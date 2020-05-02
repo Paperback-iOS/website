@@ -8,6 +8,10 @@ lang: en-US
 ## Installation
 **Paperback** is currently _not_ on **TestFlight** and _requires_ the usage of **AltStore** in order to install onto your phone. In the future, TestFlight will be used when the lead developer obtains an [Apple Developer Account](https://developer.apple.com/programs/).
 
+::: tip Video tutorial
+ If you prefer a video tutorial, Artesians made a beautiful one. You will find it [here for Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY)
+:::
+
 ### Prerequisites
 1. On your phone, download the app through the front-page of this website. The app will download as **`Paperback.ipa`**.
 	
