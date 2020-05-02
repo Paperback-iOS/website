@@ -87,6 +87,4 @@ Please, check [https://altstore.io/faq/](https://altstore.io/faq/). If you still
 ---
  
 ## App Troubleshooting
-If you're having problems with the application, please check the app troubleshooting page. If you're having an issue that is not in the troubleshooting page, please use the #support channel on Discord to ask questions.
- 
-* [**App Troubleshooting**](https://www.reddit.com/r/Paperback/wiki/troubleshooting)
+If you're having problems with the application, please check the **[App Troubleshooting page](https://www.reddit.com/r/Paperback/wiki/troubleshooting)**. If you're having an issue that is not in the troubleshooting page, please use the #support channel on Discord to ask questions.
