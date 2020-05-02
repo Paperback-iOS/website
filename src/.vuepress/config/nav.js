@@ -8,4 +8,5 @@ module.exports = [
 	},
 	{ text: "Patreon", link: "https://www.patreon.com/FaizanDurrani" },
 	{ text: "Discord", link: "https://discord.gg/Ny83JV3" },
+	{ text: "Twitter", link: "https://twitter.com/paperbackios" }
 ];
