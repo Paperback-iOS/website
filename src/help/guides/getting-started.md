@@ -23,10 +23,9 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 :::
 
 ### AltStore instructions for Mac
-1. Copy "**AltServer.app**" to your *Applications* folder.
-1. Launch **AltServer** from your menu bar (there should be an icon).
+1. Copy "**AltServer.app**" to your *Applications* folder and open it.
 1. Connect your **iPhone** to your computer and make sure it's unlocked and your device is trusted.
-1. **Mojave** users need to open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
+1. **Mojave and earlier** users need to open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
    **Catalina** users need to open **Finder** and enable "**Show this iPhone when on WiFi**" for your phone.
 1. Click the **AltServer** icon in the Mac menu bar and click "**Install AltStore**" and select your device.
 1. Enter your Apple ID email and password. (**BOTH** email address and password are case sensitive).
@@ -39,7 +38,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 ### AltStore Mail plug-in for Mac
 1. Click the "**Install Mail Plug-in**" from the AltServer menu.
 1. Enter your password to grant AltServer permission to install the plug-in.
-1. Restart Mail and Open Mail > Preferences.
+1. On the mac restart Mail and Open Mail > Preferences.
 1. Click "**Manage Plug-ins**" and enable "**AltPlugin.mailbundle**".
 1. Finally, click "**Apply and Restart Mail**" to finish installation.
  
@@ -51,7 +50,8 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 1. Download and install [iCloud for Windows 8](https://support.apple.com/en-us/HT204283).
    _This will not work if you have the Windows Store app version of **iCloud**._
 	> Can't find the link to download **iCloud** for Windows 8? [Image](https://imgur.com/a/P1ef4Wd)
-1. Restart your PC after installing both **iTunes** and **iCloud** (you can't skip this step).
+1. Restart your PC after installing both **iTunes** and **iCloud**.
+	 _This will not work if you did not restart your computer._
 1. Extract the downloaded **`AltInstaller.zip`** file. Run **`setup.exe`** and follow the instructions.
 1. Launch **AltServer** from your *Notification Area*/*System Tray* or *Hidden Icons*.
 	> Can't find **AltServer**? [Image](https://imgur.com/a/rSagfh2)
@@ -65,7 +65,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 ---
  
 ### Paperback Installation
-1. **On Mac**: Open **Mail**.
+1. **On Mac**: Open **Mail** and **Altserver**.
 	**On Windows**: Open **AltServer** along with **iCloud** and **iTunes**.
 1. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your phone via cable.
 1. Launch **AltStore** on your phone.
