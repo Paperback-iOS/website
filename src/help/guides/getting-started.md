@@ -65,7 +65,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 ---
  
 ### Paperback Installation
-1. **On Mac**: Open **Mail** and **Altserver**.
+1. **On Mac**: Open **Mail** and **AltServer**.
 	**On Windows**: Open **AltServer** along with **iCloud** and **iTunes**.
 1. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your phone via cable.
 1. Launch **AltStore** on your phone.
