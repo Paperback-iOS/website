@@ -24,7 +24,7 @@ module.exports = {
 		repo: "Paperback-iOS/Paperback",
 		docsRepo: "Paperback-iOS/website",
 		docsDir: "src",
-		logo: "/assets/media/logo.png",
+		logo: "/assets/logo.png",
 		editLinks: true,
 		editLinkText: "Help us improve this page",
 		lastUpdated: "Last Updated",
