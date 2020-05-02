@@ -5,12 +5,13 @@ lang: en-US
 
 # Troubleshooting
 
-If you're having problems with the application, please check here before posting. If you're having an issue that is not listed here, please use the #support channel on Discord to ask questions.
+If you're having problems with the application, please check here before posting. If you're having an issue that is not listed here, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
 
 --- 
 
 ### App crashes on launch
-**Public build** users should check if they're on iOS 13.4+. **Beta/Patron build** users should ping Paper on the Discord in the #supporter-chat channel.
+**Public build** users should check if they're on iOS 13.4+.
+**Beta/Patron build** users should ping Paper on the Discord in the #supporter-chat channel.
 
 ---
 

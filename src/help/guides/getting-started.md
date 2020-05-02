@@ -9,7 +9,7 @@ lang: en-US
 **Paperback** is currently _not_ on **TestFlight** and _requires_ the usage of **AltStore** in order to install onto your phone. In the future, TestFlight will be used when the lead developer obtains an [Apple Developer Account](https://developer.apple.com/programs/).
 
 ::: tip Video tutorial
- If you prefer a video tutorial, Artesians made a beautiful one. You will find it [here for Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY)
+ If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here for Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY).
 :::
 
 ### Prerequisites
@@ -91,4 +91,4 @@ Please, check [https://altstore.io/faq/](https://altstore.io/faq/). If you still
 ---
  
 ## App Troubleshooting
-If you're having problems with the application, please check the **[App Troubleshooting page](https://www.reddit.com/r/Paperback/wiki/troubleshooting)**. If you're having an issue that is not in the troubleshooting page, please use the #support channel on Discord to ask questions.
+If you're having problems with the application, please check the **[App Troubleshooting page](https://www.reddit.com/r/Paperback/wiki/troubleshooting)**. If you're having an issue that is not in the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
