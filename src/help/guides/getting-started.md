@@ -83,7 +83,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 Run AltServer as an administrator, and ensure that you've restarted after installing iTunes and iCloud.
  
 ### I can't find the .IPA file to download
-Navigate down toward the assets drop down, the .IPA should be listed there. [https://imgur.com/a/onrwNC8](https://imgur.com/a/onrwNC8)
+Navigate down toward the assets drop down, the .IPA should be listed there. [Image](https://imgur.com/a/onrwNC8)
  
 ### I have some other issue that isn't listed here
 Please, check [https://altstore.io/faq/](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel in our **[Discord](https://discord.gg/Ny83JV3)** for fast reponse or submit a post.
