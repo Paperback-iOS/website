@@ -31,7 +31,7 @@
 					:download="browserDownloadUrl ? '' : null"
 				>
 					<span>
-						Download
+						{{ this.data.downloadText }}
 					</span>
 				</a>
 				<NavLink
@@ -129,7 +129,7 @@ export default {
 				cursor pointer
 				font-family $buttonFontFamily
 				font-size 1.125em
-				width 10.5rem
+				width 11rem
 			.action-download
 				background-color $accentColorSecondary
 
