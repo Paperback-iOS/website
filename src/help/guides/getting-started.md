@@ -28,7 +28,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 
 ### AltStore instructions for Mac
 1. Copy "**AltServer.app**" to your *Applications* folder and open it.
-1. Connect your **iPhone** to your computer and make sure it's unlocked and your device is trusted.
+1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
 1. **Mojave** users need to open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
    **Catalina** users need to open **Finder** and enable "**Show this iPhone when on WiFi**" for your phone.
 1. Click the **AltServer** icon in the Mac menu bar and click "**Install AltStore**" and select your device.
@@ -59,7 +59,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 1. Extract the downloaded **`AltInstaller.zip`** file. Run **`setup.exe`** and follow the instructions.
 1. Launch **AltServer** from your *Notification Area*/*System Tray* or *Hidden Icons*.
 	> Can't find **AltServer**? [Image](https://imgur.com/a/rSagfh2)
-1. Connect your iPhone to your computer and make sure it's unlocked and your device is trusted.
+1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
 1. Open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
 1. Click the **AltServer** icon and click "**Install AltStore**, then choose your device.
 1. Enter your Apple ID email and password. (**BOTH** email address and password are case sensitive).
@@ -71,10 +71,11 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 ### Paperback Installation
 1. **On Mac**: Open **Mail** and **AltServer**.
 	**On Windows**: Open **AltServer** along with **iCloud** and **iTunes**.
-1. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your phone via cable.
-1. Launch **AltStore** on your phone.
+1. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your device via cable.
+1. Launch **AltStore** on your device.
 1. Go to **My Apps** and tap the **+** icon in the top left corner.
-1. Open the **`.IPA`** you downloaded from the [prerequisites](/help/guides/getting-started/#prerequisites) section and **Paperback** should finally be installed!
+1. Open the **`.IPA`** you downloaded from the [prerequisites](/help/guides/getting-started/#prerequisites) section.
+1. **Paperback** should finally be installed!
  
 ---
  
@@ -86,7 +87,7 @@ Run AltServer as an administrator, and ensure that you've restarted after instal
 Navigate down toward the assets drop down, the .IPA should be listed there. [Image](https://imgur.com/a/onrwNC8)
  
 ### I have some other issue that isn't listed here
-Please, check [https://altstore.io/faq/](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel in our **[Discord](https://discord.gg/Ny83JV3)** for fast reponse or submit a post.
+Please, check [altstore.io/faq/](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel in our **[Discord](https://discord.gg/Ny83JV3)** for fast reponse or submit a post on **[Reddit](https://www.reddit.com/r/Paperback/)**.
  
 ---
  
