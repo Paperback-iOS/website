@@ -3,7 +3,7 @@ home: true
 lang: fr-FR
 heroImage: /assets/logo.png
 downloadText: Télécharger
-actionText: Commencer →
+actionText: Démarrer →
 actionLink: /fr/help/guides/getting-started
 features:
     - title: Support de l’iPad
