@@ -1,17 +1,9 @@
 module.exports = [
 	["@vuepress/back-to-top"],
-	[
-		"clean-urls",
-		{
-			normalSuffix: "/",
-		},
-	],
-	[
-		"@vuepress/google-analytics",
-		{
-			ga: "UA-148427628-2",
-		},
-	],
+	/* Essentials */
+	["clean-urls", { normalSuffix: "/" }],
+	["@vuepress/google-analytics", { ga: "UA-148427628-2" }],
+	/* Containers */
 	[
 		"vuepress-plugin-container",
 		{

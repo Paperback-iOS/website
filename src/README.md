@@ -2,6 +2,7 @@
 home: true
 lang: en-US
 heroImage: /assets/logo.png
+downloadText: Download
 actionText: Get started →
 actionLink: /help/guides/getting-started
 features:
