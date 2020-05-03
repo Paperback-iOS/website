@@ -4,8 +4,6 @@ module.exports = [
 	{
 		title: "Des guides",
 		collapsable: false,
-		children: [
-			"/fr/help/guides/getting-started",
-		],
+		children: ["/fr/help/guides/getting-started"],
 	},
-]
+];
