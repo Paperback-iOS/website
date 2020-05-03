@@ -42,7 +42,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 ### AltStore Mail plug-in for Mac
 1. Click the "**Install Mail Plug-in**" from the AltServer menu.
 1. Enter your password to grant AltServer permission to install the plug-in.
-1. On the mac restart Mail and Open Mail > Preferences.
+1. Restart the Mail app and open preferences `(CMD+,)`.
 1. Click "**Manage Plug-ins**" and enable "**AltPlugin.mailbundle**".
 1. Finally, click "**Apply and Restart Mail**" to finish installation.
  
