@@ -6,11 +6,11 @@ downloadText: Télécharger
 actionText: Commencer →
 actionLink: /fr/help/guides/getting-started
 features:
-    - title: Prise en charge iPad
-      details: Disposition conviviale avec un lecteur de chapitre à double propagation robuste pour iPad. (iPadOS 13.4+)
-    - title: MangaDex l'intégration
-      details: Paperback synchronisera vos paramètres depuis et vers MangaDex.
-    - title: Pas de publicités
-      details: Contrairement à d'autres applications et sites Web qui ne doivent pas être nommés, il s'agit d'une expérience entièrement sans publicité.
+    - title: Support de l’iPad
+      details: Une mise en page agréable comprenant un lecteur double page pour l’iPad. (iPadOS 13.4+)
+    - title: Intégration de MangaDex
+      details: Paperback synchronise mangas et paramètres avec MangaDex.
+    - title: Aucune publicité
+      details: À la différence d’applications et sites que nous ne citerons pas, Paperback est intégralement dépourvu de publicité.
 footer: MIT Autorisé | Droit d'auteur © 2020-présent Faizan Durrani
 ---
