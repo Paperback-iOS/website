@@ -8,7 +8,7 @@ module.exports = [
 				items: [
 					{
 						text: "Getting started",
-						link: "/fr/help/guides/getting-started/",
+						link: "/help/guides/getting-started/",
 					},
 				],
 			},
