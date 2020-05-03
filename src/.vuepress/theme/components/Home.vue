@@ -129,7 +129,7 @@ export default {
 				cursor pointer
 				font-family $buttonFontFamily
 				font-size 1.125em
-				width 11rem
+				min-width 10rem
 			.action-download
 				background-color $accentColorSecondary
 
@@ -137,6 +137,7 @@ export default {
 					background-color lighten($accentColorSecondary, 15%)
 			.action-get-started
 				background-color $accentColor
+				margin-top 0.5rem
 
 				&:hover
 					background-color lighten($accentColor, 15%)
