@@ -27,7 +27,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 :::
 
 ### AltStore instructions for Mac
-1. Copy "**AltServer.app**" to your *Applications* folder and open it.
+1. Move "**AltServer.app**" to your *Applications* folder and launch it.
 1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
 1. **Mojave** users need to open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
    **Catalina** users need to open **Finder** and enable "**Show this iPhone when on WiFi**" for your phone.
