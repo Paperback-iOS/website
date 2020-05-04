@@ -1,16 +1,16 @@
 ---
 home: true
-lang: en-US
+lang: nl-NL
 heroImage: /assets/logo.png
 downloadText: Download
-actionText: Get started →
-actionLink: /help/guides/getting-started
+actionText: Aan de slag →
+actionLink: /nl/help/guides/getting-started
 features:
-    - title: iPad support
-      details: Friendly layout with a robust double spread chapter reader for iPad. (iPadOS 13.4+)
-    - title: MangaDex integration
-      details: Paperback will sync your mangas and settings to and from MangaDex.
-    - title: No advertisements
-      details: Unlike other not to be named apps and websites, this is a fully ad-free experience.
-footer: MIT Licensed | Copyright © 2020-present Faizan Durrani
+    - title: iPad ondersteuning
+      details: Gebruiksvriendelijke lay-out met een robuuste dubbele-pagina hoofdstuklezer voor de iPad. (iPadOS 13.4+)
+    - title: MangaDex integratie
+      details: Paperback synchroniseert je manga's en instellingen van en naar MangaDex.
+    - title: Geen reclame
+      details: In tegenstelling tot andere niet te noemen apps en websites is dit een volledig advertentievrije ervaring.
+footer: MIT Licentie | Copyright © 2020-heden Faizan Durrani
 ---

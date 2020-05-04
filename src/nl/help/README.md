@@ -1,9 +1,9 @@
 ---
 title: Help
-lang: en-US
+lang: nl-NL
 sidebar: false
 ---
 
 # Help
 
-Empty content at the moment, choose your intended destination using the navigation bar.
+Deze pagina is leeg op het moment, kies uw bestemming met behulp van de navigatiebalk.
