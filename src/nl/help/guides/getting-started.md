@@ -1,18 +1,18 @@
 ---
-title: Getting started
-lang: en-US
+title: Aan de slag
+lang: nl-NL
 ---
 
-# Getting started
+# Aan de slag
 
-## Installation
+## Installatie
 **Paperback** is currently _not_ on **TestFlight** and _requires_ the usage of **AltStore** in order to install onto your phone. In the future, TestFlight will be used when the lead developer obtains an [Apple Developer Account](https://developer.apple.com/programs/).
 
 ::: tip Video tutorial
  If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here for Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY).
 :::
 
-### Prerequisites
+### Vereisten
 1. On your phone, download the app through the front-page of this website. The app will download as **`Paperback.ipa`**.
 	
 	Alternatively you can download through our [GitHub releases page](https://github.com/FaizanDurrani/Paperback/releases/latest).
@@ -26,7 +26,7 @@ lang: en-US
 This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback is NOT designed for any iOS below.
 :::
 
-### AltStore instructions for Mac
+### AltStore instructies voor Mac
 1. Move "**AltServer.app**" to your *Applications* folder and launch it.
 1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
 1. **Mojave** users need to open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
@@ -39,7 +39,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
  
 ---
  
-### AltStore Mail plug-in for Mac
+### AltStore Mail plug-in voor Mac
 1. Click the "**Install Mail Plug-in**" from the AltServer menu.
 1. Enter your password to grant AltServer permission to install the plug-in.
 1. Restart the Mail app and open preferences `(CMD+,)`.
@@ -48,7 +48,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
  
 ---
  
-### AltStore instructions for Windows
+### AltStore instructies voor Windows
 1. Download and install [iTunes](https://www.apple.com/itunes/download/win64) for Windows.
    _This will not work if you have the Windows Store app version of **iTunes**._
 1. Download and install [iCloud for Windows 8](https://support.apple.com/en-us/HT204283).
@@ -68,7 +68,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
  
 ---
  
-### Paperback Installation
+### Paperback Installatie
 1. **On Mac**: Open **Mail** and **AltServer**.
 	**On Windows**: Open **AltServer** along with **iCloud** and **iTunes**.
 1. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your device via cable.
@@ -80,17 +80,17 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
  
 ---
  
-## Installation FAQ
+## Installatie FAQ
 ### I get "Access Denied" when trying to install AltStore
 Run AltServer as an administrator, and ensure that you've restarted after installing iTunes and iCloud.
  
-### I can't find the .IPA file to download
+### Ik kan het .IPA-bestand niet vinden om te downloaden
 Navigate down toward the assets drop down, the .IPA should be listed there. [Image](https://imgur.com/a/onrwNC8)
  
-### I have some other issue that isn't listed here
+### Ik heb een ander probleem dat hier niet wordt vermeld
 Please, check [altstore.io/faq/](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel in our **[Discord](https://discord.gg/Ny83JV3)** for fast reponse or submit a post on **[Reddit](https://www.reddit.com/r/Paperback/)**.
  
 ---
  
-## App Troubleshooting
+## App probleemoplossing
 If you're having problems with the application, please check the **[App Troubleshooting page](https://www.reddit.com/r/Paperback/wiki/troubleshooting)**. If you're having an issue that is not in the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
