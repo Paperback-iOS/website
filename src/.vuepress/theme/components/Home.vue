@@ -49,6 +49,7 @@
 			>
 				<h2>{{ feature.title }}</h2>
 				<p>{{ feature.details }}</p>
+				<img v-if="feature.image" :src="$withBase(feature.image)" />
 			</div>
 		</div>
 
@@ -158,6 +159,7 @@ export default {
 			border-bottom 1px solid darken($accentColor, 10%)
 			&:hover
 				background-color lighten($accentColor, 10%)
+		
 	.features
 		border-top 1px solid $borderColor
 		padding 1.2rem 0
@@ -167,6 +169,11 @@ export default {
 		align-items flex-start
 		align-content stretch
 		justify-content space-between
+		text-align: center 
+		img
+			max-height: 28em
+			max-width: 100%	
+			
 	.feature
 		flex-grow 1
 		flex-basis 30%
@@ -176,9 +183,13 @@ export default {
 			font-weight 500
 			border-bottom none
 			padding-bottom 0
+			color #d12020
 			color lighten($textColor, 10%)
 		p
 			color lighten($textColor, 25%)
+
+	
+
 	.footer
 		padding 2.5rem
 		border-top 1px solid $borderColor

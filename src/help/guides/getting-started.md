@@ -87,6 +87,45 @@ Please, check [https://altstore.io/faq/](https://altstore.io/faq/). If you still
 ---
  
 ## App Troubleshooting
-If you're having problems with the application, please check the app troubleshooting page. If you're having an issue that is not in the troubleshooting page, please use the #support channel on Discord to ask questions.
+If you're having problems with the application, please check here for frequently asked questions. If you're having an issue that is not below, please use the #support channel on Discord to ask questions. 
  
-* [**App Troubleshooting**](https://www.reddit.com/r/Paperback/wiki/troubleshooting)
+### App crashes on launch
+1. Your iOS may be outdated. Paperback requires you to be on iOS 13.4+ or iPadOS 13.4+ if installed through AltStore.
+1. Your certificate for Paperback may have expired. You need to reinstall AltStore onto your device.
+1. If you are on the Patron build, please ping Paper#1932 on Discord in #supporter-chat.
+
+### Manga language settings
+Go to Settings > Content Settings and select your preferred language.
+
+### Hentai settings
+1. Go to [MangaDex](https://mangadex.org/settings) and login. 
+1. Find the "**Hentai Toggle**" and enable it.
+1. Go to Settings > Content Settings and choose your preferred filter.
+
+### Content settings seset
+You need to login to [MangaDex](https://mangadex.org/settings), tick "**Remember Me**" and make sure your email is verified.
+
+### Blank reader
+1. Chapters can be removed from MangaDex due to translation group conflicts or chapters being scans of official translations.
+1. Switch between the horizontal and vertical viewer. 
+
+### Blue X
+1. Scroll or swipe a couple of pages away to reload the failed page. 
+1. Close the reader and reopen the chapter.
+
+### Page failed to load
+1. If you are reading from SEA, MangaDex servers have routing issues, so get a VPN (**Psiphon** or **ProtonVPN**).
+1. If you are not in SEA, check if MangaDex is having server complications or maintenance.
+
+### X Manga is not on Paperback
+1. If the manga is *new* (added in the last hour), it will not be available until after an hour.
+1. The manga may be restricted. Paperback does not support reading restricted manga.
+
+### Syncing is taking a long time
+Syncing more than 1,000 manga will take a considerable amount of time. You can improve this by changing the list type on the [follows page of MangaDex](https://mangadex.org/follows/manga/), and changing the display list to "**Simple List**" from the menu.
+
+### Sorting by latest updates 
+"**Latest Updates**" does not currently respect the user's language preference. Use "**Update Count**" sorting instead.
+
+### I have an issue not located here
+If the issue is a bug, file a bug report on [GitHub](https://github.com/Paperback-iOS/app/issues). Otherwise, ask for help in the Discord #support channel.
