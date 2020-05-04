@@ -181,7 +181,6 @@ export default {
 			font-weight 500
 			border-bottom none
 			padding-bottom 0
-			color #d12020
 			color lighten($textColor, 10%)
 		p
 			color lighten($textColor, 25%)
