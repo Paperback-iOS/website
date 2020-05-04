@@ -159,7 +159,6 @@ export default {
 			border-bottom 1px solid darken($accentColor, 10%)
 			&:hover
 				background-color lighten($accentColor, 10%)
-		
 	.features
 		border-top 1px solid $borderColor
 		padding 1.2rem 0
@@ -173,7 +172,6 @@ export default {
 		img
 			max-height: 28em
 			max-width: 100%	
-			
 	.feature
 		flex-grow 1
 		flex-basis 30%
@@ -187,9 +185,6 @@ export default {
 			color lighten($textColor, 10%)
 		p
 			color lighten($textColor, 25%)
-
-	
-
 	.footer
 		padding 2.5rem
 		border-top 1px solid $borderColor
