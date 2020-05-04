@@ -102,8 +102,8 @@ Go to Settings > Content Settings and select your preferred language.
 1. Find the "**Hentai Toggle**" and enable it.
 1. Go to Settings > Content Settings and choose your preferred filter.
 
-### Content settings seset
-You need to login to [MangaDex](https://mangadex.org/settings), tick "**Remember Me**" and make sure your email is verified.
+### Content settings reset
+You need to login to Mangadex, tick "**Remember Me**," and make sure your email is verified.
 
 ### Blank reader
 1. Chapters can be removed from MangaDex due to translation group conflicts or chapters being scans of official translations.
