@@ -4,28 +4,28 @@ lang: nl-NL
 ---
 
 # Veelgestelde vragen
-If you have questions about the app and our plans or need help with installing the app, try checking our guides and faq entries. If you haven't found what you needed, feel free to join the Discord and ask.
+Als je vragen hebt over de app en onze plannen of hulp nodig hebt bij het installeren van de app, bekijk dan onze handleidingen en veelgestelde vragen. Als je niet kan vinden wat je nodig hebt, kom dan op onze Discord (Alleen in het Engels) om het te vragen.
 
 ## Algemene informatie
 
 ### Waarom maak je deze app?
-There are no decent manga apps on **iOS** that have _non-intrusive_ advertisements or **MangaDex** support.
+Er zijn geen fatsoenlijke manga-apps op **iOS** die _niet-opdringerige_ advertenties of **MangaDex** ondersteuning hebben.
 
 ### Welk type bedrijfsmodel ga je gebruiken?
-There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no charge to use Paperback.
+Er zijn geen plannen om een formeel bedrijfsmodel vast te stellen. Zolang Patreon de kosten van een Apple Developer Account dekt, is de winst secundair. Het wordt op prijs gesteld om de app financieel te ondersteunen via Patreon, maar Paperback kost niets.
 
 ### Wanneer ben je van plan de app uit te brengen?
-There is a public build of the application on [GitHub](https://github.com/FaizanDurrani/Paperback-Public/releases). Acquiring an Apple Developer Account has been difficult, but hopefully TestFlight builds will be able to be launched soon. after getting one and be able to full release Paperback on the App Store. For a guide to install the application see: 
+Er is een openbare build van de applicatie op [GitHub](https://github.com/FaizanDurrani/Paperback-Public/releases). Het verkrijgen van een Apple Developer-account is moeilijk, maar hopelijk kunnen de TestFlight-builds binnenkort worden gestart. Na de TestFlight-builds hopen we Paperback in de App Store uit te brengen. Voor een gids om de applicatie te installeren, zie: 
 
 * [Paperback Installatiehandleiding](/nl/help/guides/getting-started)
 
 ## Probleemoplossing
-If you're having problems with the application, please check here before posting. If you're having an issue that is not listed here, please use the #support channel on Discord to ask questions.
+Als je problemen hebt met de applicatie, kijk dan op deze pagina voordat je een bericht plaatst. Als je een probleem hebt dat hier niet wordt vermeld, gebruik dan het #support-kanaal op Discord om vragen te stellen (In het Engels).
 
 --- 
 
 ### App loopt vast bij het opstarten
-**Public build** users should check if they're on iOS 13.4+. **Beta/Patron build** users should ping Paper on the Discord in the #supporter-chat channel.
+**Openbare build** gebruikers moeten controleren of ze iOS 13.4+ gebruiken. **Beta / Patreon build** gebruikers moeten Paper op Discord pingen in het #supporter-kanaal.
 
 ---
 
