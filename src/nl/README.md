@@ -11,6 +11,6 @@ features:
     - title: MangaDex integratie
       details: Paperback synchroniseert je manga's en instellingen van en naar MangaDex.
     - title: Geen reclame
-      details: In tegenstelling tot andere niet te noemen apps en websites is dit een volledig advertentievrije ervaring.
+      details: In tegenstelling tot andere niet te noemen apps en websites heeft Paperback geen reclame.
 footer: MIT Licentie | Copyright © 2020-heden Faizan Durrani
 ---
