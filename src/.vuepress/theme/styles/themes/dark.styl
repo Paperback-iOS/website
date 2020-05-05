@@ -148,13 +148,22 @@
 
 			&:hover,
 			&.router-link-active {
-				color: $accentColor;
+				color: $darkAltTextColor;
 			}
 		}
 
 		.dropdown-wrapper .nav-dropdown {
 			background-color: $darkPrimaryBg;
 			border-color: $darkBorderColor;
+			li {
+				h4 {
+					border-top: 1px solid $darkSecondaryBg;
+				}
+
+				&:first-child h4 {
+					border-top: 0px;
+				}
+			}
 		}
 	}
 
