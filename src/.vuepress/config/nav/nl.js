@@ -18,7 +18,7 @@ module.exports = [
 		text: "Links",
 		items: [
 			{
-				text: "Gemeenschap",
+				text: "Community",
 				items: [
 					{ text: "Discord", link: "https://discord.gg/Ny83JV3" },
 					{ text: "Reddit", link: "https://reddit.com/r/Paperback" },
