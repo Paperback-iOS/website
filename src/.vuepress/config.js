@@ -18,7 +18,7 @@ module.exports = {
 		},
 		"/nl/": {
 			lang: "nl-NL",
-			title: "Paperback",
+			title: "ogTitle",
 			description: "Een advertentievrije manga-lezer voor iOS.",
 		}
 	},
@@ -66,6 +66,12 @@ module.exports = {
 				lastUpdated: "Laatst bijgewerkt",
 				nav: require("./config/nav/nl"),
 				sidebar: require("./config/sidebar/nl")
+				serviceWorker: {
+					updatePopup: {
+						message: "Er is nieuwe inhoud beschikbaar.",
+						buttonText: "Vernieuwen",
+					}
+				},
 			}
 		},
 	},
