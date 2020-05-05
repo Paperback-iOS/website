@@ -9,7 +9,7 @@ lang: nl-NL
 **Paperback** is momenteel _niet_ op **TestFlight** en _vereist_ het gebruik van **AltStore** om op je iPhone of iPad te installeren. In de toekomst zal TestFlight worden gebruikt wanneer de hoofdontwikkelaar een [Apple Developer Account] heeft (https://developer.apple.com/programs/).
 
 ::: tip Video tutorial
- Als je liever een video-tutorial gebruikt, heeft Artesians er een mooie gemaakt. Je vindt het [hier voor Windows] (https://www.youtube.com/watch?v=n1KRwsxNiWY).
+Als je liever een video-tutorial gebruikt, heeft Artesians er een mooie gemaakt. Je vindt deze [hier] (https://www.youtube.com/watch?v=n1KRwsxNiWY).
 :::
 
 ### Vereisten
@@ -23,7 +23,6 @@ lang: nl-NL
 :::
 
 ::: warning Waarschuwing
-This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback is NOT designed for any iOS below.
 Deze app vereist iOS 13.3+ of iPadOS 13.4+, anders zal de app CRASHEN. Paperback is NIET ontworpen voor oudere iOS versies.
 :::
 

@@ -63,10 +63,10 @@ Scroll/veeg een paar pagina's weg en kom terug naar de mislukte pagina, deze zou
 ---
 
 ### Het laden van pagina's mislukt of het laden van pagina's duurt lang
- * Als je in Zuid-Oost Azië bent, gebruik dan een VPN (Psiphon of ProtonVPN) MangaDex-servers hebben routingproblemen in Zuid-Oost Azië.
+ * Als je in Zuidoost Azië bent, gebruik dan een VPN (Psiphon of ProtonVPN) MangaDex-servers hebben routingproblemen in Zuidoost Azië.
 
 
- * Als je niet in Zuid-Oost Azië bent en nog steeds problemen hebt, kijk dan of er aankondigingen in de MangaDex-Discord zijn over problemen of onderhoud.
+ * Als je niet in Zuidoost Azië bent en nog steeds problemen hebt, kijk dan of er aankondigingen in de MangaDex-Discord zijn over problemen of onderhoud.
 
 ---
 
@@ -92,5 +92,4 @@ Het synchroniseren van meer dan 1.000 manga's duurt enige tijd, maar u kunt dit 
 Het werkt, maar het respecteert de geselecteerde taal van de gebruiker niet, probeer in plaats daarvan te sorteren op Update Count.
 
 ### Ik heb een probleem dat hier niet wordt vermeld
-If its a bug, file a bug report on GitHub for review. Otherwise, ask for help in the Discord #support channel.
 Als het een bug is, maak dan een bugrapport aan op GitHub (In het Engels). Vraag anders om hulp in het Discord #support-kanaal.
