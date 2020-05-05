@@ -1,7 +1,7 @@
 const ogPrefix = "og: http://ogp.me/ns#";
 const ogTitle = "Paperback";
 const ogDescription = "An ad-free manga reader for iOS.";
-const ogColor = "#D21A1C";
+const ogColor = "#D12020";
 
 module.exports = {
 	dest: "./public",
