@@ -28,56 +28,56 @@ Deze app vereist iOS 13.3+ of iPadOS 13.4+, anders zal de app CRASHEN. Paperback
 :::
 
 ### AltStore instructies voor Mac
-1. Move "**AltServer.app**" to your *Applications* folder and launch it.
-1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
-1. **Mojave** users need to open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
-   **Catalina** users need to open **Finder** and enable "**Show this iPhone when on WiFi**" for your phone.
-1. Click the **AltServer** icon in the Mac menu bar and click "**Install AltStore**" and select your device.
-1. Enter your Apple ID email and password. (**BOTH** email address and password are case sensitive).
-	> *Your Apple ID and password are sent to Apple, and nowhere else.*
-	- **AltServer** will ask you to install a Mail plug-in, follow the instructions to continue. This is only required the first time.
-2. AltStore should be installed to your phone.
+1. Verplaats "**AltServer.app**" naar uw *Applicaties* map en start de applicatie.
+1. Verbind uw **iPhone** of **iPad** met uw computer en zorg ervoor dat deze ontgrendeld is en uw apparaat vertrouwd is.
+1. **Mojave** gebruikers moeten **iTunes** openen en "**iTunes Wi-Fi-synchronisatie**" inschakelen voor uw telefoon.
+   **Catalina** gebruikers moeten **Finder** openen en "**Show this iPhone when on wifi**" inschakelen voor uw telefoon.
+1. Klik op het **AltServer** pictogram in de Mac-menubalk en klik op "**Install AltStore**" en selecteer uw apparaat.
+1. Voer uw e-mailadres en wachtwoord voor Apple ID in. (**BEIDE** e-mailadres en wachtwoord zijn hoofdlettergevoelig).
+	> *Uw Apple ID en wachtwoord worden naar Apple gestuurd, en nergens anders.*
+	- **AltServer** zal je vragen om een Mail plug-in te installeren, volg de instructies om door te gaan. Dit is alleen de eerste keer vereist.
+2. AltStore is nu op uw iPhone/iPad geïnstalleerd.
  
 ---
  
 ### AltStore Mail plug-in voor Mac
-1. Click the "**Install Mail Plug-in**" from the AltServer menu.
-1. Enter your password to grant AltServer permission to install the plug-in.
-1. Restart the Mail app and open preferences `(CMD+,)`.
-1. Click "**Manage Plug-ins**" and enable "**AltPlugin.mailbundle**".
-1. Finally, click "**Apply and Restart Mail**" to finish installation.
+1. Klik op "**Install Mail Plug-in**" in het AltServer-menu.
+1. Voer uw wachtwoord in om AltServer toestemming te geven om de plug-in te installeren.
+1. Start de Mail-app opnieuw op en open voorkeuren `(CMD+,)`.
+1. Klik op "**Plug-ins beheren**" en schakel "**AltPlugin.mailbundle**" in.
+1. Klik ten slotte op "**Toepassen en E-mail opnieuw opstarten**" om de installatie te voltooien.
  
 ---
  
 ### AltStore instructies voor Windows
-1. Download and install [iTunes](https://www.apple.com/itunes/download/win64) for Windows.
-   _This will not work if you have the Windows Store app version of **iTunes**._
-1. Download and install [iCloud for Windows 8](https://support.apple.com/en-us/HT204283).
-   _This will not work if you have the Windows Store app version of **iCloud**._
-	> Can't find the link to download **iCloud** for Windows 8? [Image](https://imgur.com/a/P1ef4Wd)
-1. Restart your PC after installing both **iTunes** and **iCloud**.
-	 _This will not work if you did not restart your computer._
-1. Extract the downloaded **`AltInstaller.zip`** file. Run **`setup.exe`** and follow the instructions.
-1. Launch **AltServer** from your *Notification Area*/*System Tray* or *Hidden Icons*.
-	> Can't find **AltServer**? [Image](https://imgur.com/a/rSagfh2)
-1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
-1. Open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
-1. Click the **AltServer** icon and click "**Install AltStore**, then choose your device.
-1. Enter your Apple ID email and password. (**BOTH** email address and password are case sensitive).
-	> *Your Apple ID and password are sent to Apple, and nowhere else.*
-1. AltStore should then be installed into your phone.
+1. Download en installeer [iTunes](https://www.apple.com/itunes/download/win64) voor Windows.
+   _Dit werkt niet als je de Windows Store-appversie van **iTunes** hebt._
+1. Download en installeer [iCloud voor Windows 8](https://support.apple.com/en-us/HT204283).
+   _Dit werkt niet als je de Windows Store-appversie van **iCloud** hebt._
+	> Kunt u de link niet vinden om **iCloud** voor Windows 8 te downloaden? [Afbeelding](https://imgur.com/a/P1ef4Wd)
+1. Start uw pc opnieuw op nadat u zowel **iTunes** als **iCloud** hebt geïnstalleerd.
+   _Dit werkt niet als u uw computer niet opnieuw hebt opgestart._
+1. Pak het gedownloade **`AltInstaller.zip`** bestand uit. Voer **`setup.exe`** uit en volg de instructies.
+1. Start **AltServer** vanuit uw *systeemvak* of *verborgen pictogrammen*.
+	> Kunt u **AltServer** niet vinden? [Afbeelding](https://imgur.com/a/rSagfh2)
+1. Verbind uw **iPhone** of **iPad** met uw computer en zorg ervoor dat deze ontgrendeld is en uw apparaat vertrouwd is.
+1. Open **iTunes** en schakel "**iTunes Wi-Fi-synchronisatie**" in voor uw telefoon.
+1. Klik op het pictogram **AltServer** en klik op **AltStore installeren** en kies vervolgens uw apparaat.
+1. Voer uw e-mailadres en wachtwoord voor Apple ID in. (**BEIDE** e-mailadres en wachtwoord zijn hoofdlettergevoelig).
+	> *Uw Apple ID en wachtwoord worden naar Apple gestuurd, en nergens anders.*
+1. AltStore is nu op uw iPhone/iPad geïnstalleerd.
  
 ---
  
 ### Paperback Installatie
-1. **On Mac**: Open **Mail** and **AltServer**.
-	**On Windows**: Open **AltServer** along with **iCloud** and **iTunes**.
-1. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your device via cable.
-1. Trust AltStore application: on your device go in Settings, General, Profiles & Device Management. Choose your Apple ID and select **Trust**.
-1. Launch **AltStore** on your device.
-1. Go to **My Apps** and tap the **+** icon in the top left corner.
-1. Open the **`.IPA`** you downloaded from the [prerequisites](/help/guides/getting-started/#prerequisites) section.
-1. **Paperback** should finally be installed!
+1. **Op Mac**: Open **Mail** en **AltServer**.
+	**Op Windows**: Open **AltServer** samen met **iCloud** en **iTunes**.
+1. Zorg ervoor dat uw iPhone/iPad zich op _dezelfde verbinding_ bevind (dezelfde router in de meeste gevallen) als de computer met **AltServer**. Als je niet verbonden bent met hetzelfde netwerk, kun je je apparaat via een kabel aansluiten.
+1. Vertrouw op de AltStore-applicatie: ga op je apparaat naar Instellingen, Algemeen, Profielen & Apparaatbeheer. Kies uw Apple ID en selecteer **Vertrouwen**.
+1. Start **AltStore** op uw apparaat.
+1. Ga naar **Mijn apps** en tik op het **+** pictogram in de linkerbovenhoek.
+1. Open de **`.IPA`** die u hebt gedownload uit de sectie [Vereisten](/nl/help/guides/getting-started/#vereisten).
+1. **Paperback** is nu op uw iPhone/iPad geïnstalleerd!
  
 ---
  
