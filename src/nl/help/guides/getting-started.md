@@ -6,24 +6,25 @@ lang: nl-NL
 # Aan de slag
 
 ## Installatie
-**Paperback** is currently _not_ on **TestFlight** and _requires_ the usage of **AltStore** in order to install onto your phone. In the future, TestFlight will be used when the lead developer obtains an [Apple Developer Account](https://developer.apple.com/programs/).
+**Paperback** is momenteel _niet_ op **TestFlight** en _vereist_ het gebruik van **AltStore** om op je iPhone of iPad te installeren. In de toekomst zal TestFlight worden gebruikt wanneer de hoofdontwikkelaar een [Apple Developer Account] heeft (https://developer.apple.com/programs/).
 
 ::: tip Video tutorial
- If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here for Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY).
+ Als je liever een video-tutorial gebruikt, heeft Artesians er een mooie gemaakt. Je vindt het [hier voor Windows] (https://www.youtube.com/watch?v=n1KRwsxNiWY).
 :::
 
 ### Vereisten
-1. On your phone, download the app through the front-page of this website. The app will download as **`Paperback.ipa`**.
+1. Download de app op je telefoon via de homepagina van deze website. De app wordt gedownload als **`Paperback.ipa`**.
 	
-	Alternatively you can download through our [GitHub releases page](https://github.com/FaizanDurrani/Paperback/releases/latest).
-1. Download [AltServer](https://altstore.io/) for your operating system.
+	Je kunt ook downloaden via onze [GitHub releases-pagina] (https://github.com/FaizanDurrani/Paperback/releases/latest).
+1. Download [AltServer](https://altstore.io/) voor uw besturingssysteem.
 
 ::: tip Pre-releases
- If you're interested in the features introduced in the **Pre-release** or **Stable** builds then you need to be a Patron to use the app.
+ Als je geïnteresseerd bent in de functies die zijn geïntroduceerd in de **Pre-release** of **Stabiele** builds, dan moet je een Patreon zijn om de app te gebruiken.
 :::
 
-::: warning Warning
+::: warning Waarschuwing
 This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback is NOT designed for any iOS below.
+Deze app vereist iOS 13.3+ of iPadOS 13.4+, anders zal de app CRASHEN. Paperback is NIET ontworpen voor oudere iOS versies.
 :::
 
 ### AltStore instructies voor Mac
@@ -81,16 +82,16 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 ---
  
 ## Installatie FAQ
-### I get "Access Denied" when trying to install AltStore
-Run AltServer as an administrator, and ensure that you've restarted after installing iTunes and iCloud.
+### Ik krijg "Toegang geweigerd" wanneer ik AltStore probeer te installeren
+Voer AltServer uit als beheerder en zorg ervoor dat u opnieuw bent opgestart na het installeren van iTunes en iCloud.
  
 ### Ik kan het .IPA-bestand niet vinden om te downloaden
-Navigate down toward the assets drop down, the .IPA should be listed there. [Image](https://imgur.com/a/onrwNC8)
+Navigeer naar beneden naar de vervolgkeuzelijst met assets, de .IPA zou daar moeten staan. [Afbeelding] (https://imgur.com/a/onrwNC8)
  
 ### Ik heb een ander probleem dat hier niet wordt vermeld
-Please, check [altstore.io/faq/](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel in our **[Discord](https://discord.gg/Ny83JV3)** for fast reponse or submit a post on **[Reddit](https://www.reddit.com/r/Paperback/)**.
+Controleer a.u.b. [altstore.io/faq/](https://altstore.io/faq/). Als je het probleem nog steeds niet kunt oplossen, bezoek dan het #support-kanaal in onze **[Discord](https://discord.gg/Ny83JV3)** voor snelle antwoorden of plaats een bericht op **[Reddit](https://www.reddit.com/r/Paperback/)**.
  
 ---
  
 ## App probleemoplossing
-If you're having problems with the application, please check the **[App Troubleshooting page](https://www.reddit.com/r/Paperback/wiki/troubleshooting)**. If you're having an issue that is not in the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
+Als je problemen hebt met de applicatie, kijk dan op de **[App Troubleshooting page](https://www.reddit.com/r/Paperback/wiki/troubleshooting)**. Als je een probleem hebt dat niet op de pagina voor probleemoplossing staat, gebruik dan het #support-kanaal op **[Discord](https://discord.gg/Ny83JV3)** om vragen te stellen.
