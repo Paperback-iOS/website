@@ -15,7 +15,7 @@ Er zijn geen fatsoenlijke manga-apps op **iOS** die _niet-opdringerige_ adverten
 Er zijn geen plannen om een formeel bedrijfsmodel vast te stellen. Zolang Patreon de kosten van een Apple Developer Account dekt, is de winst secundair. Het wordt op prijs gesteld om de app financieel te ondersteunen via Patreon, maar Paperback kost niets.
 
 ### Wanneer ben je van plan de app uit te brengen?
-Er is een openbare build van de applicatie op [GitHub](https://github.com/FaizanDurrani/Paperback-Public/releases). Het verkrijgen van een Apple Developer-account is moeilijk, maar hopelijk kunnen de TestFlight-builds binnenkort worden gestart. Na de TestFlight-builds hopen we Paperback in de App Store uit te brengen. Voor een gids om de applicatie te installeren, zie: 
+Er is een publieke build van de applicatie op [GitHub](https://github.com/FaizanDurrani/Paperback-Public/releases). Het aanmelden voor een Apple Developer-account was moeilijk, maar hopelijk kunnen de TestFlight-builds binnenkort worden gestart. Na de TestFlight-builds hopen we Paperback in de App Store uit te brengen. Voor een gids om de applicatie te installeren, zie: 
 
 * [Paperback Installatiehandleiding](/nl/help/guides/getting-started)
 
@@ -25,71 +25,72 @@ Als je problemen hebt met de applicatie, kijk dan op deze pagina voordat je een 
 --- 
 
 ### App loopt vast bij het opstarten
-**Openbare build** gebruikers moeten controleren of ze iOS 13.4+ gebruiken. **Beta / Patreon build** gebruikers moeten Paper op Discord pingen in het #supporter-kanaal.
+**Publieke build** gebruikers moeten controleren of ze iOS 13.4+ gebruiken. **Beta / Patreon build** gebruikers moeten Paper op Discord pingen in het #supporter-kanaal (In het Engels).
 
 ---
 
 ### App loopt vast bij het volgen van manga op de iPad
-This is a known Apple bug that is fixed in iPadOS 13.4, Update to iOS 13.4 or avoid following manga from Paperback and use MangaDex's website to follow (and then sync).
+Dit is een bekende Apple-bug die is opgelost in iPadOS 13.4, update naar iOS 13.4 of vermijd het volgen van manga in Paperback en gebruik de MangaDex-website om manga te volgen (en vervolgens te synchroniseren).
 
 ---
 
 ### Hoe filter ik talen?
-Go to Settings > Content Settings.
+Ga naar Settings > Content Settings (De app is nog niet beschikbaar in het Nederlands).
 
 ---
 
 ### Hoe zet ik hentai aan?
-Go to [https://mangadex.org/settings](https://mangadex.org/settings) and login. Look for "**Hentai Toggle**" and enable it.
-Then restart the app and go to Settings > Content Settings.
+Ga naar [https://mangadex.org/settings](https://mangadex.org/settings) en login. Zoek de "**Hentai Toggle**" en schakel het in.
+Start vervolgens de app opnieuw op en ga naar Settings > Content Settings (De app is nog niet beschikbaar in het Nederlands).
 
 ---
 
 ### Elke keer dat ik de app open, worden mijn instellingen gereset
-You need to login with "**Remember Me**" checked.
-Also make sure that your email is verified.
+U moet inloggen met "**Onthoud mij**" aangevinkt op de webpagina.
+Zorg er ook voor dat uw e-mailadres is geverifieerd op MangaDex.
 
 ---
 
 ### De lezer is open maar blijft blanco als ik een hoofdstuk probeer te lezen
- * Switch between the horizontal/vertical viewers. If switching doesn't fix, try to read the same chapter on safari, if it works, ping @Paper on Discord in #support channel.
- * Some chapters are taken off of MangaDex due to group conflicts or chapters being scans of the official TL.
+ * Schakel tussen de horizontale / verticale lezers. Als het wisselen niet lukt, probeer dan hetzelfde hoofdstuk via Safari te lezen, als dat wel werkt, ping @Paper in het Discord #supporter-kanaal (In het Engels).
+ * Sommige hoofdstukken zijn van MangaDex verwijderd vanwege groepsconflicten of hoofdstukken zijn scans van de officiële vertalingen.
 
 ---
 
 ### Soms verschijnt er een blauwe X wanneer ik een hoofdstuk probeer te lezen
-Scroll/swipe a couple of pages away then come back to the failed page, it should reload. If that doesn't work, close the reader and open the chapter the again.
+Scroll/veeg een paar pagina's weg en kom terug naar de mislukte pagina, deze zou opnieuw moeten laden. Als dat niet werkt, sluit dan de lezer en open het hoofdstuk opnieuw.
 
 ---
 
 ### Het laden van pagina's mislukt of het laden van pagina's duurt lang
- * If you're in SEA get a VPN (Psiphon or ProtonVPN) MangaDex servers have routing issues in SEA.
+ * Als je in Zuid-Oost Azië bent, gebruik dan een VPN (Psiphon of ProtonVPN) MangaDex-servers hebben routingproblemen in Zuid-Oost Azië.
 
 
- * If you're not in SEA and still face this issue, see if there's any announcements in the MangaDex discord about server complications.
+ * Als je niet in Zuid-Oost Azië bent en nog steeds problemen hebt, kijk dan of er aankondigingen in de MangaDex-Discord zijn over problemen of onderhoud.
 
 ---
 
 ### Ik kan een bepaalde manga niet vinden, maar het staat wel op MangaDex
- * If the manga is REALLY new (1st chapter added in the last hour) it wont be available until after an hour.
- * If the manga isn't new, chances are it's restricted. At the moment, the app doesn't support reading restricted Manga.
-Read on the website instead.
+ * Als de manga ECHT nieuw is (eerste hoofdstuk toegevoegd in het afgelopen uur), is deze pas na een uur beschikbaar.
+ * Als de manga niet nieuw is, is de kans groot dat deze beperkt is. Op dit moment ondersteunt de app het lezen van beperkte manga niet.
+Lees de manga dan op de website in plaats van op de app.
 
 ---
 
 ### Hoe kan ik Manga Rock naar MangaDex synchroniseren
-Unfortunately, only premium members of Manga Rock are able to transfer their data currently.
+Helaas kunnen alleen premium-leden van Manga Rock hun gegevens momenteel overzetten.
 
-* [**MR to MD Guide**](https://www.reddit.com/r/mangarockapp/comments/f89aie/tool_exporting_mr_favorites/)
+* [**MR naar MD Handleiding (Engels)**](https://www.reddit.com/r/mangarockapp/comments/f89aie/tool_exporting_mr_favorites/)
 
 ---
 
 ### Het synchroniseren van lijsten duurt erg lang
-Syncing more than 1,000 manga will take some time, however you can improve this improve by changing the list type on Follows page of MD:
- * On Safari, go to [https://mangadex.org/follows/manga/](https://mangadex.org/follows/manga/) and change the display list to "Simple List" from the menu in the top right of the table.
+Het synchroniseren van meer dan 1.000 manga's duurt enige tijd, maar u kunt dit versnellen door het lijsttype op de Follows-pagina van MD te wijzigen:
+  * Ga in Safari naar [https://mangadex.org/follows/manga/](https://mangadex.org/follows/manga/) en verander de weergavelijst naar "Simple List" in het menu bovenaan rechts van de tabel.
 
 ### Het sorteren op nieuwste updates werkt niet
-It works but it doesn't respect user's selected language, try to use Update Count sorting instead.
+Het werkt, maar het respecteert de geselecteerde taal van de gebruiker niet, probeer in plaats daarvan te sorteren op Update Count.
 
 ### Ik heb een probleem dat hier niet wordt vermeld
 If its a bug, file a bug report on GitHub for review. Otherwise, ask for help in the Discord #support channel.
+Als het een bug is, maak dan een bugrapport aan op GitHub (In het Engels). Vraag anders om hulp in het Discord #support-kanaal.
