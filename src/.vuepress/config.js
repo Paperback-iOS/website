@@ -1,5 +1,30 @@
 module.exports = {
 	dest: "./public",
+	temp: "./node_modules/.temp/theme",
+
+	headOption: {
+		icon: "/favicon.ico",
+		pwa: {
+			manifest: "/manifest.json",
+			themeColor: "#D21A1C",
+			appleStatusBarColor: "black",
+			appleIcon: "/img/apple-touch-icon.png",
+			msTileImage: "/img/mstile-150x150.png",
+			msTileColor: "#D21A1C",
+		},
+	},
+
+	head: [
+		[
+			"link",
+			{
+				rel: "mask-icon",
+				href: "/img/safari-pinned-tab.svg",
+				color: "#D21A1C",
+			},
+		],
+	],
+
 	locales: {
 		"/": {
 			lang: "en-US",
@@ -15,10 +40,11 @@ module.exports = {
 			lang: "it-IT",
 			title: "Paperback",
 			description: "Un lettore di manga per iOS, senza pubblicità.",
-		}
+		},
 	},
+
 	themeConfig: {
-		logo: "/assets/logo.png",
+		logo: "/logo.png",
 		docsDir: "src",
 		repo: "Paperback-iOS/app",
 		docsRepo: "Paperback-iOS/website",
@@ -55,6 +81,7 @@ module.exports = {
 			},
 		},
 	},
+
 	plugins: require("./config/plugins"),
 	extraWatchFiles: [
 		".vuepress/config/plugins.js",

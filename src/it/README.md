@@ -1,7 +1,7 @@
 ---
 home: true
 lang: it-IT
-heroImage: /assets/logo.png
+heroImage: /logo.png
 downloadText: Scarica
 actionText: Per iniziare →
 actionLink: /it/help/guides/getting-started

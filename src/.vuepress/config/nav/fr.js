@@ -1,4 +1,5 @@
 module.exports = [
+	{ text: "Accueil", link: "/fr/" },
 	{ text: "FAQ", link: "/fr/help/faq/" },
 	{
 		text: "Des guides",
