@@ -1,7 +1,7 @@
 ---
 home: true
 lang: en-US
-heroImage: /logo.svg
+heroImage: /logo-alt.svg
 actionDownload: Download
 actionText: Get started →
 actionLink: /help/guides/getting-started
