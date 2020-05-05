@@ -65,7 +65,7 @@ module.exports = {
 				editLinkText: "Help ons deze pagina te verbeteren",
 				lastUpdated: "Laatst bijgewerkt",
 				nav: require("./config/nav/nl"),
-				sidebar: require("./config/sidebar/nl")
+				sidebar: require("./config/sidebar/nl"),
 				serviceWorker: {
 					updatePopup: {
 						message: "Er is nieuwe inhoud beschikbaar.",
