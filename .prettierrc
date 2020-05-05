@@ -2,5 +2,6 @@
 	"tabWidth": 4,
 	"useTabs": true,
 	"trailingComma": "es5",
-	"bracketSpacing": true
+	"bracketSpacing": true,
+	"endOfLine": "crlf",
 }

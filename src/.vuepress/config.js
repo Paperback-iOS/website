@@ -6,6 +6,7 @@ const ogColor = "#D21A1C";
 module.exports = {
 	dest: "./public",
 	temp: "./node_modules/.temp/theme",
+	theme: "yuu",
 
 	// prettier-ignore
 	head: [
@@ -45,7 +46,7 @@ module.exports = {
 	},
 
 	themeConfig: {
-		logo: "/logo.png",
+		logo: "/logo.svg",
 		docsDir: "src",
 		repo: "Paperback-iOS/app",
 		docsRepo: "Paperback-iOS/website",
@@ -65,7 +66,7 @@ module.exports = {
 					updatePopup: {
 						message: "New content is available.",
 						buttonText: "Refresh",
-					}
+					},
 				},
 			},
 			"/fr/": {
@@ -80,7 +81,7 @@ module.exports = {
 					updatePopup: {
 						message: "Du nouveau contenu est disponible.",
 						buttonText: "Actualiser",
-					}
+					},
 				},
 			},
 			"/it/": {
@@ -95,9 +96,14 @@ module.exports = {
 					updatePopup: {
 						message: "Nuovi contenuti disponibili.",
 						buttonText: "Aggiorna",
-					}
+					},
 				},
 			},
+		},
+		yuu: {
+			defaultDarkTheme: true,
+			disableThemeIgnore: true,
+			colorThemes: ['blue', 'purple']
 		},
 	},
 

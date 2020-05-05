@@ -4,7 +4,8 @@
 	"scripts": {
 		"build": "npm run lint && vuepress build src",
 		"lint": "eslint --fix src/.vuepress/**/*.{js,vue} --no-ignore",
-		"serve": "vuepress dev src"
+		"serve": "vuepress dev src",
+		"git-update": "git fetch upstream && git merge upstream/master"
 	},
 	"repository": {
 		"type": "git",
@@ -31,6 +32,7 @@
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-react": "^7.19.0",
 		"eslint-plugin-react-hooks": "^2.5.0",
-		"prettier-config-vuepress": "^1.0.0"
+		"prettier-config-vuepress": "^1.0.0",
+		"vuepress-theme-yuu": "^2.2.1"
 	}
 }
