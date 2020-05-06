@@ -13,10 +13,8 @@ lang: en-US
 :::
 
 ### Prerequisites
-1. On your phone, download the app through the front-page of this website. The app will download as **`Paperback.ipa`**.
-	
-	Alternatively you can download through our [GitHub releases page](https://github.com/FaizanDurrani/Paperback/releases/latest).
-1. Download [AltServer](https://altstore.io/) for your operating system.
+1. On your phone, download the app <Download text="from here"/>. The app will download as **`Paperback.ipa`**.
+2. Download [AltServer](https://altstore.io/) for your operating system.
 
 ::: tip Pre-releases
  If you're interested in the features introduced in the **Pre-release** or **Stable** builds then you need to be a Patron to use the app.
