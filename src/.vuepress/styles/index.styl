@@ -11,21 +11,12 @@ font-feature-settings()
 	-ms-font-feature-settings arguments
 	font-feature-settings arguments
 
-// Home style
-.home
-	header.hero
-		img
-			max-height $heroImageHeight
+// Service Worker
 
 // Yuu theme changes
 .yuu-theme-dark
-	.home
-		header.hero
-			.description
-				color $darkAltTextColor
-		.features
-			.feature p
-				color $darkAltTextColor
+	.sw-update-popup
+		background-color $darkPrimaryBg
 	a.settings-button
 		color $darkTextColor
 		&:hover
