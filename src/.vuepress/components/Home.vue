@@ -13,7 +13,8 @@
 			</div>
 			<div class="3 desc">
 				<p v-if="data.tagline !== null" class="main-description">{{ data.tagline || $description || 'Welcome to your VuePress site' }}</p><p v-if="data.actionText && data.actionLink" class="action">
-				<NavLink class="action-button" :item="actionLink"/></p>
+				<div class="hero"><NavLink class="action-button" :item="actionLink"/></div>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -48,35 +49,34 @@ body
     text-align center
 
 .wrapper
-    display flex
-    position relative
+	display flex
+	position relative
 
 .nested-wrapper1
-    display flex
-    width 65%
-    & > [class='1']
-        padding 1em
-        flex 1
+	display flex
+	width 65%
+	& > [class='1']
+		flex 1
+		padding 1em
 		img
+			filter brightness(75%)
 			max-width 100%
-			opacity 0.8
 
 .nested-wrapper2
     width 35%
     & > [class='2']
         padding 1em
 		.head
-			text-align center
 			padding-top 10rem
+			text-align center
 			img
 				max-height 8rem
 				max-height calc(64px + 6vw)
 			h1
-				margin 2px 4px 10px
 				font-size 3rem
 				font-size calc(32px + 1vw)
+				margin 2px 4px 10px
     & > [class='3']
-        background lightblue
         padding 1em
 		.desc
 			text-align center
@@ -84,25 +84,22 @@ body
 				font-size 1.2rem
 				font-size calc(16px + .5vw)
 				margin 2px 4px 20px
-			.action-button
-				font-size 1rem
-				font-size calc(16px + .25vw)
-				color #fff
-				background-color $accentColor
-				padding 0.8rem 1.6rem
-				border-radius 4px
-				transition background-color .1s ease
-				box-sizing border-box
-				border-bottom 1px solid darken($accentColor, 10%)
-				&:hover
-					background-color lighten($accentColor, 10%)
-
+			.action
+				margin-top 2rem
+				&-button
+					border-radius 4px
+					box-sizing border-box
+					color #fdfdfd
+					font-size 1rem
+					font-size calc(16px + .25vw)
+					padding 0.8rem 1.6rem
+					transition background-color .1s ease
 @media only screen and (max-width: $MQNarrow)
 	.wrapper
 		justify-content center
 		.nested-wrapper1
-			width 0%
 			display none
+			width 0%
 		.nested-wrapper2
 			width 100%
 </style>
