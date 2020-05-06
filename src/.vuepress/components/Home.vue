@@ -1,12 +1,18 @@
 <template>
 	<main class="home" aria-labelledby="main-title">
-
-		<lottie-player
+		<LottiePlayer
 			autoplay
 			src="/assets/render.json"
 			speed="0.5"
-			style="width: 100%; height: 1000px; left: 0%; position: absolute; z-index: -1; opacity: 0.25;"
-		></lottie-player>
+			style="
+				width: 100%;
+				height: 1000px;
+				left: 0%;
+				position: absolute;
+				z-index: -1;
+				opacity: 0.25;
+			"
+		></LottiePlayer>
 
 		<header class="hero">
 			<img
@@ -35,18 +41,15 @@
 			</p>
 		</header>
 
-		<div
-		v-if="data.features && data.features.length"
-		class="features"
-		>
-		<div
-			v-for="(feature, index) in data.features"
-			:key="index"
-			class="feature"
-		>
-			<h2>{{ feature.title }}</h2>
-			<p>{{ feature.details }}</p>
-		</div>
+		<div v-if="data.features && data.features.length" class="features">
+			<div
+				v-for="(feature, index) in data.features"
+				:key="index"
+				class="feature"
+			>
+				<h2>{{ feature.title }}</h2>
+				<p>{{ feature.details }}</p>
+			</div>
 		</div>
 
 		<Content class="theme-default-content custom" />

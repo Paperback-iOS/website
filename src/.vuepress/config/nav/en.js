@@ -1,5 +1,5 @@
 module.exports = [
-	{ text: 'Home', link: '/' },
+	{ text: "Home", link: "/" },
 	{ text: "FAQ", link: "/help/faq/" },
 	{
 		text: "Guides",

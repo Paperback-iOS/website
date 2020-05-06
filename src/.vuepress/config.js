@@ -103,7 +103,7 @@ module.exports = {
 		yuu: {
 			defaultDarkTheme: true,
 			disableThemeIgnore: true,
-			colorThemes: ['blue', 'purple']
+			colorThemes: ["blue", "purple"],
 		},
 	},
 
