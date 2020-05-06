@@ -1,9 +1,7 @@
 ---
 home: true
-homeComponent: Home
 lang: en-US
 heroImage: /logo-alt.svg
-actionDownload: Download
 actionText: Get started →
 actionLink: /help/guides/getting-started
 features:
@@ -13,4 +11,5 @@ features:
       details: Paperback will sync your mangas and settings to and from MangaDex.
     - title: No advertisements
       details: Unlike other not to be named apps and websites, this is a fully ad-free experience.
+footer: MIT Licensed | Copyright © 2020-present Faizan Durrani
 ---
