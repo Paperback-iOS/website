@@ -25,7 +25,7 @@ If you're having problems with the application, please check here before posting
 --- 
 
 ### App crashes on launch
-**Public build** users should check if they're on iOS 13.4+. **Beta/Patreon build** users should ping Paper on the Discord in the #supporter-chat channel.
+**Public build** users should check if they're on iOS 13.4+. **Beta/Patron build** users should ping Paper on the Discord in the #supporter-chat channel.
 
 ---
 

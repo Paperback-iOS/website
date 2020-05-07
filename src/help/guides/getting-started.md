@@ -19,7 +19,7 @@ lang: en-US
 1. Download [AltServer](https://altstore.io/) for your operating system.
 
 ::: tip Pre-releases
- If you're interested in the features introduced in the **Pre-release** or **Stable** builds then you need to be a Patreon to use the app.
+ If you're interested in the features introduced in the **Pre-release** or **Stable** builds then you need to be a Patron to use the app.
 :::
 
 ::: warning Warning

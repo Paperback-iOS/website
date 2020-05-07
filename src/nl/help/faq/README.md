@@ -25,7 +25,7 @@ Als je problemen hebt met de applicatie, kijk dan op deze pagina voordat je een 
 --- 
 
 ### App loopt vast bij het opstarten
-**Publieke build** gebruikers moeten controleren of ze iOS 13.4+ gebruiken. **Beta / Patreon build** gebruikers moeten Paper op Discord pingen in het #supporter-kanaal (In het Engels).
+**Publieke build** gebruikers moeten controleren of ze iOS 13.4+ gebruiken. **Beta / Patron build** gebruikers moeten Paper op Discord pingen in het #supporter-kanaal (In het Engels).
 
 ---
 

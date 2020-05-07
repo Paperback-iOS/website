@@ -19,7 +19,7 @@ Als je liever een video-tutorial gebruikt, heeft Artesians er een mooie gemaakt.
 1. Download [AltServer](https://altstore.io/) voor uw besturingssysteem.
 
 ::: tip Pre-releases
- Als je geïnteresseerd bent in de functies die zijn geïntroduceerd in de **Pre-release** of **Stabiele** builds, dan moet je een Patreon zijn om de app te gebruiken.
+ Als je geïnteresseerd bent in de functies die zijn geïntroduceerd in de **Pre-release** of **Stabiele** builds, dan moet je een Patron zijn om de app te gebruiken.
 :::
 
 ::: warning Waarschuwing
