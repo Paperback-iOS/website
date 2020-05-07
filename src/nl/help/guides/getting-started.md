@@ -6,16 +6,16 @@ lang: nl-NL
 # Aan de slag
 
 ## Installatie
-**Paperback** is momenteel _niet_ op **TestFlight** en _vereist_ het gebruik van **AltStore** om op je iPhone of iPad te installeren. In de toekomst zal TestFlight worden gebruikt wanneer de hoofdontwikkelaar een [Apple Developer Account] heeft (https://developer.apple.com/programs/).
+**Paperback** is momenteel _niet_ op **TestFlight** en _vereist_ het gebruik van **AltStore** om op je iPhone of iPad te installeren. In de toekomst zal TestFlight worden gebruikt wanneer de hoofdontwikkelaar een [Apple Developer Account](https://developer.apple.com/programs/) heeft.
 
 ::: tip Video tutorial
-Als je liever een video-tutorial gebruikt, heeft Artesians er een mooie gemaakt. Je vindt deze [hier] (https://www.youtube.com/watch?v=n1KRwsxNiWY).
+Als je liever een video-tutorial gebruikt, heeft Artesians er een mooie gemaakt. Je vindt deze [hier](https://www.youtube.com/watch?v=n1KRwsxNiWY).
 :::
 
 ### Vereisten
 1. Download de app op je telefoon via de homepagina van deze website. De app wordt gedownload als **`Paperback.ipa`**.
 	
-	Je kunt ook downloaden via onze [GitHub releases-pagina] (https://github.com/FaizanDurrani/Paperback/releases/latest).
+	Je kunt ook downloaden via onze [GitHub releases-pagina](https://github.com/FaizanDurrani/Paperback/releases/latest).
 1. Download [AltServer](https://altstore.io/) voor uw besturingssysteem.
 
 ::: tip Pre-releases
@@ -85,7 +85,7 @@ Deze app vereist iOS 13.3+ of iPadOS 13.4+, anders zal de app CRASHEN. Paperback
 Voer AltServer uit als beheerder en zorg ervoor dat u opnieuw bent opgestart na het installeren van iTunes en iCloud.
  
 ### Ik kan het .IPA-bestand niet vinden om te downloaden
-Navigeer naar beneden naar de vervolgkeuzelijst met assets, de .IPA zou daar moeten staan. [Afbeelding] (https://imgur.com/a/onrwNC8)
+Navigeer naar beneden naar de vervolgkeuzelijst met assets, de .IPA zou daar moeten staan. [Afbeelding](https://imgur.com/a/onrwNC8)
  
 ### Ik heb een ander probleem dat hier niet wordt vermeld
 Controleer a.u.b. [altstore.io/faq/](https://altstore.io/faq/). Als je het probleem nog steeds niet kunt oplossen, bezoek dan het #support-kanaal in onze **[Discord](https://discord.gg/Ny83JV3)** voor snelle antwoorden of plaats een bericht op **[Reddit](https://www.reddit.com/r/Paperback/)**.
