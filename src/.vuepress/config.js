@@ -32,6 +32,11 @@ module.exports = {
 			title: "Paperback",
 			description: "Un lettore di manga per iOS, senza pubblicità.",
 		},
+		"/nl/": {
+			lang: "nl-NL",
+			title: "Paperback",
+			description: "Een advertentievrije manga-lezer voor iOS.",
+		},
 	},
 
 	themeConfig: {
@@ -88,6 +93,21 @@ module.exports = {
 					},
 				},
 			},
+			"/nl/": {
+				label: "Nederlands",
+				selectText: "Talen",
+				artiaLabel: "Kies een taal",
+				editLinkText: "Help ons deze pagina te verbeteren",
+				lastUpdated: "Laatst bijgewerkt",
+				nav: require("./config/nav/nl"),
+				sidebar: require("./config/sidebar/nl"),
+				serviceWorker: {
+					updatePopup: {
+						message: "Er is nieuwe inhoud beschikbaar.",
+						buttonText: "Vernieuwen",
+					},
+				},
+			},
 		},
 	},
 
@@ -97,8 +117,10 @@ module.exports = {
 		".vuepress/config/nav/en.js",
 		".vuepress/config/nav/fr.js",
 		".vuepress/config/nav/it.js",
+		".vuepress/config/nav/nl.js",
 		".vuepress/config/sidebar/en.js",
 		".vuepress/config/sidebar/fr.js",
 		".vuepress/config/sidebar/it.js",
+		".vuepress/config/sidebar/nl.js",
 	],
 };
