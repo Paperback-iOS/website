@@ -46,7 +46,7 @@ module.exports = {
 	},
 
 	themeConfig: {
-		logo: "/logo-alt.svg",
+		logo: "/icons/logo-alt.svg",
 		docsDir: "src",
 		repo: "Paperback-iOS/app",
 		docsRepo: "Paperback-iOS/website",
