@@ -1,8 +1,3 @@
-const ogPrefix = "og: http://ogp.me/ns#";
-const ogTitle = "Paperback";
-const ogDescription = "An ad-free manga reader for iOS.";
-const ogColor = "#D21A1C";
-
 module.exports = {
 	dest: "./public",
 	temp: "./node_modules/.temp/theme",
@@ -11,46 +6,41 @@ module.exports = {
 	head: [
 		["link", { rel: "icon", href: "/favicon.ico" }],
 		["link", { rel: "manifest", href: "/manifest.json" }],
-		["meta", { prefix: ogPrefix, property: "og:url", content: "https://paperback.moe/" }],
-		["meta", { prefix: ogPrefix, property: "og:image", content: "https://paperback.moe/logo.png" }],
-		["meta", { prefix: ogPrefix, property: "og:type", content: "website" }],
-		["meta", { prefix: ogPrefix, property: "og:title", content: ogTitle }],
-		["meta", { prefix: ogPrefix, property: "og:description", content: ogDescription }],
-		["meta", { prefix: ogPrefix, property: "twitter:title", content: ogTitle }],
-		["meta", { name: "theme-color", content: ogColor }],
+		["link", { rel: "apple-touch-icon", href: "/icons/apple-touch-icon-152x152.png" }],
+		["link", { rel: "mask-icon", href: "/icons/safari-pinned-tab.svg", color: "#D21A1C" }],
+		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://paperback.moe/icons/logo.png" }],
+		["meta", { name: "theme-color", content: "#D21A1C" }],
 		["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
 		["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
-		["link", { rel: "apple-touch-icon", href: `/img/apple-touch-icon.png` }],
-		["link", { rel: "mask-icon", href: "/img/safari-pinned-tab.svg", color: ogColor }],
-		["meta", { name: "msapplication-TileImage", content: "/img/mstile-150x150.png" }],
-		["meta", { name: "msapplication-TileColor", content: ogColor }],
+		["meta", { name: "msapplication-TileImage", content: "/icons/msapplication-icon-144x144.png" }],
+		["meta", { name: "msapplication-TileColor", content: "#D21A1C" }]
 	],
 
 	locales: {
 		"/": {
 			lang: "en-US",
-			title: ogTitle,
-			description: ogDescription,
+			title: "Paperback",
+			description: "An ad-free manga reader for iOS.",
 		},
 		"/fr/": {
 			lang: "fr-FR",
-			title: ogTitle,
+			title: "Paperback",
 			description: "Un lecteur de manga, sur iOS, sans publicités.",
 		},
 		"/it/": {
 			lang: "it-IT",
-			title: ogTitle,
+			title: "Paperback",
 			description: "Un lettore di manga per iOS, senza pubblicità.",
 		},
 		"/nl/": {
 			lang: "nl-NL",
-			title: "ogTitle",
+			title: "Paperback",
 			description: "Een advertentievrije manga-lezer voor iOS.",
-		}
+		},
 	},
 
 	themeConfig: {
-		logo: "/logo.png",
+		logo: "/icons/logo.png",
 		docsDir: "src",
 		repo: "Paperback-iOS/app",
 		docsRepo: "Paperback-iOS/website",
@@ -70,7 +60,7 @@ module.exports = {
 					updatePopup: {
 						message: "New content is available.",
 						buttonText: "Refresh",
-					}
+					},
 				},
 			},
 			"/fr/": {
@@ -85,7 +75,7 @@ module.exports = {
 					updatePopup: {
 						message: "Du nouveau contenu est disponible.",
 						buttonText: "Actualiser",
-					}
+					},
 				},
 			},
 			"/it/": {
@@ -100,7 +90,7 @@ module.exports = {
 					updatePopup: {
 						message: "Nuovi contenuti disponibili.",
 						buttonText: "Aggiorna",
-					}
+					},
 				},
 			},
 			"/nl/": {
@@ -115,9 +105,9 @@ module.exports = {
 					updatePopup: {
 						message: "Er is nieuwe inhoud beschikbaar.",
 						buttonText: "Vernieuwen",
-					}
+					},
 				},
-			}
+			},
 		},
 	},
 
@@ -131,6 +121,6 @@ module.exports = {
 		".vuepress/config/sidebar/en.js",
 		".vuepress/config/sidebar/fr.js",
 		".vuepress/config/sidebar/it.js",
-		".vuepress/config/sidebar/nl.js"
+		".vuepress/config/sidebar/nl.js",
 	],
 };

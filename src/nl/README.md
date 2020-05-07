@@ -1,7 +1,7 @@
 ---
 home: true
 lang: nl-NL
-heroImage: /logo.png
+heroImage: /icons/logo.png
 downloadText: Download
 actionText: Aan de slag →
 actionLink: /nl/help/guides/getting-started
