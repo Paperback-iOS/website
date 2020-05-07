@@ -72,7 +72,7 @@ Deze app vereist iOS 13.3+ of iPadOS 13.4+, anders zal de app CRASHEN. Paperback
 1. **Op Mac**: Open **Mail** en **AltServer**.
 	**Op Windows**: Open **AltServer** samen met **iCloud** en **iTunes**.
 1. Zorg ervoor dat uw iPhone/iPad zich op _dezelfde verbinding_ bevind (dezelfde router in de meeste gevallen) als de computer met **AltServer**. Als je niet verbonden bent met hetzelfde netwerk, kun je je apparaat via een kabel aansluiten.
-1. Vertrouw op de AltStore-applicatie: ga op je apparaat naar Instellingen, Algemeen, Profielen & Apparaatbeheer. Kies uw Apple ID en selecteer **Vertrouwen**.
+1. Vertrouw de AltStore-applicatie: ga op je apparaat naar Instellingen, Algemeen, Profielen & Apparaatbeheer. Kies uw Apple ID en selecteer **Vertrouwen**.
 1. Start **AltStore** op uw apparaat.
 1. Ga naar **Mijn apps** en tik op het **+** pictogram in de linkerbovenhoek.
 1. Open de **`.IPA`** die u hebt gedownload uit de sectie [Vereisten](/nl/help/guides/getting-started/#vereisten).
@@ -82,7 +82,7 @@ Deze app vereist iOS 13.3+ of iPadOS 13.4+, anders zal de app CRASHEN. Paperback
  
 ## Installatie FAQ
 ### Ik krijg "Toegang geweigerd" wanneer ik AltStore probeer te installeren
-Voer AltServer uit als beheerder en zorg ervoor dat u opnieuw bent opgestart na het installeren van iTunes en iCloud.
+Voer AltServer uit als administrator en zorg ervoor dat u opnieuw bent opgestart na het installeren van iTunes en iCloud.
  
 ### Ik kan het .IPA-bestand niet vinden om te downloaden
 Navigeer naar beneden naar de vervolgkeuzelijst met assets, de .IPA zou daar moeten staan. [Afbeelding](https://imgur.com/a/onrwNC8)
