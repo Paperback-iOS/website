@@ -8,7 +8,7 @@ module.exports = {
 		["link", { rel: "manifest", href: "/manifest.json" }],
 		["link", { rel: "apple-touch-icon", href: "/icons/apple-touch-icon-152x152.png" }],
 		["link", { rel: "mask-icon", href: "/icons/safari-pinned-tab.svg", color: "#D21A1C" }],
-		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://paperback.moe/logo.png" }],
+		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://paperback.moe/icons/logo.png" }],
 		["meta", { name: "theme-color", content: "#D21A1C" }],
 		["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
 		["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
@@ -35,7 +35,7 @@ module.exports = {
 	},
 
 	themeConfig: {
-		logo: "/logo.png",
+		logo: "/icons/logo.png",
 		docsDir: "src",
 		repo: "Paperback-iOS/app",
 		docsRepo: "Paperback-iOS/website",
