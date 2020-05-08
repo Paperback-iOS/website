@@ -11,6 +11,6 @@ features:
     - title: Intégration de MangaDex
       details: Paperback synchronise mangas et paramètres avec MangaDex.
     - title: Aucune publicité
-      details: À la différence d’applications et sites que nous ne citerons pas, Paperback est intégralement dépourvu de publicité.
-footer: MIT Autorisé | Droit d'auteur © 2020-présent Faizan Durrani
+      details: À la différence d’applications et sites que nous ne citerons pas, Paperback est intégrallement dépourvue de publicités.
+footer: Licence MIT | Copyright © 2020-présent Faizan Durrani
 ---

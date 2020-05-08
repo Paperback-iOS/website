@@ -2,10 +2,10 @@ module.exports = [
 	{ text: "Accueil", link: "/fr/" },
 	{ text: "FAQ", link: "/fr/help/faq/" },
 	{
-		text: "Des guides",
+		text: "Guides",
 		items: [
 			{
-				text: "Des guides",
+				text: "Guides",
 				items: [
 					{
 						text: "Commencer",

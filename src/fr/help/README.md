@@ -1,8 +1,9 @@
 ---
-title: Utile
+title: Aide
 lang: fr-FR
 sidebar: false
 ---
 
-# Utile
-Pour le moment, videz le contenu, choisissez votre destination en utilisant la barre de navigation.
+# Aide
+
+Pour le moment, cette page est vide. Choisissez la destination de votre choix en utilisant la barre de navigation.
