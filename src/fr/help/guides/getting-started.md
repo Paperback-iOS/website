@@ -6,14 +6,14 @@ lang: fr-FR
 # Démarrer
 
 ## Installation
-**Paperback** n’est actuellement _pas_ disponible sur **TestFlight** et _nécéssite_ l’utilisation d’**AltStore** afin d’installer l’application sur votre téléphone. TestFlight sera utilisé lorsque le développeur principal obtiendra un [Compte Développeur Apple](https://developer.apple.com/programs/).
+**Paperback** n’est actuellement _pas_ disponible sur **TestFlight** et _nécessite_ l’utilisation d’**AltStore** afin d’installer l’application sur votre téléphone. TestFlight sera utilisé lorsque le développeur principal obtiendra un [Compte Développeur Apple](https://developer.apple.com/programs/).
 
 ::: tip Tutoriel vidéo
  Si vous préférez utiliser un tutoriel vidéo, Artesians en a réalisé un super en anglais. Vous le trouverez [ici pour Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY).
 :::
 
 ### Prérequis
-1. Sur votre téléphone, téléchargez l’application depuis la page d’accueil de ce site. L’application sera téléchargée sous le nom **`Paperback.ipa`**.
+1. Sur votre téléphone, téléchargez l’application depuis la page d’accueil de ce site. Elle sera téléchargée sous le nom **`Paperback.ipa`**.
 	
 	Vous pouvez aussi la télécharger depuis notre [page de publications Github](https://github.com/FaizanDurrani/Paperback/releases/latest).
 1. Téléchargez la version d’[AltServer](https://altstore.io/) correspondant à votre système d’exploitation.
@@ -29,8 +29,8 @@ Cette application a besoin de iOS 13.3+ ou iPadOS 13.4+ pour fonctionner. Paperb
 ### Instructions pour AltStore sur Mac
 1. Copiez "**AltServer.app**" dans le dossier *Applications* et ouvrez-la.
 1. Connectez votre **iPhone** à votre ordinateur, vérifiez qu’il est déverrouillé et que votre ordinateur est un appareil de confiance.
-1. Utilisateurs de **Mojave**, vous devez ouvrir **iTunes** et activer "**Synchroniser avec cet appareil en Wi-Fi**" pour votre appareil.
-   Utilisateurs de **Catalina**, vous devez ouvrir le **Finder** et activer "**Afficher cet appareil lorsqu’il est en Wi-Fi**".
+1. Utilisateurs de **Mojave**, ouvrez **iTunes** et activez "**Synchroniser avec cet appareil en Wi-Fi**" pour votre appareil.
+   Utilisateurs de **Catalina**, ouvrez le **Finder** activez "**Afficher cet appareil lorsqu’il est en Wi-Fi**".
 1. Cliquez sur l’icône de **AltServer** dans la barre des menus, cliquez sur "**Install AltStore**" et choisissez votre appareil.
 1. Saisissez votre identifiant Apple ainsi que votre mot de passe. (L’adresse mail **TOUT COMME** le mot de passe sont sensibles à la casse).
 	> *Votre identifiant Apple et votre mot de passe sont envoyés à Apple et uniquement à Apple*.
@@ -69,10 +69,10 @@ Cette application a besoin de iOS 13.3+ ou iPadOS 13.4+ pour fonctionner. Paperb
 ---
 
 ### Installation de Paperback
-1. **Sur Mac** : ouvrez **Mail** et **AltServer**.
+1. **Sur Mac** : ouvrez **AltServer** et **Mail**.
  **Sur Windows** : ouvrez **AltServer** ainsi que **iCloud** et **iTunes**.
 1. Assurez-vous d’être _connecté au même réseau_ (au même routeur, dans la majorité des cas) que l’ordinateur sur lequel **AltServer** est ouvert. Si vous n’êtes pas connecté au même réseau, vous pouvez relier votre téléphone au moyen d’un câble.
-1. Faites confiance à l'application AltStore : allez sur votre appareil dans Réglages, Général, Gestion de l'appareil. Choisissez votre identifiant Apple et appuyez sur **Faire confiance**.
+1. Faites confiance à l'application AltStore : allez, sur votre appareil, dans Réglages > Général > Gestion de l'appareil. Choisissez votre identifiant Apple et appuyez sur **Faire confiance**.
 1. Ouvrez **AltStore** sur votre téléphone.
 1. Allez dans l’onglet **My Apps** et touchez l’icône **+** en haut à gauche.
 1. Ouvrez le fichier **`.IPA`** que vous avez téléchargé dans la section [prérequis](getting-started/#prerequis).
@@ -82,7 +82,7 @@ Cette application a besoin de iOS 13.3+ ou iPadOS 13.4+ pour fonctionner. Paperb
 
 ## FAQ Installation
 ### Je suis confronté à "Access Denied" lorsque j’essaye d’installer AltStore
-Exécutez AltServer en tant qu’administrateur et assurez-vous que vous avez redémarré l’ordinateur après avoir installé iTunes et iCloud.
+Exécutez AltServer en tant qu’administrateur et assurez-vous que vous avez redémarré votre ordinateur après avoir installé iTunes et iCloud.
 
 ### Je ne parviens pas à trouver le fichier `.IPA` à télécharger
 Regardez dans le menu déroulant **assets**. Le fichier devrait s’y trouver. [Image](https://imgur.com/a/onrwNC8)
@@ -95,4 +95,4 @@ Si vous ne parvenez toujours pas à le résoudre, vous pouvez accéder au canal 
 
 ## Résolution des problèmes de l’application
 Si vous avez des problèmes avec l’application, merci de regarder la page **[Résolution des problèmes de l’application](https://www.reddit.com/r/Paperback/wiki/troubleshooting)**.  
-Si celui-ci n’est pas listé sur cette page, merci d’utiliser le canal #support sur **[Discord](https://discord.gg/Ny83JV3)** afin de poser votre question.
+Si ceux-ci ne sont pas listés sur cette page, merci d’utiliser le canal #support sur **[Discord](https://discord.gg/Ny83JV3)** afin de poser vos questions.

@@ -10,10 +10,10 @@ Si vous avez des questions au sujet de cette application et de nos projets ou qu
 ### Pourquoi développez-vous cette application ?
 Il n’existe pas de lecteur de manga convenable, sur **iOS**, dont les publicités sont _non intrusives_ et qui supporte **MangaDex**.
 
-### Quel modèle économique prévoyez-vous adopter ?
-Il n’est pas prévu d’adopter un modèle économique formel. Aussi longtemps que Patreon couvrira les couts du Compte Développeur Apple, les profits seront secondaires. Ce serait sympathique d’être soutenu dans le développement de l’application mais utiliser Paperback sera gratuit.
+### Quel modèle économique prévoyez-vous d'adopter ?
+Il n’est pas prévu d’adopter un modèle économique formel. Aussi longtemps que Patreon couvrira les coûts du Compte Développeur Apple, les profits seront secondaires. Ce serait sympathique d’être soutenu dans le développement de l’application mais utiliser Paperback sera gratuit.
 
-### Quand prévoyez-vous publier l'application ?
+### Quand prévoyez-vous de publier l'application ?
 Une version de l’application accessible au public est disponible sur [GitHub](https://github.com/FaizanDurrani/Paperback-Public/releases). Obtenir un Compte Développeur Apple se révèle difficile mais nous espérons qu’une version pourra rapidement être disponible sur TestFlight. Après avoir publié l’application sur TestFlight, nous pourrons nous pencher sur une publication définitive. Si vous cherchez un guide pour installer l’application, regardez :
 
 * [Guide d’installation de Paperback](/fr/help/guides/getting-started) 
@@ -45,7 +45,7 @@ Redémarrez ensuite l’application puis allez dans Settings > Content Settings.
 ---
 
 ### Mes préférences de contenu sont réinitialisées à l’ouverture de l’application 
-Connectez vous en cochant "**Remember Me**". Vérifiez aussi que votre adresse e-mail est vérifiée.
+Connectez-vous en cochant "**Remember Me**". Vérifiez aussi que votre adresse e-mail soit vérifiée.
 
 ---
 
