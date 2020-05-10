@@ -11,11 +11,102 @@ font-feature-settings()
 	-ms-font-feature-settings arguments
 	font-feature-settings arguments
 
+// Home style
+.home
+	header.hero
+		img
+			max-height $heroImageHeight
+
+// List
+ul,
+ol
+	padding-left 2rem
+
+// Element UI Tabs
+.el-tabs
+	&__content
+		background-color #f6f8fd
+		padding 2em
+		border-radius 8px
+	h3
+		margin-top 0em
+  ol:last-child
+	  margin-bottom 0em
+
+// Yuu theme changes
+.yuu-theme-dark
+	.sw-update-popup
+		background-color $darkPrimaryBg !important
+	a.settings-button
+		color $darkTextColor
+		&:hover
+			color $darkAltTextColor
+	.nav-links
+		.nav-item
+			a.nav-link
+				&.router-link-active
+					color $darkTextColor
+				&:hover
+					color $darkAltTextColor
+	.dropdown-wrapper
+		.nav-dropdown
+			li
+				&.dropdown-item a
+					color $darkAltTextColor
+					&.router-link-active,
+					&:not(.router-link-active)
+						&:hover
+							color $darkTextColor
+				h4
+					border-top 1px solid $darkSecondaryBg
+				&:first-child h4
+					border-top 0
+	.el-tabs
+		&__content
+			background-color #252525
+			padding 1em
+			border-radius 8px
+			h3
+				color $accentColor
+		&__item
+			user-select none
+			&.is-active
+				color $accentColor
+			&:not(.is-active)
+				color $darkTextColor
+				&:hover
+					color $darkAltTextColor
+		&__active-bar
+			background-color $accentColor
+		&__nav-wrap::after
+			background-color #313131
+	.el-tag
+		&--warning
+			margin 2px
+			background-color #e6a23c0d
+			border-color #90611a47
+	// Yuu theme colors
+	&.yuu-theme-purple
+		.el-tabs
+			h3
+				color $purpleAccentColor
+			&__item.is-active
+				color $purpleAccentColor
+			&__active-bar
+				background-color $purpleAccentColor
+	&.yuu-theme-red
+		.el-tabs
+			h3
+				color $redAccentColor
+			&__item.is-active
+				color $redAccentColor
+			&__active-bar
+				background-color $redAccentColor
 // Custom block containers
 .custom-block
-	&.tip
-	&.warning
-	&.error
+	&.tip,
+	&.warning,
+	&.error,
 	&.danger
 		border-radius $containerBorderRadius
 	&.aside
@@ -26,7 +117,7 @@ font-feature-settings()
 		font-size 0.9rem
 		text-align left
 		p
-			margin-top: 0
+			margin-top 0
 		a
 			color $accentColorSecondary
 
@@ -69,7 +160,7 @@ font-feature-settings()
 .headerLogo
 	vertical-align middle
 	height 3rem
-	margin-bottom .625rem
+	margin-bottom 0.625rem
 
 // Center align class
 .centered

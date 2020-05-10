@@ -1,8 +1,7 @@
 ---
 home: true
 lang: it-IT
-heroImage: /icons/logo.png
-downloadText: Scarica
+heroImage: /icons/logo-alt.svg
 actionText: Per iniziare →
 actionLink: /it/help/guides/getting-started
 features:

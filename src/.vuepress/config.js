@@ -1,6 +1,7 @@
 module.exports = {
 	dest: "./public",
 	temp: "./node_modules/.temp/theme",
+	theme: "yuu",
 
 	// prettier-ignore
 	head: [
@@ -45,7 +46,7 @@ module.exports = {
 	},
 
 	themeConfig: {
-		logo: "/icons/logo.png",
+		logo: "/icons/logo-alt.svg",
 		docsDir: "src",
 		repo: "Paperback-iOS/app",
 		docsRepo: "Paperback-iOS/website",
@@ -128,6 +129,11 @@ module.exports = {
 					},
 				},
 			},
+		},
+		yuu: {
+			defaultDarkTheme: true,
+			disableThemeIgnore: true,
+			colorThemes: ["red", "purple"],
 		},
 	},
 

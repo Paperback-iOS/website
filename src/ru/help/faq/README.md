@@ -1,95 +1,95 @@
 ---
-title: ЧаВо
+title: Часто Задоваемыи Вопросы 
 lang: ru-RU
 ---
 
-# ЧаВо
-If you have questions about the app and our plans or need help with installing the app, try checking our guides and faq entries. If you haven't found what you needed, feel free to join the Discord and ask.
+# Часто Задоваемыи Вопросы 
+Если у вас есть вопросы на счет приложения и наши планы на будущее, прочитайте наше руководство и часто задоваемыи вопросы. Если вы не нашли нужного, присоединяйтесь в Discord и спрашивайте там.
 
-## General Information
+## Генеральная информация
 
-### Why are you making this app?
-There are no decent manga apps on **iOS** that have _non-intrusive_ advertisements or **MangaDex** support.
+### Почему вы решили создать это приложение?
+На **iOS** нет хороших манга-приложений, которые бы содержали ненавязчивую рекламу или поддержку **MangaDex** .
 
-### What type of business model will you take on?
-There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no charge to use Paperback.
+### Какой тип бизнес-модели вы выберете?
+Нет никаких планов принять формальную бизнес-модель. Пока Patreon покрывает расходы на учетную запись разработчика Apple, прибыль вторична. Было бы неплохо получать поддержку для разработки приложения, но использование Paperback для всех бесплатно.
 
-### When are you planning on releasing the app?
-There is a public build of the application on [GitHub](https://github.com/FaizanDurrani/Paperback-Public/releases). Acquiring an Apple Developer Account has been difficult, but hopefully TestFlight builds will be able to be launched soon. after getting one and be able to full release Paperback on the App Store. For a guide to install the application see: 
+### Когда вы планируете выпустить приложение?
+Существует публичная сборка приложения на [GitHub](https://github.com/FaizanDurrani/Paperback-Public/releases). Получить учетную запись разработчика Apple сложно, но надеюсь что сборки TestFlight скоро будут запущены. После получения учетной записи мы сможем полностью выпустить Paperback в App Store. В данный момент руководство по установке приложения можно увидеть здесь:
 
-* [Paperback Installation Guide](/help/guides/getting-started)
+* [Руководство по Установке Paperback](/ru/help/guides/getting-started)
 
-## Troubleshooting
-If you're having problems with the application, please check here before posting. If you're having an issue that is not listed here, please use the #support channel on Discord to ask questions.
+## Известные проблемы
+Если у вас возникли проблемы с приложением пожалуйста проверьте здесь перед публикацией вопроса. Если у вас возникла проблема которой нет в списке, воспользуйтесь каналом #support на Discord, чтобы задать ваш вопрос.
 
 --- 
 
-### App crashes on launch
-**Public build** users should check if they're on iOS 13.4+. **Beta/Patron build** users should ping Paper on the Discord in the #supporter-chat channel.
+### Приложение вылетает при запуске
+Пользователи **Публичной сборки** должны проверить что они на iOS 13.4+. Пользователи **Бета/Патреон сборки**  могут написать Paper-у на Discord в чате #supporter-chat.
 
 ---
 
-### App crashes when trying to follow on iPad
-This is a known Apple bug that is fixed in iPadOS 13.4, Update to iOS 13.4 or avoid following manga from Paperback and use MangaDex's website to follow (and then sync).
+### Приложение вылетает при попытке отслеживания манги на айпаде
+Это известная ошибка Apple, которая исправлена ​​в iPadOS 13.4, обновитесь ​​на iOS 13.4 или не отслеживайте мангу в Paperback а используйте отслеживание на веб-сайте MangaDex (а затем синхронизуруйтесь в приложение).
 
 ---
 
-### How do I filter languages
-Go to Settings > Content Settings.
+### Как мне отфильтровать языки?
+Перейдите в Settings > Content Settings.
 
 ---
 
-### How do I enable Hentai
-Go to [https://mangadex.org/settings](https://mangadex.org/settings) and login. Look for "**Hentai Toggle**" and enable it.
-Then restart the app and go to Settings > Content Settings.
+### Как включить хентай
+Перейдите на [https://mangadex.org/settings](https://mangadex.org/settings) и войдите в систему. Найдите "**Hentai Toggle**" и включите его.
+Затем перезапустите приложение и перейдите в Settings > Content Settings.
 
 ---
 
-### My content settings are reset everytime I open the app
-You need to login with "**Remember Me**" checked.
-Also make sure that your email is verified.
+### Мои настройки контента сбрасываются каждый раз когда я открываю приложение
+Вам необходимо авторизоваться с пометкой "**Remember Me**".
+Также убедитесь, что ваш адрес электронной почты подтвержден на MangaDex.
 
 ---
 
-### The reader is open but stays blank when I try to read a chapter
- * Switch between the horizontal/vertical viewers. If switching doesn't fix, try to read the same chapter on safari, if it works, ping @Paper on Discord in #support channel.
- * Some chapters are taken off of MangaDex due to group conflicts or chapters being scans of the official TL.
+### Читатель открыт, но остается пустым, когда я пытаюсь прочитать главу
+ * Переключение между горизонтальными/вертикальными просмотром может помочь. Если переключение не помогает, попробуйте прочитать ту же главу в интернет браузере и если это работает, напишитн @Paper-у на Discord в канале #support.
+ * Некоторые главы удалены из MangaDex из-за групповых конфликтов или глав, являющихся сканированием официального переводчика.
 
 ---
 
-### A blue X appears sometimes when I try to read a chapter
-Scroll/swipe a couple of pages away then come back to the failed page, it should reload. If that doesn't work, close the reader and open the chapter the again.
+### Иногда появляется синий крестик когда я пытаюсь прочитать главу
+Прокрутите / проведите пару страниц, затем вернитесь на страницу с ошибкой, она должна перезагрузиться. Если это не сработает, закройте читатель и снова откройте главу.
 
 ---
 
-### Pages often fail/take a long time to load
- * If you're in SEA get a VPN (Psiphon or ProtonVPN) MangaDex servers have routing issues in SEA.
+### Страницы часто выходят из строя / долго загружаются
+ * Если вы находитесь в Юго-Восточной Азии, скачайте VPN (Psiphon или ProtonVPN), на серверах MangaDex есть проблемы с маршрутизацией в SEA.
 
 
- * If you're not in SEA and still face this issue, see if there's any announcements in the MangaDex discord about server complications.
-
----
-
-### I can't find X manga but it's on MangaDex
- * If the manga is REALLY new (1st chapter added in the last hour) it wont be available until after an hour.
- * If the manga isn't new, chances are it's restricted. At the moment, the app doesn't support reading restricted Manga.
-Read on the website instead.
+ * Если вы не в Юго-Восточной Азии и все еще сталкиваетесь с этой проблемой, посмотрите есть ли какие-либо объявления о проблемах с MangaDex.
 
 ---
 
-### Manga Rock to MangaDex Sync
-Unfortunately, only premium members of Manga Rock are able to transfer their data currently.
-
-* [**MR to MD Guide**](https://www.reddit.com/r/mangarockapp/comments/f89aie/tool_exporting_mr_favorites/)
+### Я не могу найти X мангу, но она на MangaDex
+ * Если манга оченнь новая (1-я глава добавлена ​​в последний час), она будет доступна только через час.
+ * Если манга не новая то скорее всего она ограничена. На данный момент приложение не поддерживает чтение ограниченной манги.
+Вместо этого читайте на сайте.
 
 ---
 
-### Syncing lists takes a really long time
-Syncing more than 1,000 manga will take some time, however you can improve this improve by changing the list type on Follows page of MD:
- * On Safari, go to [https://mangadex.org/follows/manga/](https://mangadex.org/follows/manga/) and change the display list to "Simple List" from the menu in the top right of the table.
+### Синхронизация MangaRock на MangaDex
+К сожалению, только премиум-подпищики MangaRock могут перелить свои данные в настоящее время.
 
-### Sorting by Latest Updates doesn't work
-It works but it doesn't respect user's selected language, try to use Update Count sorting instead.
+* [**Руководство по MR на MD**](https://www.reddit.com/r/mangarockapp/comments/f89aie/tool_exporting_mr_fabilities/)
 
-### I have an issue that's not listed here
-If its a bug, file a bug report on GitHub for review. Otherwise, ask for help in the Discord #support channel.
+---
+
+### Синхронизация списков занимает очень много времени
+Синхронизация более 1000 манги займет некоторое время, однако вы можете ускорить процес, изменив тип списка на странице Follows в MangaDex:
+ * В Safari перейдите на [https://mangadex.org/follows/manga/](https://mangadex.org/follows/manga/) и измените список отображения на "Simple list" из меню в верхней части, справа от столбика.
+
+### Сортировка по последним обновлениям (Latest Updates) не работает
+Он работает, но не учитывает выбранный пользователем язык, вместо этого попробуйте использовать сортировку по количеству обновлений (Update Count).
+
+### У меня есть проблема которая не указана здесь
+Если это ошибка, отправьте отчет об ошибке на [GitHub](https://github.com/paperback-ios/app/issues) для ознакомления. В противном случае обратитесь за помощью в канал Discord #support.

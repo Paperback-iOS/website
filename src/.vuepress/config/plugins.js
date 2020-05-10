@@ -1,5 +1,6 @@
 module.exports = [
 	["@vuepress/back-to-top"],
+	["element-ui"],
 	/* Essentials */
 	["clean-urls", { normalSuffix: "/" }],
 	["@vuepress/google-analytics", { ga: "UA-148427628-2" }],

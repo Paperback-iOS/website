@@ -1,7 +1,7 @@
 ---
 home: true
 lang: ru-Ru
-heroImage: /icons/logo.png
+heroImage: /icons/logo-alt.svg
 downloadText: Скачать
 actionText: Как начать →
 actionLink: /ru/help/guides/getting-started
