@@ -30,7 +30,7 @@ Cette application a besoin de iOS 13.3+ ou iPadOS 13.4+ pour fonctionner. Paperb
 1. Copiez "**AltServer.app**" dans le dossier *Applications* et ouvrez-la.
 1. Connectez votre **iPhone** à votre ordinateur, vérifiez qu’il est déverrouillé et que votre ordinateur est un appareil de confiance.
 1. Utilisateurs de **Mojave**, ouvrez **iTunes** et activez "**Synchroniser avec cet appareil en Wi-Fi**" pour votre appareil.
-   Utilisateurs de **Catalina**, ouvrez le **Finder** activez "**Afficher cet appareil lorsqu’il est en Wi-Fi**".
+   Utilisateurs de **Catalina**, ouvrez le **Finder** et activez "**Afficher cet appareil lorsqu’il est en Wi-Fi**".
 1. Cliquez sur l’icône de **AltServer** dans la barre des menus, cliquez sur "**Install AltStore**" et choisissez votre appareil.
 1. Saisissez votre identifiant Apple ainsi que votre mot de passe. (L’adresse mail **TOUT COMME** le mot de passe sont sensibles à la casse).
 	> *Votre identifiant Apple et votre mot de passe sont envoyés à Apple et uniquement à Apple*.
