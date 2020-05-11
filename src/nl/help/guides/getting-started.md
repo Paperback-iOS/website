@@ -9,7 +9,7 @@ lang: nl-NL
 **Paperback** is momenteel _niet_ op **TestFlight** en _vereist_ het gebruik van **AltStore** om op je iPhone of iPad te installeren. In de toekomst zal TestFlight worden gebruikt wanneer de hoofdontwikkelaar een [Apple Developer Account](https://developer.apple.com/programs/) heeft.
 
 ::: tip Video-tutorial
-Als je liever een video-tutorial gebruikt, heeft Artesians er een gemaakt. Je vindt deze [hier](https://www.youtube.com/watch?v=n1KRwsxNiWY).
+Als je liever een video-tutorial gebruikt, heeft Artesians er een gemaakt. Je vindt deze [hier voor Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY) en [hier voor macOS](https://www.youtube.com/watch?v=CjPjsF4yJ0M).
 :::
 
 ### Vereisten
