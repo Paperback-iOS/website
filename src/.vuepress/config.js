@@ -104,7 +104,7 @@ module.exports = {
 				sidebar: require("./config/sidebar/nl"),
 				serviceWorker: {
 					updatePopup: {
-						message: "Er is nieuwe inhoud beschikbaar.",
+						message: "Nieuwe inhoud is beschikbaar.",
 						buttonText: "Vernieuwen",
 					},
 				},
