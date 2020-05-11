@@ -3,7 +3,7 @@ home: true
 lang: en-US
 heroImage: /icons/logo-alt.svg
 actionText: Hard installation →
-actionLink: /help/getting-started
+actionLink: /uwu/getting-started
 features:
     - title: Paper's back included
       details: Enter a 100% Paper based new experience in a growing community based on Paper's cult.
