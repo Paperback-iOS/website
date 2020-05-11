@@ -15,14 +15,14 @@ Er zijn geen fatsoenlijke manga-apps op **iOS** die _niet-opdringerige_ adverten
 Er zijn geen plannen om een formeel bedrijfsmodel vast te stellen. Zolang Patreon de kosten van een Apple Developer Account dekt, is de winst secundair. Het wordt op prijs gesteld om de app financieel te ondersteunen via Patreon, maar Paperback kost niets.
 
 ### Wanneer ben je van plan de app uit te brengen?
-Er is een publieke build van de app op [GitHub](https://github.com/Paperback-iOS/app/releases). Het aanmelden voor een Apple Developer-account was moeilijk, maar hopelijk kunnen de TestFlight-builds binnenkort beginnen. Na de TestFlight-builds hopen we Paperback in de App Store uit te kunnen brengen. Voor een handleiding om de app te installeren: 
+Er is een publieke build van de app op [GitHub](https://github.com/Paperback-iOS/app/releases). Het aanmelden voor een Apple Developer-account was moeilijk, maar hopelijk kunnen de TestFlight-builds binnenkort beginnen. Na de TestFlight-builds hopen we Paperback in de App Store uit te kunnen brengen. Voor een handleiding om de app te installeren:
 
  * [Paperback Installatiehandleiding](/nl/help/guides/getting-started)
 
 ## Probleemoplossing
 Als je problemen hebt met de app, kijk dan op deze pagina voordat je een bericht plaatst. Als je een probleem hebt dat hier niet wordt vermeld, gebruik dan het #support-kanaal op Discord om je vragen te stellen (In het Engels).
 
---- 
+---
 
 ### App loopt vast bij het opstarten
 Als je de **Publieke build** gebruikt, controleer dan of je iOS 13.4+ gebruikt. Als je de **Beta / Patron build** gebruikt, stuur een bericht op het Discord #supporter-kanaal en ping Paper (In het Engels).
