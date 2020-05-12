@@ -17,7 +17,7 @@ There are no plans to adopt a formal business model. As long as Patreon covers t
 ### When are you planning on releasing the app?
 There is a public build of the application on [GitHub](https://github.com/FaizanDurrani/Paperback-Public/releases). Acquiring an Apple Developer Account has been difficult, but hopefully TestFlight builds will be able to be launched soon. after getting one and be able to full release Paperback on the App Store. For a guide to install the application see:
 
-* [Paperback Installation Guide](/help/guides/getting-started)
+ * [Paperback Installation Guide](/help/guides/getting-started)
 
 ## Troubleshooting
 If you're having problems with the application, please check here before posting. If you're having an issue that is not listed here, please use the #support channel on Discord to ask questions.
@@ -64,32 +64,34 @@ Scroll/swipe a couple of pages away then come back to the failed page, it should
 
 ### Pages often fail/take a long time to load
  * If you're in SEA get a VPN (Psiphon or ProtonVPN) MangaDex servers have routing issues in SEA.
-
-
  * If you're not in SEA and still face this issue, see if there's any announcements in the MangaDex discord about server complications.
 
 ---
 
 ### I can't find X manga but it's on MangaDex
  * If the manga is REALLY new (1st chapter added in the last hour) it wont be available until after an hour.
- * If the manga isn't new, chances are it's restricted. At the moment, the app doesn't support reading restricted Manga.
-Read on the website instead.
+ * If the manga isn't new, chances are it's restricted. At the moment, the app doesn't support reading restricted Manga. Read on the website instead.
 
 ---
 
 ### Manga Rock to MangaDex Sync
 Unfortunately, only premium members of Manga Rock are able to transfer their data currently.
 
-* [**MR to MD Guide**](https://www.reddit.com/r/mangarockapp/comments/f89aie/tool_exporting_mr_favorites/)
+ * [**MR to MD Guide**](https://www.reddit.com/r/mangarockapp/comments/f89aie/tool_exporting_mr_favorites/)
 
 ---
 
 ### Syncing lists takes a really long time
 Syncing more than 1,000 manga will take some time, however you can improve this improve by changing the list type on Follows page of MD:
+
  * On Safari, go to [https://mangadex.org/follows/manga/](https://mangadex.org/follows/manga/) and change the display list to "Simple List" from the menu in the top right of the table.
+
+---
 
 ### Sorting by Latest Updates doesn't work
 It works but it doesn't respect user's selected language, try to use Update Count sorting instead.
+
+---
 
 ### I have an issue that's not listed here
 If its a bug, file a bug report on GitHub for review. Otherwise, ask for help in the Discord #support channel.

@@ -9,7 +9,7 @@ lang: en-US
 **Paperback** is currently _not_ on **TestFlight** and _requires_ the usage of **AltStore** in order to install onto your phone. In the future, TestFlight will be used when the lead developer obtains an [Apple Developer Account](https://developer.apple.com/programs/).
 
 ::: tip Video tutorial
- If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here for Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY).
+If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here for Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY).
 :::
 
 ### Prerequisites
@@ -17,7 +17,7 @@ lang: en-US
 2. Download [AltServer](https://altstore.io/) for your operating system.
 
 ::: tip Pre-releases
- If you're interested in the features introduced in the **Pre-release** or **Stable** builds then you need to be a Patron to use the app.
+If you're interested in the features introduced in the **Pre-release** or **Stable** builds then you need to be a Patron to use the app.
 :::
 
 ::: warning Warning
@@ -35,8 +35,8 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 1. Click the **AltServer** icon in the Mac menu bar and click "**Install AltStore**" and select your device.
 1. Enter your Apple ID email and password. (**BOTH** email address and password are case sensitive).
 	> *Your Apple ID and password are sent to Apple, and nowhere else.*
-	- **AltServer** will ask you to install a Mail plug-in, follow the instructions to continue. This is only required the first time.
-2. AltStore should be installed to your phone.
+1. **AltServer** will ask you to install a Mail plug-in, follow the instructions to continue. This is only required the first time.
+1. AltStore should be installed to your phone.
 
 #### Mail plug-in
 1. Click the "**Install Mail Plug-in**" from the AltServer menu.
@@ -63,7 +63,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
    <el-tag type="warning">Not the Windows Store app!</el-tag>
 1. Download and install [iCloud for Windows 8](https://support.apple.com/en-us/HT204283).
    <el-tag type="warning">Not the Windows Store app!</el-tag>
-   > Can't find the link to download **iCloud** for Windows 8? [Image](https://imgur.com/a/P1ef4Wd)
+  > Can't find the link to download **iCloud** for Windows 8? [Image](https://imgur.com/a/P1ef4Wd)
 1. Restart your PC after installing both **iTunes** and **iCloud**.
    <el-tag type="warning">You need to restart your computer!</el-tag>
 1. Extract the downloaded **`AltInstaller.zip`** file. Run **`setup.exe`** and follow the instructions.
@@ -73,7 +73,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 1. Open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
 1. Click the **AltServer** icon and click "**Install AltStore**, then choose your device.
 1. Enter your Apple ID email and password. (**BOTH** email address and password are case sensitive).
-   > *Your Apple ID and password are sent to Apple, and nowhere else.*
+  > *Your Apple ID and password are sent to Apple, and nowhere else.*
 1. AltStore should then be installed into your phone.
 
 ### Paperback
