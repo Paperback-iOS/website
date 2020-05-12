@@ -22,7 +22,7 @@ Als je geïnteresseerd bent in het vroegtijdig testen van nieuwe functies in de 
 :::
 
 ::: warning Waarschuwing
-Deze app vereist iOS 13.3+ of iPadOS 13.4+. Als je een oudere versie hebt zal de app CRASHEN. Paperback is NIET ontworpen voor oudere iOS versies.
+Deze app vereist iOS 13.4+ of iPadOS 13.4+. Als je een oudere versie hebt zal de app CRASHEN. Paperback is NIET ontworpen voor oudere iOS versies.
 :::
 
 :::: el-tabs
