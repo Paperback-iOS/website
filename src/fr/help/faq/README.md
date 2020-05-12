@@ -29,7 +29,7 @@ Si vous utilisez la **version publique**, vérifiez que vous êtes sur iOS 13.4+
 ---
 
 ### L’application plante lorsque l’on suit un manga sur iPad
-Il s’agit d’un bug qu’Apple a corrigé avec iPadOS 13.4. Mettez votre appareil à jour vers iOS 13.4 ou évitez de suivre des mangas depuis Paperback, utilisez plutôt le site de MangaDex pour les suivre (et ainsi s’occuper de la synchronisation).
+Il s’agit d’un bug qu’Apple a corrigé avec iPadOS 13.4. Mettez votre appareil à jour vers iPadOS 13.4 ou évitez de suivre des mangas depuis Paperback, utilisez plutôt le site de MangaDex pour les suivre (et ainsi s’occuper de la synchronisation).
 
 ---
 
