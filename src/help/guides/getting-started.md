@@ -31,29 +31,29 @@ This app requires iOS 13.3+ or iPadOS 13.4+. If you have an older version, the a
 #### Instructions
 1. Move "**AltServer.app**" to your *Applications* folder and launch it.
 1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
-1. **Mojave** users need to open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
-   **Catalina** users need to open **Finder** and enable "**Show this iPhone when on WiFi**" for your phone.
-1. Click the **AltServer** icon in the Mac menu bar and click "**Install AltStore**" and select your device.
-1. Enter your Apple ID email and password. (**BOTH** email address and password are case sensitive).
+1. **Mojave** users need to open **iTunes** and enable "**iTunes Wi-Fi sync**" for your iPhone/iPad.
+   **Catalina** users need to open **Finder** and enable "**Show this iPhone when on WiFi**" for your iPhone/iPad.
+1. Click the **AltServer** icon in the Mac menu bar and click "**Install AltStore**" and select your iPhone/iPad.
+1. Enter your Apple ID email and password. (**BOTH** are case sensitive)
 	> *Your Apple ID and password are sent to Apple, and nowhere else.*
 1. **AltServer** will ask you to install a Mail plug-in, follow the instructions to continue. This is only required the first time.
-1. AltStore should be installed to your phone.
+1. AltStore should be installed to your iPhone/iPad.
 
 #### Mail plug-in
 1. Click the "**Install Mail Plug-in**" from the AltServer menu.
 1. Enter your password to grant AltServer permission to install the plug-in.
-1. Restart the Mail app and open preferences `(CMD+,)`.
+1. Restart the Mail app and open Preferences `(CMD+,)`.
 1. Click "**Manage Plug-ins**" and enable "**AltPlugin.mailbundle**".
-1. Finally, click "**Apply and Restart Mail**" to finish installation.
+1. Finally, click "**Apply and Restart Mail**" to finish the installation.
 
 ### Paperback
 #### Installation
 1. Open **Mail** and **AltServer**.
 2. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your device via cable.
-3. Trust AltStore application: on your device go in Settings, General, Profiles & Device Management. Choose your Apple ID and select **Trust**.
-4. Launch **AltStore** on your device.
+3. Trust AltStore application: On your device, go to Settings > General > Profiles & Device Management. Choose your Apple ID and select **Trust**.
+4. Launch **AltStore** on your iPhone/iPad.
 5. Go to **My Apps** and tap the **+** icon in the top left corner.
-6. Open the **`.IPA`** you downloaded from the [prerequisites](/help/guides/getting-started/#prerequisites) section.
+6. Open the **`.IPA`** you downloaded from the [Prerequisites](/help/guides/getting-started/#prerequisites) section.
 7. **Paperback** should finally be installed!
 :::
 
@@ -64,27 +64,27 @@ This app requires iOS 13.3+ or iPadOS 13.4+. If you have an older version, the a
    <el-tag type="warning">Not the Windows Store app!</el-tag>
 1. Download and install [iCloud for Windows 8](https://support.apple.com/en-us/HT204283).
    <el-tag type="warning">Not the Windows Store app!</el-tag>
-  > Can't find the link to download **iCloud** for Windows 8? [Image](https://imgur.com/a/P1ef4Wd)
-1. Restart your PC after installing both **iTunes** and **iCloud**.
+  > Can't find the link to download **iCloud** for Windows 8? [GIF](https://imgur.com/a/P1ef4Wd)
+1. Restart your PC after you've installed both **iTunes** and **iCloud**.
    <el-tag type="warning">You need to restart your computer!</el-tag>
 1. Extract the downloaded **`AltInstaller.zip`** file. Run **`setup.exe`** and follow the instructions.
-1. Launch **AltServer** from your *Notification Area*/*System Tray* or *Hidden Icons*.
+1. Launch **AltServer** from your *System tray* or *Hidden icons*.
 	> Can't find **AltServer**? [Image](https://imgur.com/a/rSagfh2)
 1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
-1. Open **iTunes** and enable "**iTunes Wi-Fi sync**" for your phone.
-1. Click the **AltServer** icon and click "**Install AltStore**, then choose your device.
-1. Enter your Apple ID email and password. (**BOTH** email address and password are case sensitive).
-  > *Your Apple ID and password are sent to Apple, and nowhere else.*
-1. AltStore should then be installed into your phone.
+1. Open **iTunes** and enable "**iTunes Wi-Fi sync**" for your iPhone/iPad.
+1. Click the **AltServer** icon in your *System tray* and click "**Install AltStore**, then select your iPhone/iPad.
+1. Enter your Apple ID email and password. (**BOTH** are case sensitive)
+	> *Your Apple ID and password are sent to Apple, and nowhere else.*
+1. AltStore should be installed to your iPhone/iPad.
 
 ### Paperback
 #### Installation
 1. Open **AltServer** along with **iCloud** and **iTunes**.
 1. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your device via cable.
-1. Trust AltStore application: on your device go in Settings, General, Profiles & Device Management. Choose your Apple ID and select **Trust**.
-1. Launch **AltStore** on your device.
+1. Trust AltStore application: On your device, go to Settings > General > Profiles & Device Management. Choose your Apple ID and select **Trust**.
+1. Launch **AltStore** on your iPhone/iPad.
 1. Go to **My Apps** and tap the **+** icon in the top left corner.
-1. Open the **`.IPA`** you downloaded from the [prerequisites](/help/guides/getting-started/#prerequisites) section.
+1. Open the **`.IPA`** you downloaded from the [Prerequisites](/help/guides/getting-started/#prerequisites) section.
 1. **Paperback** should finally be installed!
 :::
 ::::
