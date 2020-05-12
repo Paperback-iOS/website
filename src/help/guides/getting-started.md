@@ -14,7 +14,7 @@ If you prefer using a video tutorial, Artesians made a beautiful one. You will f
 
 ### Prerequisites
 1. On your iPhone or iPad, download the app <Download text="from here"/>. The app will download as **`Paperback.ipa`**.
-2. Download [AltServer](https://altstore.io/) for your operating system.
+1. Download [AltServer](https://altstore.io/) for your operating system.
 
 ::: tip Pre-releases
 On [GitHub](https://github.com/Paperback-iOS/app/releases), there are also pre-releases. These are only available for Patrons. If you are not a Patron, make sure to install the **Stable** builds.
@@ -49,12 +49,12 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 ### Paperback
 #### Installation
 1. Open **Mail** and **AltServer**.
-2. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your device via cable.
-3. Trust AltStore application: On your device, go to Settings > General > Device Management. Choose your Apple ID and select **Trust**.
-4. Launch **AltStore** on your iPhone/iPad.
-5. Go to **My Apps** and tap the **+** icon in the top left corner.
-6. Open the **`.IPA`** you downloaded from the [Prerequisites](/help/guides/getting-started/#prerequisites) section.
-7. **Paperback** should finally be installed!
+1. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your device via cable.
+1. Trust AltStore application: On your device, go to Settings > General > Device Management. Choose your Apple ID and select **Trust**.
+1. Launch **AltStore** on your iPhone/iPad.
+1. Go to **My Apps** and tap the **+** icon in the top left corner.
+1. Open the **`.IPA`** you downloaded from the [Prerequisites](/help/guides/getting-started/#prerequisites) section.
+1. **Paperback** should finally be installed!
 :::
 
 ::: el-tab-pane label="Windows 10"
@@ -68,11 +68,11 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 1. Restart your PC after you've installed both **iTunes** and **iCloud**.
    <el-tag type="warning">You need to restart your computer!</el-tag>
 1. Extract the downloaded **`AltInstaller.zip`** file. Run **`setup.exe`** and follow the instructions.
-1. Launch **AltServer** from your *System tray* or *Hidden icons*.
+1. Launch **AltServer** from your *Notification Area*.
 	> Can't find **AltServer**? [Image](https://imgur.com/a/rSagfh2)
 1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
 1. Open **iTunes** and enable "**iTunes Wi-Fi sync**" for your iPhone/iPad.
-1. Click the **AltServer** icon in your *System tray* and click "**Install AltStore**, then select your iPhone/iPad.
+1. Click the **AltServer** icon in your *Notification Area* and click "**Install AltStore**, then select your iPhone/iPad.
 1. Enter your Apple ID email and password. (**BOTH** are case sensitive)
 	> *Your Apple ID and password are sent to Apple, and nowhere else.*
 1. AltStore should be installed to your iPhone/iPad.
@@ -94,7 +94,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 Run AltServer as an administrator and ensure that you've restarted your computer after installing iTunes and iCloud.
 
 ### I can't find the .IPA file to download
-Scroll down to the **Assets** list, the .IPA should be listed there. [GIF](https://imgur.com/a/onrwNC8)
+You can download the .IPA file <Download text="from here"/>
 
 ### I have some other issue that isn't listed here
 Check the [AltStore FAQ](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel on our **[Discord](https://discord.gg/Ny83JV3)** for a fast reponse or submit a post on **[Reddit](https://www.reddit.com/r/Paperback/)**.
