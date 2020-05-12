@@ -58,7 +58,7 @@ Also make sure that your email address is verified on MangaDex.
 ---
 
 ### A blue X appears sometimes when I try to read a chapter
-Swipe a couple of pages away and then come back to the failed page, it should have been reloaded. If that doesn't work, close the reader and open the chapter the again.
+Swipe a couple of pages away and then come back to the failed page, it should have been reloaded. If that doesn't work, close the reader and open the chapter again.
 
 ---
 
