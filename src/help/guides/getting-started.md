@@ -22,7 +22,7 @@ If you are interested in testing new features early, consider becoming a Patron.
 :::
 
 ::: warning Warning
-This app requires iOS 13.3+ or iPadOS 13.4+. If you have an older version, the app will CRASH. Paperback is NOT designed for older iOS versions.
+This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the app will CRASH. Paperback is NOT designed for older iOS versions.
 :::
 
 :::: el-tabs
