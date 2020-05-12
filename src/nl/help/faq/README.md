@@ -94,4 +94,4 @@ Dit werkt wel, maar het houd geen rekening met de geselecteerde taal van de gebr
 ---
 
 ### Ik heb een probleem dat hier niet wordt vermeld
-Als het een bug is, maak dan een bugrapport aan op (GitHub)[https://github.com/Paperback-iOS/app/issues] (In het Engels). Vraag anders om hulp in het Discord #support-kanaal (In het Engels).
+Als het een bug is, maak dan een bugrapport aan op [GitHub](https://github.com/Paperback-iOS/app/issues) (In het Engels). Vraag anders om hulp in het Discord #support-kanaal (In het Engels).
