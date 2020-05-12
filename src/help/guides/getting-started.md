@@ -18,7 +18,7 @@ If you prefer using a video tutorial, Artesians made a beautiful one. You will f
 
 ::: tip Pre-releases
 On [GitHub](https://github.com/Paperback-iOS/app/releases), there are also pre-releases. These are only available for Patrons. If you are not a Patron, make sure to install the **Stable** builds.
-If you are interested in teasting new features early, consider becoming a Patron.
+If you are interested in testing new features early, consider becoming a Patron.
 :::
 
 ::: warning Warning
