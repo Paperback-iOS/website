@@ -9,7 +9,7 @@ lang: en-US
 **Paperback** is currently _not_ on **TestFlight** and _requires_ the usage of **AltStore** in order to install onto your phone. In the future, TestFlight will be used when the lead developer obtains an [Apple Developer Account](https://developer.apple.com/programs/).
 
 ::: tip Video tutorial
-If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here for Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY).
+If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here](https://www.youtube.com/watch?v=n1KRwsxNiWY) for Windows and [here](https://www.youtube.com/watch?v=CjPjsF4yJ0M) for macOS.
 :::
 
 ### Prerequisites
