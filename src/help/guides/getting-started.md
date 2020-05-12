@@ -6,22 +6,23 @@ lang: en-US
 # Getting started
 
 ## Installation
-**Paperback** is currently _not_ on **TestFlight** and _requires_ the usage of **AltStore** in order to install onto your phone. In the future, TestFlight will be used when the lead developer obtains an [Apple Developer Account](https://developer.apple.com/programs/).
+**Paperback** is currently _not_ on **TestFlight** and _requires_ the usage of **AltStore** in order to install onto your iPhone or iPad. In the future, TestFlight will be used when the lead developer obtains an [Apple Developer Account](https://developer.apple.com/programs/).
 
 ::: tip Video tutorial
 If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here](https://www.youtube.com/watch?v=n1KRwsxNiWY) for Windows and [here](https://www.youtube.com/watch?v=CjPjsF4yJ0M) for macOS.
 :::
 
 ### Prerequisites
-1. On your phone, download the app <Download text="from here"/>. The app will download as **`Paperback.ipa`**.
+1. On your iPhone or iPad, download the app <Download text="from here"/>. The app will download as **`Paperback.ipa`**.
 2. Download [AltServer](https://altstore.io/) for your operating system.
 
 ::: tip Pre-releases
-If you're interested in the features introduced in the **Pre-release** or **Stable** builds then you need to be a Patron to use the app.
+On [GitHub](https://github.com/Paperback-iOS/app/releases), there are also pre-releases. These are only available for Patrons. If you are not a Patron, make sure to install the **Stable** builds.
+If you are interested in teasting new features early, consider becoming a Patron.
 :::
 
 ::: warning Warning
-This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback is NOT designed for any iOS below.
+This app requires iOS 13.3+ or iPadOS 13.4+. If you have an older version, the app will CRASH. Paperback is NOT designed for older iOS versions.
 :::
 
 :::: el-tabs
@@ -90,15 +91,15 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 
 ## Installation FAQ
 ### I get "Access Denied" when trying to install AltStore
-Run AltServer as an administrator, and ensure that you've restarted after installing iTunes and iCloud.
+Run AltServer as an administrator and ensure that you've restarted your computer after installing iTunes and iCloud.
 
 ### I can't find the .IPA file to download
-Navigate down toward the assets drop down, the .IPA should be listed there. [Image](https://imgur.com/a/onrwNC8)
+Scroll down to the **Assets** list, the .IPA should be listed there. [GIF](https://imgur.com/a/onrwNC8)
 
 ### I have some other issue that isn't listed here
-Please, check [altstore.io/faq/](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel in our **[Discord](https://discord.gg/Ny83JV3)** for fast reponse or submit a post on **[Reddit](https://www.reddit.com/r/Paperback/)**.
+Check the [AltStore FAQ](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel on our **[Discord](https://discord.gg/Ny83JV3)** for a fast reponse or submit a post on **[Reddit](https://www.reddit.com/r/Paperback/)**.
 
 ---
 
 ## App Troubleshooting
-If you're having problems with the application, please check the **[App Troubleshooting page](/help/faq/#troubleshooting)**. If you're having an issue that is not in the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
+If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. If you're having an issue that is not mentioned on the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
