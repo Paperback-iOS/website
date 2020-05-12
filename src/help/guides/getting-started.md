@@ -50,7 +50,7 @@ This app requires iOS 13.3+ or iPadOS 13.4+. If you have an older version, the a
 #### Installation
 1. Open **Mail** and **AltServer**.
 2. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your device via cable.
-3. Trust AltStore application: On your device, go to Settings > General > Profiles & Device Management. Choose your Apple ID and select **Trust**.
+3. Trust AltStore application: On your device, go to Settings > General > Device Management. Choose your Apple ID and select **Trust**.
 4. Launch **AltStore** on your iPhone/iPad.
 5. Go to **My Apps** and tap the **+** icon in the top left corner.
 6. Open the **`.IPA`** you downloaded from the [Prerequisites](/help/guides/getting-started/#prerequisites) section.
@@ -81,7 +81,7 @@ This app requires iOS 13.3+ or iPadOS 13.4+. If you have an older version, the a
 #### Installation
 1. Open **AltServer** along with **iCloud** and **iTunes**.
 1. Make sure you're on the _same connection_ (same router, in most cases) as the computer running **AltServer**. If you're not connected to the same network, you can connect your device via cable.
-1. Trust AltStore application: On your device, go to Settings > General > Profiles & Device Management. Choose your Apple ID and select **Trust**.
+1. Trust AltStore application: On your device, go to Settings > General > Device Management. Choose your Apple ID and select **Trust**.
 1. Launch **AltStore** on your iPhone/iPad.
 1. Go to **My Apps** and tap the **+** icon in the top left corner.
 1. Open the **`.IPA`** you downloaded from the [Prerequisites](/help/guides/getting-started/#prerequisites) section.

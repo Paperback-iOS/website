@@ -50,7 +50,7 @@ Deze app vereist iOS 13.3+ of iPadOS 13.4+. Als je een oudere versie hebt zal de
 #### Installatie
 1. Open **Mail** en **AltServer**.
 2. Zorg ervoor dat je iPhone/iPad zich op _dezelfde_ verbinding bevind (dezelfde router in de meeste gevallen) als de computer met **AltServer**. Als je niet verbonden bent met hetzelfde netwerk, kun je je apparaat via een kabel aansluiten.
-3. Vertrouw de AltStore-applicatie: Ga op je apparaat naar Instellingen > Algemeen > Profielen & Apparaatbeheer. Kies je Apple ID en selecteer **Vertrouwen**.
+3. Vertrouw de AltStore-applicatie: Ga op je apparaat naar Instellingen > Algemeen > Apparaatbeheer. Kies je Apple ID en selecteer **Vertrouwen**.
 4. Start **AltStore** op je iPhone/iPad.
 5. Ga naar **My Apps** en klik op het **+** icoon in de linkerbovenhoek.
 6. Open de **`.IPA`** die je hebt gedownload uit de sectie [Vereisten](/nl/help/guides/getting-started/#vereisten).
@@ -81,7 +81,7 @@ Deze app vereist iOS 13.3+ of iPadOS 13.4+. Als je een oudere versie hebt zal de
 #### Installatie
 1. Open **AltServer** samen met **iCloud** en **iTunes**.
 2. Zorg ervoor dat je iPhone/iPad zich op _dezelfde_ verbinding bevind (dezelfde router in de meeste gevallen) als de computer met **AltServer**. Als je niet verbonden bent met hetzelfde netwerk, kun je je apparaat via een kabel aansluiten.
-3. Vertrouw de AltStore-applicatie: Ga op je apparaat naar Instellingen > Algemeen > Profielen & Apparaatbeheer. Kies je Apple ID en selecteer **Vertrouwen**.
+3. Vertrouw de AltStore-applicatie: Ga op je apparaat naar Instellingen > Algemeen > Apparaatbeheer. Kies je Apple ID en selecteer **Vertrouwen**.
 4. Start **AltStore** op je iPhone/iPad.
 5. Ga naar **My Apps** en klik op het **+** icoon in de linkerbovenhoek.
 6. Open de **`.IPA`** die je hebt gedownload uit de sectie [Vereisten](/nl/help/guides/getting-started/#vereisten).
