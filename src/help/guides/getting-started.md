@@ -37,7 +37,7 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 	> *Your Apple ID and password are sent to Apple, and nowhere else.*
 	- **AltServer** will ask you to install a Mail plug-in, follow the instructions to continue. This is only required the first time.
 2. AltStore should be installed to your phone.
- 
+
 #### Mail plug-in
 1. Click the "**Install Mail Plug-in**" from the AltServer menu.
 1. Enter your password to grant AltServer permission to install the plug-in.
@@ -91,14 +91,14 @@ This requires iOS 13.3+ or iPadOS 13.4+, the app will CRASH otherwise. Paperback
 ## Installation FAQ
 ### I get "Access Denied" when trying to install AltStore
 Run AltServer as an administrator, and ensure that you've restarted after installing iTunes and iCloud.
- 
+
 ### I can't find the .IPA file to download
 Navigate down toward the assets drop down, the .IPA should be listed there. [Image](https://imgur.com/a/onrwNC8)
- 
+
 ### I have some other issue that isn't listed here
 Please, check [altstore.io/faq/](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel in our **[Discord](https://discord.gg/Ny83JV3)** for fast reponse or submit a post on **[Reddit](https://www.reddit.com/r/Paperback/)**.
- 
+
 ---
- 
+
 ## App Troubleshooting
 If you're having problems with the application, please check the **[App Troubleshooting page](/help/faq/#troubleshooting)**. If you're having an issue that is not in the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
