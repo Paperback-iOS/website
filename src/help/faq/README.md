@@ -30,7 +30,7 @@ If you are using the **Public build**, check if you are on iOS 13.4+. If you are
 ---
 
 ### App crashes when trying to follow on iPad
-This is a known Apple bug that was fixed in iPadOS 13.4, Update to iOS 13.4 or avoid following manga in Paperback and use the MangaDex website to follow (and then sync).
+This is a known Apple bug that was fixed in iPadOS 13.4, Update to iPadOS 13.4 or avoid following manga from Paperback and use MangaDex's website to follow (and then sync).
 
 ---
 
@@ -52,7 +52,7 @@ Also make sure that your email address is verified on MangaDex.
 ---
 
 ### The reader is open but stays blank when I try to read a chapter
- * Try to switch between the horizontal and vertical viewer. If switching doesn't fix it, try to read the same chapter on safari, if it works, ping @Paper on the Discord #support channel.
+ * Try to switch between the horizontal and vertical viewer. If switching doesn't fix it, try to read the same chapter on Safari, if it works, ping @Paper on the Discord #support channel.
  * Some chapters are taken off of MangaDex due to group conflicts or chapters being scans of the official translations.
 
 ---
