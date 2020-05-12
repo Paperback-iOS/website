@@ -30,7 +30,7 @@ Als je de **Publieke build** gebruikt, controleer dan of je iOS 13.4+ gebruikt. 
 ---
 
 ### App loopt vast bij het volgen van manga op de iPad
-Dit is een bekende Apple-bug die is opgelost in iOS 13.4, update naar iOS 13.4 of vermijd het volgen van manga in Paperback en gebruik de MangaDex-website om manga te volgen (en vervolgens te synchroniseren).
+Dit is een bekende Apple-bug die is opgelost in iPadOS 13.4, update naar iPadOS 13.4 of vermijd het volgen van manga in Paperback en gebruik de MangaDex-website om manga te volgen (en vervolgens te synchroniseren).
 
 ---
 
