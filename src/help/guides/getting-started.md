@@ -64,7 +64,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
    <el-tag type="warning">Not the Windows Store app!</el-tag>
 1. Download and install [iCloud for Windows 8](https://support.apple.com/en-us/HT204283).
    <el-tag type="warning">Not the Windows Store app!</el-tag>
-  > Can't find the link to download **iCloud** for Windows 8? [GIF](https://imgur.com/a/P1ef4Wd)
+	> Can't find the link to download **iCloud** for Windows 8? [GIF](https://imgur.com/a/P1ef4Wd)
 1. Restart your PC after you've installed both **iTunes** and **iCloud**.
    <el-tag type="warning">You need to restart your computer!</el-tag>
 1. Extract the downloaded **`AltInstaller.zip`** file. Run **`setup.exe`** and follow the instructions.
