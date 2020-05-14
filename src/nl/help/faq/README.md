@@ -25,7 +25,7 @@ Als je problemen hebt met de app, kijk dan op deze pagina voordat je een bericht
 ---
 
 ### App loopt vast bij het opstarten
-Als je de **Publieke build** gebruikt, controleer dan of je iOS 13.4+ gebruikt. Als je de **Beta / Patron build** gebruikt, stuur een bericht op het Discord #supporter-kanaal en ping Paper (In het Engels).
+Als je de **Publieke build** gebruikt, controleer dan of je iOS 13.4+ of iPadOS 13.4+ gebruikt. Als je de **Beta / Patron build** gebruikt, stuur een bericht op het Discord #supporter-kanaal en ping Paper (In het Engels).
 
 ---
 
