@@ -94,7 +94,7 @@ Deze app vereist iOS 13.4+ of iPadOS 13.4+. Als je een oudere versie hebt zal de
 Voer AltServer uit als administrator en zorg ervoor dat je de computer opnieuw hebt opgestart na het installeren van iTunes en iCloud.
 
 ### Ik kan het .IPA-bestand niet vinden om te downloaden
-Je kan het .IPA bestand <Download text="hier downloaden"/>
+Je kan het **`.IPA`** bestand <Download text="hier downloaden"/>
 
 ### Ik heb een ander probleem dat hier niet wordt vermeld
 Controleer de [AltStore FAQ](https://altstore.io/faq/). Als je het probleem nog steeds niet kunt oplossen, stel dan je vraag op het #support-kanaal in onze **[Discord](https://discord.gg/Ny83JV3)** voor snel antwoord of plaats een bericht op **[Reddit](https://www.reddit.com/r/Paperback/)**.
