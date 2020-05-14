@@ -3,6 +3,8 @@ title: Per iniziare
 lang: it-IT
 ---
 
+<notuptodate/>
+
 # Per iniziare
 
 ## Installazione
