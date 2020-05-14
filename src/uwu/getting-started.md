@@ -1,6 +1,7 @@
 ---
 title: Getting started
 lang: en-US
+sidebar: false
 ---
 
 # Getting started
