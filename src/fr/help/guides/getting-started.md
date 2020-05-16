@@ -6,18 +6,19 @@ lang: fr-FR
 # Démarrer
 
 ## Installation
-**Paperback** n’est actuellement _pas_ disponible sur **TestFlight** et _nécessite_ l’utilisation d’**AltStore** afin d’installer l’application sur votre téléphone. TestFlight sera utilisé lorsque le développeur principal obtiendra un [Compte Développeur Apple](https://developer.apple.com/programs/).
+**Paperback** n’est actuellement _pas_ disponible sur **TestFlight** et _nécessite_ l’utilisation d’**AltStore** afin d’installer l’application sur votre iPhone ou iPad. TestFlight sera utilisé lorsque le développeur principal obtiendra un [Compte Développeur Apple](https://developer.apple.com/programs/).
 
 ::: tip Tutoriel vidéo
- Si vous préférez utiliser un tutoriel vidéo, Artesians en a réalisé un super en anglais. Vous le trouverez [ici pour Windows](https://www.youtube.com/watch?v=n1KRwsxNiWY) et [ici pour macOS](https://www.youtube.com/watch?v=CjPjsF4yJ0M).
+ Si vous préférez utiliser un tutoriel vidéo, Artesians en a réalisé un super en anglais. Vous le trouverez [ici](https://www.youtube.com/watch?v=n1KRwsxNiWY) pour Windows et [ici](https://www.youtube.com/watch?v=CjPjsF4yJ0M) pour macOS.
 :::
 
 ### Prérequis
-1. Sur votre téléphone, téléchargez l’application <Download text="depuis ce lien"/>. Elle sera téléchargée sous le nom **`Paperback.ipa`**.
+1. Sur votre iPhone ou votre iPad, téléchargez l’application <Download text="depuis ce lien"/>. Elle sera téléchargée sous le nom **`Paperback.ipa`**.
 1. Téléchargez la version d’[AltServer](https://altstore.io/) correspondant à votre système d’exploitation.
 
 ::: tip Pré-versions
- Si vous êtes intéressés par les fonctionnalités introduites dans les **Pré-versions** ainsi que dans les **Versions stables** il est nécessaire que vous soyez un supporter sur Patreon pour pouvoir utiliser l’application.
+Sur [GitHub](https://github.com/Paperback-iOS/app/releases) il y a aussi des pré-versions. Elles ne sont utilisables que par les supporters sur Patreon. Si vous n’êtes pas un supporter assurez-vous d’installer la version **Stable**.
+Si tester les nouvelles fonctionnalités en avance vous intéresse, considérez devenir un supporter.
 :::
 
 ::: warning Avertissement
@@ -29,17 +30,17 @@ Cette application a besoin de iOS 13.3+ ou iPadOS 13.4+ pour fonctionner. Paperb
 ### Altstore
 #### Instructions
 1. Copiez "**AltServer.app**" dans le dossier *Applications* et ouvrez-la.
-1. Connectez votre **iPhone** à votre ordinateur, vérifiez qu’il est déverrouillé et que votre ordinateur est un appareil de confiance.
-1. Utilisateurs de **Mojave**, ouvrez **iTunes** et activez "**Synchroniser avec cet appareil en Wi-Fi**" pour votre appareil.
-   Utilisateurs de **Catalina**, ouvrez le **Finder** et activez "**Afficher cet appareil lorsqu’il est en Wi-Fi**".
-1. Cliquez sur l’icône de **AltServer** dans la barre des menus, cliquez sur "**Install AltStore**" et choisissez votre appareil.
+1. Connectez votre **iPhone** ou votre **iPad** à votre ordinateur, vérifiez qu’il est déverrouillé et que votre ordinateur est un appareil de confiance.
+1. Utilisateurs de **Mojave**, ouvrez **iTunes** et activez "**Synchroniser avec cet appareil en Wi-Fi**" pour votre iPhone/iPad.
+   Utilisateurs de **Catalina**, ouvrez le **Finder** et activez "**Afficher cet appareil lorsqu’il est en Wi-Fi**" pour votre iPhone/iPad.
+1. Cliquez sur l’icône de **AltServer** dans la barre des menus, cliquez sur "**Install AltStore**" et choisissez votre iPhone/iPad.
 1. Saisissez votre identifiant Apple ainsi que votre mot de passe. (L’adresse mail **TOUT COMME** le mot de passe sont sensibles à la casse).
 	> *Votre identifiant Apple et votre mot de passe sont envoyés à Apple et uniquement à Apple*.
-	- **AltServer** vous demandera d’installer un module dans Mail, suivez les instructions pour continuer. Cela n’est nécessaire que lors de la première installation.
-1. AltStore devrait être installé sur votre appareil.
+1. **AltServer** vous demandera d’installer un module dans Mail, suivez les instructions pour continuer. Cela n’est nécessaire que lors de la première installation.
+1. AltStore devrait être installé sur votre iPhone/iPad.
 
 #### Module Mail
-1. Cliquez sur "**Install Mail Plug-in**" dans le menu de AltServer.
+1. Cliquez sur "**Install Mail Plug-in**" depuis le menu d'AltServer.
 1. Saisissez votre mot de passe pour permettre à AltServer d’installer le module.
 1. Redémarrez l’application Mail et ouvrez ses préférences `(CMD+,)`.
 1. Cliquez sur "**Gérer les modules…**" et activez "**AltPlugin.mailbundle**".
@@ -51,9 +52,9 @@ Cette application a besoin de iOS 13.3+ ou iPadOS 13.4+ pour fonctionner. Paperb
  **Sur Windows** : ouvrez **AltServer** ainsi que **iCloud** et **iTunes**.
 1. Assurez-vous d’être _connecté au même réseau_ (au même routeur, dans la majorité des cas) que l’ordinateur sur lequel **AltServer** est ouvert. Si vous n’êtes pas connecté au même réseau, vous pouvez relier votre téléphone au moyen d’un câble.
 1. Faites confiance à l'application AltStore : allez, sur votre appareil, dans Réglages > Général > Gestion de l'appareil. Choisissez votre identifiant Apple et appuyez sur **Faire confiance**.
-1. Ouvrez **AltStore** sur votre téléphone.
+1. Ouvrez **AltStore** sur votre iPhone/iPad.
 1. Allez dans l’onglet **My Apps** et touchez l’icône **+** en haut à gauche.
-1. Ouvrez le fichier **`.IPA`** que vous avez téléchargé dans la section [prérequis](getting-started/#prerequis).
+1. Ouvrez le fichier **`.IPA`** que vous avez téléchargé dans la section [Prérequis](getting-started/#prerequis).
 1. **Paperback** devrait maintenant être installé !
 :::
 
@@ -64,18 +65,18 @@ Cette application a besoin de iOS 13.3+ ou iPadOS 13.4+ pour fonctionner. Paperb
   <el-tag type="warning">Pas la version du Windows Store !</el-tag>
 1. Téléchargez et installez [iCloud pour Windows 8](https://support.apple.com/en-us/HT204283).
   <el-tag type="warning">Pas la version du Windows Store !</el-tag>
- > Vous ne trouvez pas le lien de téléchargement d’**iCloud** pour Windows 8 ? [Image](https://imgur.com/a/P1ef4Wd)
+  > Vous ne trouvez pas le lien de téléchargement d’**iCloud** pour Windows 8 ? [GIF](https://imgur.com/a/P1ef4Wd)
 1. Redémarrez votre ordinateur après avoir installé **iTunes** et **iCloud**.
   <el-tag type="warning">Il faut que vous redemarriez votre ordinateur !</el-tag>
 1. Décompressez le fichier **`AltInstaller.zip`** précédemment téléchargé. Exécutez **`setup.exe`** et suivez les instructions.
-1. Démarrez **AltServer** depuis votre *Zone de notifications* ou depuis les *icônes cachées*.
+1. Démarrez **AltServer** depuis votre *Zone de notifications*.
  > Vous ne trouvez pas **AltServer** ? [Image](https://imgur.com/a/rSagfh2)
 1. Connectez votre **iPhone** à votre ordinateur, vérifiez qu’il est déverrouillé et que votre ordinateur est un appareil de confiance.
 1. Ouvrez **iTunes** et cochez "**Synchroniser avec cet appareil sur Wi-Fi**".
 1. Cliquez sur l’icône d’**AltServer** puis sur "**Install AltStore**, sélectionnez votre appareil.
 1. Saisissez votre identifiant Apple ainsi que votre mot de passe. (L’adresse mail **TOUT COMME** le mot de passe sont sensibles à la casse).
-	> *Votre identifiant Apple et votre mot de passe sont envoyés à Apple et uniquement à Apple*.
-1. AltStore devrait être installé sur votre appareil.
+  > *Votre identifiant Apple et votre mot de passe sont envoyés à Apple et uniquement à Apple*.
+1. AltStore devrait être installé sur votre iPhone/iPad.
 
 ### Paperback
 #### Installation
@@ -85,7 +86,7 @@ Cette application a besoin de iOS 13.3+ ou iPadOS 13.4+ pour fonctionner. Paperb
 1. Faites confiance à l'application AltStore : allez, sur votre appareil, dans Réglages > Général > Gestion de l'appareil. Choisissez votre identifiant Apple et appuyez sur **Faire confiance**.
 1. Ouvrez **AltStore** sur votre téléphone.
 1. Allez dans l’onglet **My Apps** et touchez l’icône **+** en haut à gauche.
-1. Ouvrez le fichier **`.IPA`** que vous avez téléchargé dans la section [prérequis](getting-started/#prerequis).
+1. Ouvrez le fichier **`.IPA`** que vous avez téléchargé dans la section [Prérequis](getting-started/#prerequis).
 1. **Paperback** devrait maintenant être installé !
 :::
 ::::
@@ -98,11 +99,11 @@ Exécutez AltServer en tant qu’administrateur et assurez-vous que vous avez re
 Regardez dans le menu déroulant **assets**. Le fichier devrait s’y trouver. [Image](https://imgur.com/a/onrwNC8)
 
 ### J’ai un problème qui n’est pas listé sur cette page
-Merci de vérifier qu’il n’est pas présent sur la page [altstore.io/faq/](https://altstore.io/faq/).  
+Vérifiez qu’il n’est pas présent sur la page [FAQ AltStore](https://altstore.io/faq/).  
 Si vous ne parvenez toujours pas à le résoudre, vous pouvez accéder au canal #support de notre **[Discord](https://discord.gg/Ny83JV3)** pour recevoir une réponse rapidement ou publier un post sur **[Reddit](https://www.reddit.com/r/Paperback/)**.
 
 ---
 
 ## Résolution des problèmes de l’application
-Si vous avez des problèmes avec l’application, merci de regarder la page **[Résolution des problèmes de l’application](https://www.reddit.com/r/Paperback/wiki/troubleshooting)**.  
+Si vous avez des problèmes avec l’application, merci de regarder la page **[Résolution des problèmes de l’application](/fr/help/faq/#resolution-des-problemes-de-l-application)**.  
 Si ceux-ci ne sont pas listés sur cette page, merci d’utiliser le canal #support sur **[Discord](https://discord.gg/Ny83JV3)** afin de poser vos questions.
