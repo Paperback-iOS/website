@@ -57,12 +57,6 @@ module.exports = {
 				artiaLabel: "Select language",
 				nav: require("./config/nav/en"),
 				sidebar: require("./config/sidebar/en"),
-				serviceWorker: {
-					updatePopup: {
-						message: "New content is available.",
-						buttonText: "Refresh",
-					},
-				},
 			},
 			"/fr/": {
 				label: "Français",
@@ -72,12 +66,6 @@ module.exports = {
 				lastUpdated: "Dernière mise à jour",
 				nav: require("./config/nav/fr"),
 				sidebar: require("./config/sidebar/fr"),
-				serviceWorker: {
-					updatePopup: {
-						message: "Du nouveau contenu est disponible.",
-						buttonText: "Actualiser",
-					},
-				},
 			},
 			"/it/": {
 				label: "Italiano",
@@ -87,12 +75,6 @@ module.exports = {
 				lastUpdated: "Ultimo aggiornamento",
 				nav: require("./config/nav/it"),
 				sidebar: require("./config/sidebar/it"),
-				serviceWorker: {
-					updatePopup: {
-						message: "Nuovi contenuti disponibili.",
-						buttonText: "Aggiorna",
-					},
-				},
 			},
 			"/nl/": {
 				label: "Nederlands",
@@ -102,12 +84,6 @@ module.exports = {
 				lastUpdated: "Laatst bijgewerkt",
 				nav: require("./config/nav/nl"),
 				sidebar: require("./config/sidebar/nl"),
-				serviceWorker: {
-					updatePopup: {
-						message: "Nieuwe inhoud is beschikbaar.",
-						buttonText: "Vernieuwen",
-					},
-				},
 			},
 		},
 		yuu: {
