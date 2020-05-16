@@ -4,7 +4,6 @@ module.exports = [
 	/* Essentials */
 	["clean-urls", { normalSuffix: "/" }],
 	["@vuepress/google-analytics", { ga: "UA-148427628-2" }],
-	["@vuepress/pwa", { serviceWorker: true, updatePopup: true }],
 	/* Containers */
 	[
 		"vuepress-plugin-container",
