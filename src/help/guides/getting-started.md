@@ -72,7 +72,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 	> Can't find **AltServer**? [Image](https://imgur.com/a/rSagfh2)
 1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
 1. Open **iTunes** and enable "**iTunes Wi-Fi sync**" for your iPhone/iPad.
-1. Click the **AltServer** icon in your *Notification Area* and click "**Install AltStore**, then select your iPhone/iPad.
+1. Click the **AltServer** icon in your *Notification Area* and click "**Install AltStore**", then select your iPhone/iPad.
 1. Enter your Apple ID email and password. (**BOTH** are case sensitive)
 	> *Your Apple ID and password are sent to Apple, and nowhere else.*
 1. AltStore should be installed to your iPhone/iPad.

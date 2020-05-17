@@ -23,7 +23,7 @@ Artesians ha preparato una [video guida per Windows](https://www.youtube.com/wat
 ::: 
 
 ::: warning Attenzione
-È ASSOLUTAMENTE necessario aggiornare il proprio dispositivo ad iOS 13.3+ o iPadOS 13.4+ per usare l'app, altrimenti questa crasherà. Paperback NON È stata progettata per funzionare su versioni precedenti di iOS/iPadOS
+È ASSOLUTAMENTE necessario aggiornare il proprio dispositivo ad iOS 13.4+ o iPadOS 13.4+ per usare l'app, altrimenti questa crasherà. Paperback NON È stata progettata per funzionare su versioni precedenti di iOS/iPadOS
 :::
 
 ### Istruzioni per AltStore su Mac

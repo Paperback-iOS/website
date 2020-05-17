@@ -25,7 +25,7 @@ If you're having problems with the app, please check here before posting. If you
 ---
 
 ### App crashes on launch
-If you are using the **Public build**, check if you are on iOS 13.4+ or iPadOS 13.4+. If you are using the **Beta / Patron build**, ping @Paper on the Discord #supporter channel.
+If you are using the **Public build**, check if you are on iOS 13.4+ or iPadOS 13.4+. If you are using the **Beta / Patron build**, ping @Paper on the Discord #supporter-chat channel.
 
 ---
 
