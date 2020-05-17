@@ -80,7 +80,7 @@ Malheureusement, seuls les abonnés premium de Manga Rock peuvent actuellement t
 ---
 
 ### Synchroniser les mangas est très long
-Synchroniser plus de 1 000 manga prend un certain temps, cependant vous pouvez améliorer cela en changeant le type d’affichage de la page Follows sur MangaDex.
+Synchroniser plus de 1 000 manga prend un certain temps, cependant vous pouvez améliorer cela en changeant le type d’affichage de la page Follows sur MangaDex :
 
  * Sur Safari, allez sur [MangaDex Follows](https://mangadex.org/follows/manga/) et changez, depuis le menu en haut à droite du tableau, le mode d’affichage pour "Simple List".
 
