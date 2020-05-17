@@ -42,5 +42,8 @@ It's normal: Paper didn't like it so he decided to remove it.
 ### Does the app support multiple source?
 Of course, a good manga app need to support multiples sources. Just note that using them will mess up your library and make the app unusable.
 
+### Why should I join the your Discord?
+Our **[Discord](https://discord.gg/Ny83JV3)** is an active place where you will find weekly game events. Minecraft, Dota, League, we have everything to spend time waiting for Paper to make the app usable. We also provide real estate consulting and clothing suggestions.
+
 ### I have some other issue that isn't listed here
 It's not possible, everything had been listed here. The #support channel is not designed to help people who did not read this guide.
