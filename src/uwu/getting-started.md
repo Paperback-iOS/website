@@ -9,7 +9,7 @@ sidebar: false
 ## Installation
 
 ::: tip Video tutorial
- If you prefer using a video tutorial, Artesians made a beautiful one. You will find it... Oh oh, forgot we took it down 😭: we are really concerned by our users privacy.
+ If you prefer using a video tutorial, Artesians made a beautiful one. You will find it... Uh oh, I forgot we took it down 😭: we are really concerned for our users privacy.
 :::
 
 ::: warning Warning
