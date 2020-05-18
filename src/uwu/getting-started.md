@@ -27,14 +27,14 @@ sidebar: false
 Will the app work on Android? Maybe, ping Paper on Discord to check.
 
 ### App crashes on launch
-It's a **bug**! Just go to #feedback channel on Discord and ask:
+It's a **feature**! Just go to #feedback channel on Discord and ask:
 > "paperback keeps on crashing when i open it, what should i do??"
 
 ### What type of business model will you take on?
 There are no plans to adopt a formal business model, but Paper is thinking about buying a new car. Supporting the app development through Patreon would help him achieve that goal considerably quicker!
 
 ### I can't find the fancy page reader
-It's normal: Paper didn't like it so he decided to remove it.
+That's to be expected: Paper didn't like it, so he decided to remove it.
 
 ### Does the app support multiple source?
 Of course, a good manga app need to support multiples sources. Just note that using them will mess up your library and make the app unusable.
