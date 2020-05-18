@@ -9,7 +9,7 @@ lang: bg-BG
 **Paperback** понастоящем _не е_ записана в **TestFlight** и _изисква_ да използвате **AltStore**, за да инсталирате приложението на iPhone или iPad. В бъдеще TestFlight ще бъде използван, когато главният разработчик придобие [Apple Developer акаунт](https://developer.apple.com/programs/).
 
 ::: tip Видеоупътване
-Ако предпочитате видеоупътване, Artesians има прекрасно видео на темата. Ще го намерите [тук](https://www.youtube.com/watch?v=n1KRwsxNiWY) за Уиндоус и [тук](https://www.youtube.com/watch?v=CjPjsF4yJ0M) за macOS.
+Ако предпочитате видеоупътване, Artesians има прекрасно видео на темата. Ще го намерите [тук](https://www.youtube.com/watch?v=n1KRwsxNiWY) за Windows и [тук](https://www.youtube.com/watch?v=CjPjsF4yJ0M) за macOS.
 :::
 
 ### Изисквания
