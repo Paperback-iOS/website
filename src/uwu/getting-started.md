@@ -18,7 +18,7 @@ sidebar: false
 
 ### AltStore instructions for Mac
 1. Download **`Paperback.ipa`**
-1. Try to open it on your phone, that won't work.
+1. Try to open it on your phone. Wait, that didn't work.
 1. Just ask for help in #support
 
 ## FAQ
