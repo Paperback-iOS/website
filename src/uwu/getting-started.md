@@ -31,7 +31,7 @@ It's a **bug**! Just go to #feedback channel on Discord and ask:
 > "paperback keeps on crashing when i open it, what should i do??"
 
 ### What type of business model will you take on?
-There are no plans to adopt a formal business model but Paper is thinking of buying a new car thus it would be nice to get support for development of the app.
+There are no plans to adopt a formal business model, but Paper is thinking about buying a new car. Supporting the app development through Patreon would help him achieve that goal considerably quicker!
 
 ### I can't find the fancy page reader
 It's normal: Paper didn't like it so he decided to remove it.
