@@ -30,9 +30,6 @@ Will the app work on Android? Maybe, ping Paper on Discord to check.
 It's a **bug**! Just go to #feedback channel on Discord and ask:
 > "paperback keeps on crashing when i open it, what should i do??"
 
-### What type of business model will you take on?
-There are no plans to adopt a formal business model but Paper is thinking of buying a new car thus it would be nice to get support for development of the app.
-
 ### Why isn't the app on TestFlight?
 Apple decided to prevent Paper from getting an Apple Developper Account. That mean there must be something tricky about him, use the app at your own risk!
 
@@ -43,7 +40,7 @@ It's normal: Paper didn't like it so he decided to remove it.
 Of course, a good manga app need to support multiples sources. Just note that using them will mess up your library and make the app unusable.
 
 ### Why should I join the your Discord?
-Our **[Discord](https://discord.gg/Ny83JV3)** is an active place where you will find weekly game events. Minecraft, Dota, League, we have everything to spend time waiting for Paper to make the app usable. We also provide real estate consulting and clothing suggestions.
+Our **[Discord](https://discord.gg/Ny83JV3)** is an active place where you will find weekly game events. Minecraft, Dota, League, we have everything to spend time while Paper improves the app. We also provide real estate consulting and clothing suggestions.
 
 ### I have some other issue that isn't listed here
-It's not possible, everything had been listed here. The #support channel is not designed to help people who did not read this guide.
+That's literally impossible.
