@@ -62,7 +62,6 @@ Prova ad andare avanti/indietro di qualche pagina e dovrebbe ricaricare corretta
 
 ### Spesso le pagine non caricano o ci mettono molto tempo
  * Se ti trovi nel Sud-est asiatico prova con una VPN (Psiphon o ProtonVPN), i server di MangaDex hanno problemi di routing con quella regione.
- 
  * Se non ti trovi nel Sud-est asiatico e hai comunque questo problema, controlla sul Discord di MangaDex per qualche annuncio su problemi di server.
  
 ---
@@ -82,10 +81,15 @@ Prova ad andare avanti/indietro di qualche pagina e dovrebbe ricaricare corretta
 
 ### Sincronizzare le mie liste richiede troppo tempo
 Sincronizzare più di 1000 manga richiederà un bel po' di tempo, ma è possibile ridurre l'attesa cambiando il tipo di lista di manga seguiti da MangaDex:
+
  * Da Safari, aprire [**questa pagina**](https://mangadex.org/follows/manga/) e cambiare il tipo di lista in "Simple List" dal menu a tendina in alto a destra.
+
+---
 
 ### Ordinare secondo Latest Updates non funziona
 In realtà funziona, ma al momento non tiene conto delle lingue filtrate. È possibile risolvere parzialmente utilizzando Update Count.
+
+---
 
 ### Ho un problema non elencato
 Se è un bug puoi scrivere un bug report su GitHub. Altrimenti, chiedi aiuto su Discord sul canale #support.
