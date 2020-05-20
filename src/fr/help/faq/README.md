@@ -16,7 +16,7 @@ Il n’est pas prévu d’adopter un modèle économique formel. Aussi longtemps
 ### Quand prévoyez-vous de publier l'application ?
 Une version de l’application accessible au public est disponible sur [GitHub](https://github.com/FaizanDurrani/Paperback-Public/releases). Obtenir un Compte Développeur Apple se révèle difficile mais nous espérons qu’une version pourra rapidement être disponible sur TestFlight. Après avoir publié l’application sur TestFlight, nous pourrons nous pencher sur une publication définitive dans l'App Store. Si vous cherchez un guide pour installer l’application, regardez :
 
-* [Guide d’installation de Paperback](/fr/help/guides/getting-started) 
+ * [Guide d’installation de Paperback](/fr/help/guides/getting-started) 
 
 ## Résolution des problèmes de l’application
 Si vous avez des problèmes avec l’application, merci de regarder si cette page vous permet de les résoudre. Si votre problème n’est pas listé ici utilisez le canal #support sur Discord pour poser votre question.
@@ -63,7 +63,7 @@ Faites défiler quelques pages et retournez en arrière, la page devrait se rech
 ### Le chargement des pages échoue souvent ou est très lent
  * Si vous vivez en Asie du Sud-Est (SEA), utilisez un VPN (Psiphon ou ProtonVPN). Les serveurs de MangaDex ont des difficultés de distribution dans cette région.
  * Si vous n’êtes pas en Asie du Sud-Est et êtes toujours confrontés à des problèmes, vérifiez qu’un problème de serveur n’a pas été annoncé dans le Discord de MangaDex.
- 
+
 ---
 
 ### Je ne parviens pas à trouver un manga X alors qu’il est sur MangaDex
