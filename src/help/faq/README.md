@@ -29,8 +29,20 @@ If you are using the **Public build**, check if you are on iOS 13.4+ or iPadOS 1
 
 ---
 
+### Both Paperback and AltStore crash on launch
+Applications installed with AltStore need to be refreshed every seven days. While AltServer and Mail or iCloud/iTune are open and your device is connected to the same network as your computer, AltStore will try to refresh the app automatically.
+If Paperback and AltStore both crash on launch it is likely that their certificate is expired.
+Without uninstalling anything connect your iPhone/iPad to your computer. Open AltServer and Mail or iCloud/iTune then select "**Install AltStore**" from AltServer menu.
+
+---
+
 ### App crashes when trying to follow on iPad
 This is a known Apple bug that was fixed in iPadOS 13.4, Update to iPadOS 13.4 or avoid following manga in Paperback and use the MangaDex website to follow (and then sync).
+
+---
+
+### App crashes after trying to download a manga
+Download currently does not work and breaks the app. You will need to delete and reinstall the app.
 
 ---
 
