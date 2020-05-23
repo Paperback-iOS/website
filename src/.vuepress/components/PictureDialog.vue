@@ -5,7 +5,7 @@
 		<el-dialog :title="title" 
 		:visible.sync="dialogVisible"
 		center
-		:before-close="handleClose">
+		width="65%">
 			<img :src="src"/>
 		</el-dialog>
 	</span>
