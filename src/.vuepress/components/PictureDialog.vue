@@ -5,7 +5,7 @@
 		<el-dialog :title="title" 
 		:visible.sync="dialogVisible"
 		center
-		:width="size">
+		width="65%">
 			<img :src="src"/>
 		</el-dialog>
 	</span>
@@ -28,19 +28,8 @@ export default {
 		},
 	},
 	data() {
-		// If the sidebar is present, use width = 65% for the dialog. 
-		// Else use width = 90% for a better readability on small screens
-		if (screen.width > 767) {
-			return {
-				dialogVisible: false,
-				size: "65%"
-			}
-		} 
-		else {
-			return {
-				dialogVisible: false,
-				size: "90%"
-			}
+		return {
+			dialogVisible: false,
 		}
 	},
   };
