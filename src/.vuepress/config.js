@@ -38,6 +38,11 @@ module.exports = {
 			title: "Paperback",
 			description: "Een advertentievrije manga-lezer voor iOS.",
 		},
+		"/bg/": {
+			lang: "bg-BG",
+			title: "Paperback",
+			description: "Манга четец без реклами за iOS.",
+		},
 	},
 
 	themeConfig: {
@@ -85,6 +90,15 @@ module.exports = {
 				nav: require("./config/nav/nl"),
 				sidebar: require("./config/sidebar/nl"),
 			},
+			"/bg/": {
+				label: "Български",
+				selectText: "Езици",
+				artiaLabel: "Избери език",
+				editLinkText: "Помогнете ни да подобрим тази страница",
+				lastUpdated: "Последно обновено",
+				nav: require("./config/nav/bg"),
+				sidebar: require("./config/sidebar/bg"),
+			},
 		},
 		yuu: {
 			defaultDarkTheme: true,
@@ -100,9 +114,11 @@ module.exports = {
 		".vuepress/config/nav/fr.js",
 		".vuepress/config/nav/it.js",
 		".vuepress/config/nav/nl.js",
+		".vuepress/config/nav/bg.js",
 		".vuepress/config/sidebar/en.js",
 		".vuepress/config/sidebar/fr.js",
 		".vuepress/config/sidebar/it.js",
 		".vuepress/config/sidebar/nl.js",
+		".vuepress/config/sidebar/bg.js",
 	],
 };
