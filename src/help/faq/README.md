@@ -42,7 +42,7 @@ This is a known Apple bug that was fixed in iPadOS 13.4, Update to iPadOS 13.4 o
 ---
 
 ### App crashes after trying to download a manga
-Download currently does not work and breaks the app. You will need to delete and reinstall the app.
+Downloading manga currently does not work and breaks the app. You will need to delete and reinstall the app to fix this issue.
 
 ---
 
