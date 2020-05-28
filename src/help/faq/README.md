@@ -32,7 +32,7 @@ If you are using the **Public build**, check if you are on iOS 13.4+ or iPadOS 1
 ### Both Paperback and AltStore crash on launch
 Applications installed with AltStore need to be refreshed every seven days. While AltServer and Mail or iCloud/iTune are open and your device is connected to the same network as your computer, AltStore will try to refresh the app automatically.
 If Paperback and AltStore both crash on launch it is likely that their certificate is expired.
-Without uninstalling anything connect your iPhone/iPad to your computer. Open AltServer and Mail or iCloud/iTune then select "**Install AltStore**" from AltServer menu.
+Without uninstalling anything connect your iPhone/iPad to your computer. Open AltServer and Mail or iCloud/iTunes then select "**Install AltStore**" from AltServer menu.
 
 ---
 
