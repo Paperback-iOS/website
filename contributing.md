@@ -14,7 +14,7 @@ If you have any questions, you can ask them in #website-dev channel in our Disco
 
 ## Preparing the development environment
 ### Fork the project
-* Fork the repo.
+* Create your own fork of the repository by choosing the **Fork** option at the top right of the website github repository.
 * **Always create a new branch before working on your fork.**
 * You can now improve the website.
 
