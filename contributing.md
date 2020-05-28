@@ -15,7 +15,7 @@ If you have any questions, you can ask them in #website-dev channel in our Disco
 ## Preparing the development environment
 ### Fork the project
 * Create your own fork of the repository by choosing the **Fork** option at the top right of the website github repository.
-* **Always create a new branch before working on your fork.**
+* Create a new branch before working on your new fork. The method of branching depends on the Git CLI/GUI that you use, reference your software manual, or contact us if you need help with this step.
 * You can now improve the website.
 
 > You can use a git client like [GitHub Desktop](https://desktop.github.com/) to manage your local repository.
