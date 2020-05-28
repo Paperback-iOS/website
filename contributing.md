@@ -105,10 +105,17 @@ In development:
 |:----------:|:------------:|:--------------:|
 |  Russian   |KorewaWatchful|     Dkzver     |
 
-
 ### Adding a new language
-* Copy `website/src/README.md` to `website/src/LANG/README.md` and `website/src/help` to `website/src/LANG/help`.
-* Don't forget to edit `.vuepress` folder.
+ * Copy the following files:
+   * `website/src/README.md` to `website/src/LANG/README.md`
+   * `website/src/help` to `website/src/LANG/help`
+   * `src/.vuepress/config/nav/en.js` to `src/.vuepress/config/nav/LANG.js`
+   * `src/.vuepress/config/sidebar/en.js` to `src/.vuepress/config/sidebar/LANG.js`
+ * Translate these files.
+ * Edit `src/.vuepress/config.js` file the same way it was done for the other translations.
+
+Don't forget to change links:
+`/help/faq/#troubleshooting` -> `/fr/help/faq/#resolution-des-problemes-de-l-application`
 
 ### Translation decisions
 > You will find here decisions made for the translation. 
