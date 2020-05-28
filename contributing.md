@@ -1,7 +1,7 @@
 # Contributing
 
 > You want to contribute to the website? Welcome!
-> You will find here resources and advices that could help you.
+> Our website runs off of VuePress. Here you will find contribution resources and advice.
 
 If you have any questions, you can ask them in #website-dev channel in our Discord.
 
