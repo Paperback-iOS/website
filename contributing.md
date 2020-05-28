@@ -17,7 +17,7 @@ If you have any questions, you can ask them in #website-dev channel in our Disco
 
 > You can use a git client like [GitHub Desktop](https://desktop.github.com/) to manage your local repository.
 
-When your done submit a pull request.
+When your done submit a pull request. This can be done by navigating to the main page of the [website git repository](https://github.com/Paperback-iOS/website) and selecting 'pull request' at the top.  You may have to click the button titled **compare across forks**. Ensure that the base repository belongs to Paperback-iOS, whereas the head is your fork, and your branch.
 
 ### Running the website
 > When you make modifications to the site, you should validate your changes and formatting yourself first.
