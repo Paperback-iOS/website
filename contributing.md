@@ -97,7 +97,7 @@ Content2
 ```html
 <notuptodate/>
 ```
-### Potential issue
+### Potential issues
 **Note that `tabs` currently needs to begin by a `h3` and finish by an `ol` components.** 
 Otherwise there will be padding issues. See [PR #20](https://github.com/Paperback-iOS/website/pull/20)
 
