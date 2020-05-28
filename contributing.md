@@ -20,7 +20,7 @@ If you have any questions, you can ask them in #website-dev channel in our Disco
 When your done submit a pull request.
 
 ### Running the website
-> When you make modifications to the site it can be useful to render the code. You will thus see how the modifications look like.
+> When you make modifications to the site, you should validate your changes and formatting yourself first.
 
 See [Building local enviroment](https://github.com/Paperback-iOS/website#building-local-enviroment)
 
@@ -95,7 +95,7 @@ Content2
 ```html
 <notuptodate/>
 ```
-### Potential issue
+### Potential issues
 **Note that `tabs` currently needs to begin by a `h3` and finish by an `ol` components.** 
 Otherwise there will be padding issues. See [PR #20](https://github.com/Paperback-iOS/website/pull/20)
 
