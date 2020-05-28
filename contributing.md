@@ -43,17 +43,6 @@ See [Building local enviroment](https://github.com/Paperback-iOS/website#buildin
 * macOS
 * iTunes
 
-### Syntax and layout
-> To create a numbered list use `1.` on all lines:
-```markdown
-1. Line 1
-1. Line 2
-```
-
-> Write `.IPA` in a code block.
-
-> Use `[Image]()` or `[GIF]()` to link to an explicative picture.
-
 ### "Not up to date" warning
 > You've made a major modification to the English version of the site and you want to show that a translation is not up to date?
 > You can  mark a page as "not up to date" by adding the following code at the top of the concerned page.
@@ -108,6 +97,7 @@ The following languages are currently available:
 |   French   |     Lemon    |  Sirus, fma16  |
 |  Italiano  |   Kinpatsu   |                |
 | Nederlands |     Joery    |       Syn      |
+| Bulgarian  |   Rinto-kun  |                |
 
 
 In development: 
