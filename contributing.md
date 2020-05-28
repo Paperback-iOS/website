@@ -9,9 +9,6 @@ If you have any questions, you can ask them in #website-dev channel in our Disco
  * [Guidelines](#guidelines-1)
  * [Localization](#localization)
 
-<!-- /code_chunk_output -->
-
-
 ## Preparing the development environment
 ### Fork the project
 * Create your own fork of the repository by choosing the **Fork** option at the top right of the website github repository.
@@ -44,6 +41,7 @@ See [Building local enviroment](https://github.com/Paperback-iOS/website#buildin
 
 * Safari
 * macOS
+* iTunes
 
 ### Syntax and layout
 > To create a numbered list use `1.` on all lines:
