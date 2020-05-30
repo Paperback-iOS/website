@@ -44,4 +44,17 @@ module.exports = [
 			dateFormatter: (time) => new Date().toISOString(),
 		},
 	],
+	[
+		"robots",
+		{
+			host: "https://paperback.moe",
+			sitemap: "/sitemap.xml",
+			policies: [
+				{
+					userAgent: "*",
+					disallow: ["/uwu/"],
+				},
+			],
+		},
+	],
 ];
