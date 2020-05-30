@@ -36,4 +36,12 @@ module.exports = [
 			defaultTitle: "",
 		},
 	],
+	[
+		"sitemap",
+		{
+			hostname: "https://paperback.moe",
+			exclude: ["/404.html"],
+			dateFormatter: (time) => new Date().toISOString(),
+		},
+	],
 ];
