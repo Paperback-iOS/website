@@ -2,8 +2,6 @@
 title: Help
 lang: en-US
 sidebar: false
-sitemap:
-  exclude: true
 ---
 
 # Help

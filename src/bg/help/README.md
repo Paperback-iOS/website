@@ -2,8 +2,6 @@
 title: Помощ
 lang: bg-BG
 sidebar: false
-sitemap:
-  exclude: true
 ---
 
 # Помощ

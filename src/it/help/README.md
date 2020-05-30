@@ -2,8 +2,6 @@
 title: Supporto
 lang: it-IT
 sidebar: false
-sitemap:
-  exclude: true
 ---
 
 # Supporto

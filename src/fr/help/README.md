@@ -2,8 +2,6 @@
 title: Utile
 lang: fr-FR
 sidebar: false
-sitemap:
-  exclude: true
 ---
 
 # Utile
