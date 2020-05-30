@@ -27,9 +27,11 @@ See [Building local enviroment](https://github.com/Paperback-iOS/website#buildin
 ## Guidelines
 ### Glossary
 
- * App/application --> app
- * Device/iPhone/iPad/phone --> iPhone or iPad
- * iOS --> iOS or iPadOS
+| Variations               | To be used     |
+|:------------------------:|:--------------:|
+| App/application          | app            |
+| Device/iPhone/iPad/phone | iPhone or iPad |
+| iOS                      | iOS or iPadOS  |
 
 > Be careful of capitalization:
 
