@@ -40,6 +40,7 @@ module.exports = [
 		"sitemap",
 		{
 			hostname: "https://paperback.moe",
+			changefreq: "monthly",
 			exclude: ["/404.html"],
 			dateFormatter: (time) => new Date().toISOString(),
 		},
