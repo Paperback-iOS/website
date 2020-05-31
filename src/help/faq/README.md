@@ -34,6 +34,7 @@ If you are using the **Beta / Patron build**, they are usually unstable. If you 
 Applications installed with AltStore need to be refreshed every seven days. Ensure that AltServer and Mail or iCloud/iTunes are open, and your device is connected to the same network as your computer. AltStore will try to refresh the app automatically. If AltStore does not refresh automatically, you may trigger this process manually by plugging your device into a computer running AltServer, and then running the refresh on your device through AltStore app.
 If Paperback and AltStore both crash on launch it is likely that their certificate is expired.
 Without uninstalling anything connect your iPhone/iPad to your computer. Open AltServer and Mail or iCloud/iTunes then select "**Install AltStore**" from AltServer menu.
+After AltStore is installed again, open AltStore and refresh the certificate for Paperback. You'll be able to open Paperback again and no data should be lost.
 
 ---
 
