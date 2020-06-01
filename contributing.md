@@ -45,16 +45,6 @@ See [Building local enviroment](https://github.com/Paperback-iOS/website#buildin
 * macOS
 * iTunes
 
-### "Not up to date" warning
-> You've made a major modification to the English version of the site and you want to show that a translation is not up to date?
-> You can  mark a page as "not up to date" by adding the following code at the top of the concerned page.
-
-```html
-<notuptodate/>
-```
-It will create a translated warning saying:
-> Major changes have been made in the English version of this page. We suggest you to use this one.
-
 ### Components
 You can use the following components. Try not to abuse of `warning`.
 ```markdown
@@ -80,12 +70,21 @@ Content2
 ```html
 <el-tag type="warning">Not the Windows Store app!</el-tag>
 ```
+
+**Download link**
+The following component creates a link allowing to download the last public build.
 ```html
 <Download text="from here"/>
 ```
+
+**"Not up to date" warning**
+You've made a major modification to the English version of the site and you want to show that a translation is not up to date? You can mark a page as "not up to date" by adding the following code at the top of the concerned page.
 ```html
 <notuptodate/>
 ```
+It will create a translated warning saying:
+> Major changes have been made in the English version of this page. We suggest you use the English revision until this page is up to date.
+
 ### Potential issues
 **Note that `tabs` currently needs to begin by a `h3` and finish by an `ol` components.** 
 Otherwise there will be padding issues. See [PR #20](https://github.com/Paperback-iOS/website/pull/20)
