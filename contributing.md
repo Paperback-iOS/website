@@ -108,16 +108,46 @@ In development:
 |  Russian   |KorewaWatchful|     Dkzver     |
 
 ### Adding a new language
- * Copy the following files:
-   * `website/src/README.md` to `website/src/LANG/README.md`
-   * `website/src/help` to `website/src/LANG/help`
-   * `src/.vuepress/config/nav/en.js` to `src/.vuepress/config/nav/LANG.js`
-   * `src/.vuepress/config/sidebar/en.js` to `src/.vuepress/config/sidebar/LANG.js`
- * Translate these files.
- * Edit `src/.vuepress/config.js` file the same way it was done for the other translations.
+**Copy and localize the following files:**
+ * `website/src/README.md` to `website/src/LANG/README.md`
+ * `website/src/help` to `website/src/LANG/help`
+ * `src/.vuepress/config/nav/en.js` to `src/.vuepress/config/nav/LANG.js`
+ * `src/.vuepress/config/sidebar/en.js` to `src/.vuepress/config/sidebar/LANG.js`
 
-Don't forget to change links:
-`/help/faq/#troubleshooting` -> `/fr/help/faq/#resolution-des-problemes-de-l-application`
+**Edit `src/.vuepress/config.js` file:**
+ * Localize and add the following code in `locales` dictionnary:
+```js
+"/LANG": {
+  lang: "en-US",
+  title: "Paperback",
+  description: "An ad-free manga reader for iOS.",
+},
+```
+ * Localize and add the following code in `themeConfig/locales` dictionnary:
+```js
+"/LANG": {
+  label: "English",
+  selectText: "Languages",
+  artiaLabel: "Select language",
+  nav: require("./config/nav/LANG"),
+  sidebar: require("./config/sidebar/LANG"),
+  serviceWorker: {
+    updatePopup: {
+      message: "New content is available.",
+      buttonText: "Refresh",
+    },
+  },
+},
+```
+ * Add the following lines in `extraWatchFiles`list:
+```js
+".vuepress/config/nav/LANG.js",
+```
+```js
+".vuepress/config/sidebar/LANG.js",
+```
+
+Don't forget to change links. For example `/help/faq/#troubleshooting` becomes `/fr/help/faq/#resolution-des-problemes-de-l-application` in French.
 
 ### Translation decisions
 > You will find here decisions made for the translation. 
