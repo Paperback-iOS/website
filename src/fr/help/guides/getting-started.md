@@ -64,12 +64,12 @@ Cette application a besoin de iOS 13.4+ ou iPadOS 13.4+ pour fonctionner. Paperb
    <el-tag type="warning">Pas la version du Windows Store !</el-tag>
 1. Téléchargez et installez [iCloud pour Windows 8](https://support.apple.com/en-us/HT204283).
    <el-tag type="warning">Pas la version du Windows Store !</el-tag>
-   > Vous ne trouvez pas le lien de téléchargement d’**iCloud** pour Windows 8 ? [GIF](https://imgur.com/a/P1ef4Wd)
+   > Vous ne trouvez pas le lien de téléchargement d’**iCloud** pour Windows 8 ? <PictureDialog title="Télécharger iCloud pour Windows 8" button="GIF" src="/assets/iCloud.gif"/>
 1. Redémarrez votre ordinateur après avoir installé **iTunes** et **iCloud**.
    <el-tag type="warning">Il faut que vous redemarriez votre ordinateur !</el-tag>
 1. Décompressez le fichier **`AltInstaller.zip`** précédemment téléchargé. Exécutez **`setup.exe`** et suivez les instructions.
 1. Démarrez **AltServer** depuis votre *Zone de notifications*.
-   > Vous ne trouvez pas **AltServer** ? [Image](https://imgur.com/a/rSagfh2)
+   > Vous ne trouvez pas **AltServer** ? <PictureDialog title="Démarrer AltServer" button="Image" src="/assets/AltServer.png"/>
 1. Connectez votre **iPhone** à votre ordinateur, vérifiez qu’il est déverrouillé et que votre ordinateur est un appareil de confiance.
 1. Ouvrez **iTunes** et cochez "**Synchroniser avec cet appareil sur Wi-Fi**".
 1. Cliquez sur l’icône d’**AltServer** puis sur "**Install AltStore**", sélectionnez votre iPhone/iPad.
