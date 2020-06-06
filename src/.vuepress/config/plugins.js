@@ -36,4 +36,24 @@ module.exports = [
 			defaultTitle: "",
 		},
 	],
+	[
+		"sitemap",
+		{
+			hostname: "https://paperback.moe",
+			exclude: ["/404.html"],
+		},
+	],
+	[
+		"robots",
+		{
+			host: "https://paperback.moe",
+			sitemap: "/sitemap.xml",
+			policies: [
+				{
+					userAgent: "*",
+					disallow: ["/uwu/"],
+				},
+			],
+		},
+	],
 ];
