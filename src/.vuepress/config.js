@@ -38,6 +38,11 @@ module.exports = {
 			title: "Paperback",
 			description: "Een advertentievrije manga-lezer voor iOS.",
 		},
+		"/bg/": {
+			lang: "bg-BG",
+			title: "Paperback",
+			description: "Манга четец без реклами за iOS.",
+		},
 	},
 
 	themeConfig: {
@@ -57,12 +62,6 @@ module.exports = {
 				artiaLabel: "Select language",
 				nav: require("./config/nav/en"),
 				sidebar: require("./config/sidebar/en"),
-				serviceWorker: {
-					updatePopup: {
-						message: "New content is available.",
-						buttonText: "Refresh",
-					},
-				},
 			},
 			"/fr/": {
 				label: "Français",
@@ -72,12 +71,6 @@ module.exports = {
 				lastUpdated: "Dernière mise à jour",
 				nav: require("./config/nav/fr"),
 				sidebar: require("./config/sidebar/fr"),
-				serviceWorker: {
-					updatePopup: {
-						message: "Du nouveau contenu est disponible.",
-						buttonText: "Actualiser",
-					},
-				},
 			},
 			"/it/": {
 				label: "Italiano",
@@ -87,12 +80,6 @@ module.exports = {
 				lastUpdated: "Ultimo aggiornamento",
 				nav: require("./config/nav/it"),
 				sidebar: require("./config/sidebar/it"),
-				serviceWorker: {
-					updatePopup: {
-						message: "Nuovi contenuti disponibili.",
-						buttonText: "Aggiorna",
-					},
-				},
 			},
 			"/nl/": {
 				label: "Nederlands",
@@ -102,12 +89,15 @@ module.exports = {
 				lastUpdated: "Laatst bijgewerkt",
 				nav: require("./config/nav/nl"),
 				sidebar: require("./config/sidebar/nl"),
-				serviceWorker: {
-					updatePopup: {
-						message: "Er is nieuwe inhoud beschikbaar.",
-						buttonText: "Vernieuwen",
-					},
-				},
+			},
+			"/bg/": {
+				label: "Български",
+				selectText: "Езици",
+				artiaLabel: "Избери език",
+				editLinkText: "Помогнете ни да подобрим тази страница",
+				lastUpdated: "Последно обновено",
+				nav: require("./config/nav/bg"),
+				sidebar: require("./config/sidebar/bg"),
 			},
 		},
 		yuu: {
@@ -124,9 +114,11 @@ module.exports = {
 		".vuepress/config/nav/fr.js",
 		".vuepress/config/nav/it.js",
 		".vuepress/config/nav/nl.js",
+		".vuepress/config/nav/bg.js",
 		".vuepress/config/sidebar/en.js",
 		".vuepress/config/sidebar/fr.js",
 		".vuepress/config/sidebar/it.js",
 		".vuepress/config/sidebar/nl.js",
+		".vuepress/config/sidebar/bg.js",
 	],
 };

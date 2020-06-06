@@ -26,8 +26,12 @@ ol
 .el-tabs
 	&__content
 		background-color #f6f8fd
-		padding 1em
+		padding 2em
 		border-radius 8px
+	h3
+		margin-top 0em
+	ol:last-child
+		margin-bottom 0em
 
 // Yuu theme changes
 .yuu-theme-dark
@@ -60,7 +64,6 @@ ol
 	.el-tabs
 		&__content
 			background-color #252525
-			padding 1em
 			border-radius 8px
 			h3
 				color $accentColor
@@ -81,6 +84,11 @@ ol
 			margin 2px
 			background-color #e6a23c0d
 			border-color #90611a47
+	// Picture dialog windows
+	.el-dialog
+		background #252525
+		&__title
+			color #f3f3f3
 	// Yuu theme colors
 	&.yuu-theme-purple
 		.el-tabs
@@ -151,6 +159,12 @@ ol
 		/* Display navbar-name even for small screens */
 		@media (max-width: $MQMobile)
 			display inherit
+
+.sidebar 
+	.nav-links
+		.nav-link
+			// Enlarge internal links in sidebar
+			display block
 
 // Page Header Logo
 .headerLogo
