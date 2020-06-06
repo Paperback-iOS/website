@@ -25,12 +25,26 @@ If you're having problems with the app, please check here before posting. If you
 ---
 
 ### App crashes on launch
-If you are using the **Public build**, check if you are on iOS 13.4+ or iPadOS 13.4+. If you are using the **Beta / Patron build**, ping @Paper on the Discord #supporter channel.
+Ensure that you are on iOS 13.4+ or iPadOS 13.4+.
+
+If you are using the **Beta / Patron build**, they are usually unstable. If you are on the correct versioning for your device, and are still getting crashes, you may be encountering a known or unknown bug for your Paperback version. Contact us on our Discord #supporter-chat channel, and staff will try to determine what's happening with you.
+---
+
+### Both Paperback and AltStore crash on launch
+Applications installed with AltStore need to be refreshed every seven days. Ensure that AltServer and Mail or iCloud/iTunes are open, and your device is connected to the same network as your computer. AltStore will try to refresh the app automatically. If AltStore does not refresh automatically, you may trigger this process manually by plugging your device into a computer running AltServer, and then running the refresh on your device through AltStore app.
+If Paperback and AltStore both crash on launch it is likely that their certificate is expired.
+Without uninstalling anything connect your iPhone/iPad to your computer. Open AltServer and Mail or iCloud/iTunes then select "**Install AltStore**" from AltServer menu.
+After AltStore is installed again, open AltStore and refresh the certificate for Paperback. You'll be able to open Paperback again and no data should be lost.
 
 ---
 
 ### App crashes when trying to follow on iPad
 This is a known Apple bug that was fixed in iPadOS 13.4, Update to iPadOS 13.4 or avoid following manga in Paperback and use the MangaDex website to follow (and then sync).
+
+---
+
+### App crashes after trying to download a manga
+Downloading manga currently does not work and breaks the app. You will need to delete and reinstall the app to fix this issue.
 
 ---
 

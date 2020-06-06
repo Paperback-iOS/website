@@ -35,7 +35,7 @@ Deze app vereist iOS 13.4+ of iPadOS 13.4+. Als je een oudere versie hebt zal de
    **Catalina** gebruikers moeten **Finder** openen en "**Show this iPhone when on wifi**" inschakelen voor de iPhone/iPad.
 1. Klik op het **AltServer** icoon in de Mac-menubalk en klik op "**Install AltStore**" en selecteer je iPhone/iPad.
 1. Voer je e-mailadres en wachtwoord in voor je Apple ID. (**BEIDE** zijn hoofdlettergevoelig)
-	> *Je Apple ID en wachtwoord worden naar Apple gestuurd, en nergens anders.*
+   > *Je Apple ID en wachtwoord worden naar Apple gestuurd, en nergens anders.*
 1. **AltServer** zal je vragen om een Mail plug-in te installeren, volg de instructies om door te gaan. Dit is alleen de eerste keer vereist.
 1. AltStore is nu op je iPhone/iPad geïnstalleerd.
 
@@ -64,17 +64,17 @@ Deze app vereist iOS 13.4+ of iPadOS 13.4+. Als je een oudere versie hebt zal de
    <el-tag type="warning">De Windows Store-appversie van **iTunes** werkt niet!</el-tag>
 1. Download en installeer [iCloud voor Windows 8](https://support.apple.com/en-us/HT204283).
    <el-tag type="warning">De Windows Store-appversie van **iCloud** werkt niet!</el-tag>
-	> Kan je de link niet vinden om **iCloud** voor Windows 8 te downloaden? [GIF](https://imgur.com/a/P1ef4Wd)
+   > Kan je de link niet vinden om **iCloud** voor Windows 8 te downloaden? [GIF](https://imgur.com/a/P1ef4Wd)
 1. Start je computer opnieuw op nadat je zowel **iTunes** als **iCloud** hebt geïnstalleerd.
    <el-tag type="warning">AltStore zal niet werken als je de computer niet opnieuw hebt gestart!</el-tag>
 1. Pak het gedownloade **`AltInstaller.zip`** bestand uit. Voer **`setup.exe`** uit en volg de instructies.
 1. Start **AltServer** vanuit je *Systeemvak*.
-	> Kan je **AltServer** niet vinden? [Afbeelding](https://imgur.com/a/rSagfh2)
+   > Kan je **AltServer** niet vinden? [Afbeelding](https://imgur.com/a/rSagfh2)
 1. Verbind je **iPhone** of **iPad** met de computer en zorg ervoor dat deze ontgrendeld is en het apparaat vertrouwd is.
 1. Open **iTunes** en schakel "**iTunes Wi-Fi-synchronisatie**" in voor je  iPhone/iPad.
 1. Klik op het **AltServer** icoon in het *Systeemvak* en klik op "**Install AltStore**" en selecteer je iPhone/iPad.
 1. Voer je e-mailadres en wachtwoord in voor je Apple ID. (**BEIDE** zijn hoofdlettergevoelig)
-	> *Je Apple ID en wachtwoord worden naar Apple gestuurd, en nergens anders.*
+   > *Je Apple ID en wachtwoord worden naar Apple gestuurd, en nergens anders.*
 1. AltStore is nu op je iPhone/iPad geïnstalleerd.
 
 ### Paperback

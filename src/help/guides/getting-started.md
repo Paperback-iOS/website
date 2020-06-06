@@ -35,7 +35,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
    **Catalina** users need to open **Finder** and enable "**Show this iPhone when on WiFi**" for your iPhone/iPad.
 1. Click the **AltServer** icon in the Mac menu bar and click "**Install AltStore**" and select your iPhone/iPad.
 1. Enter your Apple ID email and password. (**BOTH** are case sensitive)
-	> *Your Apple ID and password are sent to Apple, and nowhere else.*
+   > *Your Apple ID and password are sent to Apple, and nowhere else.*
 1. **AltServer** will ask you to install a Mail plug-in, follow the instructions to continue. This is only required the first time.
 1. AltStore should be installed to your iPhone/iPad.
 
@@ -64,17 +64,17 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
    <el-tag type="warning">Not the Windows Store app!</el-tag>
 1. Download and install [iCloud for Windows 8](https://support.apple.com/en-us/HT204283).
    <el-tag type="warning">Not the Windows Store app!</el-tag>
-	> Can't find the link to download **iCloud** for Windows 8? <PictureDialog title="Download iCloud for Windows 8" button="GIF" src="/assets/iCloud.gif"/>
+   > Can't find the link to download **iCloud** for Windows 8? <PictureDialog title="Download iCloud for Windows 8" button="GIF" src="/assets/iCloud.gif"/>
 1. Restart your PC after you've installed both **iTunes** and **iCloud**.
    <el-tag type="warning">You need to restart your computer!</el-tag>
 1. Extract the downloaded **`AltInstaller.zip`** file. Run **`setup.exe`** and follow the instructions.
 1. Launch **AltServer** from your *Notification Area*.
-	> Can't find **AltServer**? <PictureDialog title="Launch AltServer" button="Image" src="/assets/AltServer.png"/>
+   > Can't find **AltServer**? <PictureDialog title="Launch AltServer" button="Image" src="/assets/AltServer.png"/>
 1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
 1. Open **iTunes** and enable "**iTunes Wi-Fi sync**" for your iPhone/iPad.
-1. Click the **AltServer** icon in your *Notification Area* and click "**Install AltStore**, then select your iPhone/iPad.
+1. Click the **AltServer** icon in your *Notification Area* and click "**Install AltStore**", then select your iPhone/iPad.
 1. Enter your Apple ID email and password. (**BOTH** are case sensitive)
-	> *Your Apple ID and password are sent to Apple, and nowhere else.*
+   > *Your Apple ID and password are sent to Apple, and nowhere else.*
 1. AltStore should be installed to your iPhone/iPad.
 
 ### Paperback
@@ -94,10 +94,10 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 Run AltServer as an administrator and ensure that you've restarted your computer after installing iTunes and iCloud.
 
 ### I can't find the .IPA file to download
-You can download the **`.IPA`** file <Download text="from here"/>
+You can download the **`.IPA`** file <Download text="from here"/>.
 
 ### I have some other issue that isn't listed here
-Check the [AltStore FAQ](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel on our **[Discord](https://discord.gg/Ny83JV3)** for a fast reponse or submit a post on **[Reddit](https://www.reddit.com/r/Paperback/)**.
+Check the [AltStore FAQ](https://altstore.io/faq/). If you still can't resolve the issue visit the #support channel on our **[Discord](https://discord.gg/Ny83JV3)** for a fast response or submit a post on **[Reddit](https://www.reddit.com/r/Paperback/)**.
 
 ---
 
