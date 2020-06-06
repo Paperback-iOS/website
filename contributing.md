@@ -72,7 +72,7 @@ Content2
 ```
 
 **Download link**
-The following component creates a link allowing to download the last public build.
+The following component creates a link allowing to download the latest public build.
 ```html
 <Download text="from here"/>
 ```
@@ -138,7 +138,7 @@ In development:
   },
 },
 ```
- * Add the following lines in `extraWatchFiles`list:
+ * Add the following lines in `extraWatchFiles` list:
 ```js
 ".vuepress/config/nav/LANG.js",
 ```
