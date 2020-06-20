@@ -21,7 +21,7 @@ We collect personal information that you voluntarily provide to us when  registe
 
 The personal information that we collect depends on the context of your interactions with us and the  Apps, the choices you make and the products and features you use. The personal information we collect can include the following:
 
-**Social Media Login Data.** We may provide you with the option to register using social media account details, like your Facebook, Twitter or other social media account. If you choose to register in this way, we will collect the Information described in the section called "[HOW DO WE HANDLE YOUR SOCIAL LOGINS](#socialLogins)" below.
+**Social Media Login Data.** We may provide you with the option to register using social media account details, like your Facebook, Twitter or other social media account. If you choose to register in this way, we will collect the Information described in the section called "[HOW DO WE HANDLE YOUR SOCIAL LOGINS](#_5-how-do-we-handle-your-social-logins)" below.
 
 All personal information that you provide to us must be true, complete and accurate, and you must notify us of any changes to such personal information.
 
@@ -47,7 +47,7 @@ We use personal information collected via our  Apps  for a variety of business p
 
 We use the information we collect or receive:
 
--   **To facilitate account creation and logon process.** If you choose to link your account with us to a third party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract.  See the section below headed "[HOW DO WE HANDLE YOUR SOCIAL LOGINS](#sociallogins)" for further information.  
+-   **To facilitate account creation and logon process.** If you choose to link your account with us to a third party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract.  See the section below headed "[HOW DO WE HANDLE YOUR SOCIAL LOGINS](#_5-how-do-we-handle-your-social-logins)" for further information.  
 -   **To enforce our terms, conditions and policies for Business Purposes, Legal Reasons and Contractual.**  
 -   **To respond to legal requests and prevent harm.** If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.  
 -   **To manage user accounts**. We may use your information for the purposes of managing our account and keeping it in working order.  
@@ -119,7 +119,7 @@ We have implemented appropriate technical and organizational security measures d
 
 **_In Short:_** _In some regions, such as the European Economic Area, you have rights that allow you greater access to and control over your personal information.  You may review, change, or terminate your account at any time._
 
-In some regions (like the European Economic Area), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. To make such a request, please use the [contact details](https://app.termly.io/dashboard/website/478835/privacy-policy#contact) provided below. We will consider and act upon any request in accordance with applicable data protection laws.
+In some regions (like the European Economic Area), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. To make such a request, please use the [contact details](#_12-how-can-you-contact-us-about-this-policy) provided below. We will consider and act upon any request in accordance with applicable data protection laws.
 
 If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time. Please note however that this will not affect the lawfulness of the processing before its withdrawal.
 
@@ -133,7 +133,7 @@ If you have questions or comments about your privacy rights, you may email us at
 
 If you would at any time like to review or change the information in your account or terminate your account, you can:
 
-■ Contact us using the contact information provided.
+-   Contact us using the contact information provided.
 
 Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.
 
