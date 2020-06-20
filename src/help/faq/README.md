@@ -28,6 +28,7 @@ If you're having problems with the app, please check here before posting. If you
 Ensure that you are on iOS 13.4+ or iPadOS 13.4+.
 
 If you are using the **Beta / Patron build**, they are usually unstable. If you are on the correct versioning for your device, and are still getting crashes, you may be encountering a known or unknown bug for your Paperback version. Contact us on our Discord #supporter-chat channel, and staff will try to determine what's happening with you.
+
 ---
 
 ### Both Paperback and AltStore crash on launch
