@@ -69,7 +69,7 @@ Deze app vereist iOS 13.4+ of iPadOS 13.4+. Als je een oudere versie hebt zal de
    <el-tag type="warning">AltStore zal niet werken als je de computer niet opnieuw hebt gestart!</el-tag>
 1. Pak het gedownloade **`AltInstaller.zip`** bestand uit. Voer **`setup.exe`** uit en volg de instructies.
 1. Start **AltServer** vanuit je *Systeemvak*.
-   > Kan je **AltServer** niet vinden? <PictureDialog title="Start AltServer" button="Image" src="/assets/AltServer.png"/>
+   > Kan je **AltServer** niet vinden? <PictureDialog title="Start AltServer" button="Afbeelding" src="/assets/AltServer.png"/>
 1. Verbind je **iPhone** of **iPad** met de computer en zorg ervoor dat deze ontgrendeld is en het apparaat vertrouwd is.
 1. Open **iTunes** en schakel "**iTunes Wi-Fi-synchronisatie**" in voor je  iPhone/iPad.
 1. Klik op het **AltServer** icoon in het *Systeemvak* en klik op "**Install AltStore**" en selecteer je iPhone/iPad.
