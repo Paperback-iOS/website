@@ -24,13 +24,28 @@ Als je problemen hebt met de app, kijk dan op deze pagina voordat je een bericht
 
 ---
 
-### App loopt vast bij het opstarten
-Als je de **Publieke build** gebruikt, controleer dan of je iOS 13.4+ of iPadOS 13.4+ gebruikt. Als je de **Beta / Patron build** gebruikt, stuur een bericht op het Discord #supporter-kanaal en ping Paper (In het Engels).
+### De app loopt vast bij het opstarten
+Zorg ervoor dat je iOS 13.4+ of iPadOS 13.4+ gebruikt.
+
+Als je de **Beta / Patron build** gebruikt kan het zijn dat deze onstabiel is. Als je de juiste iOS of iPadOS versie voor je apparaat gebruikt en nog steeds crasht, kan het zijn dat je een al bekende bug tegen bent gekomen. Neem contact met ons op via het Discord #supporter-chatkanaal en iemand zal je proberen te helpen met het probleem.
 
 ---
 
-### App loopt vast bij het volgen van manga op de iPad
+### Zowel Paperback als AltStore crashen bij het opstarten
+Toepassingen die met AltStore zijn geïnstalleerd, moeten elke zeven dagen worden vernieuwd. Zorg ervoor dat AltServer en Mail of iCloud / iTunes open zijn en dat je apparaat is verbonden met hetzelfde netwerk als je computer. AltStore probeert de app automatisch te vernieuwen op de achtergrond. Als AltStore niet automatisch wordt vernieuwd, kan je dit proces handmatig activeren door je apparaat aan te sluiten op een computer met AltServer en vervolgens de vernieuwing op je apparaat uit te voeren via de AltStore-app.
+Als Paperback en AltStore beide crashen bij het opstarten, is het waarschijnlijk dat het certificaat is verlopen.
+Sluit uw iPhone / iPad aan op je computer zonder iets te verwijderen. Open AltServer en Mail of iCloud / iTunes en selecteer vervolgens "**AltStore** installeren" in het AltServer-menu.
+Nadat AltStore opnieuw is geïnstalleerd, open je AltStore en vernieuw je het certificaat voor Paperback. Je kunt Paperback opnieuw openen en er zouden geen gegevens verloren moeten zijn gegaan.
+
+---
+
+### De app loopt vast bij het volgen van manga op de iPad
 Dit is een bekende Apple-bug die is opgelost in iPadOS 13.4, update naar iPadOS 13.4 of vermijd het volgen van manga in Paperback en gebruik de MangaDex-website om manga te volgen (en vervolgens te synchroniseren).
+
+---
+
+### De app loopt vast bij het downwloaden van een manga
+Het downloaden van manga werkt momenteel niet en crasht de app. Je moet de app verwijderen en opnieuw installeren om dit probleem op te lossen.
 
 ---
 
