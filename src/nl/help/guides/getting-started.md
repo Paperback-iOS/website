@@ -64,12 +64,12 @@ Deze app vereist iOS 13.4+ of iPadOS 13.4+. Als je een oudere versie hebt zal de
    <el-tag type="warning">De Windows Store-appversie van **iTunes** werkt niet!</el-tag>
 1. Download en installeer [iCloud voor Windows 8](https://support.apple.com/en-us/HT204283).
    <el-tag type="warning">De Windows Store-appversie van **iCloud** werkt niet!</el-tag>
-   > Kan je de link niet vinden om **iCloud** voor Windows 8 te downloaden? [GIF](https://imgur.com/a/P1ef4Wd)
+   > Kan je de link niet vinden om **iCloud** voor Windows 8 te downloaden? <PictureDialog title="Download iCloud voor Windows 8" button="GIF" src="/assets/iCloud.gif"/>
 1. Start je computer opnieuw op nadat je zowel **iTunes** als **iCloud** hebt geïnstalleerd.
    <el-tag type="warning">AltStore zal niet werken als je de computer niet opnieuw hebt gestart!</el-tag>
 1. Pak het gedownloade **`AltInstaller.zip`** bestand uit. Voer **`setup.exe`** uit en volg de instructies.
 1. Start **AltServer** vanuit je *Systeemvak*.
-   > Kan je **AltServer** niet vinden? [Afbeelding](https://imgur.com/a/rSagfh2)
+   > Kan je **AltServer** niet vinden? <PictureDialog title="Start AltServer" button="Image" src="/assets/AltServer.png"/>
 1. Verbind je **iPhone** of **iPad** met de computer en zorg ervoor dat deze ontgrendeld is en het apparaat vertrouwd is.
 1. Open **iTunes** en schakel "**iTunes Wi-Fi-synchronisatie**" in voor je  iPhone/iPad.
 1. Klik op het **AltServer** icoon in het *Systeemvak* en klik op "**Install AltStore**" en selecteer je iPhone/iPad.
@@ -94,7 +94,7 @@ Deze app vereist iOS 13.4+ of iPadOS 13.4+. Als je een oudere versie hebt zal de
 Voer AltServer uit als administrator en zorg ervoor dat je de computer opnieuw hebt opgestart na het installeren van iTunes en iCloud.
 
 ### Ik kan het .IPA-bestand niet vinden om te downloaden
-Je kan het **`.IPA`** bestand <Download text="hier downloaden"/>
+Je kan het **`.IPA`** bestand <Download text="hier downloaden"/>.
 
 ### Ik heb een ander probleem dat hier niet wordt vermeld
 Controleer de [AltStore FAQ](https://altstore.io/faq/). Als je het probleem nog steeds niet kunt oplossen, stel dan je vraag op het #support-kanaal in onze **[Discord](https://discord.gg/Ny83JV3)** voor snel antwoord of plaats een bericht op **[Reddit](https://www.reddit.com/r/Paperback/)**.
