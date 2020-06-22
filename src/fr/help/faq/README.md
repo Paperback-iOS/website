@@ -23,8 +23,22 @@ Si vous avez des problèmes avec l’application, merci de regarder si cette pag
 
 ---
 
-### L'application plante au démarrage
-Si vous utilisez la **version publique**, vérifiez que vous êtes sur iOS 13.4+ ou iPadOS 13.4+. Si vous utilisez les **versions Bêta/Patreon** contactez @Paper dans le canal #supporter-chat sur Discord.
+### L’application plante au démarrage
+Assurez-vous d’être sur iOS 13.4+ ou iPadOS 13.4+.
+
+Si vous utilisez une **version Bêta/Patreon**, celle-ci peut-être instable. Si votre appareil est sur iOS 13.4+ ou iPadOS 13.4+ et que l’application plante toujours, vous pouvez être confronté à un bug connu ou non. Contactez-nous dans le canal #supporter-chat afin de déterminer ce qu’il se passe.
+
+---
+
+### Paperback et AltStore plantent au démarrage
+Les applications installées avec AltStore doivent être resignées tous les sept jours. 
+Assurez-vous que AltServer et Mail ou iCloud/iTunes sont ouverts et que votre appareil est connecté au même réseau que votre ordinateur. AltStore essayera de resigner l’application automatiquement.
+
+Si AltStore ne parvient pas à le faire automatiquement, réalisez cela manuellement en connectant, au moyen d'un cable, votre appareil à l’ordinateur sur lequel AltServer est ouvert, puis en démarrant la procédure depuis AltStore.
+
+Si AltStore tout comme Paperback plantent au démarrage, leurs certificats sont probablement expirés. Sans supprimer les applications, connectez votre iPhone/iPad à votre ordinateur. Ouvrez AltServer et Mail ou iCloud/iTunes puis selectionnez "Install AltStore" depuis le menu d’AltServer.
+Une fois qu’AltStore est réinstallé, ouvrez-le et rafraichissez le certificat de Paperback.
+Vous devriez pouvoir ouvrir Paperback à nouveau et vos données ne devraient pas être perdues. 
 
 ---
 
