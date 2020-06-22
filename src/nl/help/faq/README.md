@@ -27,7 +27,7 @@ Als je problemen hebt met de app, kijk dan op deze pagina voordat je een bericht
 ### De app loopt vast bij het opstarten
 Zorg ervoor dat je iOS 13.4+ of iPadOS 13.4+ gebruikt.
 
-Als je de **Beta / Patron build** gebruikt kan het zijn dat deze onstabiel is. Als je de juiste iOS of iPadOS versie voor je apparaat gebruikt en nog steeds crasht, kan het zijn dat je een al bekende bug tegen bent gekomen. Neem contact met ons op via het Discord #supporter-chatkanaal en iemand zal je proberen te helpen met het probleem.
+Als je de **Beta / Patron build** gebruikt kan het zijn dat deze onstabiel is. Als je de juiste iOS of iPadOS versie voor je apparaat gebruikt en nog steeds crasht, kan het zijn dat je een al bekende bug tegen bent gekomen. Neem contact met ons op via het Discord #supporter-chat kanaal en iemand zal je proberen te helpen met het probleem.
 
 ---
 
