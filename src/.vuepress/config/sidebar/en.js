@@ -4,6 +4,6 @@ module.exports = [
 	{
 		title: "Guides",
 		collapsable: false,
-		children: ["/help/guides/getting-started"],
+		children: ["/help/guides/getting-started", "/help/guides/adding-repos"],
 	},
 ];
