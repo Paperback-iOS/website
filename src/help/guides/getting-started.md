@@ -24,7 +24,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 ::: el-tab-pane label="Patreon version"
 ### TestFlight
 #### Instructions
-1. After registering as a [Patreon](https://www.patreon.com/FaizanDurrani) to Paperback, you should recieve an email from TestFlight with an invitation to the beta version of Paperback
+1. After registering as a [Patreon](https://www.patreon.com/FaizanDurrani) to Paperback, you should receive an email from TestFlight with an invitation to the beta version of Paperback
    > You may not get your invitation immediately, sometimes it takes a few hours for your registration to be sent to TestFlight. If you have waited over a day, contact us on Discord
 1. Inside of the email, click the button labeled "View in TestFlight"
 1. Download the TestFlight app onto your device from the App Store
