@@ -92,13 +92,6 @@ Swipe a couple of pages away and then come back to the failed page, it should ha
 
 ---
 
-### Manga Rock to MangaDex Sync
-Unfortunately, only premium members of Manga Rock are able to transfer their data currently.
-
- * [**MR to MD Guide**](https://www.reddit.com/r/mangarockapp/comments/f89aie/tool_exporting_mr_favorites/)
-
----
-
 ### Syncing lists takes a really long time
 Syncing more than 1,000 manga will take some time however, you can improve this by changing the list type on Follows page of MD:
 
