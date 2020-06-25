@@ -13,13 +13,13 @@ Currently external sources are only available on the Beta version of the applica
 
 
 ## Adding an External Repository
-1. Open up Paperback on your device
+1. Open up Paperback on your device.
 1. Navigate to the Settings tab of the application.
 1. Navigate to the Sources tab inside of Settings.
 1. At the bottom of the page, you are able to add a repository by specifying a name, and the URL which the repository sits at. Ensure that your repository title is at least 4 characters long.
-    > Reference the [Known Repositories](/help/guides/adding-repos/#known-repositories) section for a list of known repositories, their links, and what they contain
-1. Tap "Add"
-1. Select the repository that you have added, which should have appeared in the list of repositories on this page
+    > Reference the [Known Repositories](/help/guides/adding-repos/#known-repositories) section for a list of known repositories, their links, and what they contain.
+1. Tap "Add".
+1. Select the repository that you have added, which should have appeared in the list of repositories on this page.
     > If you do not see sources, you may have typed in your Base URL incorrectly. Delete the repository and try again. If you do see sources, congratulations!
 
 ## Known Repositories
