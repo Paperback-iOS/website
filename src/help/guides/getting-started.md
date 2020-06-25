@@ -6,7 +6,7 @@ lang: en-US
 # Getting started
 
 ## Installation
-Currently an early version of the app is available on the App Store! [Click here](https://apps.apple.com/na/app/paperback-manga-reader/id1519509781) to download a copy.
+Currently an early version of the app is available on the App Store! [Click here](https://apps.apple.com/app/paperback-manga-reader/id1519509781) to download a copy.
 If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the App Store.
 
 ::: warning Warning
