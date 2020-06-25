@@ -21,7 +21,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 
 :::
 
-::: el-tab-pane label="Patreon Paperback version"
+::: el-tab-pane label="Patreon version"
 ### TestFlight
 #### Instructions
 1. After registering as a [Patreon](https://www.patreon.com/FaizanDurrani) to Paperback, you should recieve an email from TestFlight with an invitation to the beta version of Paperback
