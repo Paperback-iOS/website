@@ -15,7 +15,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 
 :::: el-tabs
 ::: el-tab-pane label="Public Paperback version"
-### TestFlight
+### App Store
 #### Instructions
 1. Installing the public version of Paperback is easy! Simply navigate to the [App Store](https://apps.apple.com/na/app/paperback-manga-reader/id1519509781) and download a copy!
 
