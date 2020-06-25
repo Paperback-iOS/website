@@ -7,7 +7,7 @@ lang: en-US
 
 ## Installation
 Currently an early version of the app is available on the App Store! [Click here](https://apps.apple.com/na/app/paperback-manga-reader/id1519509781) to download a copy.
-If you are a patreon, you will recieve an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the App Store.
+If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the App Store.
 
 ::: warning Warning
 This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the app will CRASH. Paperback is NOT designed for older iOS versions.
