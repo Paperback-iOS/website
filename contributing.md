@@ -77,6 +77,21 @@ The following component creates a link allowing to download the latest public bu
 <Download text="from here"/>
 ```
 
+**Picture dialog windows**
+This component create a dialog component containing a picture. It is based on an Element dialog and is lazy loaded.
+ * `title`: title of the dialog window
+ * `button`: text shown in the link
+ * `src`: picture's path
+```html
+<PictureDialog title="Download iCloud for Windows 8" button="GIF" src="/assets/iCloud.gif"/>
+```
+
+**Extensions list**
+The following component will create a coma separated list of the sources name contained in the repo.
+```html
+<ExtensionsList url="https://paperback-ios.github.io/extensions"/>
+```
+
 **"Not up to date" warning**
 You've made a major modification to the English version of the site and you want to show that a translation is not up to date? You can mark a page as "not up to date" by adding the following code at the top of the concerned page.
 ```html
