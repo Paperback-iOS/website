@@ -46,9 +46,9 @@ export default {
 		this.$data.last_id = data["sources"][data["sources"].length - 1];
 	},
 methods: {
-		iconUrl(extension_id, file_name) {
+		iconUrl(extensionId, fileName) {
 			//https://paperback-ios.github.io/extensions/${extension_id}/includes/${file_name}
-			return this.$props.url + "/" + extension_id + "/includes/" + file_name;
+			return this.$props.url + "/" + extensionId + "/includes/" + fileName;
 		},
 
 	},
