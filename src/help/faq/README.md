@@ -9,7 +9,7 @@ If you have questions about the app and our plans or need help with installing t
 ## General Information
 
 ### Why are you making this app?
-There are no decent manga apps on **iOS** that have _non-intrusive_ advertisements or **MangaDex** support.
+There are no decent manga apps on **iOS** and **iPadOS** that have _non-intrusive_ advertisements or **MangaDex** support.
 
 ### What type of business model will you take on?
 There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no fee to use Paperback.
