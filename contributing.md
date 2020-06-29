@@ -8,6 +8,7 @@ If you have any questions, you can ask them in #website-dev channel in our Disco
  * [Preparing the development environment](#preparing-the-development-environment)
  * [Guidelines](#guidelines-1)
  * [Localization](#localization)
+ * [Technical informations](#technical-informations)
 
 ## Preparing the development environment
 ### Fork the project
@@ -47,6 +48,8 @@ See [Building local enviroment](https://github.com/Paperback-iOS/website#buildin
 
 ### Components
 You can use the following components. Try not to abuse of `warning`.
+
+**[Vuepress Custom Containers](https://v1.vuepress.vuejs.org/guide/markdown.html#custom-containers)**
 ```markdown
 ::: tip Title
  Content
@@ -57,6 +60,8 @@ You can use the following components. Try not to abuse of `warning`.
  Content
 :::
 ```
+
+**[Vuepress Plugin Element Ui](https://lq782655835.github.io/vuepress-plugin-element-ui/)**
 ```markdown
 :::: el-tabs
 ::: el-tab-pane label="Tab1"
@@ -163,6 +168,8 @@ In development:
 
 Don't forget to change links. For example `/help/faq/#troubleshooting` becomes `/fr/help/faq/#resolution-des-problemes-de-l-application` in French.
 
+Please do not translate our privacy policy located in `website/src/privacy_policy.md`.
+
 ### Translation decisions
 > You will find here decisions made for the translation. 
 > If you want to change or improve them, please make the modification in all the website. It will allow to have a consistent translation.
@@ -180,3 +187,9 @@ Don't forget to change links. For example `/help/faq/#troubleshooting` becomes `
   
   * Ponctuation: use `’`
 </details>
+
+## Technical informations
+This website is based on [Vuepress](https://vuepress.vuejs.org/) and is hosted on [GitHub Pages](https://pages.github.com/). 
+It use the theme [Yuu](https://vuepress-theme-yuu.netlify.app/) over Vuepress default theme with a custom [Home](.vuepress/components/PaperbackHome.vue) page.
+
+We also use [Element](https://element.eleme.io/#/en-US) components for custom layouts and in markdown with [Vuepress Plugin Element Ui](https://lq782655835.github.io/vuepress-plugin-element-ui/).
