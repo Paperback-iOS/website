@@ -7,15 +7,15 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 <template>
 	<div>
 		<span v-for="extension in extensions"
-        :id="extension.name"
+		:id="extension.name"
 		:key="extension.id"
 		class="anchor"
-        >
+		>
 			<span v-if="extension.id == last_id.id">
 				{{extension.name}}
 			</span>
 			<span v-else>
-  				{{extension.name}},
+				{{extension.name}},
 			</span>
 		</span>
 
@@ -36,14 +36,14 @@ export default {
 	data() {
 		return {
 			extensions: [],
-			last_id: ""			// id of the last source. Used to removed the last coma
+			last_id: "",			// id of the last source. Used to removed the last coma
 		};
 	},
 
 	async beforeMount() {
-        const { data } = await axios.get(this.$props.url + "/versioning.json");
-		this.$data.extensions = data["sources"]
-		this.$data.last_id = data["sources"][data["sources"].length - 1]
+		const { data } = await axios.get(this.$props.url + "/versioning.json");
+		this.$data.extensions = data["sources"];
+		this.$data.last_id = data["sources"][data["sources"].length - 1];
 	},
 methods: {
 		iconUrl(extension_id, file_name) {
@@ -52,6 +52,6 @@ methods: {
 		},
 
 	},
-	
+
 };
 </script>
