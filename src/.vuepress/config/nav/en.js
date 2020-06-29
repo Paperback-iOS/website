@@ -13,8 +13,8 @@ module.exports = [
 					},
 					{
 						text: "Adding External Repositories",
-						link: "/help/guides/adding-repos/"
-					}
+						link: "/help/guides/adding-repos/",
+					},
 				],
 			},
 		],
