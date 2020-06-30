@@ -54,9 +54,19 @@
 					tabindex="0"
 					href="help/guides/getting-started/"
 				>	
-					{{ data.buttonGuides }}
+					{{ data.buttonGuides }} 1
           <i class="el-icon-notebook-2"></i>
 				</a>
+
+        <!-- RouterLink is used by the NavLink component -->
+        <RouterLink
+          class="nav-link action-button action-button__Guides"
+          to="help/guides/getting-started/"
+          @focusout.native="focusoutAction"
+        >
+          {{ data.buttonGuides }} 2
+          <i class="el-icon-notebook-2"></i>
+        </RouterLink>
 
 			</p>
 
