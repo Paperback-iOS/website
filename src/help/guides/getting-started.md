@@ -28,7 +28,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
    > You may not get your invitation immediately, sometimes it takes a few hours for your registration to be sent to TestFlight. If you have waited over a day, contact us on Discord
 1. Inside of the email, click the button labeled "View in TestFlight"
 1. Download the TestFlight app onto your device from the App Store
-1. At the top of your TestFlight app, there is a "Redeem" button. Select this, and input the code which you have recieved through the email link
+1. At the top of your TestFlight app, there is a "Redeem" button. Select this, and input the code which you have received through the email link
 1. Download the application through TestFlight
    > Whenever there is an update to the beta, you will have to return to TestFlight and select the "Update" button next to the app. It does not do this process automatically. If the setting is enabled for TestFlight, you will get a push notification to your device whenever an update is available
 :::
