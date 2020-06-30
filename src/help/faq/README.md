@@ -32,11 +32,6 @@ If you are using the **Beta / Patron build**, they are usually unstable. If you 
 
 ---
 
-### App crashes when trying to follow on iPad
-This is a known Apple bug that was fixed in iPadOS 13.4, update to iPadOS 13.4 or avoid following manga in Paperback and use the MangaDex website to follow (and then sync).
-
----
-
 ### App crashes after trying to download a manga
 Downloading manga currently does not work and breaks the app. You will need to delete and reinstall the app to fix this issue.
 
