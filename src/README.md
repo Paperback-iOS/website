@@ -1,9 +1,11 @@
 ---
 home: true
 lang: en-US
+homeComponent: PaperbackHome
 heroImage: /icons/logo-alt.svg
-actionText: App Store →
-actionLink: https://apps.apple.com/app/paperback-manga-reader/id1519509781
+buttonGuides: User guide
+buttonDownload: Download
+privacy: Privacy policy
 features:
     - title: iPad support
       details: Friendly layout with a robust double spread chapter reader for iPad. (iPadOS 13.4+)
