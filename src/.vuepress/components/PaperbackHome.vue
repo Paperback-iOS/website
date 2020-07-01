@@ -48,23 +48,24 @@
             class="lightrendered"
           >   
         </a>
+        <!--
         <a
 					v-if="data.buttonGuides"
 					class="action-button action-button__Guides"
 					tabindex="0"
 					href="help/guides/getting-started/"
 				>	
-					{{ data.buttonGuides }} 1
+					{{ data.buttonGuides }}
           <i class="el-icon-notebook-2"></i>
-				</a>
-
-        <!-- RouterLink is used by the NavLink component -->
+				</a> -->
+       
+        <!-- RouterLink is used by the NavLink component --> 
         <RouterLink
           class="nav-link action-button action-button__Guides"
           to="help/guides/getting-started/"
           @focusout.native="focusoutAction"
         >
-          {{ data.buttonGuides }} 2
+          {{ data.buttonGuides }}
           <i class="el-icon-notebook-2"></i>
         </RouterLink>
 
@@ -150,11 +151,12 @@ export default {
       display inline-block
       img
         // App Store badge
-        height 60px
+        height 3.7rem
         margin-top 0px
-        margin-bottom 5px
+        margin-bottom 5px  // Use the same margin-botton on the badge and the buttons
         vertical-align middle
-      
+      .action-button
+        border-radius 10px  // Match the button with the App Store badge
     text-align center
     img
       max-width: 100%
@@ -171,14 +173,24 @@ export default {
       line-height 1.3
       color lighten($textColor, 40%)
     .action-button
-      display inline-block
+      // Align the text inside the button and make it the same size as the badge
+      height 3.7rem
+      width 11.069rem
+      display inline-flex
+      align-items center
+      justify-content center
+      margin-bottom 5px
+      //display inline-block
       font-size 1.2rem
       color #fff
       //background-color $accentColor
-      padding 0.8rem 1.6rem
-      border-radius 4px
+      padding 0.8rem 1.4rem
+      border-radius 11px
       transition background-color .1s ease
       box-sizing border-box
+      i
+        // Add a space between the text and the Element icon in buttons
+        margin-left 2px
 
       // Removed from the default template to not override Yuu colors
       //border-bottom 1px solid darken($accentColor, 10%)
@@ -230,6 +242,9 @@ export default {
     padding-left 1.5rem
     padding-right 1.5rem
     .hero
+      a
+      img
+        img
       img
         max-height 210px
         margin 2rem auto 1.2rem
