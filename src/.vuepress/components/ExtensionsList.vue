@@ -6,18 +6,14 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 
 <template>
 	<div>
-		<span v-for="extension in extensions"
-		:id="extension.name"
-		:key="extension.id"
-		class="anchor"
-		>
-			<span v-if="extension.id == last_id.id">
-				{{extension.name}}
-			</span>
-			<span v-else>
-				{{extension.name}},
-			</span>
-		</span>
+		<ul id="v-for-object">
+			<li v-for="extension in extensions"
+			:id="extension.name"
+			:key="extension.id"
+			>
+				{{ extension.name }}
+			</li>
+		</ul>
 
 	</div>
 </template>
