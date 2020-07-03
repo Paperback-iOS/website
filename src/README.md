@@ -4,7 +4,6 @@ lang: en-US
 homeComponent: PaperbackHome
 heroImage: /icons/logo-alt.svg
 buttonGuides: User guide
-buttonDownload: Download
 privacy: Privacy policy
 features:
     - title: iPad support

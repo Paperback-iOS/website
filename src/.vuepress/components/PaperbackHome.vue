@@ -1,3 +1,6 @@
+<!--
+Custom home page based on Vuepress default theme home page
+-->
 <template>
   <main
     class="home"
@@ -34,31 +37,22 @@
         />
       </p>
 
-      <!-- Download and User guide buttons -->
-      <p v-if="data.buttonDownload || data.buttonGuides" class="action">
-        <a v-if="data.buttonDownload" href="https://apps.apple.com/app/paperback-manga-reader/id1519509781"> 
+      <!-- Download on the App Store button -->
+      <p class="action">
+        <a href="https://apps.apple.com/app/paperback-manga-reader/id1519509781"> 
           <img
-            :src="'/assets/AppStore/AppStore_' + this.$page.frontmatter.lang + '_White.svg'"
-            :alt="data.buttonDownload"
+            :src="'/assets/AppStore/AppStore_' + data.lang + '_White.svg'"
+            alt="Download on the App Store"
             class="darkrendered"
           > 
           <img
-            :src="'/assets/AppStore/AppStore_' + this.$page.frontmatter.lang + '_Black.svg'"
+            :src="'/assets/AppStore/AppStore_' + data.lang + '_Black.svg'"
             :alt="data.buttonDownload"
             class="lightrendered"
           >   
         </a>
-        <!--
-        <a
-					v-if="data.buttonGuides"
-					class="action-button action-button__Guides"
-					tabindex="0"
-					href="help/guides/getting-started/"
-				>	
-					{{ data.buttonGuides }}
-          <i class="el-icon-notebook-2"></i>
-				</a> -->
        
+        <!-- User guide button -->
         <!-- RouterLink is used by the NavLink component --> 
         <RouterLink
           class="nav-link action-button action-button__Guides"
@@ -68,7 +62,6 @@
           {{ data.buttonGuides }}
           <i class="el-icon-notebook-2"></i>
         </RouterLink>
-
 			</p>
 
     </header>
@@ -94,7 +87,7 @@
       v-if="data.footer"
       class="footer"
     >
-      {{ data.footer }} | <a href="privacy_policy/"> {{ data.privacy }}</a>
+      {{ data.footer }} | <a href="/privacy_policy/"> {{ data.privacy }}</a>
     </div>
   </main>
 </template>
@@ -153,7 +146,7 @@ export default {
         // App Store badge
         height 3.7rem
         margin-top 0px
-        margin-bottom 5px  // Use the same margin-botton on the badge and the buttons
+        margin-bottom 5px   // Use the same margin-botton on the badge and the buttons
         vertical-align middle
       .action-button
         border-radius 10px  // Match the button with the App Store badge
@@ -190,7 +183,7 @@ export default {
       box-sizing border-box
       i
         // Add a space between the text and the Element icon in buttons
-        margin-left 2px
+        margin-left 3px
 
       // Removed from the default template to not override Yuu colors
       //border-bottom 1px solid darken($accentColor, 10%)
@@ -226,7 +219,7 @@ export default {
     text-align center
     color lighten($textColor, 25%)
     a
-      // Use the same weight as the footer and not the font-weight 500 of a elements
+      // Use the same weight as the footer and not the font-weight 500 of a a elements
       font-weight initial
 
 @media (max-width: $MQMobile)

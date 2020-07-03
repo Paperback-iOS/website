@@ -3,9 +3,8 @@ home: true
 lang: fr-FR
 homeComponent: PaperbackHome
 heroImage: /icons/logo-alt.svg
-buttonGuides: Guide utilisateur
-buttonDownload: Télécharger
-privacy: Privacy policy
+buttonGuides: Guide
+privacy: Politique de confidentialité
 features:
     - title: Support de l’iPad
       details: Une mise en page agréable comprenant un lecteur double page pour l’iPad. (iPadOS 13.4+)
