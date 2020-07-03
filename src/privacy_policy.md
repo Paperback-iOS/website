@@ -1,3 +1,7 @@
+---
+title: Privacy policy
+lang: en-US
+---
 
 # PRIVACY POLICY
 *Last updated June 20, 2020*
