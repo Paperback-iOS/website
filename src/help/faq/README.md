@@ -9,13 +9,14 @@ If you have questions about the app and our plans or need help with installing t
 ## General Information
 
 ### Why are you making this app?
-There are no decent manga apps on **iOS** that have _non-intrusive_ advertisements or **MangaDex** support.
+There are no decent manga apps on **iOS** and **iPadOS** that have _non-intrusive_ advertisements or **MangaDex** support.
 
 ### What type of business model will you take on?
 There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no fee to use Paperback.
 
-### When are you planning on releasing the app?
-There is a public build of the app on [GitHub](https://github.com/Paperback-iOS/app/releases). Acquiring an Apple Developer Account has been difficult, but hopefully TestFlight builds will be able to be launched soon. After the TestFlight builds we hope to release Paperback on the App Store. For a guide to install the app see:
+### Where can I find this app?
+Currently an early version of the app is available on the App Store! [Click here](https://apps.apple.com/app/paperback-manga-reader/id1519509781) to download a copy.
+If you are a patreon, you will recieve an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the App Store.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
 
@@ -31,19 +32,6 @@ If you are using the **Beta / Patron build**, they are usually unstable. If you 
 
 ---
 
-### Both Paperback and AltStore crash on launch
-Applications installed with AltStore need to be refreshed every seven days. Ensure that AltServer and Mail or iCloud/iTunes are open, and your device is connected to the same network as your computer. AltStore will try to refresh the app automatically. If AltStore does not refresh automatically, you may trigger this process manually by plugging your device into a computer running AltServer, and then running the refresh on your device through AltStore app.
-If Paperback and AltStore both crash on launch it is likely that their certificate is expired.
-Without uninstalling anything connect your iPhone/iPad to your computer. Open AltServer and Mail or iCloud/iTunes then select "**Install AltStore**" from AltServer menu.
-After AltStore is installed again, open AltStore and refresh the certificate for Paperback. You'll be able to open Paperback again and no data should be lost.
-
----
-
-### App crashes when trying to follow on iPad
-This is a known Apple bug that was fixed in iPadOS 13.4, Update to iPadOS 13.4 or avoid following manga in Paperback and use the MangaDex website to follow (and then sync).
-
----
-
 ### App crashes after trying to download a manga
 Downloading manga currently does not work and breaks the app. You will need to delete and reinstall the app to fix this issue.
 
@@ -51,6 +39,16 @@ Downloading manga currently does not work and breaks the app. You will need to d
 
 ### How do I filter languages
 In the app, go to Settings > Content Settings.
+
+---
+
+### I am on the public version of Paperback! When will other manga sources be added?
+Currently other manga sources are already available on the patreon version of the application. Sources on the public version of the app are expected to come most likely at the end of July.
+
+---
+
+### I am on the public version of Paperback! When can I download manga to my device for offline viewing?
+Currently downloading manga is already available on the patreon version of the application. Sources on the public version of the app are expected to come most likely at the end of July.
 
 ---
 
@@ -86,13 +84,6 @@ Swipe a couple of pages away and then come back to the failed page, it should ha
 ### I can't find X manga but it's on MangaDex
  * If the manga is REALLY new (1st chapter added in the last hour) it wont be available until after an hour.
  * If the manga isn't new, chances are it's restricted. At the moment, the app doesn't support reading restricted manga. Read the manga on the website instead.
-
----
-
-### Manga Rock to MangaDex Sync
-Unfortunately, only premium members of Manga Rock are able to transfer their data currently.
-
- * [**MR to MD Guide**](https://www.reddit.com/r/mangarockapp/comments/f89aie/tool_exporting_mr_favorites/)
 
 ---
 
