@@ -23,6 +23,7 @@ module.exports = {
 			title: "Paperback",
 			description: "An ad-free manga reader for iOS.",
 		},
+		/*
 		"/fr/": {
 			lang: "fr-FR",
 			title: "Paperback",
@@ -43,6 +44,7 @@ module.exports = {
 			title: "Paperback",
 			description: "Манга четец без реклами за iOS.",
 		},
+		*/
 	},
 
 	themeConfig: {
@@ -63,6 +65,7 @@ module.exports = {
 				nav: require("./config/nav/en"),
 				sidebar: require("./config/sidebar/en"),
 			},
+			/*
 			"/fr/": {
 				label: "Français",
 				selectText: "Langues",
@@ -99,6 +102,7 @@ module.exports = {
 				nav: require("./config/nav/bg"),
 				sidebar: require("./config/sidebar/bg"),
 			},
+			*/
 		},
 		yuu: {
 			defaultDarkTheme: true,
@@ -111,14 +115,18 @@ module.exports = {
 	extraWatchFiles: [
 		".vuepress/config/plugins.js",
 		".vuepress/config/nav/en.js",
+		/*
 		".vuepress/config/nav/fr.js",
 		".vuepress/config/nav/it.js",
 		".vuepress/config/nav/nl.js",
 		".vuepress/config/nav/bg.js",
+		*/
 		".vuepress/config/sidebar/en.js",
+		/*
 		".vuepress/config/sidebar/fr.js",
 		".vuepress/config/sidebar/it.js",
 		".vuepress/config/sidebar/nl.js",
 		".vuepress/config/sidebar/bg.js",
+		*/
 	],
 };
