@@ -3,7 +3,7 @@ title: Commencer
 lang: fr-FR
 ---
 
-<notuptodate/>
+<NotUpToDate/>
 
 # Commencer
 Travaux en cours :construction_worker:

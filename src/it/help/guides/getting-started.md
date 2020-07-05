@@ -3,7 +3,7 @@ title: Per iniziare
 lang: it-IT
 ---
 
-<notuptodate/>
+<NotUpToDate/>
 
 # Per iniziare
 

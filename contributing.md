@@ -18,12 +18,12 @@ If you have any questions, you can ask them in #website-dev channel in our Disco
 
 > You can use a git client like [GitHub Desktop](https://desktop.github.com/) to manage your local repository.
 
-When your done submit a pull request. This can be done by navigating to the main page of the [website git repository](https://github.com/Paperback-iOS/website) and selecting 'pull request' at the top.  You may have to click the button titled **compare across forks**. Ensure that the base repository belongs to Paperback-iOS, whereas the head is your fork, and your branch.
+When your done submit a pull request. This can be done by navigating to the main page of the [website git repository](https://github.com/Paperback-iOS/website) and selecting "pull request" at the top. You may have to click the button titled **compare across forks**. Ensure that the base repository belongs to Paperback-iOS, whereas the head is your fork, and your branch.
 
 ### Running the website
 > When you make modifications to the site, you should validate your changes and formatting yourself first.
 
-See [Building local enviroment](https://github.com/Paperback-iOS/website#building-local-enviroment)
+See [Building local environment](https://github.com/Paperback-iOS/website#building-local-environment)
 
 ## Guidelines
 ### Glossary
@@ -39,9 +39,6 @@ See [Building local enviroment](https://github.com/Paperback-iOS/website#buildin
 * Paperback
 * MangaDex
 
-* AltStore
-* AltServer
-
 * Safari
 * macOS
 * iTunes
@@ -49,7 +46,7 @@ See [Building local enviroment](https://github.com/Paperback-iOS/website#buildin
 ### Components
 You can use the following components. Try not to abuse of `warning`.
 
-**[Vuepress Custom Containers](https://v1.vuepress.vuejs.org/guide/markdown.html#custom-containers)**
+**[VuePress Custom Containers](https://v1.vuepress.vuejs.org/guide/markdown.html#custom-containers)**
 ```markdown
 ::: tip Title
  Content
@@ -61,7 +58,7 @@ You can use the following components. Try not to abuse of `warning`.
 :::
 ```
 
-**[Vuepress Plugin Element Ui](https://lq782655835.github.io/vuepress-plugin-element-ui/)**
+**[VuePress Plugin Element Ui](https://lq782655835.github.io/vuepress-plugin-element-ui/)**
 ```markdown
 :::: el-tabs
 ::: el-tab-pane label="Tab1"
@@ -83,7 +80,7 @@ The following component creates a link allowing to download the latest public bu
 ```
 
 **Picture dialog windows**
-This component create a dialog component containing a picture. It is based on an Element dialog and is lazy loaded.
+This component create a dialog component containing a picture. It is based on an Element dialog and is lazy loaded. See [PR 32](https://github.com/Paperback-iOS/website/pull/32) for more informations.
  * `title`: title of the dialog window
  * `button`: text shown in the link
  * `src`: picture's path
@@ -92,7 +89,7 @@ This component create a dialog component containing a picture. It is based on an
 ```
 
 **Extensions list**
-The following component will create a coma separated list of the sources name contained in the repo.
+The following component will create a bullet list of the sources contained in the extension repo. This list will also render source tags.
 ```html
 <ExtensionsList url="https://paperback-ios.github.io/extensions"/>
 ```
@@ -100,7 +97,7 @@ The following component will create a coma separated list of the sources name co
 **"Not up to date" warning**
 You've made a major modification to the English version of the site and you want to show that a translation is not up to date? You can mark a page as "not up to date" by adding the following code at the top of the concerned page.
 ```html
-<notuptodate/>
+<NotUpToDate/>
 ```
 It will create a translated warning saying:
 > Major changes have been made in the English version of this page. We suggest you use the English revision until this page is up to date.
@@ -134,7 +131,7 @@ In development:
  * `src/.vuepress/config/sidebar/en.js` to `src/.vuepress/config/sidebar/LANG.js`
 
 **Edit `src/.vuepress/config.js` file:**
- * Localize and add the following code in `locales` dictionnary:
+ * Localize and add the following code in `locales` dictionary:
 ```js
 "/LANG": {
   lang: "en-US",
@@ -142,7 +139,7 @@ In development:
   description: "An ad-free manga reader for iOS.",
 },
 ```
- * Localize and add the following code in `themeConfig/locales` dictionnary:
+ * Localize and add the following code in `themeConfig/locales` dictionary:
 ```js
 "/LANG": {
   label: "English",
@@ -189,7 +186,7 @@ Please do not translate our privacy policy located in `website/src/privacy_polic
 </details>
 
 ## Technical informations
-This website is based on [Vuepress](https://vuepress.vuejs.org/) and is hosted on [GitHub Pages](https://pages.github.com/). 
-It use the theme [Yuu](https://vuepress-theme-yuu.netlify.app/) over Vuepress default theme with a custom [Home](.vuepress/components/PaperbackHome.vue) page.
+This website is based on [VuePress](https://vuepress.vuejs.org/) and is hosted on [GitHub Pages](https://pages.github.com/). 
+It use the theme [Yuu](https://vuepress-theme-yuu.netlify.app/) over VuePress default theme with a custom [Home](.vuepress/components/PaperbackHome.vue) page.
 
-We also use [Element](https://element.eleme.io/#/en-US) components for custom layouts and in markdown with [Vuepress Plugin Element Ui](https://lq782655835.github.io/vuepress-plugin-element-ui/).
+We also use [Element](https://element.eleme.io/#/en-US) components for custom layouts and in markdown with [VuePress Plugin Element UI](https://lq782655835.github.io/vuepress-plugin-element-ui/).

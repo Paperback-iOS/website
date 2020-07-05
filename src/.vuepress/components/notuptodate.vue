@@ -1,5 +1,5 @@
 <template>
-<div class="custom-block warning" v-if='this.$page.frontmatter.lang == "fr-FR"'>
+<div class="custom-block warning" v-if="$lang == 'fr-FR'">
   <p class="custom-block-title">
     Cette page n’est pas à jour.
   </p> 
