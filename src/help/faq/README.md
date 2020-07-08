@@ -16,7 +16,7 @@ There are no plans to adopt a formal business model. As long as Patreon covers t
 
 ### Where can I find this app?
 Currently an early version of the app is available on the App Store! [Click here](https://apps.apple.com/app/paperback-manga-reader/id1519509781) to download a copy.
-If you are a patreon, you will recieve an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the App Store.
+If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the App Store.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
 
