@@ -45,7 +45,7 @@ export default {
 	methods: {
 		getName(sourceName) {
 			// Return sourceName without the intext badges (18+, Country-Proof...)
-			return sourceName.replace(" (18+)", "").replace(" (Country-Proof)", "").replace("[FR] ", "")
+			return sourceName.replace(/[[|(][^(|[]+[\]|)]/g, "").trim()
 		},
 	},
 };
