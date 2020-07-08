@@ -1,5 +1,5 @@
 <!--
-Create a bullet list of sources from the external repo url.
+Create a bulleted list of sources from the external repository url.
 The component get the sources from the `versioning.json` file of the repo.
 The url argument must be of the form "https://paperback-ios.github.io/extensions" without a trailing slash.
 -->
