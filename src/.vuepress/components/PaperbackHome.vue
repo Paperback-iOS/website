@@ -3,7 +3,7 @@ Custom home page based on Vuepress default theme home page
 -->
 <template>
   <main
-    class="PaperbackHome"
+    class="home"
     aria-labelledby="main-title"
   >
     <header class="hero">
@@ -96,7 +96,7 @@ Custom home page based on Vuepress default theme home page
 import NavLink from '@theme/components/NavLink.vue'
 
 export default {
-  name: 'Home',
+  name: 'PaperbackHome',
   
   components: { NavLink },
 
