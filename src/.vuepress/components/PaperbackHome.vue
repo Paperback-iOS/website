@@ -96,7 +96,7 @@ Custom home page based on Vuepress default theme home page
 import NavLink from '@theme/components/NavLink.vue'
 
 export default {
-  name: 'Home',
+  name: 'PaperbackHome',
   
   components: { NavLink },
 
