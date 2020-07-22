@@ -3,7 +3,7 @@ Custom home page based on Vuepress default theme home page
 -->
 <template>
   <main
-    class="home"
+    class="PaperbackHome"
     aria-labelledby="main-title"
   >
     <header class="hero">
