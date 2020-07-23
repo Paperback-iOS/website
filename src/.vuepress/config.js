@@ -21,7 +21,7 @@ module.exports = {
 		"/": {
 			lang: "en-US",
 			title: "Paperback",
-			description: "An ad-free manga reader for iOS.",
+			description: "An ad-free manga reader for iOS and iPadOS.",
 		},
 		/*
 		"/fr/": {
