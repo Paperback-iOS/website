@@ -59,7 +59,7 @@ Then restart the app and go to Settings > Content Settings.
 ---
 
 ### My content settings are reset everytime I open the app
-When you are logging in, make sure that **Remember me** is checked on the page.
+When you are logging in, make sure that "**Remember me**" is checked on the page.
 Also make sure that your email address is verified on MangaDex.
 
 ---
