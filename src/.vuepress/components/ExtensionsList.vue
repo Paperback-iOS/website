@@ -51,3 +51,9 @@ methods: {
 
 };
 </script>
+
+<style lang="stylus">
+div
+	// Left align the extensions list
+	text-align left
+</style>
