@@ -24,8 +24,8 @@ Currently external sources are only available on the Beta version of the applica
 
 ## Known Repositories
 This is a list of all of the known repositories currently for Paperback, as well as the repository contents.
-| Repository Name | Base URL | Available Sources | Notes |
-| :-------------: | :------: | :---------------- | :---: |
-| **Official Repository** | Built into Paperback | <ExtensionsList url="https://paperback-ios.github.io/extensions"/> | Officially maintained repository, sources which are available and simply need enabled inside of the app |
-| **H-Extensions**    | https://paperback-ios.github.io/h-extensions | <ExtensionsList url="https://paperback-ios.github.io/h-extensions"/> | Official repository for 18+ sources. These also include redirector versions of the source, which allow you to view content even if it is blocked in your country, without a VPN |
-| **Beta Extensions** | https://conradweiser.github.io/extensions | <ExtensionsList url="https://conradweiser.github.io/extensions"/> | These extensions are upcoming to the official repository. These sources may or may not work |
+| Repository Name | Base URL | Available Sources | Notes | Add Repo (iOS Only) |
+| :-------------: | :------: | :---------------- | :---: | :---:
+| **Official Repository** | Built into Paperback | <ExtensionsList url="https://paperback-ios.github.io/extensions"/> | Officially maintained repository, sources which are available and simply need enabled inside of the app | Preinstalled |
+| **H-Extensions**    | https://paperback-ios.github.io/h-extensions | <ExtensionsList url="https://paperback-ios.github.io/h-extensions"/> | Official repository for 18+ sources. These also include redirector versions of the source, which allow you to view content even if it is blocked in your country, without a VPN | [Click Me](paperback://addRepo?url=https://paperback-ios.github.io/h-extensions&displayName=H-Extensions) |
+| **Beta Extensions** | https://conradweiser.github.io/extensions | <ExtensionsList url="https://conradweiser.github.io/extensions"/> | These extensions are upcoming to the official repository. These sources may or may not work | [Click Me](paperback://addRepo?url=https://conradweiser.github.io/extensions&displayName=Beta%20Extensions)
