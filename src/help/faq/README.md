@@ -50,7 +50,7 @@ In the app, go to Settings > Content Settings.
 ---
 
 ### How do I enable Hentai
- * Sign into [MangaDex website](https://mangadex.org/) on a browser and go to your settings to set Hentai toggle to "**View All**".
+ * Sign into [MangaDex’s website](https://mangadex.org/) on a browser, go to your settings, and set the Hentai toggle to "**View All**".
  * Then sign into MangaDex on Paperback, hitting "Remember me", and go into your *Content Settings* in the app settings tab and choose "**Show All**".
 
 ---
