@@ -75,7 +75,7 @@ Downloading manga is available on TestFlight public and patreon versions of the 
 ### How can I make a backup of my library?
 **Creating a backup**
  * Go to settings > backup
- * Press "**Create a backup**" and choose where you want to save the backup (Note is recommended)
+ * Press "**Create a backup**" and choose where you want to save the backup (We recommend you save them to your Notes app)
 
 **Restoring a backup**
  * Reinstall all sources used at the time of the backup
