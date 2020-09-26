@@ -40,8 +40,7 @@ If you are using the **Beta / Patron build**, they are usually unstable. If you 
 ---
 
 ### App crashes after trying to download a manga
-Downloading manga did not work on earlier version of the app.
-You will need either to delete and reinstall the app or  update to the latest TestFlight build to fix this issue.
+Downloading manga did not work on earlier version of the app. Update to the latest TestFlight build to fix this issue.
 
 ---
 
@@ -51,7 +50,7 @@ In the app, go to Settings > Content Settings.
 ---
 
 ### How do I enable Hentai
- * Sign into [MangaDex website]((https://mangadex.org/)) on a browser and go to your settings to set Hentai toggle to "**View All**".
+ * Sign into [MangaDex website](https://mangadex.org/) on a browser and go to your settings to set Hentai toggle to "**View All**".
  * Then sign into MangaDex on Paperback, hitting "Remember me", and go into your *Content Settings* in the app settings tab and choose "**Show All**".
 
 ---
@@ -62,8 +61,8 @@ Also make sure that your email address is verified on MangaDex.
 
 ---
 
-### I am on the public version of Paperback! How can I add other manga sources?
-Other manga sources are available on TestFlight public and patreon versions of the application. Update to the latest TestFlight build to use multiples sources.
+### How can I add other manga sources?
+Other manga sources are available on the latest TestFlight public and patreon versions of the application.
 Read [Adding an External Repository](/help/guides/adding-repos/) guide to learn how to install other sources.
 
 ---
@@ -85,8 +84,8 @@ Downloading manga is available on TestFlight public and patreon versions of the 
  * You can then press "Restore" to restore your backup
 
 **NOTE** 
- * Currently history tab is not saved in the backup
- * Manga wont be restored if their source is not installed
+ * Currently history tab is not saved in the backup process
+ * Manga won't be restored if their source is not installed
  * A video guide on how to make a backup is also available [on youtube](https://www.youtube.com/watch?v=5EPN9FORQ1g)
 
 ---
