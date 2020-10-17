@@ -15,8 +15,9 @@ There are no decent manga apps on **iOS** and **iPadOS** that have _non-intrusiv
 There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no fee to use Paperback.
 
 ### Where can I find this app?
-Currently an early version of the app is available on the App Store! [Click here](https://apps.apple.com/app/paperback-manga-reader/id1519509781) to download a copy.
-If you are a patreon, you will recieve an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the App Store.
+Currently an early version of the app is available on TestFlight! Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
+
+If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
 **NOTE** 
 * (August 1st): The app is currently not available in the US, UK, Canada, Japan, South Korea, New Zealand, India and South Africa. We're working on getting the app back into the Appstore in those countries, but if you want to get the app you can make a new Apple ID from a country outside of the blocked countries.
