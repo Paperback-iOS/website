@@ -7,6 +7,7 @@ lang: en-US
 
 ## Installation
 Currently an early version of the app is available on TestFlight!
+
 If you are a patron, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The Patreon version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
 ::: warning Warning
