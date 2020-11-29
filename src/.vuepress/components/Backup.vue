@@ -1,12 +1,13 @@
 <template>
 	<span>
+
 		<el-button type="text" @click="successDialogVisible = true">Open Conversion Result Dialog</el-button>
 
 		<!-- Successful Backup Conversion Dialog -->
 		<el-dialog title="Successful backup conversion" :visible.sync="successDialogVisible" center>
 			<!-- Download Button -->
 			<div style="text-align: center">
-		  		<el-button type="primary" plain @click="downloadData">Download Paperback backup</el-button>
+		  		<el-button type="primary" plain @click="downloadData">Download Paperback backup <i class="el-icon-download"></i></el-button>
 			</div>
 
 			<!-- Unresolved items list -->
@@ -114,7 +115,9 @@ export default {
 				}, (error) => {
 					console.log("Error")
 					console.log(error.response.data)
-					// Show and error alert
+
+					// Show an error alert
+					// https://element.eleme.io/#/en-US/component/message-box
 					this.$alert(error.response.data, 'The conversion failed', {
 						confirmButtonText: 'Cancel',
 						type: 'warning'
@@ -155,14 +158,12 @@ export default {
 
 <style lang="stylus">
 .upload-backup
-	text-align: center;
+	text-align center
 .el-upload-dragger
-	background-color: #fbfdff;
-	border: 1.2px dashed #d9d9d9;
+	background-color #fbfdff
+	border 1.2px dashed #d9d9d9
 .instruction
-    /* Make instructions bold and larger */
-    font-size: 1.65rem;
-    font-weight: 600;
-    line-height: 1.25;
-}
+	font-size 1.65rem
+	font-weight 600
+	line-height 1.25
 </style>
