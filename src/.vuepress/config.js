@@ -14,7 +14,9 @@ module.exports = {
 		["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
 		["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
 		["meta", { name: "msapplication-TileImage", content: "/icons/msapplication-icon-144x144.png" }],
-		["meta", { name: "msapplication-TileColor", content: "#D21A1C" }]
+		["meta", { name: "msapplication-TileColor", content: "#D21A1C" }],
+		// Custom headers
+		["script", {src: "/scripts/remove_service_worker.js"}],
 	],
 
 	locales: {

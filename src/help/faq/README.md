@@ -15,8 +15,14 @@ There are no decent manga apps on **iOS** and **iPadOS** that have _non-intrusiv
 There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no fee to use Paperback.
 
 ### Where can I find this app?
-Currently an early version of the app is available on the App Store! [Click here](https://apps.apple.com/app/paperback-manga-reader/id1519509781) to download a copy.
-If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the App Store.
+Currently an early version of the app is available on TestFlight! Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
+
+If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the public one.
+
+**NOTE** 
+* (August 1st): The app is currently not available in the US, UK, Canada, Japan, South Korea, New Zealand, India and South Africa. We're working on getting the app back into the Appstore in those countries, but if you want to get the app you can make a new Apple ID from a country outside of the blocked countries.
+
+* (August 11th): The public build will now be on TestFlight for 1,499 users. This limit will increase with time as we figure out how to publish the app.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
 
@@ -81,9 +87,16 @@ Swipe a couple of pages away and then come back to the failed page, it should ha
 
 ---
 
+### Manga are not showing up in my library after I follow them?
+* Sign into MangaDex on a browser and go to your settings to set the H toggle to "*Show All.*"
+* Then you need to sign into MangaDex on Paperback, hitting remember me for a year, and go into your *Content Settings* in the app to again, "*Show All*."
+
+---
+
 ### I can't find X manga but it's on MangaDex
  * If the manga is REALLY new (1st chapter added in the last hour) it wont be available until after an hour.
  * If the manga isn't new, chances are it's restricted. At the moment, the app doesn't support reading restricted manga. Read the manga on the website instead.
+ * The manga may be licensed for the MangaDex extension, but you may try to find the other titles on other [community sources](https://paperback.moe/help/guides/adding-repos/).
 
 ---
 
@@ -92,6 +105,11 @@ Syncing more than 1,000 manga will take some time however, you can improve this 
 
  * On Safari, go to [MangaDex Follows](https://mangadex.org/follows/manga/) and change the display list to **Simple list** from the menu in the top right of the table.
 
+---
+
+### How do notifications work?
+The app will periodically check for updates in the background when iOS allocates time for it. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
+ 
 ---
 
 ### Sorting by Latest Updates doesn't work
