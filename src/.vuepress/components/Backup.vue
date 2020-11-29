@@ -1,8 +1,6 @@
 <template>
 	<span>
-
-		<el-button type="text" @click="successDialogVisible = true">open a Table nested Dialog</el-button>
-
+		<el-button type="text" @click="successDialogVisible = true">Open Conversion Result Dialog</el-button>
 
 		<!-- Successful Backup Conversion Dialog -->
 		<el-dialog title="Successful backup conversion" :visible.sync="successDialogVisible" center>
@@ -21,18 +19,10 @@
 			</div>
 		</el-dialog>
 
-
 		<!-- Page content -->
-		<div class="custom-block warning">
-			<p class="custom-block-title">Warning</p>
-			<p> Recently Tachiyomi updated their backup formatting from <code>.json</code> to a <code>.gz</code>
-			extension using Protocol Buffers. This tool will only work
-			on the new version of backups. Legacy backups are unsupported.</p>
-		</div>
-
-		<h2 class="ui header">
+		<p class="instruction">
 			Provide a Tachiyomi <code>.gz</code> Backup
-		</h2>
+		</p>
 
 		<!--
 			ref="upload" is used to call clearFiles()
@@ -49,36 +39,6 @@
 			<div class="el-upload__text">Drop backup here or <em>click to upload</em></div>
 			<div class="el-upload__tip" slot="tip">Upload a Tachiyomi <code>.proto.gz</code> backup</div>
 		</el-upload>
-
-		</br>
-
-		<div class="sourcelist">
-
-			<h2 class="ui header">
-				Supported Sources
-			</h2>
-
-			<p>
-				Because Tachiyomi and Paperback both work with community-created sources, the backup conversion process can only use
-        		sources which both Paperback and Tachiyomi share. 
-			</p>
-			<p>
-				Below is a list of Tachiyomi sources which this tool is able to handle.
-			</p>
-
-			<ul>
-				<li>Manganelo</li>
-				<li>MangaDex</li>
-				<li>MangaLife</li>
-				<li>Mangasee</li>
-				<li>MangaReader</li>
-				<li>Guya</li>
-			</ul>
-
-			<p class="subtitle">
-				Additional source functionality will be added in the near future
-			</p>
-		</div>
 
 	</span>
 </template>
@@ -199,23 +159,10 @@ export default {
 .el-upload-dragger
 	background-color: #fbfdff;
 	border: 1.2px dashed #d9d9d9;
-.sourcelist
-	/* Element
-	background-color: #fbfdff;
-	padding: 1rem;
-	border: 1.2px #d9d9d9;
-	border-radius: 6px;
-	*/
-	// Tachi
-	background-color: #f0f4f8;
-
-	border-radius: .4rem;
-	margin: 1rem 0;
-	padding: 0.2rem 2rem;
-
-	h2
-		//margin-top: 0px;
-	.subtitle
-		color: rgba(0,0,0,.4);
-		font-size: .9rem;
+.instruction
+    /* Make instructions bold and larger */
+    font-size: 1.65rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
 </style>
