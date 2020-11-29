@@ -11,7 +11,7 @@ Currently an early version of the app is available on TestFlight!
 If you are a patron, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The Patreon version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
 ::: warning Warning
-This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the app will CRASH. Paperback is NOT designed for older iOS versions.
+This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the app will CRASH. Paperback is NOT designed for older iOS and iPadOS versions.
 :::
 
 :::: el-tabs

@@ -7,7 +7,7 @@ module.exports = {
 	head: [
 		["link", { rel: "icon", href: "/favicon.ico" }],
 		["link", { rel: "manifest", href: "/manifest.json" }],
-		["link", { rel: "apple-touch-icon", href: "/icons/apple-touch-icon-152x152.png" }],
+		["link", { rel: "apple-touch-icon", href: "/icons/apple-touch-icon.png" }],
 		["link", { rel: "mask-icon", href: "/icons/safari-pinned-tab.svg", color: "#D21A1C" }],
 		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://paperback.moe/icons/logo.png" }],
 		["meta", { name: "theme-color", content: "#D21A1C" }],
@@ -23,7 +23,7 @@ module.exports = {
 		"/": {
 			lang: "en-US",
 			title: "Paperback",
-			description: "An ad-free manga reader for iOS.",
+			description: "An ad-free manga reader for iOS and iPadOS.",
 		},
 		/*
 		"/fr/": {

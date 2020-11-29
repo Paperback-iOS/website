@@ -5,7 +5,7 @@ lang: en-US
 
 # External Source Repositories
 ## What is an External Repository?
-**Paperback** out of the box only comes with **MangaDex** as a source for manga. The app however has support for adding sources from external repositories which are not on the official listings. Beta Sources, 18+ Sources, and sources developed independently are seperated due to **Paperback** having to adhere to Apple policies in order to be distributed through TestFlight and the Apple App Store. 
+**Paperback** out of the box only comes with **MangaDex** as a source for manga. The app however has support for adding sources from external repositories which are not on the official listings. Beta Sources, 18+ Sources, and sources developed independently are separated due to **Paperback** having to adhere to Apple policies in order to be distributed through TestFlight and the Apple App Store. 
 
 
 ## Adding an External Repository
@@ -21,7 +21,7 @@ lang: en-US
 ## Known Repositories
 This is a list of all of the known repositories currently for Paperback, as well as the repository contents.
 | Repository Name | Base URL | Available Sources | Notes |
-| :-------------: | :------: | :---------------- | :---: |
+| :-------------: | :------: | :---------------: | :---: |
 | **Official Repository** | Built into Paperback | <ExtensionsList url="https://paperback-ios.github.io/extensions"/> | Officially maintained repository, sources which are available and simply need enabled inside of the app |
 | **H-Extensions**    | https://paperback-ios.github.io/h-extensions | <ExtensionsList url="https://paperback-ios.github.io/h-extensions"/> | Official repository for 18+ sources. These also include redirector versions of the source, which allow you to view content even if it is blocked in your country, without a VPN |
 | **Beta Extensions** | https://conradweiser.github.io/extensions | <ExtensionsList url="https://conradweiser.github.io/extensions"/> | These extensions are upcoming to the official repository. These sources may or may not work |
