@@ -155,7 +155,6 @@ export default {
 
 </script>
 
-
 <style lang="stylus">
 .upload-backup
 	text-align center
@@ -166,4 +165,5 @@ export default {
 	font-size 1.65rem
 	font-weight 600
 	line-height 1.25
+
 </style>
