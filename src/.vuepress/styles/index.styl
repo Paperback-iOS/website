@@ -33,6 +33,25 @@ ol
 	ol:last-child
 		margin-bottom 0em
 
+// Custom block containers
+.custom-block
+	&.tip,
+	&.warning,
+	&.error,
+	&.danger
+		border-radius $containerBorderRadius
+	&.aside
+		color transparentify($textColor, 0.4)
+		font-size 0.9rem
+		text-align right
+	&.aside-guide
+		font-size 0.9rem
+		text-align left
+		p
+			margin-top 0
+		a
+			color $accentColorSecondary
+
 // Yuu theme changes
 .yuu-theme-dark
 	.sw-update-popup
@@ -89,6 +108,10 @@ ol
 		background #252525
 		&__title
 			color #f3f3f3
+	.guide
+		background-color #2a2a2a
+	.aside
+		color transparentify($darkTextColor, 0.4)
 	// Yuu theme colors
 	&.yuu-theme-purple
 		.el-tabs
@@ -106,24 +129,14 @@ ol
 				color $redAccentColor
 			&__active-bar
 				background-color $redAccentColor
-// Custom block containers
-.custom-block
-	&.tip,
-	&.warning,
-	&.error,
-	&.danger
-		border-radius $containerBorderRadius
-	&.aside
-		color transparentify($textColor, 0.4)
-		font-size 0.9rem
-		text-align right
-	&.aside-guide
-		font-size 0.9rem
-		text-align left
-		p
-			margin-top 0
-		a
-			color $accentColorSecondary
+.yuu-theme-purple
+	// Upload component
+	.el-upload-dragger .el-upload__text em
+		color $purpleAccentColor
+.yuu-theme-red
+	// Upload component
+	.el-upload-dragger .el-upload__text em
+			color $redAccentColor
 
 // Guide container
 .guide
