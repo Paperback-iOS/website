@@ -32,6 +32,14 @@ ol
 		margin-top 0em
 	ol:last-child
 		margin-bottom 0em
+// Element UI table
+.el-table
+	tr
+		&:nth-child(2n)
+			// Use the same color as default tables
+			background-color #f6f8fa
+
+
 
 // Custom block containers
 .custom-block
@@ -51,6 +59,10 @@ ol
 			margin-top 0
 		a
 			color $accentColorSecondary
+
+
+//&:nth-child(2n)
+  //  background-color #f6f8fa
 
 // Yuu theme changes
 .yuu-theme-dark
@@ -118,7 +130,38 @@ ol
 		color transparentify($darkTextColor, 0.4)
 		
 	
+	
+	.el-table
+		color: $darkTextColor;
+		background-color: $darkPrimaryBg;
+		tr
+			background-color: $darkPrimaryBg;
+		//tr:hover
+		//	background-color: $darkSecondaryBg;
 
+		// Remove for two colors table
+		//tr:nth-child(2n)								//#fbfdff
+		//	background-color: $darkPrimaryBg;
+		th
+			background-color: $darkPrimaryBg;
+			color: $darkTextColor;
+	    .el-table__body
+			background-color: $darkSecondaryBg
+		.el-table--enable-row-hover // overrite
+			.el-table__body 
+				tr:hover > td {background-color :transparentify($textColor, 0.4) }//{background-color: $darkSecondaryBg}
+		th, td
+			border-style: none;	// Remove the default borders
+	.el-table__row
+		tr
+			background-color: $purpleAccentColor
+	
+	//.el-table--enable-row-hover 
+	//	.el-table__body 
+	//		td:hover
+	//			background-color: $darkSecondaryBg
+	.el-table--enable-row-hover
+		background-color: $darkSecondaryBg
 	// Yuu theme colors
 	&.yuu-theme-purple
 		.el-tabs
@@ -199,3 +242,6 @@ ol
 // Bold class
 .bold
 	font-weight bold
+
+	
+    			

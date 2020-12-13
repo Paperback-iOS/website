@@ -18,12 +18,37 @@
 					<el-table-column property="mangaTitle" label="Manga Title" ></el-table-column>
 				</el-table>
 			</div>
+			<div v-if="convertedBackupData.noConverted.length != 0">
+				<p>The conversion was successful but {{convertedBackupData.noConverted.length}} items could not be resolved</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Source Id</th>
+							<th>Manga Title</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr v-for="item in convertedBackupData.noConverted">
+							<td>{{item.sourceId}}</td>
+							<td>{{item.mangaTitle}}</td>
+						</tr>
+					</tbody>
+			</table>
+			</div>
 		</el-dialog>
 
 		<!-- Page content -->
 		<p class="instruction">
 			Provide a Tachiyomi <code>.gz</code> Backup
 		</p>
+
+		<el-table :data="[{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},
+
+		
+		]">
+					<el-table-column property="sourceId" label="Source Id" ></el-table-column>
+					<el-table-column property="mangaTitle" label="Manga Title" ></el-table-column>
+				</el-table>
 
 		<!--
 			ref="upload" is used to call clearFiles()
