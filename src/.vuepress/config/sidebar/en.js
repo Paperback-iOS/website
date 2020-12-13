@@ -6,4 +6,9 @@ module.exports = [
 		collapsable: false,
 		children: ["/help/guides/getting-started", "/help/guides/adding-repos"],
 	},
+	{
+		title: "Tools",
+		collapsable: false,
+		children: ["/tools/backup-converter"],
+	},
 ];

@@ -20,6 +20,20 @@ module.exports = [
 		],
 	},
 	{
+		text: "Tools",
+		items: [
+			{
+				text: "Tools",
+				items: [
+					{
+						text: "Backup Converter",
+						link: "/tools/backup-converter/",
+					},
+				],
+			},
+		],
+	},
+	{
 		text: "Links",
 		items: [
 			{
