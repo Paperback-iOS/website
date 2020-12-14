@@ -12,7 +12,7 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 			:key="extension.id"
 			>
 				{{ getName(extension.name) }}
-				<span v-for="tag in extension.tags"> <el-tag :type="tag.type" size="mini" effect="dark">{{ tag.text }}</el-tag> </span>
+				<span v-for="tag in extension.tags" :key="tag.text"> <el-tag :type="tag.type" size="mini" effect="dark">{{ tag.text }}</el-tag> </span>
 			</li>
 		</ul>		
 	</div>
