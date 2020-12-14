@@ -22,6 +22,7 @@ lang: en-US
 This is a list of all of the known repositories currently for Paperback, as well as the repository contents.
 | Repository Name | Base URL | Available Sources | Notes |
 | :-------------: | :------: | :---------------: | :---: |
-| **Official Repository** | Built into Paperback | <ExtensionsList url="https://paperback-ios.github.io/extensions"/> | Officially maintained repository, sources which are available and simply need enabled inside of the app |
-| **H-Extensions**    | https://paperback-ios.github.io/h-extensions | <ExtensionsList url="https://paperback-ios.github.io/h-extensions"/> | Official repository for 18+ sources. These also include redirector versions of the source, which allow you to view content even if it is blocked in your country, without a VPN |
-| **Beta Extensions** | https://conradweiser.github.io/extensions | <ExtensionsList url="https://conradweiser.github.io/extensions"/> | These extensions are upcoming to the official repository. These sources may or may not work |
+| **Primary Sources**   | https://paperback-ios.github.io/extensions-beta | <ExtensionsList url="https://paperback-ios.github.io/extensions-beta"/> | Officialy maintained repository, contains a few major sources suited for most users |
+| **H-Extensions**      | https://paperback-ios.github.io/h-extensions | <ExtensionsList url="https://paperback-ios.github.io/h-extensions"/> | Official repository for 18+ sources. These also include redirector versions of the source, which allow you to view content even if it is blocked in your country, without a VPN |
+| **MangaDex Unlocked** | https://pogogo007.github.io/extensions-beta | <ExtensionsList url="https://pogogo007.github.io/extensions-beta"/> | This source overwrites MangaDex and unlocks the full contents of the website. No content is filtered. May load faster than the built-in version of the source |
+| **Beta Extensions**   | https://conradweiser.github.io/extensions | <ExtensionsList url="https://conradweiser.github.io/extensions"/> | These extensions are upcoming to the official repository. These sources may or may not work |
