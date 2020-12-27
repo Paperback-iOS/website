@@ -67,7 +67,7 @@ export default {
 			successDialogVisible: false,	// Show the Successful Backup Conversion Dialog
 			convertedBackupData: {			// Will countain data of the converted backup
 				filename: "",
-				text: [],
+				text: [],					// JSON countaining the converted backup
 				noConverted: []
 				},
 		};
@@ -151,13 +151,22 @@ export default {
 
 		// The data is in the dictionnary convertedBackupData
 		var element = document.createElement('a')
-		element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(this.$data.convertedBackupData.text))
+
+		// We use a blob element instead of the data url
+		//element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(this.$data.convertedBackupData.text))
+
+		const blob = new Blob([ JSON.stringify(this.$data.convertedBackupData.text) ], { type: 'application/json' });
+		const url = URL.createObjectURL(blob);
+
+		element.setAttribute('href', url)
 		element.setAttribute('download', this.$data.convertedBackupData.filename)
 
 		element.style.display = 'none'
 		document.body.appendChild(element)
 		element.click()
 		document.body.removeChild(element)
+
+		URL.revokeObjectURL(url);
 		}
 	},
 
