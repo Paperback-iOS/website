@@ -117,9 +117,17 @@ ol
 			border-color #90611a47
 	// Picture dialog windows
 	.el-dialog
-		background #252525
+		background $darkSecondaryBg
 		&__title
-			color #f3f3f3
+			color $darkTextColor
+		.el-dialog__body
+			color $darkTextColor
+		table
+			// As dialog background color is $darkSecondaryBg, the second cell color need to be overwritten
+			tr
+				background-color: $darkPrimaryBg;
+			tr:nth-child(2n)
+				background-color: $darkSecondaryBg;
 	// El-loading
 	.el-loading-mask
 		background-color: $darkPrimaryBg

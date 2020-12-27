@@ -4,20 +4,13 @@
 		<el-button type="text" @click="successDialogVisible = true">Open Conversion Result Dialog</el-button>
 
 		<!-- Successful Backup Conversion Dialog -->
-		<el-dialog title="Successful backup conversion" :visible.sync="successDialogVisible" center>
+		<el-dialog title="Successful backup conversion" :visible.sync="successDialogVisible" center :width=dialogWidth>
 			<!-- Download Button -->
-			<div style="text-align: center">
+			<div class="downloadBackup">
 		  		<el-button type="primary" plain @click="downloadData">Download Paperback backup <i class="el-icon-download"></i></el-button>
 			</div>
 
 			<!-- Unresolved items list -->
-			<div v-if="convertedBackupData.noConverted.length != 0">
-				<p>The conversion was successful but {{convertedBackupData.noConverted.length}} items could not be resolved</p>
-				<el-table :data="convertedBackupData.noConverted">
-					<el-table-column property="sourceId" label="Source Id" ></el-table-column>
-					<el-table-column property="mangaTitle" label="Manga Title" ></el-table-column>
-				</el-table>
-			</div>
 			<div v-if="convertedBackupData.noConverted.length != 0">
 				<p>The conversion was successful but {{convertedBackupData.noConverted.length}} items could not be resolved</p>
 				<table>
@@ -29,7 +22,7 @@
 					</thead>
 					<tbody>
 						<tr v-for="item in convertedBackupData.noConverted">
-							<td>{{item.sourceId}}</td>
+							<td class="sourceID">{{item.sourceId}}</td>
 							<td>{{item.mangaTitle}}</td>
 						</tr>
 					</tbody>
@@ -41,14 +34,6 @@
 		<p class="instruction">
 			Provide a Tachiyomi <code>.gz</code> Backup
 		</p>
-
-		<el-table :data="[{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},{'sourceId':'720698779193817891', 'mangaTitle':'4 Cut Hero'},
-
-		
-		]">
-					<el-table-column property="sourceId" label="Source Id" ></el-table-column>
-					<el-table-column property="mangaTitle" label="Manga Title" ></el-table-column>
-				</el-table>
 
 		<!--
 			ref="upload" is used to call clearFiles()
@@ -85,6 +70,7 @@ export default {
 				text: [],
 				noConverted: []
 				},
+			dialogWidth: (window.innerWidth  < 1150) ? '90%' : '70%',	// Make the dialog larger on small screen
 		};
 	},
 	
@@ -94,7 +80,7 @@ export default {
 			console.log("Sending the backup to the server");
 
 			// First, read the file contents
-			console.log("File:");
+			console.log("Tachiyomi backup:");
 			console.log(data.file);
 
 			var form = new FormData()
@@ -130,7 +116,7 @@ export default {
 					this.$data.convertedBackupData.text = response.data.paperbackBackup
 					this.$data.convertedBackupData.noConverted = response.data.noConvert
 
-					console.log("Filename:", this.$data.convertedBackupData.filename, "Paperback backup", this.$data.convertedBackupData.text, "Unresolved items", this.$data.convertedBackupData.noConverted)
+					console.log("Filename:", this.$data.convertedBackupData.filename, "Paperback backup:", this.$data.convertedBackupData.text, "Unresolved items:", this.$data.convertedBackupData.noConverted)
 
 					// Show the dialog allowing the user to download its backup
 					this.$data.successDialogVisible = true
@@ -190,5 +176,14 @@ export default {
 	font-size 1.65rem
 	font-weight 600
 	line-height 1.25
+.downloadBackup
+	text-align center
+	padding-bottom 1rem
+table
+	display table
+	width 100%
+	table-layout auto
+	.sourceID
+		text-align center
 
 </style>
