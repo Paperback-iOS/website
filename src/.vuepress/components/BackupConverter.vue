@@ -4,7 +4,7 @@
 		<el-button type="text" @click="successDialogVisible = true">Open Conversion Result Dialog</el-button>
 
 		<!-- Successful Backup Conversion Dialog -->
-		<el-dialog title="Successful backup conversion" :visible.sync="successDialogVisible" center :width=dialogWidth>
+		<el-dialog title="Successful backup conversion" :visible.sync="successDialogVisible" center width="80%">
 			<!-- Download Button -->
 			<div class="downloadBackup">
 		  		<el-button type="primary" plain @click="downloadData">Download Paperback backup <i class="el-icon-download"></i></el-button>
@@ -70,7 +70,6 @@ export default {
 				text: [],
 				noConverted: []
 				},
-			dialogWidth: (window.innerWidth  < 1150) ? '90%' : '70%',	// Make the dialog larger on small screen
 		};
 	},
 	
