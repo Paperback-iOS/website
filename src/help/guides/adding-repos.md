@@ -21,9 +21,25 @@ lang: en-US
 ## Known Repositories
 This is a list of all of the known repositories currently for Paperback, as well as the repository contents.
 
-| Repository Name/URL | Available Sources | Notes | Add Repo (iOS Only) |
-| :------------------ | :---------------- | :---- | :-----------------: |
-| **Primary Sources** <br> https://paperback-ios.github.io/extensions-beta | <ExtensionsList url="https://paperback-ios.github.io/extensions-beta"/> | Officialy maintained repository, contains a few major sources suited for most users | [Add to Paperback](paperback://addRepo?displayName=Primary%20Sources&url=https://paperback-ios.github.io/extensions-beta) |
-| **H-Extensions** <br> https://paperback-ios.github.io/h-extensions | <ExtensionsList url="https://paperback-ios.github.io/h-extensions"/> | Official repository for 18+ sources. These also include redirector versions of the source, which allow you to view content even if it is blocked in your country, without a VPN | [Add to Paperback](paperback://addRepo?displayName=H-Extensions&url=https://paperback-ios.github.io/h-extensions) |
-| **MangaDex Unlocked** <br> https://pogogo007.github.io/extensions-beta | <ExtensionsList url="https://pogogo007.github.io/extensions-beta"/> | This source overwrites MangaDex and unlocks the full contents of the website. No content is filtered. May load faster than the built-in version of the source | [Add to Paperback](paperback://addRepo?displayName=MangaDex%20Unlocked&url=https://pogogo007.github.io/extensions-beta) |
-| **Beta Extensions** <br> https://conradweiser.github.io/extensions | <ExtensionsList url="https://conradweiser.github.io/extensions"/> | These extensions are upcoming to the official repository. These sources may or may not work | [Add to Paperback](paperback://addRepo?displayName=Beta%20Extensions&url=https://conradweiser.github.io/extensions) |
+<table>
+<thead> 
+<tr>
+<th colspan="4">Paperback Sources</th>
+</tr>
+</thead> 
+<tbody>
+<tr>
+<td><b>Primary Sources<b></td>
+<td>https://paperback-ios.github.io/extensions-beta</td>
+<td><a href="paperback://addRepo?displayName=Primary%20Sources&url=https://paperback-ios.github.io/extensions-beta">Add to Paperback</a></td>
+</tr>
+<tr>
+<td colspan="3">
+Officialy maintained repository, contains a few major sources suited for most users
+</td>
+</tr>
+<tr>
+<ExtensionsList url="https://paperback-ios.github.io/extensions-beta"/>
+</tr>
+</tbody>
+</table>
