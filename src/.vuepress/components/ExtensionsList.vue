@@ -5,16 +5,35 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 -->
 
 <template>
-	<div>
-		<ul id="v-for-object">
-			<li v-for="extension in extensions"
-			:id="extension.name"
-			:key="extension.id"
-			>
-				{{ getName(extension.name) }}
-				<span v-for="tag in extension.tags" :key="tag.text"> <el-tag :type="tag.type" size="mini" effect="dark">{{ tag.text }}</el-tag> </span>
-			</li>
-		</ul>		
+	<div style="display: contents">
+		<tr>
+			<td><b>{{ name }}</b></td>
+			<td>{{ url }}</td>
+			<td><a :href="encodedURL()">Add to Paperback</a></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				{{ description }}
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<ul id="v-for-object">
+					<li
+						v-for="extension in extensions"
+						:id="extension.name"
+						:key="extension.id"
+					>
+						{{ getName(extension.name) }}
+						<span v-for="tag in extension.tags" :key="tag.text">
+							<el-tag :type="tag.type" size="mini" effect="dark">
+								{{ tag.text }}
+							</el-tag>
+						</span>
+					</li>
+				</ul>
+			</td>
+		</tr>
 	</div>
 </template>
 
@@ -25,6 +44,14 @@ export default {
 	props: {
 		// Url of the extensions repo
 		url: {
+			type: String,
+			required: true,
+		},
+		name: {
+			type: String,
+			required: true,
+		},
+		description: {
 			type: String,
 			required: true,
 		},
@@ -45,17 +72,28 @@ export default {
 	methods: {
 		getName(sourceName) {
 			// Return sourceName without the intext badges (18+, Country-Proof...)
-			return sourceName.replace(/[[|(][^(|[]+[\]|)]/g, "").trim()
+			return sourceName.replace(/[[|(][^(|[]+[\]|)]/g, "").trim();
+		},
+		encodedURL() {
+			return (
+				"paperback://addRepo?displayName=" +
+				encodeURI(this.$props.name) +
+				"&url=" +
+				encodeURI(this.$props.url)
+			);
 		},
 	},
 };
 </script>
 
 <style lang="stylus">
-div
-	// Left align the extensions list
-	text-align left
-.el-tag
-	margin-left 2px
-	margin-right 2px
+div {
+  // Left align the extensions list
+  text-align: left;
+}
+
+.el-tag {
+  margin-left: 2px;
+  margin-right: 2px;
+}
 </style>
