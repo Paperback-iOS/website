@@ -7,7 +7,9 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 <template>
 	<div style="display: contents">
 		<tr>
-			<td><b>{{ name }}</b></td>
+			<td>
+				<b>{{ name }}</b>
+			</td>
 			<td>{{ url }}</td>
 			<td><a :href="encodedURL()">Add to Paperback</a></td>
 		</tr>
@@ -18,24 +20,60 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 		</tr>
 		<tr>
 			<td colspan="3">
-				<ul id="v-for-object">
+				<ul id="v-for-object" class="extensionList">
 					<li
 						v-for="extension in extensions"
 						:id="extension.name"
 						:key="extension.id"
 					>
-						{{ getName(extension.name) }}
-						<span v-for="tag in extension.tags" :key="tag.text">
-							<el-tag :type="tag.type" size="mini" effect="dark">
-								{{ tag.text }}
-							</el-tag>
-						</span>
+					
+						<ElTooltip placement="bottom" v-if="extension.tags.length > 0">
+							<template #content>
+								<div>
+									<span
+										v-for="tag in extension.tags"
+										:key="tag.text"
+									>
+										<el-tag
+											:type="tag.type"
+											size="mini"
+											effect="dark"
+										>
+											{{ tag.text }}
+										</el-tag>
+									</span>
+								</div>
+							</template>
+							<span><b>•</b> {{ getName(extension.name) }}</span>
+						</ElTooltip>
+						<span v-else><b>•</b> {{ getName(extension.name) }}</span>
 					</li>
 				</ul>
 			</td>
 		</tr>
 	</div>
 </template>
+
+<style scoped>
+.extensionList {
+	padding: 0;
+	margin: 0;
+}
+.extensionList li {
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 10px;
+}
+.extensionList li p {
+	margin: 0;
+}
+span {
+	margin-right: 5px;
+}
+span:last-child {
+	margin-right: 0;
+}
+</style>
 
 <script>
 import axios from "axios";
@@ -85,15 +123,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="stylus">
-div {
-  // Left align the extensions list
-  text-align: left;
-}
-
-.el-tag {
-  margin-left: 2px;
-  margin-right: 2px;
-}
-</style>
