@@ -5,29 +5,22 @@ lang: en-US
 
 # External Source Repositories
 ## What is an External Repository?
-**Paperback** out of the box only comes with **MangaDex** as a source for manga. The app however has support for adding sources from external repositories which are not on the official listings. Beta Sources, 18+ Sources, and sources developed independently are separated due to **Paperback** having to adhere to Apple policies in order to be distributed through TestFlight and the Apple App Store. 
-
+**Paperback** out of the box only comes with **SafeDex** as a source for manga. The app however has support for adding sources from external repositories which are not on the official listings. Beta Sources, 18+ Sources, and sources developed independently are separated due to **Paperback** having to adhere to Apple policies in order to be distributed through TestFlight and the Apple App Store. 
 
 ## Adding an External Repository
-1. Open up Paperback on your device
-1. Navigate to the **Settings** tab of the application
-1. Navigate to the **Sources** tab inside of Settings
-1. At the bottom of the page, you are able to add a repository by specifying a name, and the URL which the repository sits at. Ensure that your repository title is at least 4 characters long
-    > Reference the [Known Repositories](/help/guides/adding-repos/#known-repositories) section for a list of known repositories, their links, and what they contain
-1. Tap "**Add**"
-1. Select the repository that you have added, which should have appeared in the list of repositories on this page
-    > If you do not see sources, you may have typed in your Base URL incorrectly. Delete the repository and try again. If you do see sources, congratulations!
+1. Visit [Known Repositories](/help/guides/adding-repos/#known-repositories) on your Device's web browser.
+2. Add a Source Repository by tapping "Add to Paperback".
+
+## Installing a Source from a repository
+1. Follow [Adding an External Repository](/help/guides/adding-repos/#adding-an-external-repository) to add a source repository to Paperback.
+2. Navigate to the **Settings** tab then tap **Sources** menu item.
+3. Tap on the previously added repository under the "Repositories" section.
+4. Choose a source to install.
 
 ## Known Repositories
 This is a list of all of the known repositories currently for Paperback, as well as the repository contents.
 
 <table>
-    <!-- <thead> 
-        <tr>
-            <th colspan="2">Paperback Source list</th>
-            <th>Action</th>
-        </tr>
-    </thead>  -->
     <tbody>
         <ExtensionsList
             url="https://paperback-ios.github.io/extensions-beta"
