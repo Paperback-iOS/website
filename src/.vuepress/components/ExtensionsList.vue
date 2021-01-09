@@ -7,9 +7,7 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 <template>
 	<div style="display: contents">
 		<tr>
-			<td>
-				<b>{{ name }}</b>
-			</td>
+			<td><b>{{ name }}</b></td>
 			<td>{{ url }}</td>
 			<td><a :href="encodedURL()">Add to Paperback</a></td>
 		</tr>
@@ -54,25 +52,20 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 	</div>
 </template>
 
-<style scoped>
-.extensionList {
-	padding: 0;
-	margin: 0;
-}
-.extensionList li {
-	display: inline-block;
-	vertical-align: top;
-	padding-right: 10px;
-}
-.extensionList li p {
-	margin: 0;
-}
-span {
-	margin-right: 5px;
-}
-span:last-child {
-	margin-right: 0;
-}
+<style lang="stylus" scoped>
+.extensionList
+	padding 0
+	margin 0
+	li
+		display inline-block
+		vertical-align top
+		padding-right 10px
+		p
+			margin 0
+span
+	margin-right 5px
+	&:last-child
+		margin-right 0
 </style>
 
 <script>
