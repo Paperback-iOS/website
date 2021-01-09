@@ -5,54 +5,67 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 -->
 
 <template>
-	<div style="display: contents">
-		<tr>
-			<td><b>{{ name }}</b></td>
-			<td>{{ url }}</td>
-			<td><a :href="encodedURL()">Add to Paperback</a></td>
-		</tr>
-		<tr>
-			<td colspan="3">
-				{{ description }}
-			</td>
-		</tr>
-		<tr>
-			<td colspan="3">
-				<ul id="v-for-object" class="extensionList">
-					<li
-						v-for="extension in extensions"
-						:id="extension.name"
-						:key="extension.id"
-					>
-					
-						<ElTooltip placement="bottom" v-if="extension.tags.length > 0">
-							<template #content>
-								<div>
-									<span
-										v-for="tag in extension.tags"
-										:key="tag.text"
-									>
-										<el-tag
-											:type="tag.type"
-											size="mini"
-											effect="dark"
+	<table>
+		<thead>
+			<tr>
+				<th><b>{{ name }}</b></th>
+				<th>{{ url }}</th>
+				<th><a :href="encodedURL()">Add to Paperback</a></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="3">
+					{{ description }}
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<ul id="v-for-object" class="extensionList">
+						<li
+							v-for="extension in extensions"
+							:id="extension.name"
+							:key="extension.id"
+						>
+						
+							<ElTooltip placement="bottom" v-if="extension.tags.length > 0">
+								<template #content>
+									<div>
+										<span
+											v-for="tag in extension.tags"
+											:key="tag.text"
 										>
-											{{ tag.text }}
-										</el-tag>
-									</span>
-								</div>
-							</template>
-							<span><b>•</b> {{ getName(extension.name) }}</span>
-						</ElTooltip>
-						<span v-else><b>•</b> {{ getName(extension.name) }}</span>
-					</li>
-				</ul>
-			</td>
-		</tr>
-	</div>
+											<el-tag
+												:type="tag.type"
+												size="mini"
+												effect="dark"
+											>
+												{{ tag.text }}
+											</el-tag>
+										</span>
+									</div>
+								</template>
+								<span><b>•</b> {{ getName(extension.name) }}</span>
+							</ElTooltip>
+							<span v-else><b>•</b> {{ getName(extension.name) }}</span>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </template>
 
 <style lang="stylus" scoped>
+table
+	width 100%
+	display table
+	thead
+		th
+			text-align left
+			&:last-child
+				text-align center
+
 .extensionList
 	padding 0
 	margin 0
@@ -62,6 +75,7 @@ The url argument must be of the form "https://paperback-ios.github.io/extensions
 		padding-right 10px
 		p
 			margin 0
+
 span
 	margin-right 5px
 	&:last-child

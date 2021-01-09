@@ -20,26 +20,21 @@ lang: en-US
 ## Known Repositories
 This is a list of all of the known repositories currently for Paperback, as well as the repository contents.
 
-<table>
-    <tbody>
-        <ExtensionsList
-            url="https://paperback-ios.github.io/extensions-beta"
-            name="Primary Sources"
-            description="Officialy maintained repository, contains a few major sources suited for most users"/>
-            <br>
-        <ExtensionsList 
-            url="https://paperback-ios.github.io/h-extensions"
-            name="H-Extensions"
-            description="Official repository for 18+ sources. These also include redirector versions of the source, which allow you to view content even if it is blocked in your country, without a VPN"/>
-            <br>
-        <ExtensionsList 
-            url="https://pogogo007.github.io/extensions-beta"
-            name="MangaDex Unlocked"
-            description="This source overwrites MangaDex and unlocks the full contents of the website. No content is filtered. May load faster"/>
-            <br>
-        <ExtensionsList 
-            url="https://conradweiser.github.io/extensions"
-            name="Beta Extensions"
-            description="These extensions are upcoming to the official repository. These sources may or may not work"/>
-    </tbody>
-</table>
+<div>
+    <ExtensionsList
+        url="https://paperback-ios.github.io/extensions-beta"
+        name="Primary Sources"
+        description="Officialy maintained repository, contains a few major sources suited for most users"/>
+    <ExtensionsList 
+        url="https://paperback-ios.github.io/h-extensions"
+        name="H-Extensions"
+        description="Official repository for 18+ sources. These also include redirector versions of the source, which allow you to view content even if it is blocked in your country, without a VPN" />
+    <ExtensionsList 
+        url="https://pogogo007.github.io/extensions-beta"
+        name="MangaDex Unlocked"
+        description="This source overwrites MangaDex and unlocks the full contents of the website. No content is filtered. May load faster" />
+    <ExtensionsList 
+        url="https://conradweiser.github.io/extensions"
+        name="Beta Extensions"
+        description="These extensions are upcoming to the official repository. These sources may or may not work" />
+</div>
