@@ -9,13 +9,13 @@ lang: en-US
 
 ## Adding an External Repository
 1. Visit [Known Repositories](/help/guides/adding-repos/#known-repositories) on your Device's web browser.
-2. Add a Source Repository by tapping "**Add to Paperback**".
+1. Add a Source Repository by tapping "**Add to Paperback**".
 
 ## Installing a Source from a repository
 1. Follow [Adding an External Repository](/help/guides/adding-repos/#adding-an-external-repository) to add a source repository to Paperback.
-2. Navigate to the **Settings** tab then tap **Sources** menu item.
-3. Tap on the previously added repository under the "Repositories" section.
-4. Choose a source to install.
+1. Navigate to the **Settings** tab then tap **Sources** menu item.
+1. Tap on the previously added repository under the "Repositories" section.
+1. Choose a source to install.
 
 ## Known Repositories
 This is a list of all of the known repositories currently for Paperback, as well as the repository contents.
