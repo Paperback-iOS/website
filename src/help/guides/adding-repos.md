@@ -24,7 +24,7 @@ This is a list of all of the known repositories currently for Paperback, as well
     <ExtensionsList
         url="https://paperback-ios.github.io/extensions-beta"
         name="Primary Sources"
-        description="Officially maintained repository, contains a few major sources suited for most users"/>
+        description="Officially maintained repository, contains a few major sources suited for most users" />
     <ExtensionsList 
         url="https://paperback-ios.github.io/h-extensions"
         name="H-Extensions"
