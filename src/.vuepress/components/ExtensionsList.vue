@@ -1,7 +1,7 @@
 <!--
-Create a bulleted list of sources from the external repository url.
-The component get the sources from the `versioning.json` file of the repo.
-The url argument must be of the form "https://paperback-ios.github.io/extensions" without a trailing slash.
+Create a table representing an external repository.
+The component gets the sources from the `versioning.json` file of the repo.
+The url argument must point to the webpage hosting the `versioning.json` file and must not have a trailing slash EX:https://paperback-ios.github.io/extensions.
 -->
 
 <template>
