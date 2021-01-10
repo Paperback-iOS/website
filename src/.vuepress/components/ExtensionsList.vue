@@ -58,8 +58,8 @@ The url argument must point to the webpage hosting the `versioning.json` file an
 
 <style lang="stylus" scoped>
 table
-	width 100%
-	display table
+	width 100% !important
+	display unset
 	thead
 		th
 			text-align left
