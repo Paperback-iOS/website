@@ -9,15 +9,16 @@ The url argument must point to the webpage hosting the `versioning.json` file an
 		<thead>
 			<tr>
 				<th><b>{{ name }}</b></th>
-				<th>{{ url }}</th>
+				<th class="hidden-md-and-down">{{ url }}</th>
 				<th><a :href="encodedURL()">Add to Paperback</a></th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td colspan="3">
-					{{ description }}
-				</td>
+				<td colspan="3" class="hidden-lg-and-up"><b>{{ url }}</b></td>
+			</tr>
+			<tr>
+				<td colspan="3">{{ description }}</td>
 			</tr>
 			<tr>
 				<td colspan="3">
@@ -57,14 +58,16 @@ The url argument must point to the webpage hosting the `versioning.json` file an
 </template>
 
 <style lang="stylus" scoped>
+
 table
 	width 100% !important
-	display unset
+	display table
 	thead
 		th
 			text-align left
 			&:last-child
 				text-align center
+				max-width 100px
 
 .extensionList
 	padding 0
@@ -84,6 +87,7 @@ span
 
 <script>
 import axios from "axios";
+import 'element-ui/lib/theme-chalk/display.css';
 
 export default {
 	props: {
