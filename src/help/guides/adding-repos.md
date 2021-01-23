@@ -33,8 +33,4 @@ This is a list of all of the known repositories currently for Paperback, as well
         url="https://pogogo007.github.io/extensions-beta"
         name="MangaDex Unlocked"
         description="This source overwrites MangaDex and unlocks the full contents of the website. No content is filtered. May load faster" />
-    <ExtensionsList 
-        url="https://conradweiser.github.io/extensions"
-        name="Beta Extensions"
-        description="These extensions are upcoming to the official repository. These sources may or may not work" />
 </div>
