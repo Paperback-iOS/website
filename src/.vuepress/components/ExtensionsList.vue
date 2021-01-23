@@ -29,7 +29,7 @@ The url argument must point to the webpage hosting the `versioning.json` file an
 							:key="extension.id"
 						>
 						
-							<ElTooltip placement="bottom" v-if="extension.tags.length > 0">
+							<ElTooltip placement="bottom" v-if="extension.tags != undefined && extension.tags.length > 0">
 								<template #content>
 									<div>
 										<span
