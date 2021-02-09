@@ -15,15 +15,9 @@ There are no decent manga apps on **iOS** and **iPadOS** that have _non-intrusiv
 There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no fee to use Paperback.
 
 ### Where can I find this app?
-Currently an early version of the app is available on the App Store! [Click here](https://apps.apple.com/app/paperback-manga-reader/id1519509781) to download a copy.
-If you are a patreon, you will recieve an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the App Store.
+Currently an early version of the app is available through TestFlight. Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
 
-**NOTE** 
- * (August 1st): The app is currently not available in the US, UK, Canada, Japan, South Korea, New Zealand, India and South Africa. We're working on getting the app back into the App Store in those countries, but if you want to get the app you can make a new Apple ID from a country outside of the blocked countries.
-
- * (August 11th): The public build will now be on TestFlight for 1,499 users. This limit will increase with time as we figure out how to publish the app.
- 
-Check Paperback Discord server for more information.
+If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback beta through TestFlight. This version of the application contains many additional beta features which can be used before it becomes available on the App Store.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
 
@@ -56,7 +50,7 @@ In the app, go to Settings > Content Settings.
 ---
 
 ### My content settings are reset everytime I open the app
-When you are logging in, make sure that **"Remember me"** is checked on the page.
+When you are logging in, make sure that "**Remember me**" is checked on the page.
 Also make sure that your email address is verified on MangaDex.
 
 ---
@@ -67,31 +61,35 @@ Read [Adding an External Repository](/help/guides/adding-repos/) guide to learn 
 
 ---
 
-### I am on the public version of Paperback! When can I download manga to my device for offline viewing?
-Downloading manga is available on TestFlight public and patreon versions of the application. Update to the latest TestFlight build to be able to download manga.
+### How can I download manga to my device for offline viewing?
+ * On your manga page scroll down until you see "All Chapters"
+ * Press "**View**" then "**Edit**"
+ * Select what you want to download
+ * Press "**Manage**" then "**Queue Download**"
+
+<PictureDialog title="Download manga" button="GIF" src="/assets/DownloadManga.gif"/>
+
+Repeat the same steps to remove downloaded chapters
 
 ---
 
 ### How can I make a backup of my library?
 **Creating a backup**
- * Go to settings > backup
+ * Go to Settings > Backups
  * Press "**Create a backup**" and choose where you want to save the backup (We recommend you save them to your Notes app)
 
 **Restoring a backup**
- * Reinstall all sources used at the time of the backup
  * Go to your previously saved backup and press the share icon
  * Select "**Copy to Paperback**" action
- * You can then press "Restore" to restore your backup
+ * You can then press "**Restore**" to restore your backup
 
 **NOTE** 
- * Currently history tab is not saved in the backup process
- * Manga won't be restored if their source is not installed
  * A video guide on how to make a backup is also available [on youtube](https://www.youtube.com/watch?v=5EPN9FORQ1g)
 
 ---
 
 ### How to export a source logs?
-Go to Settings > Sources. Press the settings icon on the right of the source then select "**Share logs**". You may need to scroll a bit, "Share logs" is under "Turn Homepage ON/OFF" option. <PictureDialog title="Export a source logs" button="Image" src="/assets/ExportLogs.jpeg"/>
+Go to Settings and press "**Export logs**"
 
 ---
 
