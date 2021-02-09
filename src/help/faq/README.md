@@ -130,7 +130,9 @@ Syncing more than 1,000 manga will take some time however, you can improve this 
 ---
 
 ### How do notifications work?
-The app will periodically check for updates in the background when iOS or iPadOS allocates time for it. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
+The app will periodically check for updates in the background when iOS or iPadOS allocates time for it, this should be improved as you use the app and iOS learns to prioritize the app's background jobs over others. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
+
+Sources supporting notifications have a <el-tag type="success" size="mini" effect="dark">Notifications</el-tag> badge in the app and the [repositories list](/help/guides/adding-repos/#known-repositories).
  
 ---
 
