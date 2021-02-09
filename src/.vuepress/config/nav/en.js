@@ -12,7 +12,7 @@ module.exports = [
 						link: "/help/guides/getting-started/",
 					},
 					{
-						text: "Adding External Repositories",
+						text: "External Repositories",
 						link: "/help/guides/adding-repos/",
 					},
 				],
