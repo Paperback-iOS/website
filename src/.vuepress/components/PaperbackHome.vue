@@ -39,7 +39,19 @@ Custom home page based on Vuepress default theme home page
 
       <!-- Download on the App Store button -->
       <p class="action">
-        <a href="https://apps.apple.com/app/paperback-manga-reader/id1519509781"> 
+        <!--<a href="https://apps.apple.com/app/paperback-manga-reader/id1519509781"> 
+          <img
+            :src="'/assets/AppStore/AppStore_' + data.lang + '_White.svg'"
+            alt="Download on the App Store"
+            class="darkrendered"
+          > 
+          <img
+            :src="'/assets/AppStore/AppStore_' + data.lang + '_Black.svg'"
+            :alt="data.buttonDownload"
+            class="lightrendered"
+          >   
+        </a>-->
+        <a href="https://testflight.apple.com/join/c235f6rS"> 
           <img
             :src="'/assets/AppStore/AppStore_' + data.lang + '_White.svg'"
             alt="Download on the App Store"
