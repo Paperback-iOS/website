@@ -1,8 +1,6 @@
 <template>
 	<span>
 
-		<el-button type="text" @click="successDialogVisible = true">Open Conversion Result Dialog</el-button>
-
 		<!-- Successful Backup Conversion Dialog -->
 		<el-dialog title="Successful backup conversion" :visible.sync="successDialogVisible" center width="80%">
 			<!-- Download Button -->
