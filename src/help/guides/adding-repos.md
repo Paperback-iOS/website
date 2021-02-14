@@ -45,11 +45,15 @@ Following repositories will only work on Paperback version prior to 2.X.X. Use t
 ---
 
 :::warning Promises sources
-The following repository will only work on the most recent beta (version 2.X.X).
+Following repositories will only work on the most recent beta (version 2.X.X).
 :::
 <div>
     <ExtensionsList
         url="https://paperback-ios.github.io/extensions-promises"
         name="[Promises] Primary Sources"
         description="ONLY WORKS IN BETA 2.X.X Some additional sources for the app" />
+    <ExtensionsList
+        url="https://paperback-ios.github.io/h-extensions/promises"
+        name="[PROMISES] H-Extensions"
+        description="ONLY WORKS IN BETA 2.X.X Official repository for 18+ sources" />
 </div>
