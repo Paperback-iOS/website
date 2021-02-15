@@ -20,6 +20,9 @@ lang: en-US
 ## Known Repositories
 This is a list of all of the known repositories currently for Paperback, as well as the repository contents.
 
+:::warning Classic sources
+Following repositories will only work on Paperback version prior to 2.X.X. Use them on the public version of the app.
+:::
 <div>
     <ExtensionsList
         url="https://paperback-ios.github.io/extensions-beta"
@@ -29,8 +32,28 @@ This is a list of all of the known repositories currently for Paperback, as well
         url="https://paperback-ios.github.io/h-extensions"
         name="H-Extensions"
         description="Official repository for 18+ sources. These also include redirector versions of the source, which allow you to view content even if it is blocked in your country, without a VPN" />
+    <ExtensionsList
+        url="https://paperback-ios.github.io/extensions-foreign"
+        name="Foreign Extensions"
+        description="Contains official sources for languages other than English" />
     <ExtensionsList 
         url="https://pogogo007.github.io/extensions-beta"
         name="MangaDex Unlocked"
         description="This source overwrites MangaDex and unlocks the full contents of the website. No content is filtered. May load faster" />
+</div>
+
+---
+
+:::warning Promises sources
+Following repositories will only work on the most recent beta (version 2.X.X).
+:::
+<div>
+    <ExtensionsList
+        url="https://paperback-ios.github.io/extensions-promises"
+        name="[Promises] Primary Sources"
+        description="ONLY WORKS IN BETA 2.X.X Some additional sources for the app" />
+    <ExtensionsList
+        url="https://paperback-ios.github.io/h-extensions/promises"
+        name="[PROMISES] H-Extensions"
+        description="ONLY WORKS IN BETA 2.X.X Official repository for 18+ sources" />
 </div>
