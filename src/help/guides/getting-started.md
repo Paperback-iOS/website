@@ -20,7 +20,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 #### Instructions
 1. Remove every other version of Paperback
 1. Download the [TestFlight app](https://apps.apple.com/fr/app/testflight/id899247664) from App Store
-1. Accept the invite by going here [https://testflight.apple.com/join/c235f6rS](https://testflight.apple.com/join/c235f6rS) or redeem the code `c235f6rS`
+1. Accept the invite by going here [https://testflight.apple.com/join/DPmSzDEL](https://testflight.apple.com/join/DPmSzDEL) or redeem the code `DPmSzDEL`
 1. Download the application through TestFlight
    > Whenever there is an update to the application, you will have to return to TestFlight and select the "Update" button next to the app. It does not do this process automatically. If the setting is enabled for TestFlight, you will get a push notification to your device whenever an update is available
 :::

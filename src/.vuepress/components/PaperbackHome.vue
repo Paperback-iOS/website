@@ -51,7 +51,7 @@ Custom home page based on Vuepress default theme home page
             class="lightrendered"
           >   
         </a>-->
-        <a href="https://testflight.apple.com/join/c235f6rS"> 
+        <a href="https://testflight.apple.com/join/DPmSzDEL"> 
           <img
             :src="'/assets/AppStore/AppStore_' + data.lang + '_White.svg'"
             alt="Download on the App Store"
