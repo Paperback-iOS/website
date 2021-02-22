@@ -62,7 +62,7 @@ Following repositories will only work on the most recent beta (version 2.X.X).
         description="ONLY WORKS IN BETA 2.X.X Contains sources using the Madara templa
 te" />
     <ExtensionsList
-        url="https://gamefuzzy.github.io/extensions-genkan"
+        url="https://dev.gamefuzzy.me/extensions-genkan"
         name="[PROMISES] Genkan Extensions"
         description="ONLY WORKS IN BETA 2.X.X Contains scanlation sources using the Genkan template" />
 </div>
