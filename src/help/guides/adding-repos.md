@@ -59,8 +59,7 @@ Following repositories will only work on the most recent beta (version 2.X.X).
     <ExtensionsList
         url="https://paperback-ios.github.io/extensions-madara"
         name="[PROMISES] Madara Extensions"
-        description="ONLY WORKS IN BETA 2.X.X Contains sources using the Madara templa
-te" />
+        description="ONLY WORKS IN BETA 2.X.X Contains sources using the Madara template" />
     <ExtensionsList
         url="https://dev.gamefuzzy.me/extensions-genkan"
         name="[PROMISES] Genkan Extensions"
