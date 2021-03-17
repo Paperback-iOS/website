@@ -23,18 +23,18 @@ This is a list of all of the known repositories currently for Paperback, as well
 <div>
     <ExtensionsList
         url="https://paperback-ios.github.io/extensions-promises"
-        name="[PROMISES] Primary Sources"
-        description="ONLY WORKS IN BETA 2.X.X Some additional sources for the app" />
+        name="Primary Sources"
+        description="Some additional sources for the app" />
     <ExtensionsList
         url="https://paperback-ios.github.io/h-extensions/promises"
-        name="[PROMISES] H-Extensions"
-        description="ONLY WORKS IN BETA 2.X.X Official repository for 18+ sources" />
+        name="H-Extensions"
+        description="Official repository for 18+ sources" />
     <ExtensionsList
         url="https://paperback-ios.github.io/extensions-madara"
-        name="[PROMISES] Madara Extensions"
-        description="ONLY WORKS IN BETA 2.X.X Contains sources using the Madara template" />
+        name="Madara Extensions"
+        description="Contains sources using the Madara template" />
     <ExtensionsList
         url="https://dev.gamefuzzy.me/extensions-genkan"
-        name="[PROMISES] Genkan Extensions"
-        description="ONLY WORKS IN BETA 2.X.X Contains scanlation sources using the Genkan template" />
+        name="Genkan Extensions"
+        description="Contains scanlation sources using the Genkan template" />
 </div>
