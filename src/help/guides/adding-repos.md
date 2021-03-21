@@ -5,6 +5,7 @@ lang: en-US
 
 # External Source Repositories
 ## What is an External Repository?
+
 **Paperback** out of the box only comes with **SafeDex** as a source for manga. The app however has support for adding sources from external repositories which are not on the official listings. Beta Sources, 18+ Sources, and sources developed independently are separated due to **Paperback** having to adhere to Apple policies in order to be distributed through TestFlight and the Apple App Store.
 
 ## Adding an External Repository

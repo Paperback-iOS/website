@@ -15,14 +15,9 @@ There are no decent manga apps on **iOS** and **iPadOS** that have _non-intrusiv
 There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no fee to use Paperback.
 
 ### Where can I find this app?
-Currently an early version of the app is available on TestFlight! Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
+Currently an early version of the app is available through TestFlight. Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
 
-If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the public one.
-
-**NOTE** 
-* (August 1st): The app is currently not available in the US, UK, Canada, Japan, South Korea, New Zealand, India and South Africa. We're working on getting the app back into the Appstore in those countries, but if you want to get the app you can make a new Apple ID from a country outside of the blocked countries.
-
-* (August 11th): The public build will now be on TestFlight for 1,499 users. This limit will increase with time as we figure out how to publish the app.
+If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback beta through TestFlight. The TestFlight version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
 
@@ -39,7 +34,7 @@ If you are using the **Beta / Patron build**, they are usually unstable. If you 
 ---
 
 ### App crashes after trying to download a manga
-Downloading manga currently does not work and breaks the app. You will need to delete and reinstall the app to fix this issue.
+Downloading manga did not work on earlier version of the app. Update to the latest TestFlight build to fix this issue.
 
 ---
 
@@ -48,25 +43,53 @@ In the app, go to Settings > Content Settings.
 
 ---
 
-### I am on the public version of Paperback! When will other manga sources be added?
-Currently other manga sources are already available on the patreon version of the application. Sources on the public version of the app are expected to come most likely at the end of July.
-
----
-
-### I am on the public version of Paperback! When can I download manga to my device for offline viewing?
-Currently downloading manga is already available on the patreon version of the application. Sources on the public version of the app are expected to come most likely at the end of July.
-
----
-
 ### How do I enable Hentai
-Go to [MangaDex Settings](https://mangadex.org/settings) and login. Look for the **Hentai toggle** and choose **Show toggle (in navbar cog)**.
-Then restart the app and go to Settings > Content Settings.
+ * Sign into [MangaDex’s website](https://mangadex.org/) on a browser, go to your settings, and set the Hentai toggle to "**View All**".
+ * Then sign into MangaDex on Paperback, hitting "Remember me", and go into your *Content Settings* in the app settings tab and choose "**Show All**".
 
 ---
 
 ### My content settings are reset everytime I open the app
 When you are logging in, make sure that "**Remember me**" is checked on the page.
 Also make sure that your email address is verified on MangaDex.
+
+---
+
+### How can I add other manga sources?
+Other manga sources are available on the latest TestFlight public and patreon versions of the application.
+Read [Adding an External Repository](/help/guides/adding-repos/) guide to learn how to install other sources.
+
+---
+
+### How can I download manga to my device for offline viewing?
+ * On your manga page scroll down until you see "All Chapters"
+ * Press "**View**" then "**Edit**"
+ * Select what you want to download
+ * Press "**Manage**" then "**Queue Download**"
+
+<PictureDialog title="Download manga" button="GIF" src="/assets/DownloadManga.gif"/>
+
+Repeat the same steps to remove downloaded chapters
+
+---
+
+### How can I make a backup of my library?
+**Creating a backup**
+ * Go to Settings > Backups
+ * Press "**Create a backup**" and choose where you want to save the backup (We recommend you save them to your Notes app)
+
+**Restoring a backup**
+ * Go to your previously saved backup and press the share icon
+ * Select "**Copy to Paperback**" action
+ * You can then press "**Restore**" to restore your backup
+
+**NOTE** 
+ * A video guide on how to make a backup is also available [on youtube](https://www.youtube.com/watch?v=5EPN9FORQ1g)
+
+---
+
+### How to export a source logs?
+Go to Settings and press "**Export logs**"
 
 ---
 
@@ -81,22 +104,21 @@ Swipe a couple of pages away and then come back to the failed page, it should ha
 
 ---
 
-### Pages often fail/take a long time to load
+### Pages often fail/take a long time to load on MangaDex source
  * If you're in SEA (Southeast Asia) get a VPN (Psiphon or ProtonVPN) MangaDex servers have routing issues in SEA.
  * If you're not in SEA and still face this issue, see if there's any announcements in the MangaDex discord about issues or maintenance.
 
 ---
 
 ### Manga are not showing up in my library after I follow them?
-* Sign into MangaDex on a browser and go to your settings to set the H toggle to "*Show All.*"
-* Then you need to sign into MangaDex on Paperback, hitting remember me for a year, and go into your *Content Settings* in the app to again, "*Show All*."
+You need to enable hentai for hentai title to be shown in the library. See [how do I enable Hentai](#how-do-i-enable-hentai).
 
 ---
 
 ### I can't find X manga but it's on MangaDex
  * If the manga is REALLY new (1st chapter added in the last hour) it wont be available until after an hour.
  * If the manga isn't new, chances are it's restricted. At the moment, the app doesn't support reading restricted manga. Read the manga on the website instead.
- * The manga may be licensed for the MangaDex extension, but you may try to find the other titles on other [community sources](https://paperback.moe/help/guides/adding-repos/).
+ * The manga may be licensed for the MangaDex extension, but you may try to find the other titles on other [community sources](/help/guides/adding-repos/#known-repositories).
 
 ---
 
@@ -108,7 +130,9 @@ Syncing more than 1,000 manga will take some time however, you can improve this 
 ---
 
 ### How do notifications work?
-The app will periodically check for updates in the background when iOS allocates time for it. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
+The app will periodically check for updates in the background when iOS or iPadOS allocates time for it, this should be improved as you use the app and iOS learns to prioritize the app's background jobs over others. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
+
+Sources supporting notifications have a <el-tag type="success" size="mini" effect="dark"> Notifications </el-tag> badge in the app and the [repositories list](/help/guides/adding-repos/#known-repositories).
  
 ---
 
