@@ -1,3 +1,6 @@
-<script type="text/javascript">
-window.location.href = "google.com"
-</script>
+---
+title: addRepo
+lang: en-US
+sidebar: false
+---
+<DeeplinkParser/>
