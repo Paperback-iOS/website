@@ -19,7 +19,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr v-for="item in convertedBackupData.noConverted">
+						<tr v-for="item in convertedBackupData.noConverted" :key="item.sourceId">
 							<td class="sourceID">{{item.sourceId}}</td>
 							<td>{{item.mangaTitle}}</td>
 						</tr>
