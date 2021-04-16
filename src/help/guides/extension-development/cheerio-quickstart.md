@@ -4,6 +4,7 @@ We're sure that you've noticed at this point that when we're handling HTTP parsi
 
 If you are not familiar, CheerioJS is a library which allows you to programmatically pull information from HTML. This is the core fundamental on how Paperback works. Each source that you create is simply a set of parsing logic.
 
+CheerioJS, just like JQuery, utilizes **CSS Selectors** as the mode of selecting elements. This means that any selector that can be used to style elements with CSS can be used to select elements with Cheerio.
 
 
 # Quick Reference Guide
@@ -23,7 +24,9 @@ $('div.apple').text()	// Gets the text of the first 'div' block which ALSO has c
 <p id="someText" lang="en">
     This is some text
 </p>
+```
 ------------
+```ts
 $('p#someText').text()		// This will return 'This is some text'
 $('p#someText').attr('lang')	// This will return 'en'
 ```
@@ -44,7 +47,7 @@ Say in the above HTML, you need to parse out the 'Text that I want' phrase. Unfo
 
 * You cannot select `$('p.someClass')` as this will select the wrong element. (The root node)
 
-Lets look at the signature for the `$` object. `$(selector, rootNode)`
+Let's look at the signature for the `$` object. `$(selector, rootNode)`
 
 In the above examples, we've only used a selector. However you are allowed to chain selectors together to be more and more specific.
 
