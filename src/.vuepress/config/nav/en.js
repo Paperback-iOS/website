@@ -72,6 +72,10 @@ module.exports = [
 			{
 				text: "Function Definitions",
 				link: "/help/guides/extension-development/function-definitions/"
+			},
+			{
+				text: "Model Reference",
+				link: "/help/guides/extension-development/model-reference"
 			}
 		]
 	}

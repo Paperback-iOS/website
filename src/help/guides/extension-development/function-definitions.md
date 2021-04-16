@@ -1,13 +1,18 @@
 # Required Methods
 ## getMangaDetails
+### Method signature
 `async getMangaDetails(mangaId: string): Promise<Manga>`
 
-- A manga ID is defined by the source developer. However IDs are provided to Paperback in other functions, will be given to this function in the same format.
+### Parameters
+| Parameter | Type | Description|
+|-----------|------|------------|
+|  mangaId  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
 
-Given an ID, this async function should return a filled out Manga object.
+### Returns
+Given an ID, this async function should return a filled out [Manga](model-reference.md#Manga) object.
 
-Example Implementation:
-```typescript
+### Example Implementation
+```ts
 async getMangaDetails(mangaId: string): Promise<Manga> {
 
     // Create a request object which when executed, will yield a HTML page containing the data needed to fill out a Manga object
@@ -38,13 +43,19 @@ async getMangaDetails(mangaId: string): Promise<Manga> {
 ```
 
 ## getChapters
+### Method signature
 `async getChapters(mangaId: string): Promise<Chapter[]>`
 
-- A manga ID is defined by the source developer. However IDs are provided to Paperback in other functions, will be given to this function in the same format.
+### Parameters
+| Parameter | Type | Description|
+|-----------|------|------------|
+|  mangaId  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
 
-Given an ID, this async function should get all available chapters for a provided chapter.
+### Return
 
-Example Implementation:
+Given an ID, this async function should return an array of [Chapter](model-reference.md#Chapter) objects.
+
+### Example Implementation
 ```typescript
 async getChapters(mangaId: string): Promise<Chapter[]> {
 
@@ -87,12 +98,17 @@ async getChapters(mangaId: string): Promise<Chapter[]> {
 ```
 
 ## getChapterDetails
+### Method Signature
 `async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDetails>`
 
-- A manga ID is defined by the source developer. However IDs are provided to Paperback in other functions, will be given to this function in the same format.
-- A ChapterID is defined by the [Get Chapters](#getChapters) method. However it is returned there, will be fed into this function.
+### Parameters
+| Parameter | Type | Description|
+|-----------|------|------------|
+|  mangaId  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
+| chapterId | String | The ID of a chapter. defined by the [Get Chapters](#getchapters) method. The chapter ID can only contain letters, numbers, dashes and underscores. |
 
-Given both a Manga and a Chapter ID, this function should populate a ChapterDetails object, which goes into further detail of what each chapter contains.
+### Returns
+Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](model-reference.md#ChapterDetails) object.
 
 Example Implementation:
 ```typescript
