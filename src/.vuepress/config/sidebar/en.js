@@ -3,7 +3,7 @@ module.exports = [
 	{ title: "FAQ", path: "/help/faq/" },
 	{
 		title: "Guides",
-		collapsable: false,
+		collapsable: true,
 		children: ["/help/guides/getting-started", "/help/guides/adding-repos"],
 	},
 	{
@@ -11,4 +11,9 @@ module.exports = [
 		collapsable: false,
 		children: ["/tools/backup-converter"],
 	},
+	{
+		title: "Source Development",
+		collapsable: true,
+		children: ["/help/guides/extension-development/intro-to-sources", "/help/guides/extension-development/cheerio-quickstart", "/help/guides/extension-development/function-definitions"]
+	}
 ];
