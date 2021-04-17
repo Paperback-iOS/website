@@ -49,7 +49,7 @@ async getMangaDetails(mangaId: string): Promise<Manga> {
 ### Parameters
 | Parameter | Type | Description|
 |-----------|------|------------|
-|  mangaId  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
+|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
 
 ### Returns
 
@@ -104,8 +104,8 @@ async getChapters(mangaId: string): Promise<Chapter[]> {
 ### Parameters
 | Parameter | Type | Description|
 |-----------|------|------------|
-|  mangaId  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
-| chapterId | String | The ID of a chapter. defined by the [Get Chapters](#getchapters) method. The chapter ID can only contain letters, numbers, dashes and underscores. |
+|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
+| `chapterId` | String | The ID of a chapter. defined by the [Get Chapters](#getchapters) method. The chapter ID can only contain letters, numbers, dashes and underscores. |
 
 ### Returns
 Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](model-reference.md#ChapterDetails) object.
@@ -151,8 +151,8 @@ async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDeta
 ### Parameters
 | Parameter | Type | Description|
 |-----------|------|------------|
-| query | [SearchRequest](model-reference.md#searchrequest) | The object representing the search. View the fields of the [SearchRequest](model-reference.md#searchrequest) object to find out what a search can contain. |
-| metadata | any | Metadata carried through function calls. View the [metadata page](metadata.md) to learn more about how the parameter works. |
+| `query` | [SearchRequest](model-reference.md#searchrequest) | The object representing the search. View the fields of the [SearchRequest](model-reference.md#searchrequest) object to find out what a search can contain. |
+| `metadata` | any | Metadata carried through function calls. View the [metadata page](metadata.md) to learn more about how the parameter works. |
 
 # Optional Methods
 To be filled out
