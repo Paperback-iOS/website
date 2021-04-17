@@ -1,5 +1,35 @@
 # Models
 
+## Function Wrappers
+
+Most of the specialized object types have a corresponding wrapper functions. While developing a source, these wrappers
+seem to be nonfunctional. However, these wrappers are crucial, as they are the bridge between the JavaScript layer that
+the extension runs on, and the Swift layer that the app runs on. The wrappers convert the Javascript object into a Swift
+object that the app can use.
+
+::: danger Warning
+Not wrapping a created object with a wrapper function **will cause the app to crash** once the app
+gets the object. There will also be no way to find out which object was the cause of the crash, and the unit tests will
+not easily reveal the missing wrapper, as the conversion is only done within the app. The crashing behavior may be fixed
+in a later version of the app, where the source will just fail instead of bringing the app down along with it.
+:::
+
+::: tip Tip
+Every time an object is created using braces (`{}`), it should always be wrapped.
+:::
+
+### List of Wrapper Functions
+
+- `createChapter` for [Chapter](#chapter) objects.
+- `createChapterDetails` for [ChapterDetails](#chapterdetails) objects.
+- `createIconText` for [IconText](#icontext) objects.
+- `createManga` for [Manga](#manga) objects.
+- `createMangaTile` for [MangaTile](#mangatile) objects.
+- `createPagedResults` for [PagedResults](#pagedresults) objects.
+- `createSearchRequest` for [SearchRequest](#searchrequest) objects.
+- `createTag` for [Tag](#tag) objects.
+- `createTagSection` for [TagSection](#tagsection) objects.
+
 ## Chapter
 
 The Chapter object contains most metadata about a chapter. Different chapters are differentiated by the Chapter ID.
@@ -35,7 +65,8 @@ The ChapterDetails object contains a small amount of metadata about the chapter 
 | `id` | String | The chapter ID of the chapter that the object respresents. |
 | `mangaId` | String | The given identifier of the Manga that owns this chapter. This should match the id of the manga that the chapter is for. |
 | `pages` | String Array | The list of pages in the chapter. The pages are ordered by the index of the array, where the 0th index is the first page, and so on. Each item should be a link to the image file that represents the page. |
-| `longStrip` | Boolean | Indicates whether or not the chapter should be rendered in **Long Strip Mode**. A long strip is a webtoon or any other form of manga that uses very tall but narrow images. |
+| `longStrip` | Boolean | Indicates whether or not the chapter should be rendered in **Long Strip
+Mode**. A long strip is a webtoon or any other form of manga that uses very tall but narrow images. |
 
 ## IconText
 
@@ -57,8 +88,7 @@ An icon text represents a line of text and an optional icon.
 
 A string enum defining full language names, and the corresponding language code.
 
-::: warning Warning
-Some full language names have typos. These may be fixed in a future version.
+::: warning Warning Some full language names have typos. These may be fixed in a future version.
 :::
 
 ### Values
@@ -153,7 +183,8 @@ An integer enum representing the various statuses a manga can have.
 
 ## MangaTile
 
-A tile representing a manga. This is a more barebones version of [the Manga object](#manga), intended for things like homepages and searches which will not return most manga metadata.
+A tile representing a manga. This is a more barebones version of [the Manga object](#manga), intended for things like
+homepages and searches which will not return most manga metadata.
 
 ### Required Fields
 
@@ -173,7 +204,8 @@ A tile representing a manga. This is a more barebones version of [the Manga obje
 
 ## PagedResults
 
-An object representing a "page" of requests. There is no limit to how many mangas fit in a page, that is up to the source to decide. These objects use the [metadata](metadata.md) field.
+An object representing a "page" of requests. There is no limit to how many mangas fit in a page, that is up to the
+source to decide. These objects use the [metadata](metadata.md) field.
 
 ### Required Fields
 
@@ -184,13 +216,16 @@ An object representing a "page" of requests. There is no limit to how many manga
 
 ## SearchRequest
 
-An object representing the various properties in a search. While current version of Paperback only allow title-based searching, future versions of Paperback may allow searching by tags/genres, authors, artists, groups, and so on.
+An object representing the various properties in a search. While current version of Paperback only allow title-based
+searching, future versions of Paperback may allow searching by tags/genres, authors, artists, groups, and so on.
 
 ### Optional Fields
 
 | Name | Type | Description |
 |------|------|-------------|
-| `title` | String | The text that the user is searching in the search box. **Note: The title may be empty, such as if the user deletes the entire query. While some sources just treat an empty search as a queue to return all chapters, other sources might reject empty searches. Make sure to adequately deal with empty searches.** |
+| `title` | String | The text that the user is searching in the search box. **Note: The title may be empty, such as if
+the user deletes the entire query. While some sources just treat an empty search as a queue to return all chapters,
+other sources might reject empty searches. Make sure to adequately deal with empty searches.** |
 | `author` | String | The author that the user is searching works by. |
 | `artist` | String | The artist that the user is searching works by. |
 | `status` | [MangaStatus](#mangastatus) | The status of the manga. |
@@ -207,7 +242,6 @@ An object representing the various properties in a search. While current version
 | `excludeContent` | String Array | The content to exclude in the search. |
 | `excludeGenre` | String Array | The genres to exclude in the search. |
 | `excludeOperator` | String Array | The operators to exclude in the search. |
-
 
 ## Tag
 
