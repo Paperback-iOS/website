@@ -15,7 +15,7 @@ You will find all our projects in our [GitHub organization](https://github.com/P
 Here are some of our main projects:
 
  * **Paperback extensions**  
-  Extensions for the application are developed and maintained by the community.  
+  Extensions for the application are developed and maintained by the community. These currently consist of sources for pulling content into the app, but in the near future, this will also include manga tracker implementations.
   Get started with our [source development guide](extension-development/).
 
  * **Paperback website**  
