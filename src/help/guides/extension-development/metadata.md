@@ -29,20 +29,20 @@ async searchRequest(query: SearchRequest, metadata: any): Promise<PagedResults> 
     let page;
     if (typeof metadata === "object" && metadata.page){
         page = metadata.page;
-	} else {
+    } else {
         page = 1;
-	}
+    }
     const request = createRequest({
-		url: `https://mysite.com/search/?query=${query.title}&page=${page}`,
-		method: GET,
-		...
-	});
+        url: `https://mysite.com/search/?query=${query.title}&page=${page}`,
+        method: GET,
+        ...
+    });
     /* Do request and parse data */
-	return createPagedResults{
-	    results: results,
-		metadata: {
-	        page: page
-		}
-	}
+    return createPagedResults{
+        results: results,
+        metadata: {
+            page: page
+        }
+    }
 }
 ```
