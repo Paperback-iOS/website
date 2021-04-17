@@ -40,7 +40,6 @@ jobs:
       - name: Deploy website
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          ssh-key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           branch: gh-pages
           folder: ./public
           git-config-name: "github-actions[bot]"
