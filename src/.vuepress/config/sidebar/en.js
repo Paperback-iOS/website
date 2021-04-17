@@ -1,6 +1,6 @@
 module.exports = [
-	{ title: "Home", path: "/" },
-	{ title: "FAQ", path: "/help/faq/" },
+	{title: "Home", path: "/"},
+	{title: "FAQ", path: "/help/faq/"},
 	{
 		title: "Guides",
 		collapsable: true,
@@ -14,6 +14,12 @@ module.exports = [
 	{
 		title: "Source Development",
 		collapsable: true,
-		children: ["/help/guides/extension-development/intro-to-sources", "/help/guides/extension-development/cheerio-quickstart", "/help/guides/extension-development/function-definitions", "/help/guides/extension-development/model-reference"]
+		children: [
+			"/help/guides/extension-development/intro-to-sources",
+			"/help/guides/extension-development/cheerio-quickstart",
+			"/help/guides/extension-development/metadata/",
+			"/help/guides/extension-development/function-definitions",
+			"/help/guides/extension-development/model-reference"
+		]
 	}
 ];

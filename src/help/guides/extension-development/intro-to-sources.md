@@ -2,7 +2,7 @@
 
 When developing a Manga Reader, first and foremost, you need to gather your content from somewhere. There are many
 services out there, such as WebToons or MangaDex which run their own content providing system which their applications
-can attach to without much issues.
+can attach to without many issues.
 
 If you do not hold this kind of infrastructure, as Paperback does not, the app needs to be designed in a way where it
 can dynamically read **other** content providers.
@@ -12,7 +12,7 @@ with a generic source system which can be added into the application at runtime 
 available, only requiring the users to install each module correctly.
 
 Enter the Paperback Extension system. If you are familiar with [Tachiyomi](https://tachiyomi.org) this system is
-practically the same. Users are free to develop an extension completely independant with the Paperback application
+practically the same. Users are free to develop an extension completely independent with the Paperback application
 builds and updates, and publish generic sources which are simply parsing definitions which understand how to import the
 contents of X website.
 

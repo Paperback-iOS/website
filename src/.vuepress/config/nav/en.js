@@ -1,6 +1,6 @@
 module.exports = [
-	{ text: "Home", link: "/" },
-	{ text: "FAQ", link: "/help/faq/" },
+	{text: "Home", link: "/"},
+	{text: "FAQ", link: "/help/faq/"},
 	{
 		text: "Guides",
 		items: [
@@ -39,8 +39,8 @@ module.exports = [
 			{
 				text: "Community",
 				items: [
-					{ text: "Discord", link: "https://discord.gg/Ny83JV3" },
-					{ text: "Reddit", link: "https://reddit.com/r/Paperback" },
+					{text: "Discord", link: "https://discord.gg/Ny83JV3"},
+					{text: "Reddit", link: "https://reddit.com/r/Paperback"},
 					{
 						text: "Twitter",
 						link: "https://twitter.com/paperbackios",
@@ -70,12 +70,20 @@ module.exports = [
 				link: "/help/guides/extension-development/cheerio-quickstart/"
 			},
 			{
-				text: "Function Definitions",
-				link: "/help/guides/extension-development/function-definitions/"
+				text: "How To Use Metadata",
+				link: "/help/guides/extension-development/metadata/"
 			},
 			{
-				text: "Model Reference",
-				link: "/help/guides/extension-development/model-reference"
+				text: "API Reference",
+				items: [
+					{
+						text: "Function Definitions",
+						link: "/help/guides/extension-development/function-definitions/"
+					},
+					{
+						text: "Model Reference",
+						link: "/help/guides/extension-development/model-reference"
+					}]
 			}
 		]
 	}

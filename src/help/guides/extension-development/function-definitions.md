@@ -51,7 +51,7 @@ async getMangaDetails(mangaId: string): Promise<Manga> {
 |-----------|------|------------|
 |  mangaId  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
 
-### Return
+### Returns
 
 Given an ID, this async function should return an array of [Chapter](model-reference.md#Chapter) objects.
 
@@ -110,7 +110,7 @@ async getChapters(mangaId: string): Promise<Chapter[]> {
 ### Returns
 Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](model-reference.md#ChapterDetails) object.
 
-Example Implementation:
+### Example Implementation
 ```typescript
 async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDetails>
 
@@ -143,6 +143,16 @@ async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDeta
 }
 ```
 
+## searchRequest
+
+### Method signature
+`async searchRequest(query: SearchRequest, metadata: any): Promise<PagedResults>`
+
+### Parameters
+| Parameter | Type | Description|
+|-----------|------|------------|
+| query | [SearchRequest](model-reference.md#searchrequest) | The object representing the search. View the fields of the [SearchRequest](model-reference.md#searchrequest) object to find out what a search can contain. |
+| metadata | any | Metadata carried through function calls. View the [metadata page](metadata.md) to learn more about how the parameter works. |
 
 # Optional Methods
 To be filled out

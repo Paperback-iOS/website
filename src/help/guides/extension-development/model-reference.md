@@ -1,6 +1,96 @@
 # Models
+
+## Chapter
+
+The Chapter object contains most metadata about a chapter. Different chapters are differentiated by the Chapter ID.
+Changing the chapter ID will cause a different chapter entry to show up, even if another chapter has the same chapter
+number.
+
+### Required Fields
+
+| Name | Type | Description |
+|------|------|-------------|
+| id | String | A given identifier of this chapter. This may be unique to the source. For example, one source may use `Chapter-1` in it's URLs to identify this chapter, whereas other sources may use some numeric identifier, such as `123456`. |
+| mangaId | String | The given identifier of the Manga that owns this chapter. This should match the id of the manga that the chapter is for. |
+| chapNum | Number | The number of the chapter, which is used for sorting the chapter list. The number may be a decimal. Multiple chapters with the same number will be sorted based on their volume number or the group that created the chapter, if it exists. Otherwise, the chapters will be sorted on the chapter ID. |
+| langCode | [LanguageCode](#languagecode) | The language code which this chapter is associated with. This is used along with the `Content settings` option to filter the chapter list so only chapters for the languages specified by the user are shown. |
+
+### Optional Fields
+
+| Name | Type | Description |
+|------|------|-------------|
+| name | String | The title of the chapter. |
+| volume | Number | The volume that the chapter belongs to. It is recommended to leave the volume number out if every chapter does not have a corresponding volume number, as the volume number interferes with sorting. |
+| group | String | The group that posted the chapter. |
+| time | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object | The date that the chapter is published. If omitted, the chapter will have a creation of the time when the chapter list was loaded. |
+
+## ChapterDetails
+
+The ChapterDetails object contains a small amount of metadata about the chapter and contains the list of pages.
+
+### Required Fields
+
+| Name | Type | Description |
+|------|------|-------------|
+| id | String | The chapter ID of the chapter that the object respresents. |
+| mangaId | String | The given identifier of the Manga that owns this chapter. This should match the id of the manga that the chapter is for. |
+| pages | String Array | The list of pages in the chapter. The pages are ordered by the index of the array, where the 0th index is the first page, and so on. Each item should be a link to the image file that represents the page. |
+| longStrip | Boolean | Indicates whether or not the chapter should be rendered in **Long Strip Mode**. A long strip is a webtoon or any other form of manga that uses very tall but narrow images. |
+
+## LanguageCode
+
+A string enum defining full language names, and the corresponding language code.
+
+:::warning
+Some full language names have typos. These may be fixed in a future version.
+:::
+
+### Values
+
+| Language Name | Language Code |
+|---------------|---------------|
+| BENGALI | `bd` |
+| BRAZILIAN | `br` |
+| BULGARIAN | `bg` |
+| CHINEESE | `cn` |
+| CHINEESE_HONGKONG | `hk` |
+| CZECH | `cz` |
+| DANISH | `dk` |
+| DUTCH | `nl` |
+| ENGLISH | `gb` |
+| FINNISH | `fi` |
+| FRENCH | `fr` |
+| GERMAN | `de` |
+| GREEK | `gr` |
+| HUNGARIAN | `hu` |
+| INDIAN | `in` |
+| INDONESIAN | `id` |
+| IRAN | `ir` |
+| ISRELI | `il` |
+| ITALIAN | `it` |
+| JAPANESE | `jp` |
+| KOREAN | `kr` |
+| LITHUANIAN | `lt` |
+| MALAY | `my` |
+| MEXIAN | `mx` |
+| MONGOLIAN | `mn` |
+| NORWEGIAN | `no` |
+| PHILIPPINE | `ph` |
+| POLISH | `pl` |
+| PORTUGUESE | `pt` |
+| ROMANIAN | `ro` |
+| RUSSIAN | `ru` |
+| SAMI | `si` |
+| SANSKRIT | `sa` |
+| SPANISH | `es` |
+| THAI | `th` |
+| TURKISH | `tr` |
+| UKRAINIAN | `ua` |
+| UNKNOWN | `_unknown` |
+| VIETNAMESE | `vn` |
+| WELSH | `gb` |
+
 ## Manga
-### Description
 
 The Manga object contains most metadata about a manga. Different manga objects are differentiated by the Manga ID, and
 changing the Manga ID will return a different manga.
