@@ -1,6 +1,5 @@
 <!--
-Create a table representing an external repository.
-The component gets the sources from the `versioning.json` file of the repo.
+Redirect to the url scheme paperback://addRepo?displayName=name&url=url
 The url argument must point to the webpage hosting the `versioning.json` file and must not have a trailing slash EX:https://paperback-ios.github.io/extensions.
 -->
 
