@@ -22,7 +22,7 @@
 		"eslint-config-vuepress": "^2.1.0",
 		"eslint-plugin-prettier": "^3.4.0",
 		"prettier": "^2.2.1",
-		"vuepress": "^1.5.2",
+		"vuepress": "^1.8.2",
 		"vuepress-plugin-clean-urls": "^1.1.2",
 		"vuepress-plugin-container": "^2.1.5",
 		"vuepress-plugin-element-ui": "^1.1.0",
