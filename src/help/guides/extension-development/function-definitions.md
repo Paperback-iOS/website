@@ -104,7 +104,7 @@ async getChapters(mangaId: string): Promise<Chapter[]> {
 ### Parameters
 | Parameter | Type | Description|
 |-----------|------|------------|
-|  mangaId  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
+|  mangaId  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
 | chapterId | String | The ID of a chapter. defined by the [Get Chapters](#getchapters) method. The chapter ID can only contain letters, numbers, dashes and underscores. |
 
 ### Returns
