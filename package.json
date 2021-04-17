@@ -37,6 +37,6 @@
 		"prettier-config-vuepress": "^1.2.0",
 		"vuepress-plugin-robots": "^1.0.1",
 		"vuepress-plugin-sitemap": "^2.3.1",
-		"vuepress-theme-yuu": "^2.3.0"
+		"vuepress-theme-yuu": "^3.0.1"
 	}
 }
