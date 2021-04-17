@@ -41,7 +41,7 @@ The ChapterDetails object contains a small amount of metadata about the chapter 
 
 A string enum defining full language names, and the corresponding language code.
 
-:::warning
+::: warning Warning
 Some full language names have typos. These may be fixed in a future version.
 :::
 
