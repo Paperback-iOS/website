@@ -37,7 +37,7 @@ async searchRequest(query: SearchRequest, metadata: any): Promise<PagedResults> 
         method: GET,
         ...
     });
-    /* Do request and parse data */
+    // Do request and parse data
     return createPagedResults{
         results: results,
         metadata: {
