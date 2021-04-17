@@ -7,9 +7,9 @@ can attach to without many issues.
 If you do not hold this kind of infrastructure, as Paperback does not, the app needs to be designed in a way where it
 can dynamically read **other** content providers.
 
-This design paradigm has many benefits. The Apple App Store is very restrictive on content provided to iOS and iPadOS devices, however
-with a generic source system which can be added into the application at runtime allows all sorts of content to be made
-available, only requiring the users to install each module correctly.
+This design paradigm has many benefits. The Apple App Store is very restrictive on content provided to iOS and iPadOS
+devices, however with a generic source system which can be added into the application at runtime allows all sorts of
+content to be made available, only requiring the users to install each module correctly.
 
 Enter the Paperback Extension system. If you are familiar with [Tachiyomi](https://tachiyomi.org) this system is
 practically the same. Users are free to develop an extension completely independent with the Paperback application
