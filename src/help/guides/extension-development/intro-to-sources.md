@@ -7,7 +7,7 @@ can attach to without many issues.
 If you do not hold this kind of infrastructure, as Paperback does not, the app needs to be designed in a way where it
 can dynamically read **other** content providers.
 
-This design paradigm has many benefits. The Apple Store is very restrictive on content provided to iOS devices, however
+This design paradigm has many benefits. The Apple App Store is very restrictive on content provided to iOS and iPadOS devices, however
 with a generic source system which can be added into the application at runtime allows all sorts of content to be made
 available, only requiring the users to install each module correctly.
 
