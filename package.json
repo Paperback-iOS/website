@@ -24,7 +24,7 @@
 		"prettier": "^2.2.1",
 		"vuepress": "^1.5.2",
 		"vuepress-plugin-clean-urls": "^1.1.2",
-		"vuepress-plugin-container": "^2.1.4",
+		"vuepress-plugin-container": "^2.1.5",
 		"vuepress-plugin-element-ui": "^1.1.0",
 		"vuepress-types": "^0.9.3"
 	},
