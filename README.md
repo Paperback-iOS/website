@@ -21,10 +21,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 <div>
 	<p align="center">
 		<a href="https://github.com/Paperback-iOS/app/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=Paperback-iOS&repo=app&bg_color=0000&text_color=777&hide_border=true" alt="Android App">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=Paperback-iOS&repo=app&bg_color=0000&text_color=777&hide_border=true" alt="iOS App">
 		</a>
 		<a href="https://github.com/Paperback-iOS/extensions-common/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=Paperback-iOS&repo=extensions-common&bg_color=0000&text_color=777&hide_border=true" alt="App Extensions">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=Paperback-iOS&repo=extensions-common&bg_color=0000&text_color=777&hide_border=true" alt="Extensions Common">
 		</a>
 	</p>
 </div>
