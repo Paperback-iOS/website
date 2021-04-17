@@ -23,7 +23,7 @@ You are ready to start developing a source. When you think the source should be 
 :::: guide Repositories
 Please note each of our repositories has its own specificity.
 
-Check our [repositories list]() to figure where your source should be, all repositories are available on GitHub.
+Check our [repositories list](/help/guides/adding-repos/#known-repositories) to figure where your source should be, all repositories are available on GitHub.
 
 ::: aside
 If you need help figuring to which repository you should submit your new pull request, don't hesitate to contact us.
