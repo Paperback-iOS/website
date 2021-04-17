@@ -17,7 +17,7 @@ module.exports = [
 		children: [
 			"/help/guides/extension-development/intro-to-sources",
 			"/help/guides/extension-development/cheerio-quickstart",
-			"/help/guides/extension-development/metadata/",
+			"/help/guides/extension-development/metadata",
 			"/help/guides/extension-development/function-definitions",
 			"/help/guides/extension-development/model-reference"
 		]
