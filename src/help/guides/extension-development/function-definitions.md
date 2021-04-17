@@ -6,7 +6,7 @@
 ### Parameters
 | Parameter | Type | Description|
 |-----------|------|------------|
-|  mangaId  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
+|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
 
 ### Returns
 Given an ID, this async function should return a filled out [Manga](model-reference/#Manga) object.
