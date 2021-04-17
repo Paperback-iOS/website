@@ -25,7 +25,7 @@ $('div.apple').text()	// Gets the text of the first 'div' block which ALSO has c
     This is some text
 </p>
 ```
-------------
+---
 ```ts
 $('p#someText').text()		// This will return 'This is some text'
 $('p#someText').attr('lang')	// This will return 'en'
@@ -235,7 +235,6 @@ for(let obj of selectionArray) {
 
 // At this point, you should have a 'titles' array with 3 elements inside!
 ```
-
 
 
 
