@@ -38,11 +38,10 @@ jobs:
         run: touch ./public/.nojekyll
 
       - name: Deploy website
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_branch: gh-pages
-          publish_dir: ./public
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_message: ${{ github.event.head_commit.message }}
+          branch: gh-pages
+          folder: public
+          git-config-name: "github-actions[bot]"
+          git-config-email: "github-actions[bot]@users.noreply.github.com"
+          commit-message: ${{ github.event.head_commit.message }}
