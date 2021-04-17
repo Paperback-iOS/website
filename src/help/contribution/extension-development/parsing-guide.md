@@ -1,9 +1,13 @@
-## A practical guide to Parsing
+---
+title: A practical guide to Parsing
+lang: en-US
+---
+
+# A practical guide to Parsing
 
 We're sure that you've noticed at this point that when we're handling HTTP parsing that we are using [CheerioJS](https://github.com/cheeriojs/cheerio). If you are familiar with [JQuery Selectors](https://api.jquery.com/category/selectors/), fortunately a lot of this will come naturally to you.
 
 If you are not familiar, CheerioJS is a library which allows you to programmatically pull information from HTML. This is the core fundamental on how Paperback works. Each source that you create is simply a set of parsing logic.
-
 
 
 # Quick Reference Guide
@@ -24,7 +28,7 @@ $('div.apple').text()	// Gets the text of the first 'div' block which ALSO has c
     This is some text
 </p>
 ------------
-$('p#someText').text()		// This will return 'This is some text'
+$('p#someText').text()		    // This will return 'This is some text'
 $('p#someText').attr('lang')	// This will return 'en'
 ```
 
@@ -159,8 +163,8 @@ With a given HTML document, lets do some parsing.
 
 Given the above set of HTML, say that you have loaded it into Cheerio using the instructions above. What you are looking for, is the text inside each of the `li` objects. There should be a few thoughts which should be going through your head;
 
-- What _unique_ identifier is surrounding the data that I need?
-  - In the example of parsing 'Three Apples', we can see that it is __always__ in a `li` block, with a class of `apple`
+- What *unique* identifier is surrounding the data that I need?
+  - In the example of parsing 'Three Apples', we can see that it is **always** in a `li` block, with a class of `apple`
 - If the object is not entirely unique, is there any constants in the formatting?
   - If there is more than 1 object with the same signature, is the piece I want always the second in the list?
 
@@ -232,8 +236,3 @@ for(let obj of selectionArray) {
 
 // At this point, you should have a 'titles' array with 3 elements inside!
 ```
-
-
-
-
-
