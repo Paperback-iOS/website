@@ -5,18 +5,15 @@ module.exports = {
 
 	// prettier-ignore
 	head: [
+		// Embed headers
 		["link", { rel: "icon", href: "/favicon.ico" }],
-		["link", { rel: "manifest", href: "/manifest.json" }],
 		["link", { rel: "apple-touch-icon", href: "/icons/apple-touch-icon.png" }],
 		["link", { rel: "mask-icon", href: "/icons/safari-pinned-tab.svg", color: "#D21A1C" }],
-		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://paperback.moe/icons/logo.png" }],
-		["meta", { name: "theme-color", content: "#D21A1C" }],
 		["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
 		["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
-		["meta", { name: "msapplication-TileImage", content: "/icons/msapplication-icon-144x144.png" }],
-		["meta", { name: "msapplication-TileColor", content: "#D21A1C" }],
-		// Custom headers
-		["script", {src: "/scripts/remove_service_worker.js"}],
+		['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+		["meta", { name: "theme-color", content: "#D21A1C" }],
+		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://paperback.moe/icons/logo.png" }],
 	],
 
 	locales: {
