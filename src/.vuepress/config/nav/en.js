@@ -71,4 +71,21 @@ module.exports = [
 			},
 		],
 	},
+	{
+		text: "Development",
+		items: [
+			{
+				text: "Sources Introduction",
+				link: "/help/guides/extension-development/intro-to-sources/"
+			},
+			{
+				text: "Parsing Quickstart",
+				link: "/help/guides/extension-development/cheerio-quickstart/"
+			},
+			{
+				text: "Function Definitions",
+				link: "/help/guides/extension-development/function-definitions/"
+			}
+		]
+	}
 ];

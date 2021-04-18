@@ -1,16 +1,39 @@
-# Paperback
+<div>
+	<p align="center">
+		<img src="./src/.vuepress/public/icons/logo-alt.png" height="100px">
+	</p>
+	<h1 align="center">Paperback Website</h1>
+	<p align="center">
+		<a href="https://discord.gg/Ny83JV3">
+			<img src="https://img.shields.io/discord/673606787290759230.svg?label=Discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">
+		</a>
+	</p>
+</div>
 
-## Help contribute to the website
+## Contributing
 
-### Edit existing pages
-Editing existing pages is very easy, just go to it on the website then press the "Help us improve this page" link in the bottom left of it.
-I recommend previewing the code in using the [markdown-it live editor](https://markdown-it.github.io/) as they're functionally similiar.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Adding new pages
-Pretty much just keep the current structure, preferably don't add anything under FAQ, just edit the README.md for that. If you're adding new guides then go to [nav.js](https://github.com/FaizanDurrani/Paperback/blob/master/src/.vuepress/config/nav.js) and edit it in, follow the current example of `Getting started`, shouldn't be too hard.
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Contributing guide](./CONTRIBUTING.md)
+- [Discord server](https://discord.gg/Ny83JV3)
 
-### Building local enviroment
-Pretty much just fork the repo, clone it to your computer then do a `npm install` then `vuepress dev src`/`npm run serve`. 
+<div>
+	<p align="center">
+		<a href="https://github.com/Paperback-iOS/app/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=Paperback-iOS&repo=app&bg_color=0000&text_color=777&hide_border=true" alt="Android App">
+		</a>
+		<a href="https://github.com/Paperback-iOS/extensions-common/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=Paperback-iOS&repo=extensions-common&bg_color=0000&text_color=777&hide_border=true" alt="App Extensions">
+		</a>
+	</p>
+</div>
 
-### Support
-Contact Soitora#0001 on Discord for support.
+
+## Credits
+
+Thank you to all the people who have already contributed!
+
+<a href="https://github.com/Paperback-iOS/website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Paperback-iOS/website" />
+</a>

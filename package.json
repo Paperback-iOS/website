@@ -13,30 +13,29 @@
 	},
 	"private": true,
 	"devDependencies": {
-		"@vuepress/plugin-back-to-top": "^1.5.2",
-		"@vuepress/plugin-google-analytics": "^1.5.2",
-		"@vuepress/plugin-pwa": "^1.5.2",
+		"@vuepress/plugin-back-to-top": "^1.8.2",
+		"@vuepress/plugin-google-analytics": "^1.8.2",
 		"eslint": "^6.8.0",
 		"eslint-config-airbnb": "^18.2.0",
-		"eslint-config-prettier": "^6.10.0",
+		"eslint-config-prettier": "^6.15.0",
 		"eslint-config-vuepress": "^2.1.0",
-		"eslint-plugin-prettier": "^3.1.4",
-		"prettier": "^2.0.5",
-		"vuepress": "^1.5.2",
-		"vuepress-plugin-clean-urls": "^1.1.1",
-		"vuepress-plugin-container": "^2.1.4",
+		"eslint-plugin-prettier": "^3.4.0",
+		"prettier": "^2.2.1",
+		"vuepress": "^1.8.2",
+		"vuepress-plugin-clean-urls": "^1.1.2",
+		"vuepress-plugin-container": "^2.1.5",
 		"vuepress-plugin-element-ui": "^1.1.0",
-		"vuepress-types": "^0.9.3"
+		"vuepress-types": "^0.9.4"
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
-		"core-js": "^2.6.11",
-		"eslint-plugin-jsx-a11y": "^6.3.1",
-		"eslint-plugin-react": "^7.20.3",
+		"core-js": "^2.6.12",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-react": "^7.23.2",
 		"eslint-plugin-react-hooks": "^2.5.1",
-		"prettier-config-vuepress": "^1.0.0",
+		"prettier-config-vuepress": "^1.2.0",
 		"vuepress-plugin-robots": "^1.0.1",
 		"vuepress-plugin-sitemap": "^2.3.1",
-		"vuepress-theme-yuu": "^2.3.0"
+		"vuepress-theme-yuu": "^3.0.1"
 	}
 }

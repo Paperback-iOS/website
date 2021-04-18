@@ -20,5 +20,5 @@ module.exports = [
 			"/help/contribution/extension-development/parsing-guide",
 			"/help/contribution/extension-development/function-definitions",
 		]
-	},
+	}
 ];
