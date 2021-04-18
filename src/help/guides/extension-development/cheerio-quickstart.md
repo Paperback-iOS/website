@@ -167,7 +167,7 @@ for, is the text inside each of the `li` objects. There should be a few thoughts
 head;
 
 - What _unique_ identifier is surrounding the data that I need?
-	- In the example of parsing 'Three Apples', we can see that it is __always__ in a `li` block, with a class
+	- In the example of parsing 'Three Apples', we can see that it is **always** in a `li` block, with a class
 	  of `apple`
 - If the object is not entirely unique, is there any constants in the formatting?
 	- If there is more than 1 object with the same signature, is the piece I want always the second in the list?
@@ -238,7 +238,6 @@ for(let obj of selectionArray) {
 
 // At this point, you should have a 'titles' array with 3 elements inside!
 ```
-
 
 
 
