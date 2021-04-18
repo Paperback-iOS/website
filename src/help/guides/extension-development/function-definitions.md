@@ -200,7 +200,7 @@ async searchRequest(query:SearchRequest, metadata:any): Promise<PagedResults> {
 	*/
 	const data = await this.requestManager.schedule(request, 1)
 
-	// Prepare to parse the page using CheerioJS (Class object included by parent class)
+	// Prepare to parse the page using CheerioJS (The cheerio object is provided by the base class this extends)
 	let $ = this.cheerio.load(data.data)
 
 	// This will contain the manga tiles that we found
