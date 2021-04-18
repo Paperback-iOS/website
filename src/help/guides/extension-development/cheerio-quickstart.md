@@ -179,8 +179,7 @@ $('li.apple')		// Selects the correct spot
 $('li.apple').text()	// This will return the text inside of the selected area.
 ```
 
-What if we want to get the "Twelve Pears" text? Referencing the table at the top of this document, we can use the **
-Attribute Equals Selector**!
+What if we want to get the "Twelve Pears" text? Referencing the table at the top of this document, we can use the **Attribute Equals Selector**!
 
 ```js
 $('li[meta="pear-data"]').text()	// This will return 'Twelve Pears'
@@ -238,6 +237,5 @@ for(let obj of selectionArray) {
 
 // At this point, you should have a 'titles' array with 3 elements inside!
 ```
-
 
 
