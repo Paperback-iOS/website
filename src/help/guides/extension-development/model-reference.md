@@ -65,8 +65,7 @@ The ChapterDetails object contains a small amount of metadata about the chapter 
 | `id` | String | The chapter ID of the chapter that the object respresents. |
 | `mangaId` | String | The given identifier of the Manga that owns this chapter. This should match the id of the manga that the chapter is for. |
 | `pages` | String Array | The list of pages in the chapter. The pages are ordered by the index of the array, where the 0th index is the first page, and so on. Each item should be a link to the image file that represents the page. |
-| `longStrip` | Boolean | Indicates whether or not the chapter should be rendered in **Long Strip
-Mode**. A long strip is a webtoon or any other form of manga that uses very tall but narrow images. |
+| `longStrip` | Boolean | Indicates whether or not the chapter should be rendered in **Long Strip Mode**. A long strip is a webtoon or any other form of manga that uses very tall but narrow images. |
 
 ## IconText
 
@@ -88,7 +87,8 @@ An icon text represents a line of text and an optional icon.
 
 A string enum defining full language names, and the corresponding language code.
 
-::: warning Warning Some full language names have typos. These may be fixed in a future version.
+::: warning Warning
+Some full language names have typos. These may be fixed in a future version.
 :::
 
 ### Values
@@ -216,16 +216,14 @@ source to decide. These objects use the [metadata](metadata.md) field.
 
 ## SearchRequest
 
-An object representing the various properties in a search. While current version of Paperback only allow title-based
-searching, future versions of Paperback may allow searching by tags/genres, authors, artists, groups, and so on.
+An object representing the various properties in a search. The `title` parameter is the only parameter that is supported
+by the search request, and future versions of the API plan on changing the way advanced searches are done.
 
 ### Optional Fields
 
 | Name | Type | Description |
 |------|------|-------------|
-| `title` | String | The text that the user is searching in the search box. **Note: The title may be empty, such as if
-the user deletes the entire query. While some sources just treat an empty search as a queue to return all chapters,
-other sources might reject empty searches. Make sure to adequately deal with empty searches.** |
+| `title` | String | The text that the user is searching in the search box. **Note: The title may be empty, such as if the user deletes the entire query. While some sources just treat an empty search as a queue to return all chapters, other sources might reject empty searches. Make sure to adequately deal with empty searches.** |
 | `author` | String | The author that the user is searching works by. |
 | `artist` | String | The artist that the user is searching works by. |
 | `status` | [MangaStatus](#mangastatus) | The status of the manga. |
