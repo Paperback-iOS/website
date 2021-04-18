@@ -22,7 +22,7 @@ Here are some of our main projects:
   Any help improving this [website](https://github.com/Paperback-iOS/website/) is definitely welcome.
 
  * **Paperback extensions-common**  
-   Common models and type definitions for developing a Paperback source.
+   Contains the models and type definitions necessary for developing a Paperback extension.
 
  * **Paperback CLI**  
    Our CLI tool to bundle extensions repositories.
