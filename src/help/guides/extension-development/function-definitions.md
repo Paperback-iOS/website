@@ -188,7 +188,7 @@ async searchRequest(query:SearchRequest, metadata:any): Promise<PagedResults> {
 	} else { // If there is no current page, this must mean this is the first page.
 		page = 1;
 	}
-	const request = createRequest({
+	const request = createRequestObject({
 		url: `https://mysite.com/search/?query=${query.title}&page=${page}`,
 		method: GET,
 		...
