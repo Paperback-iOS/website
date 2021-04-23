@@ -205,14 +205,14 @@ homepages and searches which will not return most manga metadata.
 ## PagedResults
 
 An object representing a "page" of requests. There is no limit to how many mangas fit in a page, that is up to the
-source to decide. These objects use the [metadata](metadata.md) field.
+source to decide. These objects use the [metadata](metadata/) field.
 
 ### Required Fields
 
 | Name | Type | Description |
 |------|------|-------------|
 | results | [MangaTile](#mangatile) Array | The mangas that were found in the page. |
-| metadata | any | The metadata to carry onto future calls of the function returning the object. Reference the [page on metadata](metadata.md) to learn more. |
+| metadata | any | The metadata to carry onto future calls of the function returning the object. Reference the [page on metadata](metadata/) to learn more. |
 
 ## SearchRequest
 
