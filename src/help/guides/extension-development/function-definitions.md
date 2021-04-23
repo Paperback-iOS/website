@@ -174,7 +174,7 @@ async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDeta
 
 ### Returns
 
-A [PagedResults](model-reference.md#pagedresults) object with the results of the search for the current page, and metadata for the next page, if it exists.
+A [PagedResults](model-reference/#pagedresults) object with the results of the search for the current page, and metadata for the next page, if it exists.
 
 ### Example Implementation
 
