@@ -1,6 +1,6 @@
 module.exports = [
-	{ title: "Home", path: "/" },
-	{ title: "FAQ", path: "/help/faq/" },
+	{title: "Home", path: "/"},
+	{title: "FAQ", path: "/help/faq/"},
 	{
 		title: "Guides",
 		collapsable: true,

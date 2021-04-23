@@ -1,13 +1,24 @@
 # Required Methods
+
 ## getMangaDetails
+
+### Method signature
+
 `async getMangaDetails(mangaId: string): Promise<Manga>`
 
-- A manga ID is defined by the source developer. However IDs are provided to Paperback in other functions, will be given to this function in the same format.
+### Parameters
 
-Given an ID, this async function should return a filled out Manga object.
+| Parameter | Type | Description|
+|-----------|------|------------|
+|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
 
-Example Implementation:
-```typescript
+### Returns
+
+Given an ID, this async function should return a filled out [Manga](model-reference/#manga) object.
+
+### Example Implementation
+
+```ts
 async getMangaDetails(mangaId: string): Promise<Manga> {
 
     // Create a request object which when executed, will yield a HTML page containing the data needed to fill out a Manga object
@@ -38,13 +49,23 @@ async getMangaDetails(mangaId: string): Promise<Manga> {
 ```
 
 ## getChapters
+
+### Method signature
+
 `async getChapters(mangaId: string): Promise<Chapter[]>`
 
-- A manga ID is defined by the source developer. However IDs are provided to Paperback in other functions, will be given to this function in the same format.
+### Parameters
 
-Given an ID, this async function should get all available chapters for a provided chapter.
+| Parameter | Type | Description|
+|-----------|------|------------|
+|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
 
-Example Implementation:
+### Returns
+
+Given an ID, this async function should return an array of [Chapter](model-reference/#chapter) objects.
+
+### Example Implementation
+
 ```typescript
 async getChapters(mangaId: string): Promise<Chapter[]> {
 
@@ -82,19 +103,30 @@ async getChapters(mangaId: string): Promise<Chapter[]> {
     }
 
     // Return a list of all of the chapters discovered
-    return chapters
+    return chapters;
 }
 ```
 
 ## getChapterDetails
+
+### Method Signature
+
 `async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDetails>`
 
-- A manga ID is defined by the source developer. However IDs are provided to Paperback in other functions, will be given to this function in the same format.
-- A ChapterID is defined by the [Get Chapters](#getChapters) method. However it is returned there, will be fed into this function.
+### Parameters
 
-Given both a Manga and a Chapter ID, this function should populate a ChapterDetails object, which goes into further detail of what each chapter contains.
+| Parameter | Type | Description|
+|-----------|------|------------|
+|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
+| `chapterId` | String | The ID of a chapter. defined by the [Get Chapters](#getchapters) method. The chapter ID can only contain letters, numbers, dashes and underscores. |
 
-Example Implementation:
+### Returns
+
+Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](model-reference/#chapterdetails)
+object.
+
+### Example Implementation
+
 ```typescript
 async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDetails>
 
@@ -127,6 +159,76 @@ async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDeta
 }
 ```
 
+## searchRequest
+
+### Method signature
+
+`async searchRequest(query: SearchRequest, metadata: any): Promise<PagedResults>`
+
+### Parameters
+
+| Parameter | Type | Description|
+|-----------|------|------------|
+| `query` | [SearchRequest](model-reference/#searchrequest) | The object representing the search. View the fields of the [SearchRequest](model-reference/#searchrequest) object to find out what a search can contain. |
+| `metadata` | any | Metadata carried through function calls. View the [metadata page](metadata/) to learn more about how the parameter works. |
+
+### Returns
+
+A [PagedResults](model-reference/#pagedresults) object with the results of the search for the current page, and metadata for the next page, if it exists.
+
+### Example Implementation
+
+```ts
+async searchRequest(query:SearchRequest, metadata:any): Promise<PagedResults> {
+	let page;
+
+	// Get the current page the function is on
+	if (typeof metadata === "object" && metadata.page) {
+		page = metadata.page;
+	} else { // If there is no current page, this must mean this is the first page.
+		page = 1;
+	}
+	const request = createRequestObject({
+		url: `https://mysite.com/search/?query=${query.title}&page=${page}`,
+		method: GET,
+		...
+	});
+	/*
+	Execute the request, and retrieve the HTML page
+	this.requestManager is provided to you by the parent class. Always use this to make requests.
+	The second parameter is the number of retries the app is allowed to make, if the request fails the first time.
+	*/
+	const data = await this.requestManager.schedule(request, 1)
+
+	// Prepare to parse the page using CheerioJS (The cheerio object is provided by the base class this extends)
+	let $ = this.cheerio.load(data.data)
+
+	// This will contain the manga tiles that we found
+	const tiles: MangaTile[] = [];
+
+	for(let obj of $('someSelector').toArray()) {
+	    // Parse the details in a MangaTile
+
+		tiles.push(createMangaTile{
+		    id: mangaId,
+			image: imageUrl,
+			title: createIconText({
+				text: mangaTitle
+			})
+		})
+	}
+
+	page++;
+
+	return createPagedResults{
+		results: tiles,
+		metadata: {
+			page: page
+		}
+	}
+}
+```
 
 # Optional Methods
+
 To be filled out

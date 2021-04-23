@@ -1,10 +1,15 @@
 ## A practical guide to Parsing
 
-We're sure that you've noticed at this point that when we're handling HTTP parsing that we are using [CheerioJS](https://github.com/cheeriojs/cheerio). If you are familiar with [JQuery Selectors](https://api.jquery.com/category/selectors/), fortunately a lot of this will come naturally to you.
+We're sure that you've noticed at this point that when we're handling HTTP parsing that we are
+using [CheerioJS](https://github.com/cheeriojs/cheerio). If you are familiar
+with [JQuery Selectors](https://api.jquery.com/category/selectors/), fortunately a lot of this will come naturally to
+you.
 
-If you are not familiar, CheerioJS is a library which allows you to programmatically pull information from HTML. This is the core fundamental on how Paperback works. Each source that you create is simply a set of parsing logic.
+If you are not familiar, CheerioJS is a library which allows you to programmatically pull information from HTML. This is
+the core fundamental on how Paperback works. Each source that you create is simply a set of parsing logic.
 
-
+CheerioJS, just like JQuery, utilizes **CSS Selectors** as the mode of selecting elements. This means that any selector
+that can be used to style elements with CSS can be used to select elements with Cheerio.
 
 # Quick Reference Guide
 
@@ -23,7 +28,11 @@ $('div.apple').text()	// Gets the text of the first 'div' block which ALSO has c
 <p id="someText" lang="en">
     This is some text
 </p>
-------------
+```
+
+---
+
+```ts
 $('p#someText').text()		// This will return 'This is some text'
 $('p#someText').attr('lang')	// This will return 'en'
 ```
@@ -40,13 +49,15 @@ $('p#someText').attr('lang')	// This will return 'en'
 </p>
 ```
 
-Say in the above HTML, you need to parse out the 'Text that I want' phrase. Unfortunately, there is a big problem with this.
+Say in the above HTML, you need to parse out the 'Text that I want' phrase. Unfortunately, there is a big problem with
+this.
 
 * You cannot select `$('p.someClass')` as this will select the wrong element. (The root node)
 
-Lets look at the signature for the `$` object. `$(selector, rootNode)`
+Let's look at the signature for the `$` object. `$(selector, rootNode)`
 
-In the above examples, we've only used a selector. However you are allowed to chain selectors together to be more and more specific.
+In the above examples, we've only used a selector. However you are allowed to chain selectors together to be more and
+more specific.
 
 ```ts
 // Select a more specific area of your HTML that you wish to search inside.
@@ -66,8 +77,6 @@ let selectorContext = $('p.myClass')
 let text = $('p.someClass', $(selectorContext)).text()	// "Text that I want"
 
 ```
-
-
 
 ## Advanced Selectors
 
@@ -128,10 +137,6 @@ $('p[lang$="fr"]').text()	// Selects the first 'p' block which has a 'lang' attr
 $('p[lang^="lang"]').text()	// Selects the first 'p' block with a 'lang' attribute STARTING with 'lang'	- Block 3
 ```
 
-
-
-
-
 ## Tutorial - Basic Parsing
 
 ### Loading Data
@@ -157,12 +162,15 @@ With a given HTML document, lets do some parsing.
 </ul>
 ```
 
-Given the above set of HTML, say that you have loaded it into Cheerio using the instructions above. What you are looking for, is the text inside each of the `li` objects. There should be a few thoughts which should be going through your head;
+Given the above set of HTML, say that you have loaded it into Cheerio using the instructions above. What you are looking
+for, is the text inside each of the `li` objects. There should be a few thoughts which should be going through your
+head;
 
 - What _unique_ identifier is surrounding the data that I need?
-  - In the example of parsing 'Three Apples', we can see that it is __always__ in a `li` block, with a class of `apple`
+	- In the example of parsing 'Three Apples', we can see that it is **always** in a `li` block, with a class
+	  of `apple`
 - If the object is not entirely unique, is there any constants in the formatting?
-  - If there is more than 1 object with the same signature, is the piece I want always the second in the list?
+	- If there is more than 1 object with the same signature, is the piece I want always the second in the list?
 
 In this case, to get the 'Three Apples' text, we are looking for a `li` object with a class `apple`
 
@@ -177,11 +185,10 @@ What if we want to get the "Twelve Pears" text? Referencing the table at the top
 $('li[meta="pear-data"]').text()	// This will return 'Twelve Pears'
 ```
 
-
-
 ## Tutorial - Looping Example
 
-In most cases, when you are parsing manga from a website, you will have some kind of list. And for each element of the list, you need to get a manga object out. Lets use the following as an example.
+In most cases, when you are parsing manga from a website, you will have some kind of list. And for each element of the
+list, you need to get a manga object out. Lets use the following as an example.
 
 ```html
 <div class="mangaList">
@@ -212,8 +219,6 @@ We can note the following:
 * Each separate manga is inside of a `div` with a class `mangaObject`
 * Inside of each manga block, the title is always inside of a `p` with an ID of `title`
 
-
-
 This brings up the question: **What happens if I select something which has more than one match?**
 
 Fortunately, it's likely as you'd expect. **You can easily get an array of each matching block**
@@ -232,8 +237,5 @@ for(let obj of selectionArray) {
 
 // At this point, you should have a 'titles' array with 3 elements inside!
 ```
-
-
-
 
 
