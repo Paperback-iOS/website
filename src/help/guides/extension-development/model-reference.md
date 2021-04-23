@@ -177,7 +177,7 @@ An integer enum representing the various statuses a manga can have.
 ### Values
 
 | Name | Value | Description |
-|------|-------|-------------|
+|------|:-----:|-------------|
 | `Completed` | 0 | A manga that has officially completed production. Does not mean that the current chapter list contains all chapters that the manga will ever have, as sources can add special pages posted on social media or scanlations for chapters in languages other than the official release language. |
 | `Ongoing` | 1 | A manga that is still releasing chapters. |
 
