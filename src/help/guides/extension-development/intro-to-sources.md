@@ -19,5 +19,5 @@ contents of X website.
 ### Where do I start?
 
 * Validate that the website you intend to write for is not already available. A list of sources can be
-  found [on the Paperback Website.](../adding-repos.md#known-repositories)
-* Check out the [quickstart](cheerio-quickstart.md) page for a place to begin.
+  found [on the Paperback Website](../adding-repos/#known-repositories).
+* Check out the [quickstart](cheerio-quickstart/) page for a place to begin.
