@@ -122,7 +122,7 @@ async getChapters(mangaId: string): Promise<Chapter[]> {
 
 ### Returns
 
-Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](model-reference.md#ChapterDetails)
+Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](model-reference/#ChapterDetails)
 object.
 
 ### Example Implementation
