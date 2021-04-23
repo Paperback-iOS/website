@@ -8,7 +8,7 @@ Welcome to Paperback contributing guide. If Paperback initially is a closed sour
 :::
 
 # Paperback ecosystem
-You will find all our projects in our [GitHub organization](https://github.com/Paperback-iOS). Discussions usually take place in the development channels of our Discord server, you may be interested in joining it.
+You will find all of our projects in our [GitHub organization](https://github.com/Paperback-iOS). Additionally, discussions usually take place in the development channels of our Discord server. You're more than welcome to join in on the conversation!
 
 ---
 
