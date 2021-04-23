@@ -71,33 +71,4 @@ module.exports = [
 			},
 		],
 	},
-	{
-		text: "Development",
-		items: [
-			{
-				text: "Sources Introduction",
-				link: "/help/guides/extension-development/intro-to-sources/"
-			},
-			{
-				text: "Parsing Quickstart",
-				link: "/help/guides/extension-development/cheerio-quickstart/"
-			},
-			{
-				text: "How To Use Metadata",
-				link: "/help/guides/extension-development/metadata/"
-			},
-			{
-				text: "API Reference",
-				items: [
-					{
-						text: "Function Definitions",
-						link: "/help/guides/extension-development/function-definitions/"
-					},
-					{
-						text: "Model Reference",
-						link: "/help/guides/extension-development/model-reference"
-					}]
-			}
-		]
-	}
 ];
