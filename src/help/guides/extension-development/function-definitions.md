@@ -170,7 +170,7 @@ async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDeta
 | Parameter | Type | Description|
 |-----------|------|------------|
 | `query` | [SearchRequest](model-reference/#searchrequest) | The object representing the search. View the fields of the [SearchRequest](model-reference/#searchrequest) object to find out what a search can contain. |
-| `metadata` | any | Metadata carried through function calls. View the [metadata page](metadata.md) to learn more about how the parameter works. |
+| `metadata` | any | Metadata carried through function calls. View the [metadata page](metadata/) to learn more about how the parameter works. |
 
 ### Returns
 
