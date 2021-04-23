@@ -4,7 +4,7 @@ lang: en-US
 ---
 
 :::guide Contribute to Paperback
-Welcome to Paperback contributing guide. If Paperback initially is a closed source application, it involves a pretty important open source ecosystem. Everyone is welcome to contribute and help in our various project!
+Welcome to Paperback contributing guide. If Paperback initially is a closed source application, it involves a pretty important open source ecosystem. Everyone is welcome to contribute and help in our various projects!
 :::
 
 # Paperback ecosystem
