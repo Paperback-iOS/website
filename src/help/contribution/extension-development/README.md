@@ -33,5 +33,7 @@ Developing a source is pretty easy, you only need basic programming knowledge. S
   * [Source development quickstart](quickstart/)
   * [A practical guide to Parsing](parsing-guide/)
   * [Function definitions](function-definitions/)
+  * [Models reference](model-reference/)
+  * [Metadata parameter](metadata/)
 
 * Read comments in [Extensions Common](https://github.com/Paperback-iOS/extensions-common) to learn more about available methods.
