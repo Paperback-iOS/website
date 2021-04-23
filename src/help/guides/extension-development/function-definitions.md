@@ -10,11 +10,11 @@
 
 | Parameter | Type | Description|
 |-----------|------|------------|
-|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
+|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
 
 ### Returns
 
-Given an ID, this async function should return a filled out [Manga](model-reference/#Manga) object.
+Given an ID, this async function should return a filled out [Manga](model-reference/#manga) object.
 
 ### Example Implementation
 
@@ -58,11 +58,11 @@ async getMangaDetails(mangaId: string): Promise<Manga> {
 
 | Parameter | Type | Description|
 |-----------|------|------------|
-|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author.|
+|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
 
 ### Returns
 
-Given an ID, this async function should return an array of [Chapter](model-reference.md#Chapter) objects.
+Given an ID, this async function should return an array of [Chapter](model-reference/#chapter) objects.
 
 ### Example Implementation
 
@@ -122,7 +122,7 @@ async getChapters(mangaId: string): Promise<Chapter[]> {
 
 ### Returns
 
-Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](model-reference/#ChapterDetails)
+Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](model-reference/#chapterdetails)
 object.
 
 ### Example Implementation
