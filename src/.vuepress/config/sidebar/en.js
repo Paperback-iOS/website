@@ -19,6 +19,7 @@ module.exports = [
 			"/help/contribution/extension-development/quickstart",
 			"/help/contribution/extension-development/parsing-guide",
 			"/help/contribution/extension-development/function-definitions",
+			"/help/contribution/extension-development/model-reference",
 		]
 	}
 ];
