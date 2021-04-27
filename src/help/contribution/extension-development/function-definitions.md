@@ -1,3 +1,8 @@
+---
+title: Function definitions
+lang: en-US
+---
+
 # Required Methods
 
 ## getMangaDetails

@@ -8,18 +8,19 @@ module.exports = [
 	},
 	{
 		title: "Tools",
-		collapsable: false,
+		collapsable: true,
 		children: ["/tools/backup-converter"],
 	},
 	{
-		title: "Source Development",
+		title: "Extension Development",
 		collapsable: true,
 		children: [
-			"/help/guides/extension-development/intro-to-sources",
-			"/help/guides/extension-development/cheerio-quickstart",
-			"/help/guides/extension-development/metadata",
-			"/help/guides/extension-development/function-definitions",
-			"/help/guides/extension-development/model-reference"
+			"/help/contribution/extension-development/",
+			"/help/contribution/extension-development/quickstart",
+			"/help/contribution/extension-development/parsing-guide",
+			"/help/contribution/extension-development/function-definitions",
+			"/help/contribution/extension-development/model-reference",
+			"/help/contribution/extension-development/metadata",
 		]
 	}
 ];

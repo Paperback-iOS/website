@@ -1,4 +1,9 @@
-## A practical guide to Parsing
+---
+title: A practical guide to Parsing
+lang: en-US
+---
+
+# A practical guide to Parsing
 
 We're sure that you've noticed at this point that when we're handling HTTP parsing that we are
 using [CheerioJS](https://github.com/cheeriojs/cheerio). If you are familiar
@@ -10,6 +15,7 @@ the core fundamental on how Paperback works. Each source that you create is simp
 
 CheerioJS, just like JQuery, utilizes **CSS Selectors** as the mode of selecting elements. This means that any selector
 that can be used to style elements with CSS can be used to select elements with Cheerio.
+
 
 # Quick Reference Guide
 
@@ -237,5 +243,3 @@ for(let obj of selectionArray) {
 
 // At this point, you should have a 'titles' array with 3 elements inside!
 ```
-
-
