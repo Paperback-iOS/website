@@ -9,6 +9,6 @@ module.exports = [
 	{
 		title: "Tools",
 		collapsable: false,
-		children: ["/tools/backup-converter"],
+		children: ["/tools/backup-converter", "/tools/md-to-md-migrator"],
 	},
 ];
