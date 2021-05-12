@@ -7,10 +7,10 @@ lang: en-US
 MangaDex changed their ids to UUIDS. If the source remains compatible with legacy ids, using them will be slower as it requires to call a conversion endpoint every time.
 
 To migrate you library:
-1. [Make a backup]() of your library
+1. [Make a backup](/help/faq/#how-can-i-make-a-backup-of-my-library) of your library
 1. Convert your backup with this *MangaDex to MangaDex backup migrator*
 1. Reinstall Paperback
-1. [Restore]() the migrated backup
+1. [Restore](/help/faq/#how-can-i-make-a-backup-of-my-library) the migrated backup
 
 ::: aside
 Please note the conversion can take some time on big libraries

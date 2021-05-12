@@ -1,10 +1,12 @@
 <!--
-There are three steps:
+Allows to upload a Paperback backup and migrate MangaDex titles from legacy ids to UUIDs
+
+The migration is done in three steps:
 0	The user can upload a backup
 1	The user is shown information about the backup and can start the conversion
 2	Conversion process
 3	The new backup can be downloaded
-The variable activeStep indicate the current step
+The variable activeStep indicates the current step
 -->
 
 <template>
@@ -58,28 +60,28 @@ The variable activeStep indicate the current step
 		  		<el-button type="primary" plain @click="startMigration">Start migration</el-button>
 			</div>
 		</div>
+
 		<!-- Migration -->
-		<div v-if="activeStep===2">
+		<div v-if="activeStep === 2">
 			<p class="instruction">
 				Migrating library
 			</p>
 			<p>
-				<!-- loadingDone is increased by 500 on each request and can thus be greater than loadingTotal -->
+				<!-- loadingDone is increased by 500 on each request and can thus be greater than loadingTotal, we need to round it -->
 				Converted {{ Math.round(loadingDone) > loadingTotal ? loadingTotal : Math.round(loadingDone) }}/{{ loadingTotal }} ids. Please wait...
 			</p>
 			<el-progress :percentage="getLoadingPercentage()" :format="formatLoadingPercentage"></el-progress>
 		</div>
+
 		<!-- Downloading -->
-		<div v-if="activeStep===3">
+		<div v-if="activeStep === 3">
 			<p class="instruction">
 				Migrated library
 			</p>
 			<p>
-
 				Successful migration. Converted {{ Math.round(loadingTotal) }} ids.
 				<br />
 				Download your migrated backup.
-				
 			</p>
 			<blockquote v-if="errorsList.length > 0">
 					<p v-for="(error, index) in errorsList" :key="index" :class="error.type">{{ error.message }} </p>
@@ -105,7 +107,6 @@ export default {
 			activeStep: 0,
 			loading:false,					// Put the uploader in loading mode
 
-			backupObject: undefined,		// The backup file NOT NEEDED
 			backupJson: undefined,			// Content of the backup, format json
 
 			backupStats: {					// Information about the backup and the process
@@ -118,30 +119,29 @@ export default {
 			},
 
 			mangaAssociationDict: {},				// {mangaLegacyId: {manga:[mangaBackupIndex], chapters:[chapterBackupIndex]}}
-													// backupIndex is the index in the backup lists
+														// mangaBackupIndex is the index of the manga in the backup
+														// chapterBackupIndex is the index of the chapter in the backup
 			chaptersAssociationDict: {},			// {chapterLegacyId: {chapters:[chapterBackupIndex]}}
+														// chapterBackupIndex is the index of the chapter in the backup
 
 			loadingDone: 0,							// Number of steps already done
 			loadingTotal: 0,						// Number of steps to do
 
-			backupFileName: "",
+			backupFileName: "",						// Filename of the original backup
 			
 			errorsList: [],							// {type: "errorMessage", message: ""}
-			
+													// List of errors that are displayed at the end of the migration
 		};
 	},
 	
 	methods: {
 
-		// Cancel the current migration and return ti step one
+		// Cancel the current migration and return to step one
 		resetMigrator() {
-			
-
 			this.$data.activeStep = 0
 			this.$data.loading = false
-			this.$data.backupObject = undefined
 			this.$data.backupJson = undefined
-			this.$data.backupStats= {					// Information about the backup and the process
+			this.$data.backupStats = {					// Information about the backup and the process
 				nbManga: 0,
 				nbMangaToMigrate: 0,
 				nbMigratedManga: 0,
@@ -159,10 +159,11 @@ export default {
 
 			this.errorsList = []
 
-			// We don't need and can't reset the file list for all reset except the invalid file format error
+			// We don't need and can't reset the files list for all reset except the "invalid file format" and "unsuported backup version" errors
 			//this.$refs.upload.clearFiles();
 		},
 
+		// Calculate and return the percentage of the loading indicator
 		getLoadingPercentage () {
 			if (this.$data.loadingTotal === 0) {
 				// Prevent division by zero
@@ -172,6 +173,7 @@ export default {
 			return percentage >= 100 ? 100 : percentage
 		},
 
+		// Return the percentage shown on the right of the loading indicator
 		formatLoadingPercentage (percentage) {
 			if (this.$data.loadingTotal === 0) {
 				return "no items"
@@ -182,14 +184,18 @@ export default {
 		// Step 1 process
 		// Called on backup submission
 		submitBackup(data) {
-			// Open the backup, store it and show step 1
+			/*
+				Open the backup and store it
+				Identify legacy ids
+				Show step 2
+			 */
 
 			console.log("Backup submitted");
 			this.$data.loading = true
 			this.$data.backupFileName = data.file.name
 
-			if (data.file.type!== 'application/json') {
-				// Invalid file type
+			// Check the file type of the backup
+			if (data.file.type !== 'application/json') {
 				this.$message({
 					type: 'error',
 					message: 'Invalid file format'
@@ -206,17 +212,24 @@ export default {
 				const backup = typeof value === "string" ? JSON.parse(value) : value
 				this.$data.backup = backup
 
+				// Check the backupSchemaVersion, only `backupSchemaVersion 1` is supported
 				if (backup.backupSchemaVersion !== 1 ) {
-					// We officialy only support backupSchemaVersion 1, if different log an error but try to proceed anyway
-					console.log(`Migrator: unsuported backup schema version version ${backup.backupSchemaVersion}`)
-					this.$data.errorsList.push({type: "errorMessage", message: `INFO: Unsuported backup schema version ${backup.backupSchemaVersion}`})
+					this.$message({
+						type: 'error',
+						message: `Unsuported backup schema version: ${backup.backupSchemaVersion}`
+					});
+					console.error(`Migrator: unsuported backup schema version version ${backup.backupSchemaVersion}`);
+					// We need to reset the migrator and remove the uploaded file from the upload object
+					this.$refs.upload.clearFiles();
+					this.resetMigrator()
+					return
 				}
 
 				/* Manga legacy ids identification */
 
 				// Manga are saved in backup.sourceMangas
-				// We create a list of (index, legacyId)
-				// We converted, we will just replace the legacyId by the UUID in `backup.sourceMangas` at the index `index`
+				// For each legacy id found, we push the index of the manga in the backup to the dictionnary mangaAssociationDict 
+				// When converted, we will just need to replace all legacyId by their corresponding UUID in `backup.sourceMangas` at the position `index`
 				for (const mangaBackupIndex in backup.sourceMangas) {
 					const mangaObject = backup.sourceMangas[mangaBackupIndex]
 					if (mangaObject.sourceId === 'MangaDex') {
@@ -237,8 +250,9 @@ export default {
 				/* Chapters legacy ids identification */
 
 				// Chapters are saved in backup.chapterMarkers
-				// We create a list of (index, legacyId)
-				// We converted, we will just replace the legacyId by the UUID in `backup.chapterMarkers` at the index `index`
+				// A chapter countains a chapterId and a mangaId that may need to be converted
+				// For each legacy id found, we push the index of the manga in the backup to the dictionnaries mangaAssociationDict and chaptersAssociationDict
+				// When converted, we will just need to replace all legacyId by their corresponding UUID in `backup.chapterMarkers` at the position `index`
 				for (const chapterBackupIndex in backup.chapterMarkers) {
 					const chapterObject = backup.chapterMarkers[chapterBackupIndex].chapter
 					if (chapterObject.sourceId === 'MangaDex') {
@@ -294,6 +308,8 @@ export default {
 			
 		
 		async getMangaUUIDs(numericIds, type = 'manga') {
+			// Adapted from https://github.com/Paperback-iOS/extensions-promises/blob/master/src/MangaDex/MangaDex.ts
+			// Return a dictionnary of legacy ids / UUIDs
 
 			const requestLength = numericIds.length
 			let offset = 0
@@ -310,7 +326,7 @@ export default {
 				}
 
 				var request = {
-					"url": "http://localhost:5000/getids",
+					"url": "https://cors.paperback.workers.dev/corsproxy/?apiurl=https://api.mangadex.org/legacy/mapping",
 					"method": "POST",
 					"timeout": 0,
 					"mimeType": "multipart/form-data",
@@ -372,7 +388,7 @@ export default {
 			/* Manga migration */
 			
 			console.log("Migrating manga ids")
-			// We get the mapping legacy / 
+			// We get the mapping legacy ids / UUIDs
 			const mangaUUIDsDict = await this.getMangaUUIDs(Object.keys(this.$data.mangaAssociationDict), 'manga')
 			
 			// We modify ids in the manga backup
@@ -380,6 +396,7 @@ export default {
 				const mangaIndexList = this.$data.mangaAssociationDict[mangaLegacyId].manga
 				const chaptersIndexList = this.$data.mangaAssociationDict[mangaLegacyId].chapters
 
+				// Sometimes, a legacy id does not exist on MangaDex, it was probably removed
 				if (mangaUUIDsDict[mangaLegacyId] !== undefined) {
 					for (const mangaIndex of mangaIndexList) {
 						backup.sourceMangas[mangaIndex].id = mangaUUIDsDict[mangaLegacyId]
@@ -399,13 +416,14 @@ export default {
 			/* Chapters migration */
 			
 			console.log("Migrating chapter ids")
-			// We get the mapping legacy / 
+			// We get the mapping legacy ids / UUIDs
 			const chaptersUUIDsDict = await this.getMangaUUIDs(Object.keys(this.$data.chaptersAssociationDict), 'chapter')
 
 			// We modify ids in the backup
 			for (const chapterLegacyId of Object.keys(this.$data.chaptersAssociationDict)) {
 				const chaptersIndexList = this.$data.chaptersAssociationDict[chapterLegacyId].chapters
 
+				// Sometimes, a legacy id does not exist on MangaDex, it was probably removed
 				if (chaptersUUIDsDict[chapterLegacyId] !== undefined) {
 					for (const chapterIndex of chaptersIndexList) {
 						//console.log("changed index", chapterIndex, " : ", chapterLegacyId, "==>", chaptersUUIDsDict[chapterLegacyId])
@@ -422,13 +440,14 @@ export default {
 			// Add the new MangaDex source
 			let newActiveSources = []
 
+			// Only keep non MangaDex sources
 			for (const i in backup.activeSources) {
-				//console.log(backup.activeSources[i].id)
 				if (backup.activeSources[i].id !== 'MangaDex') {
 					newActiveSources.push(backup.activeSources[i])
 				}
 			}
 
+			// Add the new MangaDex source
 			newActiveSources.push({
 				"author": "nar1n",
 				"desc": "Extension that pulls manga from MangaDex",
@@ -469,6 +488,7 @@ export default {
 		},
 
 		// Step 3 process
+		// Called when the user press the "Download" button
 		downloadData() {
 			/* Tell the browser to start a download operation on a given set of text */
 
