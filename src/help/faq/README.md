@@ -24,6 +24,8 @@ If you are a patreon, you will receive an email to your patreon address regardin
 ## Troubleshooting
 If you're having problems with the app, please check here before posting. If you're having an issue that is not listed here, please use the #support channel on Discord to ask questions.
 
+<!-- App global issues -->
+
 ---
 
 ### App crashes on launch
@@ -35,6 +37,20 @@ If you are using the **Beta / Patron build**, they are usually unstable. If you 
 
 ### App crashes after trying to download a manga
 Downloading manga did not work on earlier version of the app. Update to the latest TestFlight build to fix this issue.
+
+<!-- App general issues -->
+
+---
+
+### Sorting by Latest Updates doesn't work
+This works but it doesn't respect user's selected language. Try to use **Update Count** sorting instead.
+
+---
+
+### Thumbnail does not appear
+In the library, long press the thumbnail then select **Refresh thumbnail** 
+
+<!-- Content settings related -->
 
 ---
 
@@ -55,9 +71,52 @@ Also make sure that your email address is verified on MangaDex.
 
 ---
 
+### Manga are not showing up in my library after I follow them?
+You need to enable hentai for hentai title to be shown in the library. See [how do I enable Hentai](#how-do-i-enable-hentai).
+
+<!-- Using sources -->
+
+---
+
 ### How can I add other manga sources?
 Other manga sources are available on the latest TestFlight public and patreon versions of the application.
 Read [Adding an External Repository](/help/guides/adding-repos/) guide to learn how to install other sources.
+
+---
+
+### Request a source
+Do you like a particular website which is currently not supported by Paperback? You can submit a source request for it. 
+
+> Please make sure the source does not exist nor was already requested before submitting a new issue.
+
+Extensions repositories:
+
+ * [Extensions Foreign](https://github.com/Paperback-iOS/extensions-foreign/issues) for non English websites
+ * [H Extensions](https://github.com/Paperback-iOS/h-extensions/issues) for +18 specific websites
+ * [Extensions Promises](https://github.com/Paperback-iOS/extensions-promises/issues) for other websites
+
+> **Contribute**
+> 
+> Would you like to make this extension a reality? You can contribute to its development! Check our (work in progress) [source development](https://deploy-preview-81--paperbackios.netlify.app/help/contribution/extension-development/#a-manga-reader-without-servers) guide to get started. If you need help or have any questions, feel free to use our Discord server #extensions-dev channel.
+
+---
+
+### How do notifications work?
+The app will periodically check for updates in the background when iOS or iPadOS allocates time for it, this should be improved as you use the app and iOS learns to prioritize the app's background jobs over others. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
+
+Sources supporting notifications have a <el-tag type="success" size="mini" effect="dark"> Notifications </el-tag> badge in the app and the [repositories list](/help/guides/adding-repos/#known-repositories).
+ 
+---
+
+### Bypass Cloudflare protection
+Go to **Settings** > **Sources**
+Select the source and press **Cloudflare bypass**
+
+This process may need to be done each time the cookies expire, usually every three days.
+
+Sources requiring this process have a <el-tag type="danger" size="mini" effect="dark"> Cloudflare </el-tag> badge in the app and the [repositories list](/help/guides/adding-repos/#known-repositories).
+
+<!-- Using the app -->
 
 ---
 
@@ -102,16 +161,13 @@ Go to Settings and press "**Export logs**"
 ### A blue X appears sometimes when I try to read a chapter
 Swipe a couple of pages away and then come back to the failed page, it should have been reloaded. If that doesn't work, close the reader and open the chapter again.
 
+<!-- MangaDex specific -->
+
 ---
 
 ### Pages often fail/take a long time to load on MangaDex source
  * If you're in SEA (Southeast Asia) get a VPN (Psiphon or ProtonVPN) MangaDex servers have routing issues in SEA.
  * If you're not in SEA and still face this issue, see if there's any announcements in the MangaDex discord about issues or maintenance.
-
----
-
-### Manga are not showing up in my library after I follow them?
-You need to enable hentai for hentai title to be shown in the library. See [how do I enable Hentai](#how-do-i-enable-hentai).
 
 ---
 
@@ -126,18 +182,6 @@ You need to enable hentai for hentai title to be shown in the library. See [how 
 Syncing more than 1,000 manga will take some time however, you can improve this by changing the list type on Follows page of MD:
 
  * On Safari, go to [MangaDex Follows](https://mangadex.org/follows/manga/) and change the display list to **Simple list** from the menu in the top right of the table.
-
----
-
-### How do notifications work?
-The app will periodically check for updates in the background when iOS or iPadOS allocates time for it, this should be improved as you use the app and iOS learns to prioritize the app's background jobs over others. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
-
-Sources supporting notifications have a <el-tag type="success" size="mini" effect="dark"> Notifications </el-tag> badge in the app and the [repositories list](/help/guides/adding-repos/#known-repositories).
- 
----
-
-### Sorting by Latest Updates doesn't work
-This works but it doesn't respect user's selected language. Try to use **Update Count** sorting instead.
 
 ---
 
