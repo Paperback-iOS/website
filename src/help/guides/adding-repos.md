@@ -32,7 +32,7 @@ This is a list of all of the known repositories currently for Paperback, as well
         description="Official repository for 18+ sources" />
     <ExtensionsList
         url="https://paperback-ios.github.io/extensions-foreign/promises"
-        name="Foreign Extentions"
+        name="Foreign Extensions"
         description="Contains official sources for languages other than English" />
     <ExtensionsList
         url="https://paperback-ios.github.io/extensions-madara"
