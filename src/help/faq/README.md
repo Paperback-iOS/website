@@ -65,12 +65,6 @@ In the app, go to Settings > Content Settings.
 
 ---
 
-### My content settings are reset everytime I open the app
-When you are logging in, make sure that "**Remember me**" is checked on the page.
-Also make sure that your email address is verified on MangaDex.
-
----
-
 ### Manga are not showing up in my library after I follow them?
 You need to enable hentai for hentai title to be shown in the library. See [how do I enable Hentai](#how-do-i-enable-hentai).
 
@@ -143,12 +137,15 @@ Repeat the same steps to remove downloaded chapters
  * You can then press "**Restore**" to restore your backup
 
 **NOTE** 
- * A video guide on how to make a backup is also available [on youtube](https://www.youtube.com/watch?v=5EPN9FORQ1g)
+ * A video guide on how to make a backup is also available [on YouTube](https://www.youtube.com/watch?v=5EPN9FORQ1g)
 
 ---
 
-### How to export a source logs?
+### How to export the app logs?
 Go to Settings and press "**Export logs**"
+
+### How to export a source logs
+Go to Settings, Sources. Select a source and press "**Export logs**"
 
 ---
 
@@ -175,13 +172,6 @@ Swipe a couple of pages away and then come back to the failed page, it should ha
  * If the manga is REALLY new (1st chapter added in the last hour) it wont be available until after an hour.
  * If the manga isn't new, chances are it's restricted. At the moment, the app doesn't support reading restricted manga. Read the manga on the website instead.
  * The manga may be licensed for the MangaDex extension, but you may try to find the other titles on other [community sources](/help/guides/adding-repos/#known-repositories).
-
----
-
-### Syncing lists takes a really long time
-Syncing more than 1,000 manga will take some time however, you can improve this by changing the list type on Follows page of MD:
-
- * On Safari, go to [MangaDex Follows](https://mangadex.org/follows/manga/) and change the display list to **Simple list** from the menu in the top right of the table.
 
 ---
 
