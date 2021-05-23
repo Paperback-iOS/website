@@ -1,6 +1,6 @@
 module.exports = [
-	{ text: "Home", link: "/" },
-	{ text: "FAQ", link: "/help/faq/" },
+	{text: "Home", link: "/"},
+	{text: "FAQ", link: "/help/faq/"},
 	{
 		text: "Guides",
 		items: [
@@ -38,13 +38,26 @@ module.exports = [
 		],
 	},
 	{
+		text: "Contribution",
+		items: [
+			{
+				text: "Contribute to Paperback",
+				link: "/help/contribution/"
+			},
+			{
+				text: "Extension Development",
+				link: "/help/contribution/extension-development/"
+			},
+		]
+	},
+	{
 		text: "Links",
 		items: [
 			{
 				text: "Community",
 				items: [
-					{ text: "Discord", link: "https://discord.gg/Ny83JV3" },
-					{ text: "Reddit", link: "https://reddit.com/r/Paperback" },
+					{text: "Discord", link: "https://discord.gg/Ny83JV3"},
+					{text: "Reddit", link: "https://reddit.com/r/Paperback"},
 					{
 						text: "Twitter",
 						link: "https://twitter.com/paperbackios",
