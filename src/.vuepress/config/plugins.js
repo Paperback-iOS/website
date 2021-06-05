@@ -25,6 +25,14 @@ module.exports = [
 	[
 		"vuepress-plugin-container",
 		{
+			type: "linkedcode",
+			before: (info) => `<CodeLinked language="${info}">`,
+			after: "</CodeLinked>",
+		},
+	],
+	[
+		"vuepress-plugin-container",
+		{
 			type: "aside",
 			defaultTitle: "",
 		},
