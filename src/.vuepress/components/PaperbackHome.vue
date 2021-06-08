@@ -51,18 +51,6 @@ Custom home page based on Vuepress default theme home page
             class="lightrendered"
           >   
         </a>-->
-        <a href="https://testflight.apple.com/join/pRG9XsHu"> 
-          <img
-            :src="'/assets/AppStore/AppStore_' + data.lang + '_White.svg'"
-            alt="Download on the App Store"
-            class="darkrendered"
-          > 
-          <img
-            :src="'/assets/AppStore/AppStore_' + data.lang + '_Black.svg'"
-            :alt="data.buttonDownload"
-            class="lightrendered"
-          >   
-        </a>
        
         <!-- User guide button -->
         <!-- RouterLink is used by the NavLink component --> 
