@@ -7,6 +7,15 @@ module.exports = [
 		children: ["/help/guides/getting-started", "/help/guides/adding-repos"],
 	},
 	{
+		title: "Installation",
+		collapsable: true,
+		children: [
+			"/help/installation/public-testflight",
+			"/help/installation/public-altstore",
+			"/help/installation/beta-testflight"
+		]
+	},
+	{
 		title: "Tools",
 		collapsable: true,
 		children: ["/tools/backup-converter"],
