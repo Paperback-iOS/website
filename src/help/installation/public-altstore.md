@@ -9,7 +9,7 @@ lang: en-US
 **Paperback** can be sideloaded with **AltStore**.
 
 :::: tip Video tutorial
-If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here](https://www.youtube.com/watch?v=n1KRwsxNiWY) for Windows and [here](https://www.youtube.com/watch?v=CjPjsF4yJ0M) for macOS.
+If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here](https://www.youtube.com/watch?v=2NBACQHgF-I) for Windows and [here](https://www.youtube.com/watch?v=qTgiHQVgulg) for macOS.
 
 :::aside
 The installation guides use outdated UI. Please ignore it.
