@@ -53,7 +53,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 1. Trust AltStore application: On your device, go to Settings > General > Device Management. Choose your Apple ID and select **Trust**.
 1. Launch **AltStore** on your iPhone/iPad.
 1. Go to **My Apps** and tap the **+** icon in the top left corner.
-1. Open the **`.IPA`** you downloaded from the [Prerequisites](/help/guides/getting-started/#prerequisites) section.
+1. Open the **`.IPA`** you downloaded from the [Prerequisites](#prerequisites) section.
 1. **Paperback** should finally be installed!
 :::
 
@@ -83,7 +83,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 1. Trust AltStore application: On your device, go to Settings > General > Device Management. Choose your Apple ID and select **Trust**.
 1. Launch **AltStore** on your iPhone/iPad.
 1. Go to **My Apps** and tap the **+** icon in the top left corner.
-1. Open the **`.IPA`** you downloaded from the [Prerequisites](/help/guides/getting-started/#prerequisites) section.
+1. Open the **`.IPA`** you downloaded from the [Prerequisites](#prerequisites) section.
 1. **Paperback** should finally be installed!
 :::
 ::::
