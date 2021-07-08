@@ -9,7 +9,7 @@ If you have questions about the app and our plans or need help with installing t
 ## General Information
 
 ### Why are you making this app?
-There are no decent manga apps on **iOS** and **iPadOS** that have _non-intrusive_ advertisements or **MangaDex** support.
+There are no decent manga apps on **iOS** and **iPadOS** that have _non-intrusive_ advertisements support for third-party plugins.
 
 ### What type of business model will you take on?
 There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no fee to use Paperback.
@@ -40,18 +40,6 @@ Downloading manga did not work on earlier version of the app. Update to the late
 
 ### How do I filter languages
 In the app, go to Settings > Content Settings.
-
----
-
-### How do I enable Hentai
- * Sign into [MangaDex’s website](https://mangadex.org/) on a browser, go to your settings, and set the Hentai toggle to "**View All**".
- * Then sign into MangaDex on Paperback, hitting "Remember me", and go into your *Content Settings* in the app settings tab and choose "**Show All**".
-
----
-
-### My content settings are reset everytime I open the app
-When you are logging in, make sure that "**Remember me**" is checked on the page.
-Also make sure that your email address is verified on MangaDex.
 
 ---
 
@@ -95,7 +83,6 @@ Go to Settings and press "**Export logs**"
 
 ### The reader is open but stays blank when I try to read a chapter
  * Try to switch between the horizontal and vertical viewer. If switching doesn't fix it, try to read the same chapter on Safari, if it works, ping @Paper on the Discord #support channel.
- * Some chapters are taken off of MangaDex due to group conflicts or chapters being scans of the official translations.
 
 ---
 
@@ -104,28 +91,8 @@ Swipe a couple of pages away and then come back to the failed page, it should ha
 
 ---
 
-### Pages often fail/take a long time to load on MangaDex source
- * If you're in SEA (Southeast Asia) get a VPN (Psiphon or ProtonVPN) MangaDex servers have routing issues in SEA.
- * If you're not in SEA and still face this issue, see if there's any announcements in the MangaDex discord about issues or maintenance.
-
----
-
 ### Manga are not showing up in my library after I follow them?
 You need to enable hentai for hentai title to be shown in the library. See [how do I enable Hentai](#how-do-i-enable-hentai).
-
----
-
-### I can't find X manga but it's on MangaDex
- * If the manga is REALLY new (1st chapter added in the last hour) it wont be available until after an hour.
- * If the manga isn't new, chances are it's restricted. At the moment, the app doesn't support reading restricted manga. Read the manga on the website instead.
- * The manga may be licensed for the MangaDex extension, but you may try to find the other titles on other [community sources](/help/guides/adding-repos/#known-repositories).
-
----
-
-### Syncing lists takes a really long time
-Syncing more than 1,000 manga will take some time however, you can improve this by changing the list type on Follows page of MD:
-
- * On Safari, go to [MangaDex Follows](https://mangadex.org/follows/manga/) and change the display list to **Simple list** from the menu in the top right of the table.
 
 ---
 
