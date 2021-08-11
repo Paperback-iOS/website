@@ -5,7 +5,7 @@ lang: en-US
 
 # Install the patron version
 
-> If you are not a patron and want to install the public build, you can check our other [installation guide](/help/guide/getting-started).
+> If you are not a patron and want to install the public build, you can check our other [installation guides](/help/guide/getting-started).
 
 ::: warning Warning
 This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the app will CRASH. Paperback is NOT designed for older iOS and iPadOS versions.
