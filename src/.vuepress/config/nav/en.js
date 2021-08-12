@@ -29,6 +29,10 @@ module.exports = [
 						text: "Backup Converter",
 						link: "/tools/backup-converter/",
 					},
+					{
+						text: "Backup Reader",
+						link: "/tools/backup-reader/",
+					},
 				],
 			},
 		],
