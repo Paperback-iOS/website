@@ -13,7 +13,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 #### Request a code
 1. Join Paperback **[Discord](https://discord.gg/Ny83JV3)** server
 1. On Discord, send a **direct message** (a DM) to `Paperback Bot#1108` (*Tim's Dealer*). \
-   Type inside the DMs: `pb invite Your-email-here.com`
+   Type inside the DMs: <code>pb invite <span style="color: #02c1ff">Your-email-here.com</span></code>
    > This have to be send has a **DM**, you **should not** use the command inside Paperback Discord server, in order for your email address to remain private!
 
 You should receive an email shortly with your TestFlight invite.
