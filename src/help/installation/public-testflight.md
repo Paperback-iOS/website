@@ -10,16 +10,42 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 :::
 
 ### TestFlight
-#### Instructions
+#### Request a code
+1. Join Paperback **[Discord](https://discord.gg/Ny83JV3)** server
+1. On Discord, send a **direct message** (a DM) to `Paperback Bot#1108` (*Tim's Dealer*). \
+   Type inside the DMs: `pb invite Your-email-here.com`
+   > This have to be send has a **DM**, you **should not** use the command inside Paperback Discord server, in order for your email address to remain private!
+
+You should receive an email shortly with your TestFlight invite.
+
+#### Installation instructions
 1. Remove every other version of Paperback
-1. Download the [TestFlight app](https://apps.apple.com/fr/app/testflight/id899247664) from App Store
-1. Accept the invite by going here [https://testflight.apple.com/join/pRG9XsHu](https://testflight.apple.com/join/pRG9XsHu) or redeem the code `pRG9XsHu`
+1. Inside of the email, click the button labeled "**View in TestFlight**"
+1. Download the TestFlight app onto your device from the App Store
+1. At the top of your TestFlight app, there is a "**Redeem**" button. Select this, and input the code which you have received through the email link
 1. Download the application through TestFlight
-   > Whenever there is an update to the application, you will have to return to TestFlight and select the "Update" button next to the app. It does not do this process automatically. If the setting is enabled for TestFlight, you will get a push notification to your device whenever an update is available
+   > Whenever there is an update to the beta, you will have to return to TestFlight and select the "Update" button next to the app. It does not do this process automatically. If the setting is enabled for TestFlight, you will get a push notification to your device whenever an update is available
 
 ---
 
 ## Installation FAQ
+
+### You only have one invite per 6 hours
+If you made a mistake, you may have to 6 hours to be able to request for a new invite.
+
+### `Paperback Bot#1108` answered me "**NO U**"
+You must have send the command in Paperback Discord server. You need to send a **direct message** to the bot.
+
+### I can not send a DM to `Paperback Bot#1108`
+Open your DMs for Paperback Discord server.
+
+### I made a typo when I send my email
+If you made a typo, request a private thread in our Discord server `#support` channel.
+
+### Requesting an invite from `Paperback Bot#1108` didn't work
+Are you sure you carefully followed all previous steps?
+If yes, please request a private thread in our Discord server `#support` channel. Our staff will help you get an invite.
+
 ### I get "The beta is full" when trying to install the app
 There can only be a limited number of testers on TestFlight due to the 10k testers limit enforced by Apple.
 To install the app you can use an other method of installation like [AltStore sideloading](/help/installation/public-altstore/).
