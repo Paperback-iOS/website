@@ -3,13 +3,13 @@ title: Backup Converter
 lang: en-US
 ---
 
-# Tachiyomi to Paperback Backup Converter
+# Tachiyomi and Paperback Backup Converter
 
 ::: warning Warning
 Recently Tachiyomi updated their backup formatting from `.json` to a `.gz` extension using Protocol Buffers. This tool will only work on the new version of backups. Legacy backups are unsupported.
 :::
 
-<BackupConverter/>
+<Backup-Converter/>
 
 :::: guide Supported Sources
 Because Tachiyomi and Paperback both work with community-created sources, the backup conversion process can only use sources which both Paperback and Tachiyomi share.
