@@ -30,8 +30,7 @@ export default {
 .failed
 	height 100%
 	width 100%
-	//background #F5F7FA
-	background #f0f4f8      // dark #2a2a2a
+	background #f0f4f8
 	display inline-flex
 	align-items center
 	text-align center

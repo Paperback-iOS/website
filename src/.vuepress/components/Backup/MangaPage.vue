@@ -16,12 +16,10 @@
 						<i class="el-icon-info"></i>
 					</el-tooltip>
 				</div>
-				<!-- Paperback id, useless {{ libraryMangaObject.manga.id }} -->
 			</div>
                     
 			<div class="block desc">
 				<p class="light">Description:</p>
-				<!--<br/>-->
 				{{ manga.description }}
 			</div>
 
@@ -34,45 +32,10 @@
 				<el-tag v-for="sourceId in manga.sourcesIds" :key="sourceId" class="tab" size="medium" type="info" effect="plain"> {{ sources[sourceId] ? sources[sourceId] : 'id: ' + sourceId }} </el-tag>
 			</div>
         </div>
-            
-            <!--
-                Titles
-                Authors
-                Artists
-                Tags
-                Sources
-                Ids
-                -->
-			<!-- Download Button 
-			<div class="downloadBackup">
-		  		<el-button type="primary" plain @click="downloadData">Download Paperback backup <i class="el-icon-download"></i></el-button>
-			</div>
-
-			<!-Unresolved items list 
-			<div v-if="convertedBackupData.noConverted.length != 0">
-				<p>The conversion was successful but {{convertedBackupData.noConverted.length}} items could not be resolved</p>
-				<table>
-					<thead>
-						<tr>
-							<th>Source Id</th>
-							<th>Manga Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr v-for="item in convertedBackupData.noConverted" :key="item.sourceId">
-							<td class="sourceID">{{item.sourceId}}</td>
-							<td>{{item.mangaTitle}}</td>
-						</tr>
-					</tbody>
-			</table>
-			</div>
-            -->
-
 	</span>
 </template>
 
 <script> 
-
 
 export default {
     props: {
@@ -87,16 +50,11 @@ export default {
 		}
 
 	},
-};
-
- 
+}
 
 </script>
 
 <style lang="stylus">
-
-
-
 .mangaPage
 	display grid
 	grid-template-columns 100px auto
@@ -112,7 +70,6 @@ export default {
 .cover
 	grid-column 1
 	grid-row 1
-
 
 
 .info
@@ -139,12 +96,6 @@ export default {
 	.tab
 		margin-right: 5px;
 
-/*
-.title
-	font-weight bold
-*/
-
 .light
-	//color: grey
 	font-weight lighter
 </style>
