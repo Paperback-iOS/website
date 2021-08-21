@@ -3,7 +3,7 @@ title: Backup Converter
 lang: en-US
 ---
 
-# Paperback Backup Reader
+# Tachiyomi and Paperback Backup Reader
 
 
 <Backup-Reader/>
