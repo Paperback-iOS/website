@@ -213,7 +213,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 
 guide
 	.title
@@ -239,15 +239,6 @@ guide
 .sourcesOption
 	margin-bottom: 0.5em;
 
-.upload-backup
-	text-align center
-.el-upload-dragger
-	background-color #fbfdff
-	border 1.2px dashed #d9d9d9
-	// Prevent the component from being to large
-	width unset
-	padding-left 4rem
-	padding-right 4rem
 .instruction
 	font-size 1.65rem
 	font-weight 600

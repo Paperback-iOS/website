@@ -5,7 +5,7 @@
 		<el-dialog title="Successful backup conversion" :visible.sync="successDialogVisible" center width="80%">
 			<!-- Download Button -->
 			<div class="downloadBackup">
-		  		<el-button type="primary" plain @click="downloadData">Download {{ conversionResult.type }} backup <i class="el-icon-download"></i></el-button>
+		  		<el-button type="primary" plain @click="downloadData">Download the {{ conversionResult.type }} backup <i class="el-icon-download"></i></el-button>
 			</div>
 
 			<!-- Unresolved items list -->
@@ -20,8 +20,8 @@
 					</thead>
 					<tbody>
 						<tr v-for="item in conversionResult.unconverted" :key="item.sourceId + '-' + item.mangaId">
-							<td class="sourceID"> {{ item.sourceId }} </td>
-							<td> {{ item.mangaTitle }} <br/> <span class="mangaId"> {{ item.mangaId }} </span></td>
+							<td class="sourceId">{{ item.sourceId }}</td>
+							<td>{{ item.mangaTitle }} <span class="mangaId">- {{ item.mangaId }}</span></td>
 						</tr>
 					</tbody>
 			</table>
@@ -200,20 +200,13 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-.upload-backup
-	text-align center
-.el-upload-dragger
-	background-color #fbfdff
-	border 1.2px dashed #d9d9d9
-	// Prevent the component from being to large
-	width unset
-	padding-left 4rem
-	padding-right 4rem
+<style scoped lang="stylus">
+// Drop a backup page
 .instruction
 	font-size 1.65rem
 	font-weight 600
 	line-height 1.25
+// Result dialog
 .downloadBackup
 	text-align center
 	padding-bottom 1rem
@@ -221,7 +214,10 @@ table
 	display table
 	width 100%
 	table-layout auto
-	.sourceID
+	.sourceId
 		text-align center
+	.mangaId
+		font-weight lighter
+		font-size smaller
 
 </style>

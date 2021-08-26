@@ -54,7 +54,7 @@ export default {
 
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 .mangaPage
 	display grid
 	grid-template-columns 100px auto

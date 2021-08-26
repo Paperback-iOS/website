@@ -44,7 +44,16 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style scoped lang="stylus">
 .el-upload__tip
     line-height 2
+.upload-backup
+	text-align center
+.el-upload-dragger
+	background-color #fbfdff
+	border 1.2px dashed #d9d9d9
+	// Prevent the component from being to large
+	width unset
+	padding-left 4rem
+	padding-right 4rem
 </style>
