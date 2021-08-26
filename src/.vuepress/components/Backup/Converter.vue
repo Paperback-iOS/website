@@ -5,12 +5,12 @@
 		<el-dialog title="Successful backup conversion" :visible.sync="successDialogVisible" center width="80%">
 			<!-- Download Button -->
 			<div class="downloadBackup">
-		  		<el-button type="primary" plain @click="downloadData">Download {{ convertedBackupData.type }} backup <i class="el-icon-download"></i></el-button>
+		  		<el-button type="primary" plain @click="downloadData">Download {{ conversionResult.type }} backup <i class="el-icon-download"></i></el-button>
 			</div>
 
 			<!-- Unresolved items list -->
-			<div v-if="convertedBackupData.noConverted.length != 0">
-				<p>The conversion was successful but {{convertedBackupData.noConverted.length}} items could not be resolved</p>
+			<div v-if="conversionResult.unconverted.length > 0">
+				<p>The conversion was successful but {{ conversionResult.unconverted.length }} items could not be resolved</p>
 				<table>
 					<thead>
 						<tr>
@@ -19,9 +19,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr v-for="item in convertedBackupData.noConverted" :key="item.sourceId">
-							<td class="sourceID">{{item.sourceId}}</td>
-							<td>{{item.mangaTitle}}</td>
+						<tr v-for="item in conversionResult.unconverted" :key="item.sourceId + '-' + item.mangaId">
+							<td class="sourceID"> {{ item.sourceId }} </td>
+							<td> {{ item.mangaTitle }} <br/> <span class="mangaId"> {{ item.mangaId }} </span></td>
 						</tr>
 					</tbody>
 			</table>
@@ -30,13 +30,28 @@
 
 		<!-- Page content -->
 		<p class="instruction">
-			Provide a <!--Tachiyomi <code>.gz</code>--> Backup
+			Provide a backup
 		</p>
 
-		<!--
-			ref="upload" is used to call clearFiles()
-		-->
 		<Backup-Uploader :loading="loading" :uploadRequestCallback="sendFile"/>
+
+		<div class="guide">
+			<p class="title">Supported Sources</p>
+
+			Because Tachiyomi and Paperback both work with community-created sources, the backup conversion process can only use sources which both Paperback and Tachiyomi share.
+			<br/><br/>
+			Below is a list of sources which this tool is able to handle.<br/>
+
+			<ul>
+				<li v-for="converterName in converterNames" :key="converterName"> {{ converterName }} </li>
+			</ul>
+
+			<div class="custom-block aside">
+				<p>
+					Contact us if you need additional sources support.
+				</p>
+			</div>
+		</div>
 
 	</span>
 </template>
@@ -49,53 +64,36 @@ console.log(converter)
 export default {
 	data() {
 		return {
+			converterNames: converter.getConversionSourcesNames(),
 			loading:false,					// Put the uploader in loading mode
 			successDialogVisible: false,	// Show the Successful Backup Conversion Dialog
-			convertedBackupData: {			// Will countain data of the converted backup
-				filename: "",
-				text: [],					// JSON countaining the converted backup
-				noConverted: []
-				},
-				type: "Paperback"
-		};
+			conversionResult: {				// The result of the conversion.
+				type: "Paperback",			// Type of the converted backup
+				unconverted: [],			// List of unconverted titles
+				filename: "",				// the filename of the converted backup
+				backupData: null			// The data of the converted backup, can be a string or a Uint8Array/Buffer
+			},
+		}
 	},
 	
 	methods: {
 		// The function that will be called when a backup is submitted
         sendFile(data) {
 
-			// Mask the uploader
+			// Block the uploader
             this.$data.loading = true
-			
-			// Save the file name
-			//this.$data.convertedBackupData.filename = data.file.name
 
 			// Call the async file handler
             this.handleFile(data)
-				.then( (res) => {
-					console.log("Finished")
-					console.log(result)
-					const type = res[0]
-					const result = res[1]
-					//this.$data.backup = result
-
-					let title = new Date().toDateString() + "-PaperbackConversion.json"
-
-					// Save returned data to be able to display it from the dialog and download button
-					this.$data.convertedBackupData.filename = title
-					this.$data.convertedBackupData.text = result
-					//this.$data.convertedBackupData.noConverted = response.data.noConvert
-
-					//console.log("Filename:", this.$data.convertedBackupData.filename, "Paperback backup:", this.$data.convertedBackupData.text, "Unresolved items:", this.$data.convertedBackupData.noConverted)
+				.then( (conversionResult) => {
+					// Save the result, it will be used by the dialog to show unconverted titles and by the downloader to access the backup
+					this.$data.conversionResult = conversionResult
 
 					// Show the dialog allowing the user to download its backup
 					this.$data.successDialogVisible = true
 
+					// Allow the user to upload an other backup
 					this.$data.loading = false
-
-					this.$data.convertedBackupData.type = type
-
-
             	})
 				.catch((error) => {
 					console.error(error)
@@ -104,95 +102,102 @@ export default {
 						message: error
 					})
 					// Show the uploader again
-					this.$data.canUploadBackup = true
+					this.$data.loading = false
 				})
         },
 
-		// An async function that handle the submitted file. Return a LightRepresentation.Backup object.
+		// An async function that handle the submitted file. Return an object used for `$data.conversionResult`
         handleFile: async(data) => {
 
             // Check the file type of the submited file
 			if (data.file.type === 'application/json') {
                 // It's a paperback backup
 
+				const filename = data.file.name.replace(".json", "-TachiyomiConversion.proto.gz")
+
                 // We don't need to check if the backup format is supported, it done by the converter in `loadText()`
                 // The converter only accept backupSchemaVersion 3
 
-                // The convert can load a backup from a stringified JSON object
+				// Get the content of the file as a string
                 const backupString = await data.file.text()
                 
+				// Transform this string into a PaperbackBackup.Backup object
                 const backupManager = new converter.PaperbackBackupManager()
-
 				backupManager.loadText(backupString)
-
 				const paperbackBackup = backupManager.exportBackup()
 
-				const conversionManager = new converter.PaperToTachiBackupConverter(paperbackBackup)
-
-				const tachiyomiBackup = await conversionManager.conversion()
+				// Convert the backup object
+				const conversionManager = new converter.PaperToTachiBackupConverter(paperbackBackup) // The converter needs a PaperbackBackup.Backup object
+				const conversionResult = await conversionManager.conversion()
 				
+				// Encode and gzip the converted Tachiyomi backup
+				const tachiyomiBackup = conversionResult.backupObject
 				const tachiyomiBackupManager = new converter.TachiyomiBackupManager()
 				tachiyomiBackupManager.loadBackup(tachiyomiBackup)
 
-                return ['Tachiyomi', tachiyomiBackupManager.exportProtoGz()]
+                return {
+					type: "Tachiyomi",
+					unconverted: conversionResult.unconverted,
+					filename: filename,
+					backupData: tachiyomiBackupManager.exportProtoGz()	// backupData is an encoded, gziped, .proto.gz Buffer
+				}
 
 			} else if (data.file.type === 'application/x-gzip') {
                 // It's a Tachiyomi backup
 
+				let filename = data.file.name.replace(".proto.gz", "-PaperbackConversion.json")
+
+				// Get the content of the file as a Buffer
 				const protoGzFile = await data.file.arrayBuffer()
 
+				// Inflate and decode the Tachiyomi backup into a TachiyomiModel.Backup object
 				const tachiyomiBackupManager = new converter.TachiyomiBackupManager()
-
 				tachiyomiBackupManager.loadProtoGz(protoGzFile)
-
 				const tachiyomiBackup = tachiyomiBackupManager.exportBackup()
 
-				const conversionManager = new converter.TachiToPaperBackupConverter(tachiyomiBackup)
+				// Convert the backup object
+				const conversionManager = new converter.TachiToPaperBackupConverter(tachiyomiBackup) // The converter needs a TachiyomiModel.Backup object
+				const conversionResult = await conversionManager.conversion()
 
-				const paperbackBackup = await conversionManager.conversion()
-
-                return ['Paperback', paperbackBackup]
+                return  {
+					type: "Paperback",
+					unconverted: conversionResult.unconverted,
+					filename: filename,
+					backupData: JSON.stringify(conversionResult.backupObject)	// backupData is a string
+				}
             }
             else {
                 // It's not a supported format
                 throw new Error(`Unsupported file format: ${data.file.type}`)
             }
-
-
         },
 	
- 	downloadData() {
+		downloadData() {
+			if (this.$data.conversionResult.type === "Tachiyomi") {
+				var blob = new Blob([this.$data.conversionResult.backupData], {type: "application/x-gzip"});
+				var link = document.createElement("a");
+				link.href = window.URL.createObjectURL(blob);
+				link.download = this.$data.conversionResult.filename;
+				link.click();
+			} 
+			else if (this.$data.conversionResult.type === "Paperback") {
+				/* Tell the browser to start a download operation on a given set of text */
 
-		if (this.$data.convertedBackupData.type === 'Tachiyomi') {
-			var blob = new Blob([this.$data.convertedBackupData.text], {type: "application/x-gzip"});
-			var link = document.createElement("a");
-			link.href = window.URL.createObjectURL(blob);
-			link.download = "myFileName.proto.gz";
-			link.click();
-		} else {
-			/* Tell the browser to start a download operation on a given set of text */
+				var element = document.createElement('a')
 
-			// The data is in the dictionnary convertedBackupData
-			var element = document.createElement('a')
+				element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(this.$data.conversionResult.backupData))
+				element.setAttribute('download', this.$data.conversionResult.filename)
 
-			element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(this.$data.convertedBackupData.text)))
-			element.setAttribute('download', this.$data.convertedBackupData.filename)
-
-			element.style.display = 'none'
-			document.body.appendChild(element)
-			element.click()
-			document.body.removeChild(element)
+				element.style.display = 'none'
+				document.body.appendChild(element)
+				element.click()
+				document.body.removeChild(element)
+			} else {
+				throw new Error(`Unsupported converted type: ${this.$data.conversionResult.type}`)
+			}
 		}
-
-		
-
-		return
-		
-		}
-	},
-
-};
-
+	}
+}
 </script>
 
 <style lang="stylus">
