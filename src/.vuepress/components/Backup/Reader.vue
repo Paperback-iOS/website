@@ -55,7 +55,7 @@
 		</div>
         
 		<!-- Manga dialog -->
-        <el-dialog v-if="dialog.visible" :title="dialog.mangaObject.titles[0]" :visible.sync="dialog.visible" center width="50%">
+        <el-dialog v-if="dialog.visible" :title="dialog.mangaObject.titles[0]" :visible.sync="dialog.visible" center>
             <Backup-MangaPage :manga="dialog.mangaObject" :tabs="backup.tabs" :sources="backup.sources"/>
         </el-dialog>
         
