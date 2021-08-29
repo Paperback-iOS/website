@@ -58,16 +58,15 @@
 
 <script>
 
-const converter = require('./bundle.js')
-console.log(converter)
+const converter = require('./backupConverter.js')
 
 export default {
 	data() {
 		return {
 			converterNames: converter.getConversionSourcesNames(),
-			loading:false,					// Put the uploader in loading mode
+			loading: false,					// Put the uploader in loading mode
 			successDialogVisible: false,	// Show the Successful Backup Conversion Dialog
-			conversionResult: {				// The result of the conversion.
+			conversionResult: {
 				type: "Paperback",			// Type of the converted backup
 				unconverted: [],			// List of unconverted titles
 				filename: "",				// the filename of the converted backup
@@ -174,11 +173,11 @@ export default {
 	
 		downloadData() {
 			if (this.$data.conversionResult.type === "Tachiyomi") {
-				var blob = new Blob([this.$data.conversionResult.backupData], {type: "application/x-gzip"});
-				var link = document.createElement("a");
-				link.href = window.URL.createObjectURL(blob);
-				link.download = this.$data.conversionResult.filename;
-				link.click();
+				var blob = new Blob([this.$data.conversionResult.backupData], {type: "application/x-gzip"})
+				var link = document.createElement("a")
+				link.href = window.URL.createObjectURL(blob)
+				link.download = this.$data.conversionResult.filename
+				link.click()
 			} 
 			else if (this.$data.conversionResult.type === "Paperback") {
 				/* Tell the browser to start a download operation on a given set of text */
