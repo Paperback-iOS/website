@@ -15,9 +15,9 @@
 				</p>
 
                 <span class="filters-list">
-                    <ElInput v-model="filters.search" placeholder="Search..." clearable class="searchBar"/>
+                    <ElInput v-model="filters.search" placeholder="Search..." clearable class="filter searchBar"/>
 
-                    <div class="tabsOption">
+                    <div class="filter tabsOption">
                         Library tabs:
                         <ElSelect v-model="filters.tabs" placeholder="All tabs" multiple clearable>
                             <ElOption
@@ -29,7 +29,7 @@
                         </ElSelect>
                     </div>
 
-                    <div class="sourcesOption">
+                    <div class="filter sourcesOption">
                         Sources:
                         <ElSelect v-model="filters.sources" placeholder="All sources" multiple clearable>
                             <ElOption
@@ -65,12 +65,12 @@
 
 <script>
 
-const converter = require('./bundle.js')
+const converter = require('./backupConverter.js')
 
 export default {
 	data() {
 		return {
-			// Filter the backup content
+			// Filters for the backup content
 			filters: {
 				search: "",
 				tabs: "",
@@ -79,7 +79,7 @@ export default {
 			// Manga dialog
 			dialog: {
 				visible: false,
-				mangaObject: {}		// The manga that is selected, a LightRepresentation.title object
+				mangaObject: {}		// The manga that is selected, a LightRepresentation.Title object
 			},
             canUploadBackup: true,	// If the uploader should be shown
 			backup: {},				// A LightRepresentation.Backup object to display
@@ -95,7 +95,7 @@ export default {
 
 			if (filters.search) {
 				library = library.filter((manga) => 
-					this.includeInTitles(manga.titles, filters.search.toLowerCase().trim())
+					this.includeInTitles(manga.titles, filters.search)
 				)
 			}
 			
@@ -112,7 +112,7 @@ export default {
 			}
 
 			if (filters.sources.length > 0) {
-				// Only keep manga which have one of the requested filters.tabs
+				// Only keep manga which have one of the requested filters.sources
 				library = library.filter((manga) => {
 					for (const requestedSource of filters.sources) {
 						if (manga.sourcesIds.includes(requestedSource)) {
@@ -139,7 +139,6 @@ export default {
 			// Call the async file handler
             this.handleFile(data)
 				.then( (result) => {
-					console.log("Finished")
 					this.$data.backup = result
             	})
 				.catch((error) => {
@@ -167,7 +166,6 @@ export default {
                 const backupString = await data.file.text()
                 
                 const backupManager = new converter.PaperbackBackupManager()
-
 				backupManager.loadText(backupString)
 
                 return backupManager.exportLightRepresentation()
@@ -175,10 +173,10 @@ export default {
 			} else if (data.file.type === 'application/x-gzip') {
                 // It's a Tachiyomi backup
 
+				// We can load the backup from the encoded, gziped, UintArray/Buffer
 				const protoGzFile = await data.file.arrayBuffer()
 
 				const backupManager = new converter.TachiyomiBackupManager()
-
 				backupManager.loadProtoGz(protoGzFile)
 
                 return backupManager.exportLightRepresentation()
@@ -193,7 +191,8 @@ export default {
         
 		includeInTitles(titles, requestedSearch) {
 			// Check if the string search is included in one of the titles
-            // Should apply .toLowerCase().trim() to requestedSearch
+            // Apply .toLowerCase().trim() to requestedSearch
+			const requestedSearchLowered = requestedSearch.toLowerCase().trim()
 			for (const title of titles) {
 				console.log(title)
 				if (title.toLowerCase().includes(requestedSearch)) {
@@ -227,30 +226,8 @@ guide
 .backupContainer
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-.mangaTile
-	width: 100px
-	cursor: pointer
-	margin-bottom: 0.5em;
 
-.searchBar
-	margin-bottom: 0.5em;
-.tabsOption
-	margin-bottom: 0.5em;
-.sourcesOption
-	margin-bottom: 0.5em;
 
-.instruction
-	font-size 1.65rem
-	font-weight 600
-	line-height 1.25
-.downloadBackup
-	text-align center
-	padding-bottom 1rem
-table
-	display table
-	width 100%
-	table-layout auto
-	.sourceID
-		text-align center
-
+.filter
+	margin-bottom 0.5em
 </style>
