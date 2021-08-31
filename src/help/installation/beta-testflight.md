@@ -16,7 +16,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 After registering as a [Patreon](https://www.patreon.com/FaizanDurrani) to Paperback, you need to request a TestFlight invite from our bot:
 
 1. Join Paperback **[Discord](https://discord.gg/Ny83JV3)** server
-1. Linked your Discord account from your [Patreon Profile Settings](https://www.patreon.com/settings/profile)
+1. Link your Discord account from your [Patreon Profile Settings](https://www.patreon.com/settings/profile)
    > Read more on how to do it [here](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role)
 1. On Discord, send a **direct message** (a DM) to `Paperback Bot#1108` (*Tim's DM4Invite*). \
    Type inside the DMs: <code>pb beta invite <span style="color: #02c1ff">PatreonEmailAddress</span></code>
