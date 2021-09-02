@@ -18,7 +18,7 @@ There are no plans to adopt a formal business model. As long as Patreon covers t
 ### Where can I find this app?
 Currently an early version of the app is available. Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
 
-If you are a patreon, you will receive an email to your patreon address regarding information about accessing Paperback beta through TestFlight. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
+If you are a patreon, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for patrons who would be interrested in sideloading the app throught AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
 
@@ -135,9 +135,8 @@ Go to **Settings** > **External Sources**, then select a source to access its se
 
 ## Extensions
 
-### How can I add other manga sources? <el-tag size="mini" type="warning">Not up to date</el-tag>
-Other manga sources are available on the latest public and patreon versions of the application.
-Read [Adding an External Repository](/help/guides/adding-repos/) guide to learn how to install other sources.
+### Adding other sources
+The app allow the user to install community made source repositories.
 
 ### Request a source
 <!-- Need a revision -->
@@ -163,6 +162,8 @@ Sources supporting notifications have a <el-tag type="success" size="mini" effec
 ### Bypass Cloudflare protection
 Go to **Settings** > **Sources**.
 Select the source and press **Cloudflare bypass**
+
+> This process can also be done by pressing the cloud icon on the source homepage.
 
 This process may need to be done each time the cookies expire, usually every three days.
 
