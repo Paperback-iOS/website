@@ -70,6 +70,7 @@ export default {
 				type: "Paperback",			// Type of the converted backup
 				unconverted: [],			// List of unconverted titles
 				filename: "",				// the filename of the converted backup
+				fileType: "",
 				backupData: null			// The data of the converted backup, can be a string or a Uint8Array/Buffer
 			},
 		}
@@ -138,6 +139,7 @@ export default {
 					type: "Tachiyomi",
 					unconverted: conversionResult.unconverted,
 					filename: filename,
+					fileType: 'application/x-gzip',
 					backupData: tachiyomiBackupManager.exportProtoGz()	// backupData is an encoded, gziped, .proto.gz Buffer
 				}
 
@@ -162,6 +164,7 @@ export default {
 					type: "Paperback",
 					unconverted: conversionResult.unconverted,
 					filename: filename,
+					fileType: 'application/json',
 					backupData: JSON.stringify(conversionResult.backupObject)	// backupData is a string
 				}
             }
@@ -172,25 +175,13 @@ export default {
         },
 	
 		downloadData() {
-			if (this.$data.conversionResult.type === "Tachiyomi") {
-				var blob = new Blob([this.$data.conversionResult.backupData], {type: "application/x-gzip"})
+			if (this.$data.conversionResult.type === "Tachiyomi" || this.$data.conversionResult.type === "Paperback") {
+				// We use the same download method for Paperback and Tachiyomi backups
+				var blob = new Blob([this.$data.conversionResult.backupData], {type: this.$data.conversionResult.fileType})
 				var link = document.createElement("a")
 				link.href = window.URL.createObjectURL(blob)
 				link.download = this.$data.conversionResult.filename
 				link.click()
-			} 
-			else if (this.$data.conversionResult.type === "Paperback") {
-				/* Tell the browser to start a download operation on a given set of text */
-
-				var element = document.createElement('a')
-
-				element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(this.$data.conversionResult.backupData))
-				element.setAttribute('download', this.$data.conversionResult.filename)
-
-				element.style.display = 'none'
-				document.body.appendChild(element)
-				element.click()
-				document.body.removeChild(element)
 			} else {
 				throw new Error(`Unsupported converted type: ${this.$data.conversionResult.type}`)
 			}
