@@ -3,12 +3,12 @@
 
         <span v-if="canUploadBackup">
             <!-- Upload a backup -->
-            <Backup-Uploader :loading="!canUploadBackup" :uploadRequestCallback="sendFile"/>
+            <Backup-Uploader :loading="!canUploadBackup" :uploadRequestCallback="processFile"/>
         </span>
         <span v-else>
             <!-- Display the backup -->
 
-			<!-- Backup info and filters block -->
+			<!-- Backup info and filters -->
             <div class="guide">
 				<p class="title">
 					<el-button type="danger" size="mini" icon="el-icon-close" circle @click="closeBackup()"></el-button> {{ backupFilename }}
@@ -17,7 +17,8 @@
                 <span class="filters-list">
                     <ElInput v-model="filters.search" placeholder="Search..." clearable class="filter searchBar"/>
 
-                    <div class="filter tabsOption">
+					<!-- backup.tabs is an object containing {tabId: tabName} elements -->
+                    <div v-if="Object.keys(backup.tabs).length" class="filter tabsOption">
                         Library tabs:
                         <ElSelect v-model="filters.tabs" placeholder="All tabs" multiple clearable>
                             <ElOption
@@ -29,7 +30,8 @@
                         </ElSelect>
                     </div>
 
-                    <div class="filter sourcesOption">
+					<!-- backup.sources is an object containing {sourceId: sourceName} elements -->
+                    <div v-if="Object.keys(backup.sources).length" class="filter sourcesOption">
                         Sources:
                         <ElSelect v-model="filters.sources" placeholder="All sources" multiple clearable>
                             <ElOption
@@ -49,7 +51,7 @@
 
 		<!-- Backup content -->
 		<div class="backupContainer">
-			<span v-for="manga in filtredLibrary" :key="manga.id" @click="dialog.mangaObject = manga; dialog.visible = true" class="mangaTile">
+			<span v-for="manga in filtredLibrary" :key="manga.id" @click="showManga(manga)" class="mangaTile">
 				<Backup-MangaTile :manga="manga"/>
 			</span>
 		</div>
@@ -87,8 +89,11 @@ export default {
         }
 	},
 	computed: {
-		// Called on modification of the filters form. Return backup.library filtred accordinly.
+		// Called on modification of the filters form. Return backup.library filtred accordingly.
 		filtredLibrary() {
+			console.log(this.$data.backup)
+			console.log(this.$data.backup.sources)
+
 			const { backup, filters } = this
 
 			var library = backup.library
@@ -128,7 +133,7 @@ export default {
 	},
 	methods: {
 		// The function that will be called when a backup is submitted
-        sendFile(data) {
+        processFile(data) {
 
 			// Mask the uploader
             this.$data.canUploadBackup = false
@@ -185,8 +190,6 @@ export default {
                 // It's not a supported format
                 throw new Error(`Unsupported file format: ${data.file.type}`)
             }
-
-
         },
         
 		includeInTitles(titles, requestedSearch) {
@@ -194,14 +197,19 @@ export default {
             // Apply .toLowerCase().trim() to requestedSearch
 			const requestedSearchLowered = requestedSearch.toLowerCase().trim()
 			for (const title of titles) {
-				console.log(title)
-				if (title.toLowerCase().includes(requestedSearch)) {
+				if (title.toLowerCase().includes(requestedSearchLowered)) {
 					return true
 				}
 			}
 			return false
 		},
-
+		showManga(mangaObject) {
+			// Show the manga dialog for the selected manga
+			this.$data.dialog = {
+				visible: true,
+				mangaObject: mangaObject
+			}
+		},
 		closeBackup() {
 			this.$data.backup = {}
 			this.$data.dialog.visible = false
@@ -213,20 +221,18 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-
 guide
 	.title
 		// Align vertically
-		display: inline-flex;
-		align-items: center;
+		display inline-flex
+		align-items center
 
 .el-dialog__title
 	font-weight bold
 
 .backupContainer
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-
+	display grid
+	grid-template-columns repeat(auto-fill, minmax(100px, 1fr))
 
 .filter
 	margin-bottom 0.5em

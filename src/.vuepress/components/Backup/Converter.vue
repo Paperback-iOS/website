@@ -19,7 +19,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr v-for="item in conversionResult.unconverted" :key="item.sourceId + '-' + item.mangaId">
+						<tr v-for="item in conversionResult.unconverted" :key="`${item.sourceId}-${item.mangaId}`">
 							<td class="sourceId">{{ item.sourceId }}</td>
 							<td>{{ item.mangaTitle }} <span class="mangaId">- {{ item.mangaId }}</span></td>
 						</tr>
@@ -40,11 +40,14 @@
 
 			Because Tachiyomi and Paperback both work with community-created sources, the backup conversion process can only use sources which both Paperback and Tachiyomi share.
 			<br/><br/>
-			Below is a list of sources which this tool is able to handle.<br/>
+			Below is a list of sources which this tool is able to handle.
+			<br/>
 
 			<ul>
 				<li v-for="converterName in converterNames" :key="converterName"> {{ converterName }} </li>
 			</ul>
+
+			We care about your privacy, the conversion process is done on your device and your backup will never be uploaded to the internet.
 
 			<div class="custom-block aside">
 				<p>
@@ -209,5 +212,4 @@ table
 	.mangaId
 		font-weight lighter
 		font-size smaller
-
 </style>

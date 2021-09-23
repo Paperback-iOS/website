@@ -25,6 +25,7 @@ export default {
         loading: {
 			required: false,
 		},
+		// Function that will be called when the user upload a backup
         uploadRequestCallback: {
             required: true
         }

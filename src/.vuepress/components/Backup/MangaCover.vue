@@ -14,6 +14,7 @@
 <script>
 export default {
 	props: {
+		// The url of the cover
         src: {
             type: String,
             required: true

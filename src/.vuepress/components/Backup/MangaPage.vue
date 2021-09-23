@@ -18,7 +18,7 @@
 				</div>
 			</div>
                     
-			<div class="block desc">
+			<div class="block desc" v-if="manga.description">
 				<p class="light">Description:</p>
 				{{ manga.description }}
 			</div>
@@ -39,16 +39,18 @@
 
 export default {
     props: {
+		// A LightRepresentation.Title object
 		manga: {
 			required: true,
 		},
+		// The content of backup.tabs, an object {tabId: tabName} elements
 		tabs: {
 			required: true,
 		},
+		// The content of backup.sources, an object {sourceId: sourceName} elements
 		sources: {
 			required: true,
 		}
-
 	},
 }
 
@@ -71,11 +73,9 @@ export default {
 	grid-column 1
 	grid-row 1
 
-
 .info
 	grid-row 1
 	grid-column 2
-	//max-width: 60%;
 
 .desc
 	grid-column-start 1
@@ -87,14 +87,14 @@ export default {
 	grid-column-end 3
 	grid-row 3
 	.tab
-		margin-right: 5px;
+		margin-right 5px
 
 .sources
 	grid-column-start 1
 	grid-column-end 3
 	grid-row 4
 	.tab
-		margin-right: 5px;
+		margin-right 5px
 
 .light
 	font-weight lighter
