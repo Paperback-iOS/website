@@ -18,7 +18,7 @@ module.exports = [
 	{
 		title: "Tools",
 		collapsable: true,
-		children: ["/tools/backup-converter"],
+		children: ["/tools/backup-converter", "/tools/md-to-md-migrator"],
 	},
 	{
 		title: "Extension Development",
