@@ -30,6 +30,10 @@ module.exports = [
 						link: "/tools/backup-converter/",
 					},
 					{
+						text: "Backup Reader",
+						link: "/tools/backup-reader/",
+					},
+					{
 						text: "MangaDex Migrator",
 						link: "/tools/md-to-md-migrator/",
 					},
