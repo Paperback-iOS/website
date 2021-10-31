@@ -18,7 +18,7 @@ There are no plans to adopt a formal business model. As long as Patreon covers t
 ### Where can I find this app?
 Currently an early version of the app is available. Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
 
-If you are a patreon, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for patrons who would be interrested in sideloading the app throught AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
+If you are a patreon, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for patrons who would be interested in sideloading the app through AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
 
@@ -194,7 +194,7 @@ This is a known issue on the horizontal reader which should not happen on the ve
 > The beta version of the application may contain additional beta features which can be used before it becomes available on the public one.
 
 ### I pledge on Patreon, when will I receive the invite
-They are sent out once a day or every 24 hours roughly. Contact Paper on Discord if you waited more than a day.
+You need to request an invite from our Discord bot. Check the [beta installation guide](/help/installation/beta-testflight/) for the procedure.
 
 ## Bugs and feature requests
 
