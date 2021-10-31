@@ -318,7 +318,6 @@ export default {
 			while (true) {
 
 				const ids = numericIds.slice(offset, offset + REQUESTSSIZE).map(x => Number(x))
-				const realSize = ids.length
 
 				const data = {
 					'type': type,
