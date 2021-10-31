@@ -18,7 +18,7 @@ After registering as a [Patreon](https://www.patreon.com/FaizanDurrani) to Paper
 1. Join Paperback **[Discord](https://discord.gg/Ny83JV3)** server
 1. Link your Discord account from your [Patreon Profile Settings](https://www.patreon.com/settings/profile)
    > Read more on how to do it [here](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role)
-1. On Discord, send a **direct message** (a DM) to `Paperback Bot#1108` (*Tim's DM4Invite*). \
+1. On Discord, send a **direct message** (a DM) to `Paperback Bot#1108` (*DM me for Invite*). \
    Type inside the DMs: <code>pb beta invite <span style="color: #02c1ff">PatreonEmailAddress</span></code>
    > This have to be send has a **DM**, you **should not** use the command inside Paperback Discord server, in order for your email address to remain private!
 
