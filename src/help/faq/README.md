@@ -31,7 +31,7 @@ We are not affiliated with or responsible for any source.
 
 Source are community made. 
 
-**We are not responsible if it is / has;**  
+**We are not responsible if it is / has:**  
 slow, down, missing chapters, bad image quality, another language or another manga.
 ::::
 
