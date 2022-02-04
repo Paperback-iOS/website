@@ -11,12 +11,8 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 
 ### TestFlight
 #### Request an invite
-1. Join Paperback **[Discord](https://discord.gg/Ny83JV3)** server
-1. On Discord, send a **direct message** (a DM) to `Paperback Bot#1108` (*DM me for Invite*). \
-   Type inside the DMs: <code>pb invite <span style="color: #02c1ff">EmailAddress</span></code>
-   > This have to be send has a **DM**, you **should not** use the command inside Paperback Discord server, in order for your email address to remain private!
-
-You should receive an email shortly with your TestFlight invite.
+1. Join Paperback **[Discord](https://discord.gg/Ny83JV3)** server.
+1. Follow our announcement channel to be updated with Testflight spots.
 
 #### Installation instructions
 1. Remove every other version of Paperback
@@ -30,18 +26,8 @@ You should receive an email shortly with your TestFlight invite.
 
 ## Installation FAQ
 
-### You only have one invite per 6 hours
-If you made a mistake, you may have to 6 hours to be able to request for a new invite.
-
-### I can not send a DM to `Paperback Bot#1108`
-Open your DMs for Paperback Discord server.
-
-### I made a typo when I send my email
-If you made a typo, request a private thread in our Discord server `#support` channel.
-
-### Requesting an invite from `Paperback Bot#1108` didn't work
-Are you sure you carefully followed all previous steps?
-If yes, please go to our Discord server `#support` channel. Our staff will help you get an invite.
+### I am a Patreon supporter.
+Refer to our [Patreon installation guide](/help/installation/beta-testflight/#installation)
 
 ### I get "The beta is full" when trying to install the app
 There can only be a limited number of testers on TestFlight due to the 10k testers limit enforced by Apple.
