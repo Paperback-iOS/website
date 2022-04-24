@@ -42,7 +42,7 @@ slow, down, missing chapters, bad image quality, another language or another man
 ### The app crashes on launch
 Ensure that you are on iOS 13.4+ or iPadOS 13.4+.
 
-If you are using the **Beta / Patron build**, they are usually unstable. If you are on the correct versioning for your device, and are still getting crashes, you may be encountering a known or unknown bug for your Paperback version. Contact us on our Discord `#supporter-squad` channel, and staff will try to determine what's happening with you.
+If you are using the **Beta / Patron build**, they are usually unstable. If you are on the correct versioning for your device, and are still getting crashes, you may be encountering a known or unknown bug for your Paperback version. Contact us on our Discord `#support` channel, and staff will try to determine what's happening with you.
 
 ### The app crashes after trying to download a manga
 Downloading manga did not work on earlier version of the app. Update to the latest build to fix this issue.
@@ -152,7 +152,7 @@ Extensions repositories:
 
 > **Contribute**
 > 
-> Would you like to make this extension a reality? You can contribute to its development! Check our [source development](/help/contribution/extension-development/) guide to get started. If you need help or have any questions, feel free to use our Discord server `#extensions-dev` channel.
+> Would you like to make this extension a reality? You can contribute to its development! Check our [source development](/help/contribution/extension-development/) guide to get started.
 
 ### How do notifications work?
 The app will periodically check for updates in the background when iOS or iPadOS allocates time for it, this should be improved as you use the app and iOS learns to prioritize the app's background jobs over others. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
@@ -180,8 +180,6 @@ Troubleshooting steps:
  * Check the source in webview: if it does not work, there is nothing Paperback can do as the app relies on the website to get contents
 
 > Sometimes, sources are blocked by specific networks or internet providers. If you can not access the source in webview, you may want to try to use a VPN.
-
-If the previous points did not help you to identify the issue, you can try to ask in our Discord `#source-issues` channel.
 
 ## Readers
 
