@@ -107,7 +107,7 @@ Repeat the same steps to remove downloaded chapters.
 In the library, long press the thumbnail then select **Refresh thumbnail**.
 
 ### Manga are not showing up in my library after I follow them
-You need to [adjust your content settings](#adjust-content-settings) for hentai titles to be shown in the library.
+You need to [adjust your content settings](#adjust-content-settings) for Adult titles to be shown in the library.
 
 ### Sorting by Latest Updates doesn't work <el-tag size="mini" type="warning">Depreciated</el-tag>
 This works but it doesn't respect user's selected language. Try to use **Update Count** sorting instead.
