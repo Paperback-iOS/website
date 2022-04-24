@@ -47,6 +47,20 @@ If you are using the **Beta / Patron build**, they are usually unstable. If you 
 ### The app crashes after trying to download a manga
 Downloading manga did not work on earlier version of the app. Update to the latest build to fix this issue.
 
+### The app crashes when I open a title
+Ensure you are on the latest version of Paperback. 
+
+Switch to the new manga reader/viewer, available to version 0.7 and above. 
+<br>
+* Settings -> Experimental Features
+
+### The app crashes when I search for titles
+Ensure you are on the latest version of Paperback.
+
+It is recommended to have no more than 10 sources installed. Check if you have any deprecated sources and repositories and remove them.
+If you are still crashing, attempt a database repair.
+* Settings -> Attempt Database Repair
+
 ### The app crash after trying to make a backup <el-tag size="mini" type="warning">Depreciated</el-tag>
 <!-- Need a revision -->
 <!-- This section is referenced in How can I make a backup of my library -->
