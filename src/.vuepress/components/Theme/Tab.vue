@@ -1,12 +1,5 @@
 <template lang="html">
-	<div
-		class="tab"
-		v-show="isActive"
-		role="tab"
-		:aria-hidden="!isActive"
-		:id="`tab-${label}`"
-		:aria-labelledby="`tab-${label}`"
-	>
+	<div class="tab" v-show="isActive" role="tab" :aria-hidden="!isActive">
 		<slot></slot>
 	</div>
 </template>

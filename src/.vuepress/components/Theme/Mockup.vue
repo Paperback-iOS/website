@@ -159,6 +159,7 @@ export default {
 }
 
 .iphone-x:after {
+	z-index: 5;
 	bottom: 7px;
 	width: 140px;
 	height: 4px;
@@ -251,9 +252,7 @@ export default {
 .status-time {
 	flex-shrink: 0;
 	width: auto;
-	/* 34px */
 	height: auto;
-	/* 18px */
 	white-space: pre;
 	overflow: visible;
 	font-weight: 600;

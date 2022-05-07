@@ -3,7 +3,7 @@
 		<div class="tabs__header">
 			<div
 				v-for="(tab, index) in tabs"
-				:key="tab.title"
+				:key="tab.label"
 				@click="selectTab(index)"
 				:class="{ tab__selected: index == selectedIndex }"
 				role="tab"
@@ -63,6 +63,7 @@ export default {
 	overflow: hidden;
 	position: absolute;
 	bottom: 0;
+	z-index: 1;
 }
 
 .tabs__header > div {
@@ -75,9 +76,8 @@ export default {
 	overflow: hidden;
 }
 
-.tabs__header > div.tab__selected {
-	background-color: rgba(0, 0, 255, 0.808);
-	border-radius: 10px 10px 0 0;
-	border-bottom: 8px solid transparent;
+.tab__selected svg > path:nth-last-child(1) {
+	stroke: #eb736d;
+	fill: #eb736d;
 }
 </style>

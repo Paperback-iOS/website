@@ -2,7 +2,7 @@
 	<div
 		style="
 			color: white;
-			font-size: 24px;
+			font-size: 18px;
 			font-weight: bold;
 			text-align: center;
 		"
