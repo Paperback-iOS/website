@@ -1,6 +1,6 @@
 module.exports = [
-	{title: "Home", path: "/"},
-	{title: "FAQ", path: "/help/faq/"},
+	{ title: "Home", path: "/" },
+	{ title: "FAQ", path: "/help/faq/" },
 	{
 		title: "Guides",
 		collapsable: true,
@@ -12,13 +12,18 @@ module.exports = [
 		children: [
 			"/help/installation/public-testflight",
 			"/help/installation/public-altstore",
-			"/help/installation/beta-testflight"
-		]
+			"/help/installation/beta-testflight",
+		],
 	},
 	{
 		title: "Tools",
 		collapsable: true,
-		children: ["/tools/backup-converter", "/tools/backup-reader", "/tools/md-to-md-migrator"],
+		children: [
+			"/tools/backup-converter",
+			"/tools/backup-reader",
+			"/tools/md-to-md-migrator",
+			"/tools/theme-editor",
+		],
 	},
 	{
 		title: "Extension Development",
@@ -30,6 +35,6 @@ module.exports = [
 			"/help/contribution/extension-development/function-definitions",
 			"/help/contribution/extension-development/model-reference",
 			"/help/contribution/extension-development/metadata",
-		]
-	}
+		],
+	},
 ];
