@@ -143,8 +143,8 @@ export default {
 .iphone-x {
 	position: relative;
 	margin: 40px auto;
-	width: 390px;
-	height: 844px;
+	width: 319.6px;
+	height: 664.4px;
 	border-radius: 40px;
 	box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919,
 		0px 0px 0px 20px #111;
@@ -239,7 +239,7 @@ export default {
 
 .status-bar {
 	box-sizing: border-box;
-	width: 390px;
+	width: 325px;
 	height: 44px;
 	display: flex;
 	flex-direction: row;

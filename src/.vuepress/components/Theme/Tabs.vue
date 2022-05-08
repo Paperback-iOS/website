@@ -57,7 +57,7 @@ export default {
 <style scoped lang="css">
 .tabs__header {
 	display: flex;
-	width: 390px;
+	width: 319.6px;
 	height: 80px;
 	background-color: #111111;
 	overflow: hidden;
@@ -67,7 +67,7 @@ export default {
 }
 
 .tabs__header > div {
-	width: 390px;
+	width: 319.6px;
 	height: 49px;
 	display: flex;
 	flex-direction: row;
