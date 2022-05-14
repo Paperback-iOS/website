@@ -1,25 +1,19 @@
 <template>
-	<div>
-		<el-row :gutter="20">
-			<el-col
-				:span="12"
-				v-for="(value, key, index) in defaultColors"
-				:key="index"
-			>
-				<div
-					class="grid-content"
-					:style="{
-						'background-color': `rgb(${
-							defaultColors[key].darkColor.red * 255
-						}, ${defaultColors[key].darkColor.green * 255}, ${
-							defaultColors[key].darkColor.blue * 255
-						})`,
-					}"
-				>
-					{{ key }}
-				</div>
-			</el-col>
-		</el-row>
+	<div class="palette">
+		<div
+			:key="index"
+			v-for="(value, key, index) in defaultColors"
+			class="palette-block"
+			:style="{
+				'background-color': `rgb(${
+					defaultColors[key].darkColor.red * 255
+				}, ${defaultColors[key].darkColor.green * 255}, ${
+					defaultColors[key].darkColor.blue * 255
+				})`,
+			}"
+		>
+			{{ key }}
+		</div>
 	</div>
 </template>
 
@@ -273,12 +267,25 @@ export default {
 </script>
 
 <style scoped>
-.grid-content {
-	margin: 20px 0px;
-	border-radius: 4px;
-	min-height: 36px;
+.palette {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin: 20px 10px;
 }
-.bg-purple {
-	background-color: purple;
+
+.palette-block {
+	word-wrap: break-word;
+	text-align: center;
+	margin: 10px;
+	border-radius: 4px;
+	min-height: 90px;
+	font-weight: 400;
+	width: 45%;
 }
 </style>

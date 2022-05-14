@@ -14,17 +14,11 @@
 					<el-row :gutter="10">
 						<el-col :xl="24">
 							<!-- Color Picker -->
-							<div class="grid-content bg-purple">
-								Colors Picker
-								<el-color-picker
-									v-model="color"
-									show-alpha
-								></el-color-picker>
-							</div>
+							<Theme-ColorPicker />
 						</el-col>
 						<el-col :xl="24">
 							<!-- Export Colors -->
-							<div class="grid-content bg-purple">Export</div>
+							<Theme-Export />
 						</el-col>
 					</el-row>
 				</el-col>
@@ -33,23 +27,6 @@
 	</el-row>
 </template>
 
-<script>
-export default {
-	data() {
-		return {
-			color: "rgba(235, 115, 109, 1)",
-		};
-	},
-};
-</script>
+<script></script>
 
-<style scoped>
-.grid-content {
-	margin: 20px 0px;
-	border-radius: 4px;
-	min-height: 36px;
-}
-.bg-purple {
-	background-color: purple;
-}
-</style>
+<style scoped></style>
