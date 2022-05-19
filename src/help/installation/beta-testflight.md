@@ -42,7 +42,7 @@ If you made a mistake, you may have to 6 hours to be able to request for a new i
 If you made a typo/mistake, you need to wait 6 hours for a new invite.
 
 ### I am getting an ERROR INSTANCE ID 
-Make sure your name is in english alphabet (A-Z or 1-9). Using others special characters will not work.
+Make sure your Discord name is in alphanumeric characters. Using other special characters will not work.
 
 ### I can not get my supporter role
  Link your Discord account from your [Patreon Profile Settings](https://www.patreon.com/settings/profile)
