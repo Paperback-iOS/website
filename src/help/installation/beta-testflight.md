@@ -18,14 +18,14 @@ After registering as a [Patreon](https://www.patreon.com/FaizanDurrani) supporte
 1. Join Paperback **[Discord](https://discord.gg/Ny83JV3)** server
 1. Link your Discord account from your [Patreon Profile Settings](https://www.patreon.com/settings/profile)
    > Read more on how to do it [here](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role)
-1. On Discord, send a **direct message** (a DM) to `Paperback Bot#1108` (*DM me for Invite*). \
+1. On Discord, send a **direct message** (a DM) to `Paperback Bot#1108`\
    Type inside the DMs: <code>pb beta invite <span style="color: #02c1ff">PatreonEmailAddress</span></code>
-   > This have to be send has a **DM**, you **should not** use the command inside the Paperback Discord server, in order for your email address to remain private!
+   > Replace PatreonEmailAddress with your email address.
 
 You should receive an email shortly with your TestFlight invite.
 
 #### Installation instructions
-1. Inside of the email, click the button labeled "**View in TestFlight**"
+1. Inside of the invite email, click the button labeled "**View in TestFlight**"
 1. Download the TestFlight app onto your device from the App Store
 1. At the top of your TestFlight app, there is a "**Redeem**" button. Select this, and input the code which you have received through the email link
 1. Download the application through TestFlight
