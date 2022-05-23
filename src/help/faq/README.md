@@ -10,7 +10,7 @@ If you have questions about the app and our plans or need help with installing t
 # General Information
 
 ### Why are you making this app?
-There are no decent manga apps on **iOS** and **iPadOS** that have *non-intrusive* advertisements support for third-party plugins.
+There are no decent reader apps on **iOS** and **iPadOS** that have *non-intrusive* advertisements support for third-party plugins.
 
 ### What type of business model will you take on?
 There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no fee to use Paperback.
@@ -18,21 +18,18 @@ There are no plans to adopt a formal business model. As long as Patreon covers t
 ### Where can I find this app?
 Currently an early version of the app is available. Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
 
-If you are a patreon, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for patrons who would be interested in sideloading the app through AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
+If you are a patreon supporter, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for patrons who would be interested in sideloading the app through AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
-
-### Will this app be available on Android?
-Paperback is designed for iOS and iPadOS. On Android, you can use [Tachiyomi](https://tachiyomi.org/)
 
 ### Disclaimer
 :::: warning Paperback is not hosting any copyrighted content.
 We are not affiliated with or responsible for any source.
 
-Source are community made. 
+Sources are community made. 
 
 **We are not responsible if it is / has:**  
-slow, down, missing chapters, bad image quality, another language or another manga.
+slow, down, missing chapters, bad image quality, another language or another title.
 ::::
 
 # Troubleshooting
@@ -42,15 +39,15 @@ slow, down, missing chapters, bad image quality, another language or another man
 ### The app crashes on launch
 Ensure that you are on iOS 13.4+ or iPadOS 13.4+.
 
-If you are using the **Beta / Patron build**, they are usually unstable. If you are on the correct versioning for your device, and are still getting crashes, you may be encountering a known or unknown bug for your Paperback version. Contact us on our Discord `#support` channel, and staff will try to determine what's happening with you.
+If you are using the **Beta/Patreon build**, they are usually unstable. If you are on the correct version for your device, and are still getting crashes, you may be encountering a known or unknown bug for your Paperback version. Contact us on our Discord `#support` channel, and staff will try to determine what's happening with you.
 
-### The app crashes after trying to download a manga
-Downloading manga did not work on earlier version of the app. Update to the latest build to fix this issue.
+### The app crashes after trying to download a chapter
+Turn off your device LTE & WiFi connection, open Paperback and remove the chapter.
 
 ### The app crashes when I open a title
 Ensure you are on the latest version of Paperback. 
 
-Switch to the new manga reader/viewer, available to version 0.7 and above. 
+Switch to the new reader/viewer, available to version 0.7 and above. 
 <br>
 * Settings -> Experimental Features
 
@@ -73,11 +70,11 @@ You should always have a backup of your library, especially before updating the 
 
 :::: guide Creating a backup
  * Go to Settings > Backups
- * Press "**Create a backup**" and choose where you want to save the backup (We recommend you save them to your Notes app)
+ * Press "**New Backup**" and choose where you want to save the backup (We recommend you save them to your Notes app)
 
 **Restoring a backup**
  * Go to your previously saved backup and press the share icon
- * Select "**Copy to Paperback**" action
+ * Select "**Copy to Paperback**" or "**Export to Paperback**" action
  * You can then press "**Restore**" to restore your backup
 
 ::: aside
@@ -134,39 +131,23 @@ In order to adjust your content settings, including allowing more mature content
 You will need to [adjust your Paperback account content settings](#adjust-content-settings).
 
 ### Where did my language filter go?
-It's now handled by sources!
+It's now handled by the third party sources!
 
-Go to **Settings** > **External Sources**, then select a source to access its settings.
+Go to **Settings** > **External Sources**, then select a third party source to access its settings.
 
 > **Notes**:
 >
-> Sources need to be updated to support this new feature, it may thus still be unavailable for some of your sources. \
->  Make sure you always use the latest version of a source.
+> Third party sources need to be updated to support this new feature, it may thus still be unavailable for some. \
+>  Make sure you always use the latest version of the third party source.
 
 > **Oh but I still see other languages!**
 > 
-> Fear not, that means you already fetched the chapters. Long press the manga thumbnail in library and **Refresh Stored Chapters**.
+> Fear not, that means you already fetched the chapters. Long press the thumbnail in library and **Refresh Stored Chapters**.
 
 ## Extensions
 
-### Adding other sources
+### Adding other third party sources
 The app allow the user to install community made source repositories.
-
-### Request a source
-<!-- Need a revision -->
-Do you like a particular website which is currently not supported by Paperback? You can submit a source request for it. 
-
-> Please make sure the source does not exist nor was already requested before submitting a new issue.
-
-Extensions repositories:
-
- * [Extensions Foreign](https://github.com/Paperback-iOS/extensions-foreign/issues) for non English websites
- * [H Extensions](https://github.com/Paperback-iOS/h-extensions/issues) for +18 specific websites
- * [Extensions Promises](https://github.com/Paperback-iOS/extensions-promises/issues) for other websites
-
-> **Contribute**
-> 
-> Would you like to make this extension a reality? You can contribute to its development! Check our [source development](/help/contribution/extension-development/) guide to get started.
 
 ### How do notifications work?
 The app will periodically check for updates in the background when iOS or iPadOS allocates time for it, this should be improved as you use the app and iOS learns to prioritize the app's background jobs over others. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
@@ -182,24 +163,6 @@ Select the source and press **Cloudflare bypass**
 This process may need to be done each time the cookies expire, usually every three days.
 
 Sources requiring this process have a <el-tag type="danger" size="mini" effect="dark"> Cloudflare </el-tag> badge in the app. <!-- and the [repositories list](/help/guides/adding-repos/#known-repositories).-->
-
-### A particular source does not work
-Sometimes, usually after the source made modifications to its website, a source can stop working in the app.
-
-Troubleshooting steps:
-
- * Some source may require a [bypass CloudFlare](#bypass-cloudflare-protection) process
- * Make sure the issue was not reported before: known source issues are listed in our Discord `#source-updates` channel
- * Make sure you are using the latest version of both the source and the application
- * Check the source in webview: if it does not work, there is nothing Paperback can do as the app relies on the website to get contents
-
-> Sometimes, sources are blocked by specific networks or internet providers. If you can not access the source in webview, you may want to try to use a VPN.
-
-## Readers
-
-### The is some flash between pages on horizontal reader
-<!-- Need a revision -->
-This is a known issue on the horizontal reader which should not happen on the vertical reader.
 
 ## Patreon
 
