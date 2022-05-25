@@ -22,7 +22,7 @@ module.exports = [
 			"/tools/backup-converter",
 			"/tools/backup-reader",
 			"/tools/md-to-md-migrator",
-			"/tools/theme-editor",
+			"/tools/theme-generator",
 		],
 	},
 	{

@@ -38,8 +38,8 @@ module.exports = [
 						link: "/tools/md-to-md-migrator/",
 					},
 					{
-						text: "Theme Editor",
-						link: "/tools/theme-editor/",
+						text: "Theme Generator",
+						link: "/tools/theme-generator/",
 					},
 				],
 			},

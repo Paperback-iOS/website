@@ -141,7 +141,7 @@ export default {
 
 <style scoped>
 .iphone-x {
-	position: relative;
+	/* position: relative; */
 	margin: 40px auto;
 	width: 319.6px;
 	height: 664.4px;
