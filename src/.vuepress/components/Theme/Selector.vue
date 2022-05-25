@@ -105,7 +105,7 @@
 				</ul>
 			</li>
 		</ul>
-		<pre class="language-plain"><code>{{ defaultColors }}</code></pre>
+		<pre class="language-plain"><code>{{ outputColors }}</code></pre>
 	</div>
 </template>
 
@@ -398,6 +398,22 @@ export default {
 				this.componentToHex(g) +
 				this.componentToHex(b)
 			);
+		},
+	},
+	computed: {
+		outputColors() {
+			let temp = JSON.parse(JSON.stringify(this.defaultColors));
+
+			for (const key in temp) {
+				temp[key].darkColor.red /= 255;
+				temp[key].darkColor.green /= 255;
+				temp[key].darkColor.blue /= 255;
+				temp[key].lightColor.red /= 255;
+				temp[key].lightColor.green /= 255;
+				temp[key].lightColor.blue /= 255;
+			}
+
+			return temp;
 		},
 	},
 };
