@@ -203,7 +203,18 @@ export default {
 	methods: {
 		copyToClipBoard(textToCopy) {
 			this.copyButonActive = true;
-			navigator.clipboard.writeText(textToCopy);
+
+			if (navigator.clipboard) {
+				navigator.clipboard.writeText(textToCopy);
+			} else {
+				let copyelement = document.createElement("textarea");
+				document.body.appendChild(copyelement);
+				copyelement.value = textToCopy;
+				copyelement.select();
+				document.execCommand("Copy");
+				copyelement.remove();
+			}
+
 			setTimeout(() => {
 				this.copyButonActive = false;
 			}, 1000);
