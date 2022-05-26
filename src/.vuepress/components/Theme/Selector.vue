@@ -113,7 +113,7 @@
 				}"
 				class="copy-json"
 				@click="copyToClipBoard(JSON.stringify(outputColors))"
-			></i><code>{{ outputColors }}</code></pre>
+			></i><i class="download-json el-icon-download" @click="downloadBlob(JSON.stringify(outputColors), 'theme.pbcolors', 'application/json')"></i><code>{{ outputColors }}</code></pre>
 		</div>
 	</div>
 </template>
@@ -126,242 +126,76 @@ export default {
 			activeColor: "borderColor",
 			defaultColors: {
 				borderColor: {
-					lightColor: {
-						red: 255 * 0.8,
-						green: 255 * 0.8,
-						blue: 255 * 0.8,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 0.4,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#c0c0c0", 1),
+					darkColor: this.generateColors("#5f5f5f", 1),
 				},
 				accentColor: {
-					lightColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#fd6a68", 1),
+					darkColor: this.generateColors("#fd6a68", 1),
 				},
 				foregroundColor: {
-					lightColor: {
-						red: 255 * 1,
-						green: 255 * 1,
-						blue: 255 * 1,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 0.1,
-						green: 255 * 0.1,
-						blue: 255 * 0.1,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#fcffff", 1),
+					darkColor: this.generateColors("#171717", 1),
 				},
 				overlayColor: {
-					lightColor: {
-						red: 255 * 0.9,
-						green: 255 * 0.9,
-						blue: 255 * 0.9,
-						alpha: 0.7,
-					},
-					darkColor: {
-						red: 255 * 0,
-						green: 255 * 0,
-						blue: 255 * 0,
-						alpha: 0.7,
-					},
+					lightColor: this.generateColors("#f2f2f2", 0.7),
+					darkColor: this.generateColors("#000000", 0.7),
 				},
 				titleTextColor: {
-					lightColor: {
-						red: 255 * 0.1,
-						green: 255 * 0.1,
-						blue: 255 * 0.1,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 0.9,
-						green: 255 * 0.9,
-						blue: 255 * 0.9,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#212121", 1),
+					darkColor: this.generateColors("#ebebeb", 1),
 				},
 				backgroundColor: {
-					lightColor: {
-						red: 255 * 0.9,
-						green: 255 * 0.9,
-						blue: 255 * 0.9,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 0,
-						green: 255 * 0,
-						blue: 255 * 0,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#f2f2f2", 1),
+					darkColor: this.generateColors("#000000", 1),
 				},
 				buttonNormalTextColor: {
-					lightColor: {
-						red: 255 * 0.1,
-						green: 255 * 0.1,
-						blue: 255 * 0.1,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 0.9,
-						green: 255 * 0.9,
-						blue: 255 * 0.9,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#1f1f1f", 1),
+					darkColor: this.generateColors("#ebebeb", 1),
 				},
 				supertitleTextColor: {
-					lightColor: {
-						red: 255 * 0.4,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 0.8,
-						green: 255 * 0.8,
-						blue: 255 * 0.8,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#5f5f5f", 1),
+					darkColor: this.generateColors("#c0c0c0", 1),
 				},
 				buttonSelectedTextColor: {
-					lightColor: {
-						red: 255 * 1,
-						green: 255 * 1,
-						blue: 255 * 1,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 1,
-						green: 255 * 1,
-						blue: 255 * 1,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#ffffff", 1),
+					darkColor: this.generateColors("#ffffff", 1),
 				},
 				separatorColor: {
-					lightColor: {
-						red: 255 * 0.2,
-						green: 255 * 0.2,
-						blue: 255 * 0.3,
-						alpha: 0.3,
-					},
-					darkColor: {
-						red: 255 * 0.3,
-						green: 255 * 0.3,
-						blue: 255 * 0.3,
-						alpha: 0.6,
-					},
+					lightColor: this.generateColors("#3c3c43", 0.3),
+					darkColor: this.generateColors("#545458", 0.6),
 				},
 				bodyTextColor: {
-					lightColor: {
-						red: 255 * 0.1,
-						green: 255 * 0.1,
-						blue: 255 * 0.1,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 0.9,
-						green: 255 * 0.9,
-						blue: 255 * 0.9,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#1f1f1f", 1),
+					darkColor: this.generateColors("#ebebeb", 1),
 				},
 				buttonNormalBackgroundColor: {
-					lightColor: {
-						red: 255 * 1,
-						green: 255 * 1,
-						blue: 255 * 1,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 0,
-						green: 255 * 0,
-						blue: 255 * 0,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#ffffff", 1),
+					darkColor: this.generateColors("#000000", 1),
 				},
 				buttonNormalBorderColor: {
-					lightColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#fd6a68", 1),
+					darkColor: this.generateColors("#fd6a68", 1),
 				},
 				buttonSelectedBackgroundColor: {
-					lightColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 0.5,
-					},
-					darkColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 0.5,
-					},
+					lightColor: this.generateColors("#fd6a68", 0.5),
+					darkColor: this.generateColors("#fd6a68", 0.5),
 				},
 				buttonSelectedBorderColor: {
-					lightColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#fd6a68", 1),
+					darkColor: this.generateColors("#fd6a68", 1),
 				},
 				subtitleTextColor: {
-					lightColor: {
-						red: 255 * 0.4,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 1,
-					},
-					darkColor: {
-						red: 255 * 0.8,
-						green: 255 * 0.8,
-						blue: 255 * 0.8,
-						alpha: 1,
-					},
+					lightColor: this.generateColors("#5f5f5f", 1),
+					darkColor: this.generateColors("#c0c0c0", 1),
 				},
 				accentColorLight: {
-					lightColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 0.5,
-					},
-					darkColor: {
-						red: 255 * 1,
-						green: 255 * 0.4,
-						blue: 255 * 0.4,
-						alpha: 0.5,
-					},
+					lightColor: this.generateColors("#fd6a68", 0.5),
+					darkColor: this.generateColors("#fd6a68", 0.5),
+				},
+				accentTextColor: {
+					lightColor: this.generateColors("#ffffff", 1),
+					darkColor: this.generateColors("#ffffff", 1),
 				},
 			},
 		};
@@ -385,6 +219,11 @@ export default {
 			let rgba = { ...this.defaultColors[name][theme], ...rgb };
 
 			this.$set(this.defaultColors[name], theme, rgba);
+		},
+		generateColors(hex, alpha) {
+			let rgb = this.hexToRGB(hex);
+
+			return { ...rgb, alpha };
 		},
 		componentToHex(c) {
 			const hex = c.toString(16);
@@ -414,6 +253,24 @@ export default {
 				this.componentToHex(b)
 			);
 		},
+		downloadURL(data, fileName) {
+			const a = document.createElement("a");
+			a.href = data;
+			a.download = fileName;
+			document.body.appendChild(a);
+			a.style.display = "none";
+			a.click();
+			a.remove();
+		},
+		downloadBlob(data, fileName, mimeType) {
+			// create a Blob from our buffer
+			const blob = new Blob([data], {
+				type: mimeType,
+			});
+			const url = window.URL.createObjectURL(blob);
+			this.downloadURL(url, fileName);
+			setTimeout(() => window.URL.revokeObjectURL(url), 1000);
+		},
 	},
 	computed: {
 		outputColors() {
@@ -441,10 +298,20 @@ export default {
 
 div[class*="language-"] .copy-json {
 	display: inline-block;
+	font-weight: 600;
 	cursor: pointer;
 	position: absolute;
-	top: 35px;
-	right: 15px;
+	top: 0.8em;
+	right: 3em;
+}
+
+div[class*="language-"] .download-json {
+	display: inline-block;
+	font-weight: 600;
+	cursor: pointer;
+	position: absolute;
+	top: 0.8em;
+	right: 5em;
 }
 
 .paperback-color-border {
@@ -539,75 +406,5 @@ div[class*="language-"] .copy-json {
 	pointer-events: all;
 	transition: height 0.35s cubic-bezier(0.36, 0.66, 0.04, 1) 25ms,
 		opacity 0.35s cubic-bezier(0.36, 0.66, 0.04, 1) 0s;
-}
-</style>
-
-<style>
-:root {
-	/* borderColor */
-	--paperback-color-border: #3165bf;
-	--paperback-color-border-light: #3165bf;
-
-	/* accentColor and accentColorLight */
-	--paperback-color-accent: #eb736d;
-	--paperback-color-accent-light: #eb736d;
-	--paperback-color-accentlight: #eb736d;
-	--paperback-color-accentlight-light: #eb736d;
-
-	/* foregroundColor */
-	--paperback-color-foreground: #5260ff;
-	--paperback-color-foreground-light: #5260ff;
-
-	/* overlayColor */
-	--paperback-color-overlay: #2dd36f;
-	--paperback-color-overlay-light: #2dd36f;
-
-	/* titleTextColor */
-	--paperback-color-title-text: #ffc409;
-	--paperback-color-title-text-light: #ffc409;
-
-	/* subtitleTextColor */
-	--paperback-color-subtitle-text: #ffc409;
-	--paperback-color-subtitle-text-light: #ffc409;
-
-	/* backgroundColor */
-	--paperback-color-background: #eb445a;
-	--paperback-color-background-light: #eb445a;
-
-	/*
-		buttonNormalTextColor
-		buttonNormalBackgroundColor
-		buttonNormalBorderColor
-	*/
-	--paperback-color-button-normal-text: #92949c;
-	--paperback-color-button-normal-text-light: #92949c;
-	--paperback-color-button-normal-background: #92949c;
-	--paperback-color-button-normal-background-light: #92949c;
-	--paperback-color-button-normal-border: #92949c;
-	--paperback-color-button-normal-border-light: #92949c;
-
-	/*
-		buttonSelectedTextColor
-		buttonSelectedBackgroundColor
-		buttonSelectedBorderColor
-	*/
-	--paperback-color-button-selected-text: #92949c;
-	--paperback-color-button-selected-text-light: #92949c;
-	--paperback-color-button-selected-background: #92949c;
-	--paperback-color-button-selected-background-light: #92949c;
-	--paperback-color-button-selected-border: #92949c;
-	--paperback-color-button-selected-border-light: #92949c;
-
-	/* supertitleTextColor */
-	--paperback-color-supertitle-text: #92949c;
-	--paperback-color-supertitle-text-light: #92949c;
-
-	/* separatorColor */
-	--paperback-color-separator: #f4f5f8;
-	--paperback-color-separator-light: #f4f5f8;
-
-	/* bodyTextColor */
-	--paperback-color-body-text: #f4f5f8;
-	--paperback-color-body-text-light: #f4f5f8;
 }
 </style>
