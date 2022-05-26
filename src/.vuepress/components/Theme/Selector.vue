@@ -113,7 +113,7 @@
 				}"
 				class="copy-json"
 				@click="copyToClipBoard(JSON.stringify(outputColors))"
-			></i><i class="download-json el-icon-download" @click="downloadBlob(JSON.stringify(outputColors), 'theme.pbcolors', 'application/json')"></i><code>{{ outputColors }}</code></pre>
+			></i><i class="download-json el-icon-download" @click="downloadBlob(JSON.stringify(outputColors), 'theme.pbcolors', 'application/octet-stream')"></i><code>{{ outputColors }}</code></pre>
 		</div>
 	</div>
 </template>
