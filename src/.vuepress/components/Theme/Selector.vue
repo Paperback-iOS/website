@@ -12,7 +12,7 @@
 					<div class="title-row-start">
 						<i
 							:class="{
-								'el-icon-s-open':
+								'el-icon-brush':
 									activeColor !== name ? true : false,
 								'el-icon-edit-outline':
 									activeColor === name ? true : false,
@@ -65,26 +65,6 @@
 					<li class="subcategory">
 						<div class="heading-groups">
 							<span
-								>Dark&nbsp;
-								<code>
-									{{
-										rgbToHex(defaultColors[name].darkColor)
-									}}
-								</code>
-							</span>
-						</div>
-
-						<input
-							@input="update(name, 'darkColor', $event)"
-							type="color"
-							id="body"
-							name="body"
-							:value="rgbToHex(defaultColors[name].darkColor)"
-						/>
-					</li>
-					<li class="subcategory">
-						<div class="heading-groups">
-							<span
 								>Light&nbsp;
 								<code>
 									{{
@@ -102,10 +82,39 @@
 							:value="rgbToHex(defaultColors[name].lightColor)"
 						/>
 					</li>
+					<li class="subcategory">
+						<div class="heading-groups">
+							<span
+								>Dark&nbsp;
+								<code>
+									{{
+										rgbToHex(defaultColors[name].darkColor)
+									}}
+								</code>
+							</span>
+						</div>
+
+						<input
+							@input="update(name, 'darkColor', $event)"
+							type="color"
+							id="body"
+							name="body"
+							:value="rgbToHex(defaultColors[name].darkColor)"
+						/>
+					</li>
 				</ul>
 			</li>
 		</ul>
-		<pre class="language-plain"><code>{{ outputColors }}</code></pre>
+		<div class="output language-json">
+			<pre class="language-json"><i
+				:class="{
+					'el-icon-copy-document': !copyButonActive,
+					'el-icon-check': copyButonActive,
+				}"
+				class="copy-json"
+				@click="copyToClipBoard(JSON.stringify(outputColors))"
+			></i><code>{{ outputColors }}</code></pre>
+		</div>
 	</div>
 </template>
 
@@ -113,6 +122,7 @@
 export default {
 	data() {
 		return {
+			copyButonActive: false,
 			activeColor: "borderColor",
 			defaultColors: {
 				borderColor: {
@@ -357,6 +367,13 @@ export default {
 		};
 	},
 	methods: {
+		copyToClipBoard(textToCopy) {
+			this.copyButonActive = true;
+			navigator.clipboard.writeText(textToCopy);
+			setTimeout(() => {
+				this.copyButonActive = false;
+			}, 1000);
+		},
 		setActiveColor(name) {
 			this.activeColor = name;
 		},
@@ -366,8 +383,6 @@ export default {
 		update(name, theme, event) {
 			let rgb = this.hexToRGB(event.target.value);
 			let rgba = { ...this.defaultColors[name][theme], ...rgb };
-
-			console.log(rgb);
 
 			this.$set(this.defaultColors[name], theme, rgba);
 		},
@@ -420,72 +435,16 @@ export default {
 </script>
 
 <style scoped>
-:root {
-	/* borderColor */
-	--paperback-color-border: #3165bf;
-	--paperback-color-border-light: #3165bf;
+.output {
+	position: relative;
+}
 
-	/* accentColor and accentColorLight */
-	--paperback-color-accent: #0f20d7;
-	--paperback-color-accent-light: #0f20d7;
-	--paperback-color-accentlight: #0f20d7;
-	--paperback-color-accentlight-light: #0f20d7;
-
-	/* foregroundColor */
-	--paperback-color-foreground: #5260ff;
-	--paperback-color-foreground-light: #5260ff;
-
-	/* overlayColor */
-	--paperback-color-overlay: #2dd36f;
-	--paperback-color-overlay-light: #2dd36f;
-
-	/* titleTextColor */
-	--paperback-color-title-text: #ffc409;
-	--paperback-color-title-text-light: #ffc409;
-
-	/* subtitleTextColor */
-	--paperback-color-subtitle-text: #ffc409;
-	--paperback-color-subtitle-text-light: #ffc409;
-
-	/* backgroundColor */
-	--paperback-color-background: #eb445a;
-	--paperback-color-background-light: #eb445a;
-
-	/*
-		buttonNormalTextColor
-		buttonNormalBackgroundColor
-		buttonNormalBorderColor
-	*/
-	--paperback-color-button-normal-text: #92949c;
-	--paperback-color-button-normal-text-light: #92949c;
-	--paperback-color-button-normal-background: #92949c;
-	--paperback-color-button-normal-background-light: #92949c;
-	--paperback-color-button-normal-border: #92949c;
-	--paperback-color-button-normal-border-light: #92949c;
-
-	/*
-		buttonSelectedTextColor
-		buttonSelectedBackgroundColor
-		buttonSelectedBorderColor
-	*/
-	--paperback-color-button-selected-text: #92949c;
-	--paperback-color-button-selected-text-light: #92949c;
-	--paperback-color-button-selected-background: #92949c;
-	--paperback-color-button-selected-background-light: #92949c;
-	--paperback-color-button-selected-border: #92949c;
-	--paperback-color-button-selected-border-light: #92949c;
-
-	/* supertitleTextColor */
-	--paperback-color-supertitle-text: #92949c;
-	--paperback-color-supertitle-text-light: #92949c;
-
-	/* separatorColor */
-	--paperback-color-separator: #f4f5f8;
-	--paperback-color-separator-light: #f4f5f8;
-
-	/* bodyTextColor */
-	--paperback-color-body-text: #f4f5f8;
-	--paperback-color-body-text-light: #f4f5f8;
+div[class*="language-"] .copy-json {
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top: 35px;
+	right: 15px;
 }
 
 .paperback-color-border {
@@ -580,5 +539,75 @@ export default {
 	pointer-events: all;
 	transition: height 0.35s cubic-bezier(0.36, 0.66, 0.04, 1) 25ms,
 		opacity 0.35s cubic-bezier(0.36, 0.66, 0.04, 1) 0s;
+}
+</style>
+
+<style>
+:root {
+	/* borderColor */
+	--paperback-color-border: #3165bf;
+	--paperback-color-border-light: #3165bf;
+
+	/* accentColor and accentColorLight */
+	--paperback-color-accent: #eb736d;
+	--paperback-color-accent-light: #eb736d;
+	--paperback-color-accentlight: #eb736d;
+	--paperback-color-accentlight-light: #eb736d;
+
+	/* foregroundColor */
+	--paperback-color-foreground: #5260ff;
+	--paperback-color-foreground-light: #5260ff;
+
+	/* overlayColor */
+	--paperback-color-overlay: #2dd36f;
+	--paperback-color-overlay-light: #2dd36f;
+
+	/* titleTextColor */
+	--paperback-color-title-text: #ffc409;
+	--paperback-color-title-text-light: #ffc409;
+
+	/* subtitleTextColor */
+	--paperback-color-subtitle-text: #ffc409;
+	--paperback-color-subtitle-text-light: #ffc409;
+
+	/* backgroundColor */
+	--paperback-color-background: #eb445a;
+	--paperback-color-background-light: #eb445a;
+
+	/*
+		buttonNormalTextColor
+		buttonNormalBackgroundColor
+		buttonNormalBorderColor
+	*/
+	--paperback-color-button-normal-text: #92949c;
+	--paperback-color-button-normal-text-light: #92949c;
+	--paperback-color-button-normal-background: #92949c;
+	--paperback-color-button-normal-background-light: #92949c;
+	--paperback-color-button-normal-border: #92949c;
+	--paperback-color-button-normal-border-light: #92949c;
+
+	/*
+		buttonSelectedTextColor
+		buttonSelectedBackgroundColor
+		buttonSelectedBorderColor
+	*/
+	--paperback-color-button-selected-text: #92949c;
+	--paperback-color-button-selected-text-light: #92949c;
+	--paperback-color-button-selected-background: #92949c;
+	--paperback-color-button-selected-background-light: #92949c;
+	--paperback-color-button-selected-border: #92949c;
+	--paperback-color-button-selected-border-light: #92949c;
+
+	/* supertitleTextColor */
+	--paperback-color-supertitle-text: #92949c;
+	--paperback-color-supertitle-text-light: #92949c;
+
+	/* separatorColor */
+	--paperback-color-separator: #f4f5f8;
+	--paperback-color-separator-light: #f4f5f8;
+
+	/* bodyTextColor */
+	--paperback-color-body-text: #f4f5f8;
+	--paperback-color-body-text-light: #f4f5f8;
 }
 </style>

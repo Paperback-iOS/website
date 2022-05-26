@@ -13,7 +13,7 @@
 
 		<div class="container">
 			<!-- manga source tabs -->
-			<el-tabs value="first">
+			<el-tabs value="first" class="manga-tabs">
 				<el-tab-pane label="Manga 1" name="first"></el-tab-pane>
 				<el-tab-pane label="Manga 2" name="second"></el-tab-pane>
 			</el-tabs>
@@ -175,19 +175,15 @@
 </style>
 
 <style>
-.el-tabs__item {
-	color: #f3f3f3 !important;
+.manga-tabs .el-tabs__item.is-active {
+	color: var(--paperback-color-accent);
 }
 
-.el-tabs__item.is-active {
-	color: #eb736d !important;
+.manga-tabs .el-tabs__active-bar {
+	background-color: var(--paperback-color-accent);
 }
 
-.el-tabs__active-bar {
-	background-color: #eb736d !important;
-}
-
-.el-tabs__content {
+.manga-tabs .el-tabs__content {
 	display: none;
 }
 </style>

@@ -8,15 +8,15 @@
 				<svg xmlns="http://www.w3.org/2000/svg" width="54" height="14">
 					<path
 						d="M 38 4.5 C 38 3.119 39.119 2 40.5 2 L 51.5 2 C 52.881 2 54 3.119 54 4.5 L 54 9.5 C 54 10.881 52.881 12 51.5 12 L 40.5 12 C 39.119 12 38 10.881 38 9.5 Z"
-						fill="#FFFFFF"
+						fill="currentColor"
 					></path>
 					<path
 						d="M 18.665 4.808 C 18.303 4.368 18.381 3.714 18.837 3.372 L 20 2.5 C 21.25 1.75 23 1 25 1 C 27 1 28.75 1.75 30 2.5 L 31.163 3.372 C 31.619 3.714 31.697 4.368 31.335 4.808 L 25.772 11.563 C 25.372 12.048 24.628 12.048 24.228 11.563 Z"
-						fill="#FFFFFF"
+						fill="currentColor"
 					></path>
 					<path
 						d="M 10.336 1.479 C 10.981 0.906 12 1.364 12 2.227 L 12 11 C 12 11.552 11.552 12 11 12 L 1.13 12 C 0.211 12 -0.221 10.863 0.466 10.253 Z"
-						fill="#FFFFFF"
+						fill="currentColor"
 					></path>
 				</svg>
 			</div>
@@ -140,16 +140,17 @@ export default {
 </script>
 
 <style scoped>
+/* iPhone outer */
 .iphone-x {
-	/* position: relative; */
 	margin: 40px auto;
-	width: 319.6px;
-	height: 664.4px;
+	width: 320px;
+	height: 691px;
 	border-radius: 40px;
 	box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919,
 		0px 0px 0px 20px #111;
 }
 
+/* Notch and Home bar */
 .iphone-x:before,
 .iphone-x:after {
 	content: "";
@@ -158,6 +159,7 @@ export default {
 	transform: translateX(-50%);
 }
 
+/* Home bar */
 .iphone-x:after {
 	z-index: 5;
 	bottom: 7px;
@@ -167,15 +169,17 @@ export default {
 	border-radius: 10px;
 }
 
+/* Notch */
 .iphone-x:before {
 	z-index: 1;
 	top: 0px;
-	width: 56%;
+	width: 53%;
 	height: 30px;
 	background-color: #1f1f1f;
 	border-radius: 0px 0px 40px 40px;
 }
 
+/* Camera and Speaker */
 .iphone-x i,
 .iphone-x b {
 	z-index: 5;
@@ -184,6 +188,7 @@ export default {
 	color: transparent;
 }
 
+/* Front Speaker */
 .iphone-x i {
 	top: 0px;
 	left: 50%;
@@ -195,8 +200,9 @@ export default {
 	box-shadow: inset 0px -3px 3px 0px rgba(255, 255, 255, 0.2);
 }
 
+/* Camera */
 .iphone-x b {
-	left: 14%;
+	left: 4%;
 	top: 0px;
 	transform: translate(180px, 4px);
 	width: 12px;
@@ -206,6 +212,7 @@ export default {
 	box-shadow: inset 0px -3px 2px 0px rgba(255, 255, 255, 0.2);
 }
 
+/* Camera Lens */
 .iphone-x b:after {
 	content: "";
 	position: absolute;
@@ -221,6 +228,7 @@ export default {
 	box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* iPhone inner screen */
 .screen {
 	border-radius: 40px;
 	width: 100%;
@@ -230,6 +238,7 @@ export default {
 	position: relative;
 }
 
+/* Just icons, paperback navbar icon */
 .graphic {
 	flex-shrink: 0;
 	width: 24px;
@@ -237,15 +246,16 @@ export default {
 	cursor: pointer;
 }
 
+/* iPhone status bar, time and battery */
 .status-bar {
 	box-sizing: border-box;
-	width: 325px;
+	width: 100%;
 	height: 44px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0px 24px 0px 24px;
+	padding: 0px 20px 0px 28px;
 	overflow: visible;
 }
 
@@ -258,7 +268,6 @@ export default {
 	font-weight: 600;
 	font-style: normal;
 	font-family: "Inter", sans-serif;
-	color: #ffffff;
 	font-size: 15px;
 	letter-spacing: 0px;
 	line-height: 1.2;

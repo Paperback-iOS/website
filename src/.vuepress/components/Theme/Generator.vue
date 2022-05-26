@@ -1,5 +1,5 @@
 <template>
-	<div class="colorGenerator">
+	<div class="theme-generator">
 		<Theme-Selector class="selector-column" />
 		<div class="spacer" />
 		<Theme-Preview class="preview-column" />
@@ -9,7 +9,7 @@
 <script></script>
 
 <style scoped>
-.colorGenerator {
+.theme-generator {
 	display: flex;
 	justify-content: center;
 }
@@ -28,7 +28,7 @@
 	flex-basis: 5rem;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
 	.spacer {
 		flex-basis: 0;
 		display: none;
