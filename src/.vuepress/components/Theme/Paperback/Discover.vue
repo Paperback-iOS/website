@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="discover-page">
 		<div
 			style="
 				color: white;
@@ -63,7 +63,7 @@
 					<div>Title</div>
 				</el-col>
 				<el-col :span="6">
-					<el-badge :value="3" class="item">
+					<el-badge :value="3" class="badge-item">
 						<el-image
 							class="image"
 							src="https://via.placeholder.com/150x250.png"
@@ -148,9 +148,8 @@
 .grid-content {
 	border-radius: 4px;
 	min-height: 36px;
-	background: #eb736d;
+	background: var(--paperback-color-accent);
 }
-
 .text {
 	color: white;
 }
@@ -175,15 +174,16 @@
 </style>
 
 <style>
-.manga-tabs .el-tabs__item.is-active {
-	color: var(--paperback-color-accent);
+.discover-page .manga-tabs .el-tabs__item.is-active {
+	color: var(--paperback-color-accent) !important;
 }
 
-.manga-tabs .el-tabs__active-bar {
-	background-color: var(--paperback-color-accent);
+.discover-page .el-badge__content,
+.discover-page .manga-tabs .el-tabs__active-bar {
+	background-color: var(--paperback-color-accent) !important;
 }
 
-.manga-tabs .el-tabs__content {
-	display: none;
+.discover-page .manga-tabs .el-tabs__content {
+	display: none !important;
 }
 </style>

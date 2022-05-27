@@ -1,12 +1,50 @@
 <template>
-	<div class="theme-generator">
-		<Theme-Selector class="selector-column" />
+	<div class="theme-generator" :style="cssProps">
+		<Theme-Selector class="selector-column" @updateStyles="updateStyles" />
 		<div class="spacer" />
 		<Theme-Preview class="preview-column" />
 	</div>
 </template>
 
-<script></script>
+<script>
+export default {
+	data() {
+		return {
+			defaultColors: {
+				borderColor: {
+					darkColor: {
+						red: 1,
+						green: 1,
+						blue: 1,
+					},
+				},
+			},
+		};
+	},
+	methods: {
+		updateStyles(colors) {
+			this.defaultColors = colors;
+			// console.log(this.defaultColors);
+		},
+		rgbaToString({ red, green, blue, alpha }) {
+			let r = Math.round(red);
+			let g = Math.round(green);
+			let b = Math.round(blue);
+
+			return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+		},
+	},
+	computed: {
+		cssProps() {
+			return {
+				"--paperback-color-accent": this.rgbaToString(
+					this.defaultColors?.borderColor?.darkColor
+				),
+			};
+		},
+	},
+};
+</script>
 
 <style scoped>
 .theme-generator {

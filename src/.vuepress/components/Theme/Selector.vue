@@ -75,7 +75,7 @@
 						</div>
 
 						<input
-							@input="update(name, 'lightColor', $event)"
+							@input="updateColors(name, 'lightColor', $event)"
 							type="color"
 							id="body"
 							name="body"
@@ -95,7 +95,7 @@
 						</div>
 
 						<input
-							@input="update(name, 'darkColor', $event)"
+							@input="updateColors(name, 'darkColor', $event)"
 							type="color"
 							id="body"
 							name="body"
@@ -126,76 +126,76 @@ export default {
 			activeColor: "borderColor",
 			defaultColors: {
 				borderColor: {
-					lightColor: this.generateColors("#c0c0c0", 1),
-					darkColor: this.generateColors("#5f5f5f", 1),
+					lightColor: this.generateColor("#c0c0c0", 1),
+					darkColor: this.generateColor("#5f5f5f", 1),
 				},
 				accentColor: {
-					lightColor: this.generateColors("#fd6a68", 1),
-					darkColor: this.generateColors("#fd6a68", 1),
+					lightColor: this.generateColor("#fd6a68", 1),
+					darkColor: this.generateColor("#fd6a68", 1),
 				},
 				foregroundColor: {
-					lightColor: this.generateColors("#fcffff", 1),
-					darkColor: this.generateColors("#171717", 1),
+					lightColor: this.generateColor("#fcffff", 1),
+					darkColor: this.generateColor("#171717", 1),
 				},
 				overlayColor: {
-					lightColor: this.generateColors("#f2f2f2", 0.7),
-					darkColor: this.generateColors("#000000", 0.7),
+					lightColor: this.generateColor("#f2f2f2", 0.7),
+					darkColor: this.generateColor("#000000", 0.7),
 				},
 				titleTextColor: {
-					lightColor: this.generateColors("#212121", 1),
-					darkColor: this.generateColors("#ebebeb", 1),
+					lightColor: this.generateColor("#212121", 1),
+					darkColor: this.generateColor("#ebebeb", 1),
 				},
 				backgroundColor: {
-					lightColor: this.generateColors("#f2f2f2", 1),
-					darkColor: this.generateColors("#000000", 1),
+					lightColor: this.generateColor("#f2f2f2", 1),
+					darkColor: this.generateColor("#000000", 1),
 				},
 				buttonNormalTextColor: {
-					lightColor: this.generateColors("#1f1f1f", 1),
-					darkColor: this.generateColors("#ebebeb", 1),
+					lightColor: this.generateColor("#1f1f1f", 1),
+					darkColor: this.generateColor("#ebebeb", 1),
 				},
 				supertitleTextColor: {
-					lightColor: this.generateColors("#5f5f5f", 1),
-					darkColor: this.generateColors("#c0c0c0", 1),
+					lightColor: this.generateColor("#5f5f5f", 1),
+					darkColor: this.generateColor("#c0c0c0", 1),
 				},
 				buttonSelectedTextColor: {
-					lightColor: this.generateColors("#ffffff", 1),
-					darkColor: this.generateColors("#ffffff", 1),
+					lightColor: this.generateColor("#ffffff", 1),
+					darkColor: this.generateColor("#ffffff", 1),
 				},
 				separatorColor: {
-					lightColor: this.generateColors("#3c3c43", 0.3),
-					darkColor: this.generateColors("#545458", 0.6),
+					lightColor: this.generateColor("#3c3c43", 0.3),
+					darkColor: this.generateColor("#545458", 0.6),
 				},
 				bodyTextColor: {
-					lightColor: this.generateColors("#1f1f1f", 1),
-					darkColor: this.generateColors("#ebebeb", 1),
+					lightColor: this.generateColor("#1f1f1f", 1),
+					darkColor: this.generateColor("#ebebeb", 1),
 				},
 				buttonNormalBackgroundColor: {
-					lightColor: this.generateColors("#ffffff", 1),
-					darkColor: this.generateColors("#000000", 1),
+					lightColor: this.generateColor("#ffffff", 1),
+					darkColor: this.generateColor("#000000", 1),
 				},
 				buttonNormalBorderColor: {
-					lightColor: this.generateColors("#fd6a68", 1),
-					darkColor: this.generateColors("#fd6a68", 1),
+					lightColor: this.generateColor("#fd6a68", 1),
+					darkColor: this.generateColor("#fd6a68", 1),
 				},
 				buttonSelectedBackgroundColor: {
-					lightColor: this.generateColors("#fd6a68", 0.5),
-					darkColor: this.generateColors("#fd6a68", 0.5),
+					lightColor: this.generateColor("#fd6a68", 0.5),
+					darkColor: this.generateColor("#fd6a68", 0.5),
 				},
 				buttonSelectedBorderColor: {
-					lightColor: this.generateColors("#fd6a68", 1),
-					darkColor: this.generateColors("#fd6a68", 1),
+					lightColor: this.generateColor("#fd6a68", 1),
+					darkColor: this.generateColor("#fd6a68", 1),
 				},
 				subtitleTextColor: {
-					lightColor: this.generateColors("#5f5f5f", 1),
-					darkColor: this.generateColors("#c0c0c0", 1),
+					lightColor: this.generateColor("#5f5f5f", 1),
+					darkColor: this.generateColor("#c0c0c0", 1),
 				},
 				accentColorLight: {
-					lightColor: this.generateColors("#fd6a68", 0.5),
-					darkColor: this.generateColors("#fd6a68", 0.5),
+					lightColor: this.generateColor("#fd6a68", 0.5),
+					darkColor: this.generateColor("#fd6a68", 0.5),
 				},
 				accentTextColor: {
-					lightColor: this.generateColors("#ffffff", 1),
-					darkColor: this.generateColors("#ffffff", 1),
+					lightColor: this.generateColor("#ffffff", 1),
+					darkColor: this.generateColor("#ffffff", 1),
 				},
 			},
 		};
@@ -222,16 +222,14 @@ export default {
 		setActiveColor(name) {
 			this.activeColor = name;
 		},
-		isOpen(name) {
-			this.activeColor === name ? true : false;
-		},
-		update(name, theme, event) {
+		updateColors(name, theme, event) {
 			let rgb = this.hexToRGB(event.target.value);
 			let rgba = { ...this.defaultColors[name][theme], ...rgb };
 
 			this.$set(this.defaultColors[name], theme, rgba);
+			this.$emit("updateStyles", this.defaultColors);
 		},
-		generateColors(hex, alpha) {
+		generateColor(hex, alpha) {
 			let rgb = this.hexToRGB(hex);
 
 			return { ...rgb, alpha };
