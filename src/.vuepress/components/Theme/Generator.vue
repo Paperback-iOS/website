@@ -12,11 +12,76 @@ export default {
 		return {
 			defaultColors: {
 				borderColor: {
-					darkColor: {
-						red: 1,
-						green: 1,
-						blue: 1,
-					},
+					lightColor: this.generateColor("#c0c0c0", 1),
+					darkColor: this.generateColor("#5f5f5f", 1),
+				},
+				accentColor: {
+					lightColor: this.generateColor("#fd6a68", 1),
+					darkColor: this.generateColor("#fd6a68", 1),
+				},
+				foregroundColor: {
+					lightColor: this.generateColor("#fcffff", 1),
+					darkColor: this.generateColor("#171717", 1),
+				},
+				overlayColor: {
+					lightColor: this.generateColor("#f2f2f2", 0.7),
+					darkColor: this.generateColor("#000000", 0.7),
+				},
+				titleTextColor: {
+					lightColor: this.generateColor("#212121", 1),
+					darkColor: this.generateColor("#ebebeb", 1),
+				},
+				backgroundColor: {
+					lightColor: this.generateColor("#f2f2f2", 1),
+					darkColor: this.generateColor("#000000", 1),
+				},
+				buttonNormalTextColor: {
+					lightColor: this.generateColor("#1f1f1f", 1),
+					darkColor: this.generateColor("#ebebeb", 1),
+				},
+				supertitleTextColor: {
+					lightColor: this.generateColor("#5f5f5f", 1),
+					darkColor: this.generateColor("#c0c0c0", 1),
+				},
+				buttonSelectedTextColor: {
+					lightColor: this.generateColor("#ffffff", 1),
+					darkColor: this.generateColor("#ffffff", 1),
+				},
+				separatorColor: {
+					lightColor: this.generateColor("#3c3c43", 0.3),
+					darkColor: this.generateColor("#545458", 0.6),
+				},
+				bodyTextColor: {
+					lightColor: this.generateColor("#1f1f1f", 1),
+					darkColor: this.generateColor("#ebebeb", 1),
+				},
+				buttonNormalBackgroundColor: {
+					lightColor: this.generateColor("#ffffff", 1),
+					darkColor: this.generateColor("#000000", 1),
+				},
+				buttonNormalBorderColor: {
+					lightColor: this.generateColor("#fd6a68", 1),
+					darkColor: this.generateColor("#fd6a68", 1),
+				},
+				buttonSelectedBackgroundColor: {
+					lightColor: this.generateColor("#fd6a68", 0.5),
+					darkColor: this.generateColor("#fd6a68", 0.5),
+				},
+				buttonSelectedBorderColor: {
+					lightColor: this.generateColor("#fd6a68", 1),
+					darkColor: this.generateColor("#fd6a68", 1),
+				},
+				subtitleTextColor: {
+					lightColor: this.generateColor("#5f5f5f", 1),
+					darkColor: this.generateColor("#c0c0c0", 1),
+				},
+				accentColorLight: {
+					lightColor: this.generateColor("#fd6a68", 0.5),
+					darkColor: this.generateColor("#fd6a68", 0.5),
+				},
+				accentTextColor: {
+					lightColor: this.generateColor("#ffffff", 1),
+					darkColor: this.generateColor("#ffffff", 1),
 				},
 			},
 		};
@@ -33,12 +98,30 @@ export default {
 
 			return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 		},
+		generateColor(hex, alpha) {
+			let rgb = this.hexToRGB(hex);
+
+			return { ...rgb, alpha };
+		},
+
+		hexToRGB(hex) {
+			var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+			let red = parseInt(result[1], 16);
+			let green = parseInt(result[2], 16);
+			let blue = parseInt(result[3], 16);
+
+			return {
+				red,
+				green,
+				blue,
+			};
+		},
 	},
 	computed: {
 		cssProps() {
 			return {
 				"--paperback-color-accent": this.rgbaToString(
-					this.defaultColors?.borderColor?.darkColor
+					this.defaultColors?.accentColor?.darkColor
 				),
 			};
 		},

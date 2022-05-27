@@ -76,7 +76,7 @@ export default {
 	overflow: hidden;
 }
 
-.tab__selected svg > path:nth-last-child(1) {
+.tab__selected svg path {
 	stroke: var(--paperback-color-accent);
 	fill: var(--paperback-color-accent);
 }
