@@ -2,13 +2,13 @@
 	<div class="container">
 		<div>Settings</div>
 
-		<div class="paperback-foreground">
+		<div class="foreground">
 			<div>example@email.com</div>
 			<div>Logout</div>
 		</div>
 
 		<div>SETTINGS</div>
-		<div class="paperback-foreground">
+		<div class="foreground">
 			<div>
 				<span>Incognito Mode</span>
 				<div class="toggleWrapper">
@@ -53,8 +53,8 @@
 	padding: 1rem;
 }
 
-.paperback-foreground {
-	background: #171717;
+.foreground {
+	background: var(--paperback-foreground-color);
 	border-radius: 8px;
 	margin: 20px 0px;
 	padding: 1rem;

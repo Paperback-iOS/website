@@ -10,7 +10,10 @@
 export default {
 	data() {
 		return {
+			// To make the theme generator work, we need to have a default theme
+			// Vue2 will not have reactivity if inital data state is not created
 			defaultColors: {
+				// A: This is not used at the moment, leave values as is.
 				borderColor: {
 					lightColor: this.generateColor("#c0c0c0", 1),
 					darkColor: this.generateColor("#5f5f5f", 1),
@@ -19,42 +22,52 @@ export default {
 					lightColor: this.generateColor("#fd6a68", 1),
 					darkColor: this.generateColor("#fd6a68", 1),
 				},
+				// B: The boxes https://imgur.com/a/IzMuE0c (everything in red is what will change, this does not include buttons which have destructive functions (like "Clear")).
 				foregroundColor: {
 					lightColor: this.generateColor("#fcffff", 1),
 					darkColor: this.generateColor("#171717", 1),
 				},
+				// C: Overlay when refreshing library. Change "X", "Y" and "Z" to the same values you choose for the background ("E").
 				overlayColor: {
 					lightColor: this.generateColor("#f2f2f2", 0.7),
 					darkColor: this.generateColor("#000000", 0.7),
 				},
+				// D: This is not used at the moment, leave values as is.
 				titleTextColor: {
 					lightColor: this.generateColor("#212121", 1),
 					darkColor: this.generateColor("#ebebeb", 1),
 				},
+				// E: The background https://imgur.com/a/6ErnRpk (everything in red is what will change, this does not include buttons which have destructive functions (like "Clear")).
 				backgroundColor: {
 					lightColor: this.generateColor("#f2f2f2", 1),
 					darkColor: this.generateColor("#000000", 1),
 				},
+				// F: This is not used at the moment, leave values as is.
 				buttonNormalTextColor: {
 					lightColor: this.generateColor("#1f1f1f", 1),
 					darkColor: this.generateColor("#ebebeb", 1),
 				},
+				// G: This is not used at the moment, leave values as is.
 				supertitleTextColor: {
 					lightColor: this.generateColor("#5f5f5f", 1),
 					darkColor: this.generateColor("#c0c0c0", 1),
 				},
+				// H: This is not used at the moment, leave values as is.
 				buttonSelectedTextColor: {
 					lightColor: this.generateColor("#ffffff", 1),
 					darkColor: this.generateColor("#ffffff", 1),
 				},
+				// I: Thin line between certain elements (visible in "Discover", "History" and the manga viewer).
 				separatorColor: {
 					lightColor: this.generateColor("#3c3c43", 0.3),
 					darkColor: this.generateColor("#545458", 0.6),
 				},
+				// J: Main text https://imgur.com/a/1syDeob (everything in red is what will change, this does not include buttons which have destructive functions (like "Clear")).
 				bodyTextColor: {
 					lightColor: this.generateColor("#1f1f1f", 1),
 					darkColor: this.generateColor("#ebebeb", 1),
 				},
+				// K: This is not used at the moment, leave values as is.
 				buttonNormalBackgroundColor: {
 					lightColor: this.generateColor("#ffffff", 1),
 					darkColor: this.generateColor("#000000", 1),
@@ -71,14 +84,17 @@ export default {
 					lightColor: this.generateColor("#fd6a68", 1),
 					darkColor: this.generateColor("#fd6a68", 1),
 				},
+				// L: Secondary text https://imgur.com/a/N3Azw8R (everything in red is what will change, this does not include buttons which have destructive functions (like "Clear")).
 				subtitleTextColor: {
 					lightColor: this.generateColor("#5f5f5f", 1),
 					darkColor: this.generateColor("#c0c0c0", 1),
 				},
+				// M: This is not used at the moment, leave values as is.
 				accentColorLight: {
 					lightColor: this.generateColor("#fd6a68", 0.5),
 					darkColor: this.generateColor("#fd6a68", 0.5),
 				},
+				// 6: The text inside of the red boxes/buttons in the standard theme.
 				accentTextColor: {
 					lightColor: this.generateColor("#ffffff", 1),
 					darkColor: this.generateColor("#ffffff", 1),
@@ -103,7 +119,6 @@ export default {
 
 			return { ...rgb, alpha };
 		},
-
 		hexToRGB(hex) {
 			var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
 			let red = parseInt(result[1], 16);
@@ -119,11 +134,20 @@ export default {
 	},
 	computed: {
 		cssProps() {
-			return {
-				"--paperback-color-accent": this.rgbaToString(
-					this.defaultColors?.accentColor?.darkColor
-				),
-			};
+			let cssVariables = {};
+
+			for (const name in this.defaultColors) {
+				// split the name into its parts to form the css variable name
+				let cssVariablesString = `--paperback-${name
+					.replace(/([a-zA-Z])(?=[A-Z])/g, "$1-")
+					.toLowerCase()}`;
+				let rgbaString = this.rgbaToString(
+					this.defaultColors[name].darkColor
+				);
+				cssVariables[cssVariablesString] = rgbaString;
+			}
+
+			return cssVariables;
 		},
 	},
 };
@@ -161,72 +185,65 @@ export default {
 }
 </style>
 
-<style>
+<!-- This style scection isn't used, just here for reference, see computed method for used styles -->
+<style scoped>
 :root {
 	/* borderColor */
-	--paperback-color-border: #3165bf;
-	--paperback-color-border-light: #3165bf;
+	--paperback-border-color: #5f5f5f;
 
-	/* accentColor and accentColorLight */
-	--paperback-color-accent: #eb736d;
-	--paperback-color-accent-light: #eb736d;
-	--paperback-color-accentlight: #eb736d;
-	--paperback-color-accentlight-light: #eb736d;
+	/*
+		accentColor
+		accentColorLight
+		accentTextColor
+	*/
+	--paperback-accent-color: #fd6a68;
+	--paperback-accent-color-light: #fd6a68;
+	--paperback-accent-text-color: #ffffff;
 
 	/* foregroundColor */
-	--paperback-color-foreground: #5260ff;
-	--paperback-color-foreground-light: #5260ff;
+	--paperback-foreground-color: #171717;
 
 	/* overlayColor */
-	--paperback-color-overlay: #2dd36f;
-	--paperback-color-overlay-light: #2dd36f;
+	--paperback-overlay-color: #000000;
 
 	/* titleTextColor */
-	--paperback-color-title-text: #ffc409;
-	--paperback-color-title-text-light: #ffc409;
-
-	/* subtitleTextColor */
-	--paperback-color-subtitle-text: #ffc409;
-	--paperback-color-subtitle-text-light: #ffc409;
+	--paperback-title-text-color: #ebebeb;
 
 	/* backgroundColor */
-	--paperback-color-background: #eb445a;
-	--paperback-color-background-light: #eb445a;
+	--paperback-background-color: #000000;
 
 	/*
 		buttonNormalTextColor
 		buttonNormalBackgroundColor
 		buttonNormalBorderColor
 	*/
-	--paperback-color-button-normal-text: #92949c;
-	--paperback-color-button-normal-text-light: #92949c;
-	--paperback-color-button-normal-background: #92949c;
-	--paperback-color-button-normal-background-light: #92949c;
-	--paperback-color-button-normal-border: #92949c;
-	--paperback-color-button-normal-border-light: #92949c;
+	--paperback-button-normal-text-color: #ebebeb;
+
+	--paperback-button-normal-background-color: #000000;
+
+	--paperback-button-normal-border-color: #fd6a68;
+
+	/* supertitleTextColor */
+	--paperback-supertitle-text-color: #c0c0c0;
 
 	/*
 		buttonSelectedTextColor
 		buttonSelectedBackgroundColor
 		buttonSelectedBorderColor
 	*/
-	--paperback-color-button-selected-text: #92949c;
-	--paperback-color-button-selected-text-light: #92949c;
-	--paperback-color-button-selected-background: #92949c;
-	--paperback-color-button-selected-background-light: #92949c;
-	--paperback-color-button-selected-border: #92949c;
-	--paperback-color-button-selected-border-light: #92949c;
+	--paperback-button-selected-text-color: #ffffff;
 
-	/* supertitleTextColor */
-	--paperback-color-supertitle-text: #92949c;
-	--paperback-color-supertitle-text-light: #92949c;
+	--paperback-button-selected-background-color: #fd6a68;
+
+	--paperback-button-selected-border-color: #fd6a68;
 
 	/* separatorColor */
-	--paperback-color-separator: #f4f5f8;
-	--paperback-color-separator-light: #f4f5f8;
+	--paperback-separator-color: #545458;
 
 	/* bodyTextColor */
-	--paperback-color-body-text: #f4f5f8;
-	--paperback-color-body-text-light: #f4f5f8;
+	--paperback-body-text-color: #ebebeb;
+
+	/* subtitleTextColor */
+	--paperback-subtitle-text-color: #c0c0c0;
 }
 </style>

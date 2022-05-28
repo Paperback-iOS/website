@@ -1,14 +1,8 @@
 <template>
 	<div class="discover-page">
-		<div
-			style="
-				color: white;
-				font-size: 18px;
-				font-weight: bold;
-				text-align: center;
-			"
-		>
-			Discover
+		<div class="header">
+			<div class="title">Discover</div>
+			<i class="el-icon-cloudy header-icon"> </i>
 		</div>
 
 		<div class="container">
@@ -36,13 +30,13 @@
 				</div>
 				<el-row :gutter="20">
 					<el-col :span="8">
-						<div class="grid-content genres-item">Action</div>
+						<div class="grid-content accent-text">Action</div>
 					</el-col>
 					<el-col :span="8">
-						<div class="grid-content genres-item">Adventure</div>
+						<div class="grid-content accent-text">Adventure</div>
 					</el-col>
 					<el-col :span="8">
-						<div class="grid-content genres-item">Comedy</div>
+						<div class="grid-content accent-text">Comedy</div>
 					</el-col>
 				</el-row>
 			</div>
@@ -142,16 +136,44 @@
 
 <style scoped>
 .container {
-	margin: 0px 1.25rem;
+	padding: 0px 1.25rem;
+}
+
+.header {
+	margin: 0 1.25rem;
+	display: grid;
+}
+
+.title {
+	color: var(--paperback-title-text-color);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.header > * {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	justify-self: center;
+}
+
+.header-icon {
+	color: var(--paperback-accent-color);
+	justify-self: right;
+	font-size: 1.5rem;
 }
 
 .grid-content {
 	border-radius: 4px;
 	min-height: 36px;
-	background: var(--paperback-color-accent);
+	background: var(--paperback-accent-color);
 }
+
 .text {
-	color: white;
+	color: var(--paperback-body-text-color);
+}
+
+.accent-text {
+	color: var(--paperback-accent-text-color);
 }
 
 .image {
@@ -175,12 +197,16 @@
 
 <style>
 .discover-page .manga-tabs .el-tabs__item.is-active {
-	color: var(--paperback-color-accent) !important;
+	color: var(--paperback-accent-color) !important;
+}
+
+.discover-page .manga-tabs .el-tabs__item {
+	color: var(--paperback-body-text-color) !important;
 }
 
 .discover-page .el-badge__content,
 .discover-page .manga-tabs .el-tabs__active-bar {
-	background-color: var(--paperback-color-accent) !important;
+	background-color: var(--paperback-accent-color) !important;
 }
 
 .discover-page .manga-tabs .el-tabs__content {

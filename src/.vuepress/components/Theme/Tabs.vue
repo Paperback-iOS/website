@@ -59,7 +59,7 @@ export default {
 	display: flex;
 	width: 100%;
 	height: 80px;
-	background-color: #111111;
+	background-color: var(--paperback-background-color);
 	overflow: hidden;
 	position: absolute;
 	bottom: 0;
@@ -77,7 +77,7 @@ export default {
 }
 
 .tab__selected svg path {
-	stroke: var(--paperback-color-accent);
-	fill: var(--paperback-color-accent);
+	stroke: var(--paperback-accent-color);
+	fill: var(--paperback-accent-color);
 }
 </style>

@@ -124,7 +124,10 @@ export default {
 		return {
 			copyButonActive: false,
 			activeColor: "borderColor",
+			// To make the theme generator work, we need to have a default theme
+			// Vue2 will not have reactivity if inital data state is not created
 			defaultColors: {
+				// A: This is not used at the moment, leave values as is.
 				borderColor: {
 					lightColor: this.generateColor("#c0c0c0", 1),
 					darkColor: this.generateColor("#5f5f5f", 1),
@@ -133,42 +136,52 @@ export default {
 					lightColor: this.generateColor("#fd6a68", 1),
 					darkColor: this.generateColor("#fd6a68", 1),
 				},
+				// B: The boxes https://imgur.com/a/IzMuE0c (everything in red is what will change, this does not include buttons which have destructive functions (like "Clear")).
 				foregroundColor: {
 					lightColor: this.generateColor("#fcffff", 1),
 					darkColor: this.generateColor("#171717", 1),
 				},
+				// C: Overlay when refreshing library. Change "X", "Y" and "Z" to the same values you choose for the background ("E").
 				overlayColor: {
 					lightColor: this.generateColor("#f2f2f2", 0.7),
 					darkColor: this.generateColor("#000000", 0.7),
 				},
+				// D: This is not used at the moment, leave values as is.
 				titleTextColor: {
 					lightColor: this.generateColor("#212121", 1),
 					darkColor: this.generateColor("#ebebeb", 1),
 				},
+				// E: The background https://imgur.com/a/6ErnRpk (everything in red is what will change, this does not include buttons which have destructive functions (like "Clear")).
 				backgroundColor: {
 					lightColor: this.generateColor("#f2f2f2", 1),
 					darkColor: this.generateColor("#000000", 1),
 				},
+				// F: This is not used at the moment, leave values as is.
 				buttonNormalTextColor: {
 					lightColor: this.generateColor("#1f1f1f", 1),
 					darkColor: this.generateColor("#ebebeb", 1),
 				},
+				// G: This is not used at the moment, leave values as is.
 				supertitleTextColor: {
 					lightColor: this.generateColor("#5f5f5f", 1),
 					darkColor: this.generateColor("#c0c0c0", 1),
 				},
+				// H: This is not used at the moment, leave values as is.
 				buttonSelectedTextColor: {
 					lightColor: this.generateColor("#ffffff", 1),
 					darkColor: this.generateColor("#ffffff", 1),
 				},
+				// I: Thin line between certain elements (visible in "Discover", "History" and the manga viewer).
 				separatorColor: {
 					lightColor: this.generateColor("#3c3c43", 0.3),
 					darkColor: this.generateColor("#545458", 0.6),
 				},
+				// J: Main text https://imgur.com/a/1syDeob (everything in red is what will change, this does not include buttons which have destructive functions (like "Clear")).
 				bodyTextColor: {
 					lightColor: this.generateColor("#1f1f1f", 1),
 					darkColor: this.generateColor("#ebebeb", 1),
 				},
+				// K: This is not used at the moment, leave values as is.
 				buttonNormalBackgroundColor: {
 					lightColor: this.generateColor("#ffffff", 1),
 					darkColor: this.generateColor("#000000", 1),
@@ -185,14 +198,17 @@ export default {
 					lightColor: this.generateColor("#fd6a68", 1),
 					darkColor: this.generateColor("#fd6a68", 1),
 				},
+				// L: Secondary text https://imgur.com/a/N3Azw8R (everything in red is what will change, this does not include buttons which have destructive functions (like "Clear")).
 				subtitleTextColor: {
 					lightColor: this.generateColor("#5f5f5f", 1),
 					darkColor: this.generateColor("#c0c0c0", 1),
 				},
+				// M: This is not used at the moment, leave values as is.
 				accentColorLight: {
 					lightColor: this.generateColor("#fd6a68", 0.5),
 					darkColor: this.generateColor("#fd6a68", 0.5),
 				},
+				// 6: The text inside of the red boxes/buttons in the standard theme.
 				accentTextColor: {
 					lightColor: this.generateColor("#ffffff", 1),
 					darkColor: this.generateColor("#ffffff", 1),
@@ -223,8 +239,8 @@ export default {
 			this.activeColor = name;
 		},
 		updateColors(name, theme, event) {
-			let rgb = this.hexToRGB(event.target.value);
-			let rgba = { ...this.defaultColors[name][theme], ...rgb };
+			let { alpha } = this.defaultColors[name][theme];
+			let rgba = this.generateColor(event.target.value, alpha);
 
 			this.$set(this.defaultColors[name], theme, rgba);
 			this.$emit("updateStyles", this.defaultColors);
@@ -324,7 +340,7 @@ div[class*="language-"] .download-json {
 }
 
 .paperback-color-border {
-	background: var(--paperback-color-border);
+	background: var(--paperback-border-color);
 }
 
 .title-row {
