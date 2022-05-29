@@ -1,5 +1,5 @@
 <template>
-	<div class="discover-page">
+	<div id="discover-page">
 		<div class="header">
 			<div class="title">Discover</div>
 			<i class="el-icon-cloudy header-icon"> </i>
@@ -25,18 +25,18 @@
 			<!-- genres section -->
 			<div class="genres">
 				<div class="flex-container">
-					<span class="text">Genres</span>
-					<span class="text">View &gt;</span>
+					<span class="body-text">Genres</span>
+					<span class="body-text">View &gt;</span>
 				</div>
 				<el-row :gutter="20">
 					<el-col :span="8">
-						<div class="grid-content accent-text">Action</div>
+						<div class="genres-content accent-text">Action</div>
 					</el-col>
 					<el-col :span="8">
-						<div class="grid-content accent-text">Adventure</div>
+						<div class="genres-content accent-text">Adventure</div>
 					</el-col>
 					<el-col :span="8">
-						<div class="grid-content accent-text">Comedy</div>
+						<div class="genres-content accent-text">Adventure</div>
 					</el-col>
 				</el-row>
 			</div>
@@ -44,42 +44,33 @@
 			<!-- hot updates section -->
 			<el-row :gutter="20" class="hot-updates">
 				<div class="flex-container">
-					<span class="text">Hot Updates</span>
-					<span class="text">View &gt;</span>
+					<span class="body-text">Hot Updates</span>
+					<span class="body-text">View &gt;</span>
 				</div>
-				<el-col :span="6">
+				<el-col :span="8">
 					<el-image
 						class="image"
-						src="https://via.placeholder.com/150x250.png"
+						src="https://via.placeholder.com/100x150.png"
 						alt="placeholder"
 					>
 					</el-image>
 					<div>Title</div>
 				</el-col>
-				<el-col :span="6">
+				<el-col :span="8">
 					<el-badge :value="3" class="badge-item">
 						<el-image
 							class="image"
-							src="https://via.placeholder.com/150x250.png"
+							src="https://via.placeholder.com/100x150.png"
 							alt="placeholder"
 						>
 						</el-image>
 						<div>Title</div>
 					</el-badge>
 				</el-col>
-				<el-col :span="6">
+				<el-col :span="8">
 					<el-image
 						class="image"
-						src="https://via.placeholder.com/150x250.png"
-						alt="placeholder"
-					>
-					</el-image>
-					<div>Title</div>
-				</el-col>
-				<el-col :span="6">
-					<el-image
-						class="image"
-						src="https://via.placeholder.com/150x250.png"
+						src="https://via.placeholder.com/100x150.png"
 						alt="placeholder"
 					>
 					</el-image>
@@ -90,40 +81,40 @@
 			<!-- latest updates section -->
 			<el-row :gutter="20" class="latest-updates">
 				<div class="flex-container">
-					<span class="text">Latest Updates</span>
-					<span class="text">View &gt;</span>
+					<span class="body-text">Latest Updates</span>
+					<span class="body-text">View &gt;</span>
 				</div>
-				<el-col :span="6">
+				<el-col :span="8">
 					<el-image
 						class="image"
-						src="https://via.placeholder.com/150x250.png"
+						src="https://via.placeholder.com/100x150.png"
 						alt="placeholder"
 					>
 					</el-image>
 					<div>Title</div>
 				</el-col>
-				<el-col :span="6">
+				<el-col :span="8">
 					<el-image
 						class="image"
-						src="https://via.placeholder.com/150x250.png"
+						src="https://via.placeholder.com/100x150.png"
 						alt="placeholder"
 					>
 					</el-image>
 					<div>Title</div>
 				</el-col>
-				<el-col :span="6">
+				<el-col :span="8">
 					<el-image
 						class="image"
-						src="https://via.placeholder.com/150x250.png"
+						src="https://via.placeholder.com/100x150.png"
 						alt="placeholder"
 					>
 					</el-image>
 					<div>Title</div>
 				</el-col>
-				<el-col :span="6">
+				<el-col :span="8">
 					<el-image
 						class="image"
-						src="https://via.placeholder.com/150x250.png"
+						src="https://via.placeholder.com/100x150.png"
 						alt="placeholder"
 					>
 					</el-image>
@@ -136,18 +127,12 @@
 
 <style scoped>
 .container {
-	padding: 0px 1.25rem;
+	margin: 0px 1.25rem;
 }
 
 .header {
 	margin: 0 1.25rem;
 	display: grid;
-}
-
-.title {
-	color: var(--paperback-title-text-color);
-	font-size: 18px;
-	font-weight: bold;
 }
 
 .header > * {
@@ -162,14 +147,21 @@
 	font-size: 1.5rem;
 }
 
-.grid-content {
+.title {
+	color: var(--paperback-title-text-color);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.genres-content {
 	border-radius: 4px;
 	min-height: 36px;
 	background: var(--paperback-accent-color);
 }
 
-.text {
+.body-text {
 	color: var(--paperback-body-text-color);
+	padding-bottom: 5px;
 }
 
 .accent-text {
@@ -196,20 +188,20 @@
 </style>
 
 <style>
-.discover-page .manga-tabs .el-tabs__item.is-active {
+#discover-page .manga-tabs .el-tabs__item.is-active {
 	color: var(--paperback-accent-color) !important;
 }
 
-.discover-page .manga-tabs .el-tabs__item {
+#discover-page .manga-tabs .el-tabs__item {
 	color: var(--paperback-body-text-color) !important;
 }
 
-.discover-page .el-badge__content,
-.discover-page .manga-tabs .el-tabs__active-bar {
+#discover-page .el-badge__content,
+#discover-page .manga-tabs .el-tabs__active-bar {
 	background-color: var(--paperback-accent-color) !important;
 }
 
-.discover-page .manga-tabs .el-tabs__content {
+#discover-page .manga-tabs .el-tabs__content {
 	display: none !important;
 }
 </style>
