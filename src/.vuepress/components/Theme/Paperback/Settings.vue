@@ -58,12 +58,14 @@
 .title {
 	font-size: 24px;
 	font-weight: bold;
+	color: var(--paperback-title-text-color);
 }
 
 .text {
 	margin: auto;
 	padding: 7px 0.5rem;
 	border-bottom: var(--paperback-separator-color) solid 1px;
+	color: var(--paperback-title-text-color);
 }
 
 .body-text {
@@ -100,6 +102,7 @@
 }
 
 .toggleWrapper input.mobileToggle + label {
+	cursor: pointer;
 	background: white;
 	position: relative;
 	display: inline-block;

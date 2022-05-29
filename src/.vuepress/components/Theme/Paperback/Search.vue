@@ -63,6 +63,7 @@
 .header > div:nth-child(2) {
 	justify-self: right;
 	color: #222222;
+	cursor: pointer;
 }
 
 .manga-content {
@@ -70,6 +71,7 @@
 	border-radius: 4px;
 	width: 80px;
 	min-height: 80px;
+	color: var(--paperback-body-text-color);
 	background: var(--paperback-foreground-color);
 }
 

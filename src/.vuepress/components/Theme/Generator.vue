@@ -2,7 +2,7 @@
 	<div class="theme-generator" :style="cssProps">
 		<Theme-Selector class="selector-column" @updateStyles="updateStyles" />
 		<div class="spacer" />
-		<Theme-Preview class="preview-column" />
+		<Theme-Preview class="preview-column" @updateTheme="updateTheme" />
 	</div>
 </template>
 
@@ -10,6 +10,7 @@
 export default {
 	data() {
 		return {
+			theme: "dark",
 			// To make the theme generator work, we need to have a default theme
 			// Vue2 will not have reactivity if inital data state is not created
 			defaultColors: {
@@ -107,6 +108,9 @@ export default {
 			this.defaultColors = colors;
 			// console.log(this.defaultColors);
 		},
+		updateTheme(theme) {
+			this.theme = theme;
+		},
 		rgbaToString({ red, green, blue, alpha }) {
 			let r = Math.round(red);
 			let g = Math.round(green);
@@ -141,9 +145,17 @@ export default {
 				let cssVariablesString = `--paperback-${name
 					.replace(/([a-zA-Z])(?=[A-Z])/g, "$1-")
 					.toLowerCase()}`;
-				let rgbaString = this.rgbaToString(
-					this.defaultColors[name].darkColor
-				);
+
+				let rgbaString;
+				if (this.theme === "dark") {
+					rgbaString = this.rgbaToString(
+						this.defaultColors[name].darkColor
+					);
+				} else {
+					rgbaString = this.rgbaToString(
+						this.defaultColors[name].lightColor
+					);
+				}
 				cssVariables[cssVariablesString] = rgbaString;
 			}
 
@@ -162,11 +174,6 @@ export default {
 .selector-column {
 	flex-grow: 1;
 	min-width: 0;
-}
-
-.preview-column {
-	position: sticky;
-	top: 9rem;
 }
 
 .spacer {

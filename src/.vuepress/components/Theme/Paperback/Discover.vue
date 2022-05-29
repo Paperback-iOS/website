@@ -54,7 +54,7 @@
 						alt="placeholder"
 					>
 					</el-image>
-					<div>Title</div>
+					<div class="body-text">Title</div>
 				</el-col>
 				<el-col :span="8">
 					<el-badge :value="3" class="badge-item">
@@ -64,7 +64,7 @@
 							alt="placeholder"
 						>
 						</el-image>
-						<div>Title</div>
+						<div class="body-text">Title</div>
 					</el-badge>
 				</el-col>
 				<el-col :span="8">
@@ -74,7 +74,7 @@
 						alt="placeholder"
 					>
 					</el-image>
-					<div>Title</div>
+					<div class="body-text">Title</div>
 				</el-col>
 			</el-row>
 
@@ -91,7 +91,7 @@
 						alt="placeholder"
 					>
 					</el-image>
-					<div>Title</div>
+					<div class="body-text">Title</div>
 				</el-col>
 				<el-col :span="8">
 					<el-image
@@ -100,7 +100,7 @@
 						alt="placeholder"
 					>
 					</el-image>
-					<div>Title</div>
+					<div class="body-text">Title</div>
 				</el-col>
 				<el-col :span="8">
 					<el-image
@@ -109,7 +109,7 @@
 						alt="placeholder"
 					>
 					</el-image>
-					<div>Title</div>
+					<div class="body-text">Title</div>
 				</el-col>
 				<el-col :span="8">
 					<el-image
@@ -118,7 +118,7 @@
 						alt="placeholder"
 					>
 					</el-image>
-					<div>Title</div>
+					<div class="body-text">Title</div>
 				</el-col>
 			</el-row>
 		</div>
@@ -145,6 +145,7 @@
 	color: var(--paperback-accent-color);
 	justify-self: right;
 	font-size: 1.5rem;
+	cursor: pointer;
 }
 
 .title {

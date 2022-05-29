@@ -1,7 +1,7 @@
 <template>
 	<div id="library-page">
 		<div class="header">
-			<div>Edit</div>
+			<div>Done</div>
 		</div>
 		<div class="title">Library</div>
 
@@ -24,7 +24,7 @@
 				Collections
 			</div>
 
-			<div style="font-size: 18px; text-align: center">
+			<div style="font-size: 18px; text-align: center; cursor: pointer">
 				<span class="body-text"
 					><i class="el-icon-circle-plus"></i> Add Item</span
 				>
@@ -47,11 +47,13 @@
 	justify-self: right;
 	font-size: 1rem;
 	font-weight: 600;
+	cursor: pointer;
 }
 
 .title {
 	font-size: 24px;
 	font-weight: bold;
+	color: var(--paperback-title-text-color);
 }
 
 .body-text {
