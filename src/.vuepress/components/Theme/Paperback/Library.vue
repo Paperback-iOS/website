@@ -53,7 +53,7 @@
 .title {
 	font-size: 24px;
 	font-weight: bold;
-	color: var(--paperback-title-text-color);
+	color: var(--paperback-body-text-color);
 }
 
 .body-text {

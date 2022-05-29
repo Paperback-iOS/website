@@ -3,15 +3,18 @@
 		<div class="title">Settings</div>
 
 		<div class="foreground" style="margin: 20px 0px">
-			<div class="text body-text">example@email.com</div>
-			<div class="text destructive-text">Logout</div>
+			<div class="body-text">example@email.com</div>
+			<div class="body-text destructive-text">Logout</div>
 		</div>
 
-		<div style="font-size: 12px; margin-left: 10px; margin-bottom: 5px">
+		<div
+			style="font-size: 12px; margin-left: 10px; margin-bottom: 5px"
+			class="text"
+		>
 			SETTINGS
 		</div>
 		<div class="foreground">
-			<div class="text text-with-switch">
+			<div class="body-text text-with-switch">
 				<span>Incognito Mode</span>
 				<span class="toggleWrapper">
 					<input
@@ -23,7 +26,7 @@
 					<label for="toggle2"></label>
 				</span>
 			</div>
-			<div class="text text-with-switch">
+			<div class="body-text text-with-switch">
 				<span>Error Popups</span>
 				<span class="toggleWrapper">
 					<input
@@ -36,16 +39,20 @@
 					<label for="toggle1"></label>
 				</span>
 			</div>
-			<div class="text">General Settings</div>
-			<div class="text">Theme Settings</div>
-			<div class="text">External Sources</div>
-			<div class="text">External Trackers</div>
-			<div class="text">Experimental Featuers</div>
-			<div class="text">Notification Settings</div>
-			<div class="text">Backups</div>
-			<div class="text destructive-text">Clear image cache</div>
-			<div class="text destructive-text">Clear All Search History</div>
-			<div class="text destructive-text">Attempt Database Repair</div>
+			<div class="body-text">General Settings</div>
+			<div class="body-text">Theme Settings</div>
+			<div class="body-text">External Sources</div>
+			<div class="body-text">External Trackers</div>
+			<div class="body-text">Experimental Featuers</div>
+			<div class="body-text">Notification Settings</div>
+			<div class="body-text">Backups</div>
+			<div class="body-text destructive-text">Clear image cache</div>
+			<div class="body-text destructive-text">
+				Clear All Search History
+			</div>
+			<div class="body-text destructive-text">
+				Attempt Database Repair
+			</div>
 		</div>
 	</div>
 </template>
@@ -58,18 +65,17 @@
 .title {
 	font-size: 24px;
 	font-weight: bold;
-	color: var(--paperback-title-text-color);
+	color: var(--paperback-body-text-color);
 }
 
 .text {
-	margin: auto;
-	padding: 7px 0.5rem;
-	border-bottom: var(--paperback-separator-color) solid 1px;
-	color: var(--paperback-title-text-color);
+	color: var(--paperback-body-text-color);
 }
 
 .body-text {
 	margin: auto;
+	padding: 7px 0.5rem;
+	border-bottom: var(--paperback-separator-color) solid 1px;
 	color: var(--paperback-body-text-color);
 }
 
@@ -82,7 +88,7 @@
 	border-radius: 8px;
 }
 
-.foreground .text:nth-last-child(1) {
+.foreground .body-text:nth-last-child(1) {
 	border-bottom: none;
 }
 

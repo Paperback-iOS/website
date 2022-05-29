@@ -119,7 +119,7 @@
 }
 
 .title {
-	color: var(--paperback-title-text-color);
+	color: var(--paperback-body-text-color);
 	font-size: 18px;
 	font-weight: bold;
 }
