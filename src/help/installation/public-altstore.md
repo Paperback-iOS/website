@@ -96,7 +96,7 @@ Run AltServer as an administrator and ensure that you've restarted your computer
 You can download the **`.IPA`** file <Download text="from here"/>.
 
 ### I have some other issue that isn't listed here
-Check the [AltStore FAQ](https://altstore.io/faq/). If you still can't resolve the issue visit the #suppor channel on our **[Discord](https://discord.gg/Ny83JV3)**.
+Check the [AltStore FAQ](https://altstore.io/faq/). If you still can't resolve the issue visit the `#support` channel on our **[Discord](https://discord.gg/Ny83JV3)**.
 
 ---
 

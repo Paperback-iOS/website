@@ -24,7 +24,7 @@ If you are a patreon supporter, you will receive an email to your patreon addres
 ---
 
 ## Installation FAQ
-### I'm not a patreon, should I use TestFlight or AltStore?
+### I'm not a Patreon supporter, should I use TestFlight or AltStore?
 If the TestFlight is not at max capacity, [TestFlight installation](/help/installation/beta-testflight/) would be recommend as it is easier to use.
 
 ---
