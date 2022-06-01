@@ -7,7 +7,7 @@ lang: en-US
 
 ## Preparing the development environment
 
-1. Create your own fork of one of our repositories, like [Extensions Promises](https://github.com/Paperback-iOS/extensions-promises).
+1. Create your own fork of one of our repositories, like [Extensions Promises](https://github.com/Paperback-iOS/extensions-main-promises).
 
 1. Create a new branch before working on your new fork. The method of branching depends on the Git CLI/GUI that you use, reference your software manual, or contact us if you need help with this step.
 
@@ -19,11 +19,6 @@ lang: en-US
    ```
 
 You are ready to start developing a source. When you think the source should be available for users, submit a pull request to one of our repository.
-
-:::: guide Repositories
-Please note each of our repositories has its own specificity.
-
-Check our [repositories list](/help/guides/adding-repos/#known-repositories) to figure where your source should be, all repositories are available on GitHub.
 
 ::: aside
 If you need help figuring to which repository you should submit your new pull request, don't hesitate to contact us.

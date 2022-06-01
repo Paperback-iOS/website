@@ -15,7 +15,7 @@ You will find all of our projects in our [GitHub organization](https://github.co
 Here are some of our main projects:
 
  * **Paperback extensions**  
-  Extensions for the application are developed and maintained by the community. These currently consist of sources for pulling content into the app, but in the near future, this will also include manga tracker implementations.
+  Extensions for the application are developed and maintained by the community. These currently consist of sources for pulling content into the app, but in the near future, this will also include tracker implementations.
   Get started with our [source development guide](extension-development/).
 
  * **Paperback website**  
@@ -27,6 +27,3 @@ Here are some of our main projects:
  * **Paperback CLI**  
    Our CLI tool to bundle extensions repositories.
 
- * **Backup Converter**  
-  We are working on a backup converter for Paperback.  
-  Its code is available on [Tachiyomi To Paperback backup Converter](https://github.com/Paperback-iOS/Tachiyomi-To-Paperbackup-Converter) repository. It can be used on our website [backup converter](/tools/backup-converter/).

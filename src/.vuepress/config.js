@@ -20,30 +20,8 @@ module.exports = {
 		"/": {
 			lang: "en-US",
 			title: "Paperback",
-			description: "An ad-free manga reader for iOS and iPadOS.",
+			description: "An ad-free reader for iOS and iPadOS.",
 		},
-		/*
-		"/fr/": {
-			lang: "fr-FR",
-			title: "Paperback",
-			description: "Un lecteur de manga, sur iOS, sans publicités.",
-		},
-		"/it/": {
-			lang: "it-IT",
-			title: "Paperback",
-			description: "Un lettore di manga per iOS, senza pubblicità.",
-		},
-		"/nl/": {
-			lang: "nl-NL",
-			title: "Paperback",
-			description: "Een advertentievrije manga-lezer voor iOS.",
-		},
-		"/bg/": {
-			lang: "bg-BG",
-			title: "Paperback",
-			description: "Манга четец без реклами за iOS.",
-		},
-		*/
 	},
 
 	themeConfig: {

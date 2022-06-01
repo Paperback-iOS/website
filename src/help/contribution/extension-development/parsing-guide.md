@@ -201,19 +201,19 @@ list, you need to get a manga object out. Lets use the following as an example.
 
     <div class="mangaObject">
         <p id="title">
-            Some Manga
+            Some Title
         </p>
     </div>
 
     <div class="mangaObject">
         <p id="title">
-            Some other Manga
+            Some other Title
         </p>
     </div>
 
     <div class="mangaObject">
         <p id="title">
-            The last manga
+            The last title
         </p>
     </div>
 
