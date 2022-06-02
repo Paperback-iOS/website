@@ -2,7 +2,7 @@
 home: true
 lang: en-US
 homeComponent: PaperbackHome
-heroImage: /icons/logo-new.svg
+heroImage: /icons/appicon-round.svg
 buttonGuides: User guide
 privacy: Privacy policy
 features:
