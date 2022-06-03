@@ -18,7 +18,7 @@ There are no plans to adopt a formal business model. As long as Patreon covers t
 ### Where can I find this app?
 Currently an early version of the app is available. Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
 
-If you are a Patreon supporter, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for Patreons who would be interested in sideloading the app through AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
+If you are a Patreon supporter, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for Patreon supporters who would be interested in sideloading the app through AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
 
