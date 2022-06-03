@@ -1,11 +1,11 @@
 ---
-title: Install the patreon version
+title: Install the Patreon version
 lang: en-US
 ---
 
-# Install the patreon version
+# Install the Patreon version
 
-> If you are not a patreon supporter and want to install the public build, you can check our other [installation guides](/help/guides/getting-started).
+> If you are not a Patreon supporter and want to install the public build, you can check our other [installation guides](/help/guides/getting-started).
 
 ::: warning Warning
 This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the app will CRASH. Paperback is NOT designed for older iOS and iPadOS versions.
@@ -64,5 +64,6 @@ If yes, please go to our Discord server `#support` channel. Our staff will help 
 
 ---
 
-## App Troubleshooting
-If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. If you're having an issue that is not mentioned on the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
+## Troubleshooting
+If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
+If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support)

@@ -4,12 +4,18 @@ module.exports = [
 	{
 		title: "Guides",
 		collapsable: true,
-		children: ["/help/guides/getting-started", "/help/guides/adding-repos"],
+		children: [
+			"/help/guides/getting-started",
+			"/help/guides/discord-support",
+			"/help/guides/content-settings",
+			"/help/guides/adding-repos"
+		]
 	},
 	{
 		title: "Installation",
 		collapsable: true,
 		children: [
+			"/help/installation/app-store",
 			"/help/installation/public-testflight",
 			"/help/installation/public-altstore",
 			"/help/installation/beta-testflight"

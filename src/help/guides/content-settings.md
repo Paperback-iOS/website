@@ -25,5 +25,7 @@ Clear your safari cache, login to the Portal through an incognito window.
 Verify your email, check spam/promotion. 
 
 ---
-## App Troubleshooting
-If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. If you're having an issue that is not mentioned on the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
+
+## Troubleshooting
+If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
+If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support)

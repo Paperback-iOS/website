@@ -17,7 +17,7 @@ Currently an early version of the app is available on TestFlight or can be sidel
  * Check our [AltStore installation guide](/help/installation/public-altstore/)
 
 
-If you are a patreon supporter, you will receive an email to your patreon address regarding information about accessing Paperback through TestFlight. The Patreon version of the application contains many additional beta features which can be used before it becomes available on the public one.
+If you are a Patreon supporter, you will receive an email to your Patreon address regarding information about accessing Paperback through TestFlight. The Patreon version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
  * Check our [Patreon installation guide](/help/installation/beta-testflight/)
 
@@ -29,5 +29,6 @@ If the TestFlight is not at max capacity, [TestFlight installation](/help/instal
 
 ---
 
-## App Troubleshooting
-If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. If you're having an issue that is not mentioned on the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
+## Troubleshooting
+If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
+If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support)
