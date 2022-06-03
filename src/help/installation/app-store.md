@@ -17,4 +17,4 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 
 ## Troubleshooting
 If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
-If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support)
+If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support).
