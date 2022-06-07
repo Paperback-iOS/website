@@ -9,18 +9,8 @@ If you have questions about the app and our plans or need help with installing t
 
 # General Information
 
-### Why are you making this app?
-There are no decent reader apps on **iOS** and **iPadOS** that have *non-intrusive* advertisements support for third-party plugins.
-
-### What type of business model will you take on?
-There are no plans to adopt a formal business model. As long as Patreon covers the costs of an Apple Developer Account, profit is secondary. It would be nice to get support for development of the app, but there will be no fee to use Paperback.
-
 ### Where can I find this app?
-Currently an early version of the app is available. Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
-
-If you are a Patreon supporter, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for Patreon supporters who would be interested in sideloading the app through AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
-
- * [Paperback Installation Guide](/help/guides/getting-started)
+Check [Paperback Installation Guide](/help/guides/getting-started).
 
 ### Disclaimer
 :::: warning Paperback is not hosting any copyrighted content.
@@ -58,35 +48,11 @@ It is recommended to have no more than 10 sources installed. Check if you have a
 If you are still crashing, attempt a database repair.
 * Settings -> Attempt Database Repair
 
-### The app crash after trying to make a backup <el-tag size="mini" type="warning">Depreciated</el-tag>
-<!-- Need a revision -->
-<!-- This section is referenced in How can I make a backup of my library -->
-Go to settings and choose "**Clear orphaned chapters**".
-
 ## Features
-
-### How can I make a backup of my library?
-You should always have a backup of your library, especially before updating the app.
-
-:::: guide Creating a backup
- * Go to Settings > Backups
- * Press "**New Backup**" and choose where you want to save the backup (We recommend you save them to your Notes app)
-
-**Restoring a backup**
- * Go to your previously saved backup and press the share icon
- * Select "**Copy to Paperback**" or "**Export to Paperback**" action
- * You can then press "**Restore**" to restore your backup
-
-::: aside
-A video guide is also available [on YouTube](https://www.youtube.com/watch?v=5EPN9FORQ1g)
-:::
-::::
-
-> If the app crashed when you made the backup, see [this faq section](#the-app-crash-when-i-try-to-make-a-backup-depreciated).
 
 ### How can I download manga to my device for offline viewing?
 :::: guide Download chapters
- * On your manga page scroll down until you see "All Chapters"
+ * On your title page scroll down until you see "All Chapters"
  * Press "**View**" then "**Edit**"
  * Select what you want to download
  * Press "**Manage**" then "**Queue Download**"
@@ -104,7 +70,7 @@ Repeat the same steps to remove downloaded chapters.
 In the library, long press the thumbnail then select **Refresh thumbnail**.
 
 ### Manga are not showing up in my library after I follow them
-You need to [adjust your content settings](#adjust-content-settings) for Adult titles to be shown in the library.
+You need to [adjust your content settings](/help/guides/content-settings) for Adult titles to be shown in the library.
 
 ### Sorting by Latest Updates doesn't work <el-tag size="mini" type="warning">Depreciated</el-tag>
 This works but it doesn't respect user's selected language. Try to use **Update Count** sorting instead.
@@ -129,12 +95,6 @@ This process may need to be done each time the cookies expire, usually every thr
 
 Sources requiring this process have a <el-tag type="danger" size="mini" effect="dark"> Cloudflare </el-tag> badge in the app. <!-- and the [repositories list](/help/guides/adding-repos/#known-repositories).-->
 
-## Patreon
-
-> The beta version of the application may contain additional beta features which can be used before it becomes available on the public one.
-
-### I pledge on Patreon, when will I receive the invite
-You need to request an invite from our Discord bot. Check the [beta installation guide](/help/installation/beta-testflight/) for the procedure.
 
 ## Bugs and feature requests
 

@@ -5,15 +5,15 @@ lang: en-US
 
 # Read carefully 
 
-::: warning Warning
+:::: tip To receive support on the Discord server
 In order to receive support, you need to read carefully everything displayed in `#welcome` and `#support`
-:::
+::::
 
 Use the dropdown menus in `#support` to resolve common problems you may encounter.
 
 ---
 
-## Make a thread
+### Make a thread
 ::: warning Warning
 Do not steal someone else thread under `#threads`, make your own!
 :::
@@ -24,5 +24,5 @@ Do not steal someone else thread under `#threads`, make your own!
 > Here's how your thread will look  <PictureDialog title="Discord thread" button="Click me to display" src="/assets/discordthread.png"/>
 
 ---
-## Troubleshooting
+**Troubleshooting**
 If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**.

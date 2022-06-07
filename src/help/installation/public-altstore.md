@@ -1,5 +1,5 @@
 ---
-title: Install with AltStore
+title: AltStore
 lang: en-US
 ---
 
@@ -28,7 +28,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 
 :::: el-tabs
 ::: el-tab-pane label="macOS 10.14+"
-### AltStore
+### AltStore on MacOS
 #### Instructions
 1. Move "**AltServer.app**" to your *Applications* folder and launch it (it will appear as an icon in the menu bar).
 1. Connect your **iPhone** or **iPad** to your computer and make sure it's unlocked and your device is trusted.
@@ -59,7 +59,7 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 :::
 
 ::: el-tab-pane label="Windows 10"
-### AltStore
+### AltStore on Windows
 #### Instructions
 1. Download and install the latest version of [iTunes](https://www.apple.com/itunes/) for Windows.
    <el-tag type="warning">Not the Microsoft Store app!</el-tag>
@@ -89,18 +89,18 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 :::
 ::::
 
-## Installation FAQ
-### I get "Access Denied" when trying to install AltStore
+### Installation FAQ
+#### I get "Access Denied" when trying to install AltStore
 Run AltServer as an administrator and ensure that you've restarted your computer after installing iTunes and iCloud.
 
-### I can't find the .IPA file to download
+#### I can't find the .IPA file to download
 You can download the **`.IPA`** file <Download text="from here"/>.
 
-### I have some other issue that isn't listed here
+#### I have some other issue that isn't listed here
 Check the [AltStore FAQ](https://altstore.io/faq/). If you still can't resolve the issue visit the `#support` channel on our **[Discord](https://discord.gg/Ny83JV3)**.
 
 ---
 
-## Troubleshooting
+**Troubleshooting**
 If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
 If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support).
