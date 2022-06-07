@@ -1,5 +1,5 @@
 ---
-title: Set your content settings
+title: Backups
 lang: en-US
 ---
 
@@ -13,7 +13,8 @@ You should always have a backup of your library, especially before updating the 
 
 :::: guide Creating a backup from Paperback
  * Go to Settings > Backups
- * Press "**New Backup**" and choose where you want to save the backup (We recommend you save them to your Notes app)
+ * Press "**New Backup**" and choose where you want to save the backup
+ > We recommend you save them to your Notes or Files
 ::::
 
 ---
@@ -29,6 +30,6 @@ You should always have a backup of your library, especially before updating the 
 
 ---
 
-**Troubleshooting**
-If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
-If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support).
+#### Troubleshooting
+ * If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
+ * If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support).

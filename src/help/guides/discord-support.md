@@ -1,5 +1,5 @@
 ---
-title: Get support on the Discord server
+title: Discord Server
 lang: en-US
 ---
 
@@ -24,5 +24,5 @@ Do not steal someone else thread under `#threads`, make your own!
 > Here's how your thread will look  <PictureDialog title="Discord thread" button="Click me to display" src="/assets/discordthread.png"/>
 
 ---
-**Troubleshooting**
-If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**.
+#### Troubleshooting
+ * If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
