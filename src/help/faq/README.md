@@ -5,7 +5,7 @@ sidebarDepth: 2
 ---
 
 # Frequently Asked Questions
-If you have questions about the app and our plans or need help with installing the app, try checking our guides and faq entries. If you haven't found what you needed, feel free to join the Discord and ask.
+If you have questions about the app and our plans or need help with installing the app, try checking our guides and DAQ entries. If you haven't found what you needed, feel free to join the [Discord](https://discord.gg/Ny83JV3) and ask using our thread system.
 
 # General Information
 
@@ -18,7 +18,7 @@ There are no plans to adopt a formal business model. As long as Patreon covers t
 ### Where can I find this app?
 Currently an early version of the app is available. Check [Paperback Installation Guide](/help/guides/getting-started) to download a copy.
 
-If you are a patreon supporter, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for patrons who would be interested in sideloading the app through AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
+If you are a Patreon supporter, check the beta [installation guide](/help/installation/beta-testflight/) to install Paperback beta through TestFlight. An IPA is also available on GitHub for Patreon supporters who would be interested in sideloading the app through AltStore. The beta version of the application contains many additional beta features which can be used before it becomes available on the public one.
 
  * [Paperback Installation Guide](/help/guides/getting-started)
 
@@ -108,41 +108,6 @@ You need to [adjust your content settings](#adjust-content-settings) for Adult t
 
 ### Sorting by Latest Updates doesn't work <el-tag size="mini" type="warning">Depreciated</el-tag>
 This works but it doesn't respect user's selected language. Try to use **Update Count** sorting instead.
-
-## Content settings
-
-### Adjust content settings
-In order to adjust your content settings, including allowing more mature content to display in Paperback, you need to have a Paperback account.
-
-1. Visit [Paperback Portal](https://portal.paperback.moe/welcome)
-1. Login with your Paperback Account (or create one if you don't have one)
-1. Change the content setting to your liking
-1. Logout of the app if you were logged in
-1. Login again in the app
-
-> **Notes**: 
-> If you set your content settings to "Adult" on the portal, you can restrict what content appears in the app by going into Settings > General Settings > Content Filtering.
-
-> **A Common Problem**: 
-> I've updated my settings on the portal, why has it not changed in my app?  
-> Simply restart the app by removing it from your app switcher.
-
-### I see `_ sources filtered` when trying to add a source
-You will need to [adjust your Paperback account content settings](#adjust-content-settings).
-
-### Where did my language filter go?
-It's now handled by the third party sources!
-
-Go to **Settings** > **External Sources**, then select a third party source to access its settings.
-
-> **Notes**:
->
-> Third party sources need to be updated to support this new feature, it may thus still be unavailable for some. \
->  Make sure you always use the latest version of the third party source.
-
-> **Oh but I still see other languages!**
-> 
-> Fear not, that means you already fetched the chapters. Long press the thumbnail in library and **Refresh Stored Chapters**.
 
 ## Extensions
 

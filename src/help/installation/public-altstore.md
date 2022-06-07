@@ -6,7 +6,8 @@ lang: en-US
 # Install the public build with AltStore
 
 ## Installation
-**Paperback** can be sideloaded with **AltStore**.
+**Paperback** can be sideloaded with **AltStore**. 
+You can grab the app from the Altstore repository [here](https://altstore.paperback.moe/altstore.json).
 
 :::: tip Video tutorial
 If you prefer using a video tutorial, Artesians made a beautiful one. You will find it [here](https://www.youtube.com/watch?v=2NBACQHgF-I) for Windows and [here](https://www.youtube.com/watch?v=qTgiHQVgulg) for macOS.
@@ -100,5 +101,6 @@ Check the [AltStore FAQ](https://altstore.io/faq/). If you still can't resolve t
 
 ---
 
-## App Troubleshooting
-If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. If you're having an issue that is not mentioned on the troubleshooting page, please use the #support channel on **[Discord](https://discord.gg/Ny83JV3)** to ask questions.
+## Troubleshooting
+If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
+If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support).

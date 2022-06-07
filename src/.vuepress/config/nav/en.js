@@ -12,6 +12,14 @@ module.exports = [
 						link: "/help/guides/getting-started/",
 					},
 					{
+						text: "Discord Support",
+						link: "/help/guides/discord-support/",
+					},
+					{
+						text: "Content Settings",
+						link: "/help/guides/content-settings/",
+					},
+					{
 						text: "External Repositories",
 						link: "/help/guides/adding-repos/",
 					},
