@@ -1,9 +1,9 @@
 ---
-title: Install with TestFlight
+title: Public Testflight
 lang: en-US
 ---
 
-# Install the public build with TestFlight
+# Install the Public build with TestFlight
 
 ::: warning Warning
 This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the app will CRASH. Paperback is NOT designed for older iOS and iPadOS versions.
@@ -24,17 +24,17 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 
 ---
 
-## Installation FAQ
+### Installation FAQ
 
-### I am a Patreon supporter.
+#### I am a Patreon supporter.
 Refer to our [Patreon installation guide](/help/installation/beta-testflight/#installation)
 
-### I get "The beta is full" when trying to install the app
+#### I get "The beta is full" when trying to install the app
 There can only be a limited number of testers on TestFlight due to the 10k testers limit enforced by Apple.
-To install the app you can use an other method of installation like [AltStore sideloading](/help/installation/public-altstore/).
+To install the app you can use an other method of installation like sideloading with [AltStore](/help/installation/public-altstore/).
 
 ---
 
-## Troubleshooting
-If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
-If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support).
+#### Troubleshooting
+ * If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
+ * If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support).

@@ -7,6 +7,7 @@ module.exports = [
 		children: [
 			"/help/guides/getting-started",
 			"/help/guides/discord-support",
+			"/help/guides/backups",
 			"/help/guides/content-settings",
 			"/help/guides/adding-repos"
 		]
@@ -16,8 +17,8 @@ module.exports = [
 		collapsable: true,
 		children: [
 			"/help/installation/app-store",
-			"/help/installation/public-testflight",
 			"/help/installation/public-altstore",
+			"/help/installation/public-testflight",
 			"/help/installation/beta-testflight"
 		]
 	},
@@ -26,16 +27,4 @@ module.exports = [
 		collapsable: true,
 		children: ["/tools/backup-converter", "/tools/backup-reader", "/tools/md-to-md-migrator"],
 	},
-	{
-		title: "Extension Development",
-		collapsable: true,
-		children: [
-			"/help/contribution/extension-development/",
-			"/help/contribution/extension-development/quickstart",
-			"/help/contribution/extension-development/parsing-guide",
-			"/help/contribution/extension-development/function-definitions",
-			"/help/contribution/extension-development/model-reference",
-			"/help/contribution/extension-development/metadata",
-		]
-	}
 ];

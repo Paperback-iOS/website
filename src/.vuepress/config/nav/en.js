@@ -15,14 +15,6 @@ module.exports = [
 						text: "Discord Support",
 						link: "/help/guides/discord-support/",
 					},
-					{
-						text: "Content Settings",
-						link: "/help/guides/content-settings/",
-					},
-					{
-						text: "External Repositories",
-						link: "/help/guides/adding-repos/",
-					},
 				],
 			},
 		],
@@ -55,10 +47,6 @@ module.exports = [
 			{
 				text: "Contribute to Paperback",
 				link: "/help/contribution/"
-			},
-			{
-				text: "Extension Development",
-				link: "/help/contribution/extension-development/"
 			},
 		]
 	},

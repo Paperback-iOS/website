@@ -1,5 +1,5 @@
 ---
-title: Install from the App Store
+title: App Store
 lang: en-US
 ---
 
@@ -10,11 +10,13 @@ This app requires iOS 13.4+ or iPadOS 13.4+. If you have an older version, the a
 :::
 
 #### Installation instructions
-1. The app has yet to be on the App Store. Stay updated on **[Discord](https://discord.gg/Ny83JV3)**.
-
+1. Open the App Store
+1. Search for "Paperback - A Komga Client"
+1. Click Install
+1. Enjoy!
 
 ---
 
-## Troubleshooting
-If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
-If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support).
+#### Troubleshooting
+ * If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
+ * If you're having an issue that is not mentioned on the troubleshooting page, please check [How to get support on our Discord server](/help/guides/discord-support).
