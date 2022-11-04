@@ -5,7 +5,7 @@ sidebarDepth: 2
 ---
 
 # Frequently Asked Questions
-If you have questions about the app and our plans or need help with installing the app, try checking our guides and DAQ entries. If you haven't found what you needed, feel free to join the [Discord](https://discord.gg/Ny83JV3) and ask using our thread system.
+If you have questions about the app and our plans or need help with installing the app, try checking our guides and FAQ entries. If you haven't found what you needed, feel free to join the [Discord](https://discord.gg/Ny83JV3) and ask using our thread system.
 
 # General Information
 
@@ -73,12 +73,12 @@ In the library, long press the thumbnail then select **Refresh thumbnail**.
 You need to [adjust your content settings](/help/guides/content-settings) for Adult titles to be shown in the library.
 
 ### Sorting by Latest Updates doesn't work <el-tag size="mini" type="warning">Depreciated</el-tag>
-This works but it doesn't respect user's selected language. Try to use **Update Count** sorting instead.
+This works but it doesn't respect the user's selected language. Try to use **Update Count** sorting instead.
 
 ## Extensions
 
 ### Adding other third party sources
-The app allow the user to [install community made source repositories](/help/guides/adding-repos).
+The app allows the user to [install community made source repositories](/help/guides/adding-repos).
 
 ### How do notifications work?
 The app will periodically check for updates in the background when iOS or iPadOS allocates time for it, this should be improved as you use the app and iOS learns to prioritize the app's background jobs over others. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after.
