@@ -18,5 +18,3 @@ npm-debug.log
 # Ignore Visual Studio Code files
 *.code-workspace
 .vscode/launch.json
-.vitepress/cache
-.vitepress/dist
