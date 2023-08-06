@@ -25,4 +25,4 @@ Do not steal someone else thread under `#threads`, make your own!
 
 ---
 #### Troubleshooting
- * If you're having problems with the app, please check the **[Troubleshooting page](/help/faq/#troubleshooting)**. 
+ * If you're having problems with the app, please check the **[Troubleshooting page](/help/faq#troubleshooting)**. 
