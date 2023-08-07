@@ -4,7 +4,7 @@ export default [
 	{ text: "Getting started", link: "/help/guides/getting-started" },
 	{
 		text: "Contribute",
-		link: "/help/contribution"
+		link: "/help/contribution/contribute"
 	},
 	{
 		text: "Support on Patreon",
