@@ -12,13 +12,4 @@ export default [
 			{ text: "Adding Repositories", link: "/help/guides/adding-repos" }
 		]
 	},
-	{
-		text: "Installation",
-		collapsable: true,
-		items: [
-			{ text: "App Store", link: "/help/installation/app-store" },
-			{ text: "AltStore", link: "/help/installation/public-altstore" },
-			{ text: "Beta TestFlight", link: "/help/installation/beta-testflight" }
-		]
-	}
 ];
