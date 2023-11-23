@@ -7,30 +7,12 @@
  * Colors
  * -------------------------------------------------------------------------- */
 
- :root {
-  --vp-c-brand: #F64B4B;
-  --vp-c-brand-light: #F98181;
-  --vp-c-brand-lighter: #FDD3D3;
-  --vp-c-brand-lightest: #ffe4e4;
-  --vp-c-brand-dark: #DE4D4D;
-  --vp-c-brand-darker: #DE4D4D;
-  --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
-}
-
-/**
- * Component: Button
- * -------------------------------------------------------------------------- */
-
 :root {
-  --vp-button-brand-border: var(--vp-c-brand-light);
-  --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: var(--vp-c-brand);
-  --vp-button-brand-hover-border: var(--vp-c-brand-light);
-  --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
-  --vp-button-brand-active-border: var(--vp-c-brand-light);
-  --vp-button-brand-active-text: var(--vp-c-white);
-  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
+	--vp-c-brand-1: #f64b4b;
+	--vp-c-brand-2: #f46565;
+	--vp-c-brand-3: #f64b4b;
+	--vp-c-brand-soft: rgb(246, 75, 75, 0.14);
+	--vp-c-brand-alternative: rgba(100, 108, 255, 0.08);
 }
 
 /**
@@ -38,31 +20,31 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #5478db 30%,
-    #F64B4B
-  );
+	--vp-home-hero-name-color: transparent;
+	--vp-home-hero-name-background: -webkit-linear-gradient(
+		120deg,
+		#5478db 30%,
+		#f64b4b
+	);
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #5478db 50%,
-    #F64B4B 50%
-  );
-  --vp-home-hero-image-filter: blur(40px);
+	--vp-home-hero-image-background-image: linear-gradient(
+		-45deg,
+		#5478db 50%,
+		#f64b4b 50%
+	);
+	--vp-home-hero-image-filter: blur(40px);
 }
 
 @media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
+	:root {
+		--vp-home-hero-image-filter: blur(56px);
+	}
 }
 
 @media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(72px);
-  }
+	:root {
+		--vp-home-hero-image-filter: blur(72px);
+	}
 }
 
 /**
@@ -70,22 +52,11 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-custom-block-tip-border: var(--vp-c-brand);
-  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+	--vp-custom-block-tip-border: var(--vp-c-brand-1);
+	--vp-custom-block-tip-bg: var(--vp-c-brand-alternative);
 }
 
 .dark {
-  --vp-custom-block-tip-border: var(--vp-c-brand);
-  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+	--vp-custom-block-tip-border: var(--vp-c-brand-1);
+	--vp-custom-block-tip-bg: var(--vp-c-brand-alternative);
 }
-
-/**
- * Component: Algolia
- * -------------------------------------------------------------------------- */
-
-.DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand) !important;
-}
-

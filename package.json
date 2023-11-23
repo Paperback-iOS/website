@@ -1,25 +1,30 @@
 {
-  "name": "paperback-website",
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "build": "npm run docs:build",
-    "serve": "npm run docs:dev",
-    "docs:dev": "vitepress dev src",
-    "docs:build": "vitepress build src",
-    "docs:preview": "vitepress preview src"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Paperback-iOS/website.git"
-  },
-  "private": true,
-  "devDependencies": {
-    "@mdit/plugin-tab": "^0.4.8",
-    "stylus": "^0.59.0",
-    "typescript": "^5.1.6",
-    "vitepress": "^1.0.0-beta.7",
-    "vitepress-plugin-tabs": "^0.3.0",
-    "vue": "^3.3.4"
-  }
+	"name": "paperback-website",
+	"version": "1.0.0",
+	"description": "The official website for Paperback",
+	"author": "Paperback-iOS",
+	"homepage": "https://paperback.moe",
+	"keywords": [
+		"Paperback",
+		"Website",
+		"VitePress"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Paperback-iOS/website.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Paperback-iOS/website/issues"
+	},
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "vitepress dev src",
+		"build": "vitepress build src",
+		"preview": "vitepress preview src"
+	},
+	"devDependencies": {
+		"vitepress": "^1.0.0-rc.42",
+		"vitepress-plugin-tabs": "^0.5.0"
+	}
 }
