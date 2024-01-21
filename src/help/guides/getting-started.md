@@ -17,7 +17,7 @@ Search for "<u>_Paperback - A Komga Client_</u>" in the **App Store**.
 == TestFlight
 
 ::: warning Patreon Exclusive Beta
-You need to be a <u>[Patreon Supporter](https://patreon.com/FaizanDurrani)</u> in order to access the Beta builds of Paperback
+You need to be a <u>[Patreon Supporter](https://patreon.com/FaizanDurrani)</u> in order to access the Beta builds of Paperback.
 :::
 
 ### Request an invite
@@ -53,13 +53,46 @@ Make sure your Discord account is properly linked to Patreon and that your subsc
 - **I did everything but still didn't get an invite**  
 Please create a new post in the `#support` channel of the [Paperback Discord Server](https://discord.paperback.moe).
 :::
+
+== Server Booster
+::: warning Limited spots
+If you are a Discord server Booster, you can try to get Testflight access. There are only 100 Testflight spots reserved for Boosters.
+:::
+
+### Request an invite
+1. Join the [Paperback Discord Server](https://discord.paperback.moe/).
+1. Boost the server
+1. Run the `/invite` command or use the bot at `TO BE ADDED`
+
+You should receive an email shortly with your TestFlight invite.
+
+### Installation instructions
+1. Download the TestFlight app onto your device from the App Store.
+1. Inside of the invite email, click the button labeled "**View in TestFlight**".
+1. Download the application through TestFlight
+
+::: details Frequently Asked Questions
+- **You only have one invite per 6 hours**    
+If you made a mistake, you may have to 6 hours to be able to request for a new invite.
+
+- **I made a typo/mistake when I sent my email to the bot**  
+If you made a typo/mistake, you need to wait 6 hours for a new invite.
+
+- **The `/invite` command failed**  
+Make sure your Discord name is in alphanumeric characters. Using other special characters will not work.
+
+- **I did everything but still didn't get an invite**  
+Please create a new post in the `#support` channel of the [Paperback Discord Server](https://discord.paperback.moe).
+:::
+
+
 == AltStore
 # Install the public build with AltStore
 
 ### Installation
 **Paperback** can be sideloaded with **AltStore**. 
 You can grab the app from the Altstore repository [here](https://altstore.paperback.moe/altstore.json).
-
+> If you require additional assistance with AltStore, please visit their official website at https://altstore.io/faq/ to review their frequently asked questions. We are not affiliated with AltStore. We simply recommend their app to sideload Paperback. For further support, we suggest joining their Discord server at https://discord.gg/ERssHqy for more information.
 ### Prerequisites
 1. On your iPhone or iPad, download the app <Download text="from here"/>. The app will download as **`Paperback.ipa`**.
 1. Download [AltServer](https://altstore.io/) for your operating system.
