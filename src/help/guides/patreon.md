@@ -83,8 +83,16 @@ Please create a new post in the `#support` channel of the [Paperback Discord Ser
 #### #⁠beta-chat shows up as No Access
  * You need to be subscribed to the Patreon and have your discord account linked
 
-#### I cannot chat in ⁠beta-chat
+#### I cannot chat in #⁠beta-chat
  * You need to read and accept the ⁠rules. 
+
+#### I made a custom pledge, why can't I have access?
+ * Making a **Custom Pledge** with Patreon will not allow you to have access to the Patreon Testflight.
+ * Make sure to verify that **YOU HAVE SELECTED A TIER**. You will only get your supporter role and your invite if you select a tier.\n• Everything is sold out? **WAIT**. Do not pledge.
+ * If you want a refund, please let us know immediately.
+
+#### Expired Beta Access
+If your beta access has expired, join again. TestFlight builds expire after 90 days. 
 
 ### Troubleshooting
  * If you're having problems with the app, please check the **[Troubleshooting page](/help/faq#troubleshooting)**. 
