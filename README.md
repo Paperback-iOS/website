@@ -4,7 +4,7 @@
 	</p>
 	<h1 align="center">Paperback Website</h1>
 	<p align="center">
-		<a href="https://discord.gg/Ny83JV3">
+		<a href="https://discord.paperback.moe/">
 			<img src="https://img.shields.io/discord/673606787290759230.svg?label=Discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">
 		</a>
 	</p>
@@ -16,7 +16,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [Contributing guide](./CONTRIBUTING.md)
-- [Discord server](https://discord.gg/Ny83JV3)
+- [Discord server](https://discord.paperback.moe/)
 
 <div>
 	<p align="center">

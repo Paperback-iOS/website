@@ -7,22 +7,21 @@ lang: en-US
 You should always have a backup of your library, especially before updating the app.
 
 :::: tip Tips
- * A video guide is also available [on YouTube](https://www.youtube.com/watch?v=5EPN9FORQ1g)
  * If the app crashed when you made the backup, go to settings and choose "**Clear orphaned chapters**".
 ::::
 
-## Creating a backup from Paperback
- * Go to Settings > Backups
- * Press "**New Backup**" and choose where you want to save the backup
- > We recommend you save them to your Notes or Files
+## Backing your data
+**Creating a backup from Paperback**
+ * Go to Settings > Backups.
+ * Press "**New Backup**" and choose where you want to save the backup.
+ > We recommend you save them to the **Notes** app or **Files** app.
 
 ## Importing your data
-
-:::: guide Importing a backup to Paperback
 **Restoring a backup**
- * Go to your previously saved backup and press the share icon
- * Select "**Copy to Paperback**" or "**Export to Paperback**" action
- * You can then press "**Restore**" to restore your backup
+ * Open **Paperback** and leave it running in the background.
+ * Go to your previously saved backup and press the share icon.
+ * Select "**Copy to Paperback**" or "**Export to Paperback**".
+ * You can then press "**Restore**" to restore your backup.
 
 ---
 
