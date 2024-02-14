@@ -23,7 +23,6 @@ You are ready to start developing a source. When you think the source should be 
 ::: aside
 If you need help figuring to which repository you should submit your new pull request, don't hesitate to contact us.
 :::
-::::
 
 ---
 
