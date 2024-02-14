@@ -5,7 +5,7 @@ sidebarDepth: 2
 ---
 
 # Frequently Asked Questions
-If you have questions about the app and our plans or need help with installing the app, try checking our guides and DAQ entries. If you haven't found what you needed, feel free to join the [Discord](https://discord.gg/Ny83JV3) and ask using our thread system.
+If you have questions about the app and our plans or need help with installing the app, try checking our guides and FAQ entries. If you haven't found what you needed, feel free to join the [Discord](https://discord.gg/Ny83JV3) and ask using our thread system.
 
 # General Information
 
@@ -16,9 +16,9 @@ Check [Paperback Installation Guide](/help/guides/getting-started).
 :::: warning Paperback is not hosting any copyrighted content.
 We are not affiliated with or responsible for any source.
 
-Sources are community made. 
+Sources are community made.
 
-**We are not responsible if it is / has:**  
+**We are not responsible if it is / has:**
 slow, down, missing chapters, bad image quality, another language or another title.
 ::::
 
@@ -35,9 +35,9 @@ If you are using the **Beta/Patreon build**, they are usually unstable. If you a
 Turn off your device LTE & WiFi connection, open Paperback and remove the chapter.
 
 ### The app crashes when I open a title
-Ensure you are on the latest version of Paperback. 
+Ensure you are on the latest version of Paperback.
 
-Switch to the new reader/viewer, available to version 0.7 and above. 
+Switch to the new reader/viewer, available to version 0.7 and above.
 <br>
 * Settings -> Experimental Features
 
@@ -73,15 +73,15 @@ In the library, long press the thumbnail then select **Refresh thumbnail**.
 You need to [adjust your content settings](/help/guides/content-settings) for Adult titles to be shown in the library.
 
 ### Sorting by Latest Updates doesn't work <el-tag size="mini" type="warning">Depreciated</el-tag>
-This works but it doesn't respect user's selected language. Try to use **Update Count** sorting instead.
+This works but it doesn't respect the user's selected language. Try to use **Update Count** sorting instead.
 
 ## Extensions
 
 ### Adding other third party sources
-The app allow the user to install community made source repositories.
+The app allows the user to [install community made source repositories](/help/guides/adding-repos).
 
 ### How do notifications work?
-The app will periodically check for updates in the background when iOS or iPadOS allocates time for it, this should be improved as you use the app and iOS learns to prioritize the app's background jobs over others. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after. 
+The app will periodically check for updates in the background when iOS or iPadOS allocates time for it, this should be improved as you use the app and iOS learns to prioritize the app's background jobs over others. You can expedite the process by hitting refresh *once* to check for updates. This does not guarantee that notifications will work immediately after.
 
 Sources supporting notifications have a <el-tag type="success" size="mini" effect="dark"> Notifications </el-tag> badge in the app. <!-- and the [repositories list](/help/guides/adding-repos/#known-repositories). -->
 

@@ -8,7 +8,9 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ## Development Setup
 
-You will need [Node.js](http://nodejs.org) **version 12+**, and [npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm) **version 7+**.
+You will need [Node.js](http://nodejs.org) **version >=12 <=16**[^1], and [npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm) **version 7+**.
+
+[^1]: Node.js v17 [moved to OpenSSL 3.0](https://nodejs.org/en/blog/release/v17.0.0/#openssl-3-0), which is unsupported by this website's current build environment
 
 After cloning the repo, run:
 
