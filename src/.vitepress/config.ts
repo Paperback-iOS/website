@@ -25,7 +25,7 @@ export default defineConfig({
 		["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
 		['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
 		["meta", { name: "theme-color", content: "#D21A1C" }],
-		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://paperback.moe/icons/appicon-round.png" }],
+		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "/logo-pb.png" }],
 	],
 
   themeConfig: {
