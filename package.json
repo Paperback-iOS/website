@@ -1,41 +1,30 @@
 {
 	"name": "paperback-website",
-	"version": "0.0.0",
-	"scripts": {
-		"build": "npm run lint && vuepress build src",
-		"lint": "eslint --fix src/.vuepress/**/*.{js,vue} --no-ignore",
-		"serve": "vuepress dev src",
-		"git-update": "git fetch upstream && git merge upstream/master"
-	},
+	"version": "1.0.0",
+	"description": "The official website for Paperback",
+	"author": "Paperback-iOS",
+	"homepage": "https://paperback.moe",
+	"keywords": [
+		"Paperback",
+		"Website",
+		"VitePress"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Paperback-iOS/website.git"
 	},
-	"private": true,
-	"devDependencies": {
-		"@vuepress/plugin-back-to-top": "^1.8.2",
-		"@vuepress/plugin-google-analytics": "^1.8.2",
-		"eslint": "^6.8.0",
-		"eslint-config-airbnb": "^18.2.0",
-		"eslint-config-prettier": "^6.15.0",
-		"eslint-config-vuepress": "^2.1.0",
-		"eslint-plugin-prettier": "^3.4.0",
-		"prettier": "^2.2.1",
-		"vuepress": "^1.8.2",
-		"vuepress-plugin-clean-urls": "^1.1.2",
-		"vuepress-plugin-container": "^2.1.5",
-		"vuepress-plugin-element-ui": "^1.1.0",
-		"vuepress-types": "^0.9.4"
+	"bugs": {
+		"url": "https://github.com/Paperback-iOS/website/issues"
 	},
-	"dependencies": {
-		"axios": "^0.21.1",
-		"core-js": "^2.6.12",
-		"eslint-plugin-jsx-a11y": "^6.4.1",
-		"eslint-plugin-react": "^7.23.2",
-		"eslint-plugin-react-hooks": "^2.5.1",
-		"prettier-config-vuepress": "^1.2.0",
-		"vuepress-plugin-robots": "^1.0.1",
-		"vuepress-plugin-sitemap": "^2.3.1",
-		"vuepress-theme-yuu": "^3.0.1"
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "vitepress dev src",
+		"build": "vitepress build src",
+		"preview": "vitepress preview src"
+	},
+	"devDependencies": {
+		"vitepress": "^1.0.0-rc.42",
+		"vitepress-plugin-tabs": "^0.5.0"
 	}
 }
