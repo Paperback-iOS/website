@@ -1,12 +1,10 @@
----
-title: Getting started
----
-
 # Getting Started
 
 ## Introduction to Paperback
 
-Welcome to Paperback! Before diving into the guides, let's briefly introduce the app. With Paperback, you can enjoy a seamless reading experience without distractions on Apple devices, it comes with a modern UI, is feature rich and is completely ad-free.
+Welcome to Paperback! Before diving into the guides, let's briefly introduce the app.
+
+With Paperback, you can enjoy a seamless reading experience without distractions on Apple devices, it comes with a modern UI, is completely ad-free and is feature rich (extension support, offline reading, tracking and more).
 
 ## Essential Guides
 

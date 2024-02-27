@@ -1,16 +1,5 @@
----
-title: Website Contribution
----
-
 # Website Contribution
 
-Contributions to the website are always welcome.
+Contributing to the website is always welcome.
 
-This website is made using [VitePress](https://vitepress.dev), it is a static site generator using markdown files with [Vue](https://vuejs.org) support.
-
--   [Markdown examples](/contribute/website/markdown-examples)
--   [API examples](/contribute/website/api-examples)
-
-We recommend you start with reading the [contribution guidelines](https://github.com/Paperback-iOS/website/blob/master/.github/CONTRIBUTING.md) on GitHub.
-
-You can also simply use the "Edit this page" button at the bottom of every page to propose changes.
+This website is made using [VitePress](https://vitepress.dev), it is a static site generator using markdown files, it also has Vue support. Check out the [quick-start guide](/contribute/website/quick-start) and the [references](/contribute/website/reference/) to get an idea of how VitePress works.

@@ -6,7 +6,7 @@ import './style.css';
 
 // @ts-ignore
 const modules = import.meta.glob('../components/**/*.vue', {
-	eager: true
+	eager: true,
 });
 const components: any[] = [];
 
@@ -29,5 +29,5 @@ export default {
 		components.forEach((component) => {
 			app.component(component.name, component);
 		});
-	}
+	},
 };

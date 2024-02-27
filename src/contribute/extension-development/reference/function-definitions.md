@@ -1,8 +1,4 @@
----
-title: Function definitions
----
-
-# Required Methods
+# Function Definitions
 
 ## getMangaDetails
 
@@ -12,9 +8,9 @@ title: Function definitions
 
 ### Parameters
 
-| Parameter | Type | Description|
-|-----------|------|------------|
-|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
+| Parameter | Type   | Description                                                                                                                                                                                                                    |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `mangaId` | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
 
 ### Returns
 
@@ -60,9 +56,9 @@ async getMangaDetails(mangaId: string): Promise<Manga> {
 
 ### Parameters
 
-| Parameter | Type | Description|
-|-----------|------|------------|
-|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
+| Parameter | Type   | Description                                                                                                                                                                                                                    |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `mangaId` | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
 
 ### Returns
 
@@ -119,10 +115,10 @@ async getChapters(mangaId: string): Promise<Chapter[]> {
 
 ### Parameters
 
-| Parameter | Type | Description|
-|-----------|------|------------|
-|  `mangaId`  | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
-| `chapterId` | String | The ID of a chapter. defined by the [Get Chapters](#getchapters) method. The chapter ID can only contain letters, numbers, dashes and underscores. |
+| Parameter   | Type   | Description                                                                                                                                                                                                                    |
+| ----------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `mangaId`   | String | The ID of a manga. The manga ID is provided from the other discovery functions, such as the home page and performed searches. The manga ID should be used to return information about the manga, such as the title and author. |
+| `chapterId` | String | The ID of a chapter. defined by the [Get Chapters](#getchapters) method. The chapter ID can only contain letters, numbers, dashes and underscores.                                                                             |
 
 ### Returns
 
@@ -171,10 +167,10 @@ async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDeta
 
 ### Parameters
 
-| Parameter | Type | Description|
-|-----------|------|------------|
-| `query` | [SearchRequest](model-reference#searchrequest) | The object representing the search. View the fields of the [SearchRequest](model-reference#searchrequest) object to find out what a search can contain. |
-| `metadata` | any | Metadata carried through function calls. View the [metadata page](metadata) to learn more about how the parameter works. |
+| Parameter  | Type                                           | Description                                                                                                                                             |
+| ---------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `query`    | [SearchRequest](model-reference#searchrequest) | The object representing the search. View the fields of the [SearchRequest](model-reference#searchrequest) object to find out what a search can contain. |
+| `metadata` | any                                            | Metadata carried through function calls. View the [metadata page](metadata) to learn more about how the parameter works.                                |
 
 ### Returns
 

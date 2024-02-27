@@ -30,7 +30,7 @@ The url argument must point to the webpage hosting the `versioning.json` file an
 export default {
 	data() {
 		return {
-			statusSuccess: false
+			statusSuccess: false,
 		};
 	},
 
@@ -54,7 +54,7 @@ export default {
 				'&url=' +
 				encodeURIComponent(url)
 			);
-		}
-	}
+		},
+	},
 };
 </script>

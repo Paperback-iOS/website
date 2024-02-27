@@ -3,10 +3,10 @@ export default [
 	{ text: 'Guides', link: '/guides/' },
 	{
 		text: 'FAQ',
-		link: '/faq/'
+		link: '/faq/',
 	},
 	{
 		text: 'Contribute',
-		link: '/contribute/'
-	}
+		link: '/contribute/',
+	},
 ];

@@ -1,8 +1,4 @@
----
-title: Frequently Asked Questions
----
-
-# Frequently Asked Questions
+# Frequently Asked Questions (FAQ)
 
 ::: tip
 If you need further assistance feel free to join the [Paperback Discord Server](https://discord.paperback.moe) and create a support post in `#support`.
@@ -60,7 +56,7 @@ You need to [adjust your content settings](/guides/getting-started/content-setti
 
 ## Extensions
 
-### Adding other third party sources
+### Adding other third party extensions
 
 1. Navigate to `Settings > Extensions`
 1. Press `Edit` button in the top-right corner
@@ -78,7 +74,7 @@ Notifications are not supported in 0.8.x
 Press the cloud button in the top-right corner of the Discover tab
 This process may need to be done each time the cookies expire, usually every three days.
 ::: info
-Sources requiring this process have a cloud icon in the app.
+Extensions requiring this process have a cloud icon in the app.
 :::
 
 ## Bugs and feature requests
@@ -87,9 +83,9 @@ Sources requiring this process have a cloud icon in the app.
 
 Go to Settings and press "**Export logs**".
 
-### How to export a source logs?
+### How to export an extension its logs?
 
-Go to Settings, External Sources. Then select a source and press "**Export logs**".
+Go to Settings, Extensions. Then select an extension and press "**Export logs**".
 
 ### I found a bug, what should I do?
 

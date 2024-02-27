@@ -1,5 +1,4 @@
 ---
-title: App Store Availability
 prev:
     text: 'Installation'
     link: '/guides/getting-started/installation'
@@ -32,7 +31,6 @@ What follows is a list of all countries where you can find the Paperback app in 
 -   Chad
 -   Chile
 -   Democratic Republic of the Congo
--   Côte d’Ivoire
 -   Czech Republic
 -   Denmark
 -   Egypt
@@ -52,6 +50,7 @@ What follows is a list of all countries where you can find the Paperback app in 
 -   Ireland
 -   Israel
 -   Italy
+-   Ivory Coast
 -   Jordan
 -   Kenya
 -   Kuwait
@@ -100,7 +99,7 @@ What follows is a list of all countries where you can find the Paperback app in 
 -   Tanzania
 -   Thailand
 -   Tunisia
--   Türkiye
+-   Turkey
 -   Uganda
 -   United Arab Emirates
 -   United Kingdom

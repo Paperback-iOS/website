@@ -8,7 +8,7 @@ const headConfig: HeadConfig[] = [
 
 	[
 		'meta',
-		{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+		{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
 	],
 	['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
 
@@ -17,8 +17,8 @@ const headConfig: HeadConfig[] = [
 		{
 			rel: 'icon',
 			type: 'image/x-icon',
-			href: '/favicon.ico'
-		}
+			href: '/favicon.ico',
+		},
 	],
 	[
 		'link',
@@ -26,8 +26,8 @@ const headConfig: HeadConfig[] = [
 			rel: 'icon',
 			type: 'image/png',
 			sizes: '32x32',
-			href: '/favicon-32x32.png'
-		}
+			href: '/favicon-32x32.png',
+		},
 	],
 	[
 		'link',
@@ -35,8 +35,8 @@ const headConfig: HeadConfig[] = [
 			rel: 'icon',
 			type: 'image/png',
 			sizes: '16x16',
-			href: '/favicon-16x16.png'
-		}
+			href: '/favicon-16x16.png',
+		},
 	],
 	[
 		'link',
@@ -44,8 +44,8 @@ const headConfig: HeadConfig[] = [
 			rel: 'apple-touch-icon',
 			type: 'image/png',
 			sizes: '180x180',
-			href: '/apple-touch-icon.png'
-		}
+			href: '/apple-touch-icon.png',
+		},
 	],
 
 	['link', { rel: 'manifest', href: '/site.webmanifest' }],
@@ -58,8 +58,8 @@ const headConfig: HeadConfig[] = [
 		'meta',
 		{
 			name: 'twitter:description',
-			content: 'An Ad-Free Comic/Manga Reader for iOS'
-		}
+			content: 'An Ad-Free Comic/Manga Reader for iOS',
+		},
 	],
 
 	['meta', { property: 'og:title', content: 'Paperback' }],
@@ -70,9 +70,9 @@ const headConfig: HeadConfig[] = [
 		'meta',
 		{
 			property: 'og:description',
-			content: 'An Ad-Free Comic/Manga Reader for iOS'
-		}
-	]
+			content: 'An Ad-Free Comic/Manga Reader for iOS',
+		},
+	],
 ];
 
 export default headConfig;

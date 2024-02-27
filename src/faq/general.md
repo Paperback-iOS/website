@@ -1,5 +1,3 @@
----
-title: Frequently Asked Questions
----
+# FAQ - General
 
-# Frequently Asked Questions - General
+Coming soon!

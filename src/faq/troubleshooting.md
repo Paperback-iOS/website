@@ -1,5 +1,3 @@
----
-title: Frequently Asked Questions
----
+# FAQ - Troubleshooting
 
-# Frequently Asked Questions - Troubleshooting
+Coming soon!

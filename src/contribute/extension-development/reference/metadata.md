@@ -1,7 +1,3 @@
----
-title: Metadata Parameter
----
-
 # The Metadata Parameter
 
 Any function that returns the [PagedData](model-reference#pageddata) object will also accept a parameter

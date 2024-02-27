@@ -1,12 +1,11 @@
 ---
-title: Privacy policy
 sidebar: false
 next: false
 ---
 
-# PRIVACY POLICY
+# Privacy Policy
 
-_Last updated Februari 16, 2024_
+_Last reviewed February 23, 2024_
 
 Thank you for choosing to be part of our community at Paperback (“**Company**”, “**we**”, “**us**”, or “**our**”). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at paperbackios@gmail.com.
 
@@ -16,7 +15,7 @@ This privacy policy applies to all information collected through our mobile appl
 
 **Please read this privacy policy carefully as it will help you make informed decisions about sharing your personal information with us.**
 
-## 1. WHAT INFORMATION DO WE COLLECT?
+## 1. What information do we collect?
 
 **Personal information you disclose to us**
 
@@ -26,7 +25,7 @@ We collect personal information that you voluntarily provide to us when register
 
 The personal information that we collect depends on the context of your interactions with us and the Apps, the choices you make and the products and features you use. The personal information we collect can include the following:
 
-**Social Media Login Data:** We may provide you with the option to register using social media account details, like your Facebook, Twitter or other social media account. If you choose to register in this way, we will collect the Information described in the section called "[HOW DO WE HANDLE YOUR SOCIAL LOGINS](#_5-how-do-we-handle-your-social-logins)" below.
+**Social Media Login Data:** We may provide you with the option to register using social media account details, like your Facebook, Twitter or other social media account. If you choose to register in this way, we will collect the Information described in the section called "[5. How do we handle your social logins?](#_5-how-do-we-handle-your-social-logins)" below.
 
 All personal information that you provide to us must be true, complete and accurate, and you must notify us of any changes to such personal information.
 
@@ -47,7 +46,7 @@ If you use our Apps, we may also collect the following information:
 -   _Mobile Device Data._ We may automatically collect device information (such as your mobile device ID, model and manufacturer), operating system, version information and IP address.
 -   _Push Notifications._ We may request to send you push notifications regarding your account or the mobile application. If you wish to opt-out from receiving these types of communications, you may turn them off in your device's settings.
 
-## **2. HOW DO WE USE YOUR INFORMATION?**
+## 2. How do we use your information?
 
 **_In Short:_** _We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent._
 
@@ -55,13 +54,13 @@ We use personal information collected via our Apps for a variety of business pur
 
 We use the information we collect or receive:
 
--   **To facilitate account creation and logon process.** If you choose to link your account with us to a third party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract. See the section below headed "[HOW DO WE HANDLE YOUR SOCIAL LOGINS](#_5-how-do-we-handle-your-social-logins)" for further information.
+-   **To facilitate account creation and logon process.** If you choose to link your account with us to a third party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract. See the section below headed "[5. How do we handle your social logins?](#_5-how-do-we-handle-your-social-logins)" for further information.
 -   **To enforce our terms, conditions and policies for Business Purposes, Legal Reasons and Contractual.**
 -   **To respond to legal requests and prevent harm.** If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
 -   **To manage user accounts**. We may use your information for the purposes of managing our account and keeping it in working order.
 -   **To deliver services to the user.** We may use your information to provide you with the requested service.
 
-## **3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?**
+## 3. Will your information be shared with anyone?
 
 **_In Short:_** _We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations._
 
@@ -87,13 +86,13 @@ More specifically, we may need to process your data or share your personal infor
 
 -   **Business Partners.** We may share your information with our business partners to offer you certain products, services or promotions.
 
-## **4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?**
+## 4. Do we use cookies and other tracking technologies?
 
 **_In Short:_** _We may use cookies and other tracking technologies to collect and store your information._
 
 We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Policy.
 
-## **5. HOW DO WE HANDLE YOUR SOCIAL LOGINS?**
+## 5. How do we handle your social logins?
 
 **_In Short:_** _If you choose to register or log in to our services using a social media account, we may have access to certain information about you._
 
@@ -101,7 +100,7 @@ Our Apps offer you the ability to register and login using your third party soci
 
 We will use the information we receive only for the purposes that are described in this privacy policy or that are otherwise made clear to you on the Apps. Please note that we do not control, and are not responsible for, other uses of your personal information by your third party social media provider. We recommend that you review their privacy policy to understand how they collect, use and share your personal information, and how you can set your privacy preferences on their sites and apps.
 
-## **6. HOW LONG DO WE KEEP YOUR INFORMATION?**
+## 6. How long do we keep your information?
 
 **_In Short:_** _We keep your information for as long as necessary to fulfill the purposes outlined in this privacy policy unless otherwise required by law._
 
@@ -109,13 +108,13 @@ We will only keep your personal information for as long as it is necessary for t
 
 When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
 
-## **7. HOW DO WE KEEP YOUR INFORMATION SAFE?**
+## 7. How do we keep your information safe?
 
 **_In Short:_** _We aim to protect your personal information through a system of organizational and technical security measures._
 
 We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the internet itself is 100% secure. Although we will do our best to protect your personal information, transmission of personal information to and from our Apps is at your own risk. You should only access the services within a secure environment.
 
-## **8. WHAT ARE YOUR PRIVACY RIGHTS?**
+## 8. What are your privacy rights?
 
 **_In Short:_** _In some regions, such as the European Economic Area, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time._
 
@@ -137,11 +136,11 @@ Upon your request to terminate your account, we will deactivate or delete your a
 
 **Cookies and similar technologies:** Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Apps.
 
-## **9. CONTROLS FOR DO-NOT-TRACK FEATURES**
+## 9. Controls for do-not-track features
 
 Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy policy.
 
-## **10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?**
+## 10. Do california residents have specific privacy rights?
 
 **_In Short:_** _Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information._
 
@@ -149,16 +148,16 @@ California Civil Code Section 1798.83, also known as the “Shine The Light” l
 
 If you are under 18 years of age, reside in California, and have a registered account with the Apps, you have the right to request removal of unwanted data that you publicly post on the Apps. To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Apps, but please be aware that the data may not be completely or comprehensively removed from our systems.
 
-## **11. DO WE MAKE UPDATES TO THIS POLICY?**
+## 11. Do we make updates to this policy?
 
 **_In Short:_** _Yes, we will update this policy as necessary to stay compliant with relevant laws._
 
 We may update this privacy policy from time to time. The updated version will be indicated by an updated “Revised” date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy policy frequently to be informed of how we are protecting your information.
 
-## **12. HOW CAN YOU CONTACT US ABOUT THIS POLICY?**
+## 12. How can you contact us about this policy?
 
 If you have questions or comments about this policy, you may email us at paperbackios@gmail.com.
 
-**HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?**
+## 13. How can you review, update, or delete the data we collect from you?
 
 Based on the laws of some countries, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please contact us at paperbackios@gmail.com

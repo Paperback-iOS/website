@@ -19,10 +19,10 @@ hero:
 features:
     - title: Modern UI
       details: Comes with no ads and a modern, intuitive user interface.
-    - title: Sources
-      details: Support for third-party sources enabling the addition of more content.
+    - title: Extensions
+      details: Support for third-party extensions enabling the addition of more content.
     - title: Offline Reading
       details: Allows easy downloading of content for offline reading.
     - title: Tracking
-      details: Automatically keep track of your content with trackers.
+      details: Automatically keep track of your content with external trackers.
 ---

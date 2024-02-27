@@ -1,5 +1,5 @@
 ---
-title: addRepo
+title: Adding Repository
 navbar: false
 sidebar: false
 editLink: false
