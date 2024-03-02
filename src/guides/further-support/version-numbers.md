@@ -1,7 +1,7 @@
 ---
 prev:
     text: 'Further Support'
-    link: '/guides/further-support#getting-support'
+    link: '/guides/further-support#getting-support/'
 next: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 prev:
     text: 'Installation'
-    link: '/guides/getting-started/installation'
+    link: '/guides/getting-started/installation/'
 next: false
 ---
 

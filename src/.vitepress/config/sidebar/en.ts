@@ -9,7 +9,7 @@ export default [
 				items: [
 					{
 						text: 'Installation',
-						link: '/guides/getting-started/installation',
+						link: '/guides/getting-started/installation/',
 					},
 					{
 						text: 'Changing Content Settings',
@@ -50,7 +50,7 @@ export default [
 			},
 			{
 				text: 'Further Support',
-				link: '/guides/further-support',
+				link: '/guides/further-support/',
 			},
 		],
 	},

@@ -19,7 +19,7 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"dev": "vitepress dev src",
+		"dev": "vitepress dev src --host",
 		"build": "vitepress build src",
 		"preview": "vitepress preview src"
 	},

@@ -25,15 +25,32 @@ Adding your Komga instance to your Paperback app is straight forward. below you 
 
 #### 1. Add the official repository
 
-The official repository comes pre-installed on clean Paperback installations so most people can skip this step. However, a guide on how to add it back to your app if you did end up removing it can be found [here](#adding-extensions), make sure to use the link below.
+The official repository comes pre-installed on a clean Paperback installation, so most people can skip this step. However, here is a guide on how to add it back to your app if you did end up removing it.
 
-Official Repository link: [https://paperback-ios.github.io/extensions-default/main/](https://paperback-ios.github.io/extensions-default/main/)
+:::: tabs
+== Automatically
+
+1.  Click/Press on [this link](https://paperback-ios.github.io/extensions-default/main/).
+2.  On the website, select "**Add to Paperback**".
+3.  Accept the 'Open in "Paperback"?' pop-up.
+4.  In Paperback, select "**Add as Source Repo**".
+
+== Manually
+
+1. Open the app and go to **Settings** > **Extensions**.
+2. Select **Edit** > **+**.
+3. The "Repository Name" can be whatever you want, it is optional.
+4. As "Repository Base URL" you will want to put this url: [https://paperback-ios.github.io/extensions-default/main/](https://paperback-ios.github.io/extensions-default/main/).
+5. Read and accept the conditions.
+6. Select Add to Paperback.
+
+::::
 
 #### 2. Install the Paperback extension
 
 The official repository contains the "Paperback" extension, here is how to install it:
 
-1. Go to **Settings** > **Extensions** > **Official Repo** (Or any other name you gave your repository).
+1. Go to **Settings** > **Extensions** > **Official Repo** (Or whatever other name you gave it during manual installation).
 2. Select "**GET**". It should change to "**RELOAD**" if it has successfully installed.
 
 #### 3. Configure the Extension
@@ -59,16 +76,16 @@ Adding extensions is necessary to add content to your app, there are 2 methods t
 == Automatically
 
 1.  Click/Press on the provided link.
-2.  On the website, select "Add to Paperback".
+2.  On the website, select "**Add to Paperback**".
 3.  Accept the 'Open in "Paperback"?' pop-up.
-4.  In Paperback, select "Add as Source Repo".
+4.  In Paperback, select "**Add as Source Repo**".
 
 == Manually
 
 1. Open the app and go to **Settings** > **Extensions**.
 2. Select **Edit** > **+**.
 3. The "Repository Name" can be whatever you want, it is optional.
-4. As "Repository Base URL" you will want to put the a link provided by the repository developer.
+4. As "Repository Base URL" you will want to put the url provided by the repository developer.
 5. Read and accept the conditions.
 6. Select Add to Paperback.
 
