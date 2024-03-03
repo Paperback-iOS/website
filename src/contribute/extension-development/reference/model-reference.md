@@ -1,4 +1,4 @@
-# Models reference
+# Models Reference
 
 ## Function Wrappers
 

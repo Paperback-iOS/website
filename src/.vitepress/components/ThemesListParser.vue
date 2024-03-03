@@ -1,17 +1,21 @@
 <template>
-	<section class="fetchError" v-if="typeof themesList === 'undefined'">
-		<p>Failed to fetch the available themes.</p>
-		<p>Check again later.</p>
+	<p v-if="!canShare">
+		Your browser does not support installing Paperback Themes. We recommend
+		using Safari.
+	</p>
+	<section class="fetchError" v-else-if="loading">
+		<p>Loading...</p>
 	</section>
 	<section
 		class="fetchSuccess"
-		v-else-if="canShare"
+		v-else-if="themesList"
 		v-for="group in themesList.themes"
 	>
 		<p>
 			Click the "<span>Install</span>" button and share it with your
-			Paperback app to install the theme (it needs to be open in the
-			background for the theme to apply).
+			Paperback app to install the theme. You can also download the theme
+			file and share that with the Paperback app. Note: In both cases the
+			app needs to be open in the background for the theme to apply.
 		</p>
 		<section class="group">
 			<h2>
@@ -30,14 +34,12 @@
 				class="accentColor"
 				v-for="accentColor in subGroup.accentColors"
 			>
-				<h4 v-if="accentColor.name">
+				<h3 v-if="accentColor.name">
 					{{
-						accentColor.name
-							? accentColor.name.charAt(0).toUpperCase() +
-							  accentColor.name.slice(1)
-							: ''
+						accentColor.name.charAt(0).toUpperCase() +
+						accentColor.name.slice(1)
 					}}
-				</h4>
+				</h3>
 				<p v-for="creator in accentColor.creators">
 					<span>Creator: </span>
 					{{ creator.charAt(0).toUpperCase() + creator.slice(1) }}
@@ -45,40 +47,53 @@
 				<p>
 					{{ accentColor.description }}
 				</p>
-				<section>
+				<section class="themeImages">
 					<img
 						v-for="mode in ['dark', 'light']"
 						:src="
-							getImage(
+							this.getThemeImage(
 								group.name,
-								subGroup.name,
-								accentColor.name,
+								subGroup.name || undefined,
+								accentColor.name || undefined,
 								mode
 							)
 						"
 						alt="Theme Example Image"
 					/>
 				</section>
-				<button
-					@click="
-						installTheme(
-							group.name,
-							subGroup.name || '',
-							accentColor.name || '',
-							accentColor.description as string
-						)
-					"
-				>
-					Install
-				</button>
+				<section class="themeInstallation">
+					<button
+						@click="
+							this.installTheme(
+								group.name,
+								subGroup.name || undefined,
+								accentColor.name || undefined,
+								accentColor.description as string
+							)
+						"
+					>
+						Install
+					</button>
+					<a
+						:href="
+							this.getThemeUrl(
+								group.name,
+								subGroup.name || undefined,
+								accentColor.name || undefined
+							)
+						"
+						target="_blank"
+						>Or download the theme.</a
+					>
+				</section>
 				<div class="accentColorDivider"></div>
 			</section>
 		</section>
 	</section>
-	<p v-else>
-		Your browser does not support installing Paperback Themes. We recommend
-		using Safari.
-	</p>
+	<section class="fetchError" v-else>
+		<p>Failed to fetch the available themes.</p>
+		<p>Check again later.</p>
+	</section>
 </template>
 
 <script lang="ts">
@@ -112,26 +127,41 @@ interface Creator {
 export default {
 	data() {
 		return {
-			themesList: undefined,
 			canShare: true,
-		} as { themesList: ThemesList | undefined; canShare: Boolean };
+			loading: true,
+			themesList: undefined,
+		} as {
+			loading: Boolean;
+			themesList: ThemesList | undefined;
+			canShare: Boolean;
+		};
 	},
 
-	async beforeMount() {
-		if (!navigator.canShare) {
-			this.$data.canShare = false;
-			return;
+	async beforeMount(): Promise<void> {
+		try {
+			if (
+				!navigator.canShare({
+					title: 'Test Share',
+					text: 'Testing the share method',
+					files: [],
+				})
+			) {
+				this.$data.canShare = false;
+				return;
+			}
+		} catch (error) {
+			console.log(error);
 		}
 
-		const themesList = await this.fetchThemesList();
-
+		const themesList: ThemesList | undefined = await this.fetchThemesList();
 		if (themesList) {
 			this.$data.themesList = themesList;
+			this.$data.loading = false;
 		}
 	},
 
 	methods: {
-		async fetchThemesList(): Promise<void | ThemesList> {
+		async fetchThemesList(): Promise<ThemesList | undefined> {
 			try {
 				const response = await fetch(
 					'https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes-list.json'
@@ -147,10 +177,11 @@ export default {
 				return data as Promise<ThemesList>;
 			} catch (error) {
 				console.log(error);
+				return undefined;
 			}
 		},
 
-		getImage(
+		getThemeImage(
 			group: String,
 			subGroup: String,
 			accentColor: String,
@@ -163,9 +194,39 @@ export default {
 			return url;
 		},
 
-		async fetchTheme(url: string): Promise<Blob> {
-			const response = await fetch(url);
-			return response.blob();
+		getThemeTitle(
+			group: String,
+			subGroup: String,
+			accentColor: String
+		): string {
+			const title =
+				group.charAt(1).toUpperCase() + group.slice(1) + ' ' + subGroup
+					? subGroup.charAt(1).toUpperCase() + subGroup.slice(1)
+					: '' + ' ' + accentColor
+					? accentColor.charAt(1).toUpperCase() + accentColor.slice(1)
+					: '';
+			return title;
+		},
+
+		getThemeUrl(
+			group: String,
+			subGroup: String,
+			accentColor: String
+		): string {
+			const url = `https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes/${group}/${
+				subGroup ? subGroup + '/' : ''
+			}${accentColor ? accentColor + '/' : ''}theme.pbcolors`;
+			return url;
+		},
+
+		async fetchTheme(url: string): Promise<Blob | undefined> {
+			try {
+				const response = await fetch(url);
+				return response.blob();
+			} catch (error) {
+				console.log(error);
+				return undefined;
+			}
 		},
 
 		async installTheme(
@@ -174,30 +235,27 @@ export default {
 			accentColor: String,
 			description: string
 		): Promise<void> {
-			const title =
-				group.charAt(1).toUpperCase() + group.slice(1) + ' ' + subGroup
-					? subGroup.charAt(1).toUpperCase() + subGroup.slice(1)
-					: '' + ' ' + accentColor
-					? accentColor.charAt(1).toUpperCase() + accentColor.slice(1)
-					: '';
+			const title: string = this.getThemeTitle(
+				group,
+				subGroup,
+				accentColor
+			);
 
-			const url = `https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes/${group}/${
-				subGroup ? subGroup + '/' : ''
-			}${accentColor ? accentColor + '/' : ''}theme.pbcolors`;
+			const url = this.getThemeUrl(group, subGroup, accentColor);
+			const theme: Blob | undefined = await this.fetchTheme(url);
 
-			console.log(url);
+			if (theme) {
+				const themeFile = new File([theme], title + '.pbcolors');
 
-			const theme = await this.fetchTheme(url);
-			const themeFile = new File([theme], title + '.pbcolors');
-
-			try {
-				await navigator.share({
-					title: title,
-					text: description,
-					files: [themeFile],
-				});
-			} catch (error) {
-				console.log(error);
+				try {
+					navigator.share({
+						title: title,
+						text: description,
+						files: [themeFile],
+					});
+				} catch (error) {
+					console.log(error);
+				}
 			}
 		},
 	},
@@ -241,7 +299,8 @@ export default {
 	border-left: 1px solid var(--vp-c-divider);
 }
 
-.accentColor > h4 {
+.accentColor > h3 {
+	margin: 0 !important;
 	padding: 0 0 0.5em 0;
 }
 
@@ -254,18 +313,25 @@ export default {
 	font-weight: bold;
 }
 
-.accentColor > section {
+.themeImages {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1em;
+	gap: 5%;
 }
 
-.accentColor > section > img {
-	width: 15em;
+.themeImages > img {
+	width: 47.5%;
 	display: inline !important;
 }
 
-.accentColor > button {
+.themeInstallation {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	padding-bottom: 1.5em;
+}
+
+.themeInstallation > button {
 	color: var(--vp-button-brand-text);
 	background: var(--vp-button-brand-bg);
 	border: 1px solid var(--vp-button-brand-border);
@@ -279,7 +345,7 @@ export default {
 	margin: 1.5em 0;
 }
 
-.accentColor > button:hover {
+.themeInstallation > button:hover {
 	color: var(--vp-button-brand-hover-text);
 	background: var(--vp-button-brand-hover-bg);
 	border: 1px solid var(--vp-button-brand-hover-border);
@@ -290,12 +356,31 @@ export default {
 	top: -1px;
 	border-top: 1px solid var(--vp-c-divider);
 	margin-bottom: 1em;
-	width: 15em;
+	width: 100%;
 }
 
-@media only screen and (min-width: 578px) {
+@media only screen and (min-width: 397px) {
+	.themeInstallation {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 1em;
+		padding-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 594px) {
+	.themeImages {
+		gap: 1.7em;
+	}
+
+	.themeImages > img {
+		width: 15em;
+		display: inline !important;
+	}
+
 	.accentColor > .accentColorDivider {
-		width: 31em;
+		width: 31.7em;
 	}
 }
 </style>

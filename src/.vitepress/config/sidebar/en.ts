@@ -1,52 +1,45 @@
 export default [
 	{
+		text: 'Getting Started',
+		link: '/getting-started/',
+		items: [
+			{
+				text: 'Installation',
+				link: '/getting-started/installation/',
+			},
+			{
+				text: 'Changing Content Settings',
+				link: '/getting-started/content-settings',
+			},
+			{
+				text: 'Adding Content',
+				link: '/getting-started/adding-content',
+			},
+		],
+	},
+	{
 		text: 'Guides',
 		link: '/guides/',
 		items: [
 			{
-				text: 'Getting Started',
-				link: '/guides/getting-started/',
-				items: [
-					{
-						text: 'Installation',
-						link: '/guides/getting-started/installation/',
-					},
-					{
-						text: 'Changing Content Settings',
-						link: '/guides/getting-started/content-settings',
-					},
-					{
-						text: 'Adding Content',
-						link: '/guides/getting-started/adding-content',
-					},
-				],
+				text: 'Using the Reader',
+				link: '/guides/reader',
 			},
 			{
-				text: 'Extra Guides',
-				link: '/guides/extra/',
-				collapsed: true,
-				items: [
-					{
-						text: 'Your Library',
-						link: '/guides/extra/library',
-					},
-					{
-						text: 'Using the Reader',
-						link: '/guides/extra/reader',
-					},
-					{
-						text: 'Backing Up Your Data',
-						link: '/guides/extra/backups',
-					},
-					{
-						text: 'Connecting Trackers',
-						link: '/guides/extra/trackers',
-					},
-					{
-						text: 'Changing the Theme',
-						link: '/guides/extra/themes',
-					},
-				],
+				text: 'Backing Up Your Data',
+				link: '/guides/backups',
+			},
+			{
+				text: 'Your Library',
+				link: '/guides/library',
+			},
+			{
+				text: 'Connecting Trackers',
+				link: '/guides/trackers',
+			},
+			{
+				text: 'Changing the Theme',
+				link: '/guides/themes',
 			},
 			{
 				text: 'Further Support',

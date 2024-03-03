@@ -1,0 +1,27 @@
+{
+	"name": "Paperback",
+	"short_name": "Paperback",
+	"icons": [
+		{
+			"src": "/pb-logo-256x256.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/pb-logo-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"description": "An Ad-Free Comic/Manga Reader for iOS",
+	"theme_color": "#f64b4b",
+	"background_color": "#f64b4b",
+	"start_url": ".",
+	"display": "standalone",
+	"related_applications": [
+		{
+			"platform": "itunes",
+			"url": "https://apps.apple.com/gb/app/paperback-a-komga-client/id1626613373"
+		}
+	]
+}

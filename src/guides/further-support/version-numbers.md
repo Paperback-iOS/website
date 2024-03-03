@@ -1,7 +1,7 @@
 ---
 prev:
     text: 'Further Support'
-    link: '/guides/further-support#getting-support/'
+    link: '/guides/further-support/#getting-support'
 next: false
 ---
 
@@ -24,7 +24,7 @@ Locate the version number of the extension from within the app using the followi
     > e.g. **1.2.12**
 
 ::: warning No Support Provided for Third-Party Extensions
-Ensure your question is not related to third-party extensions, as we do not maintain those and cannot offer assistance ([Learn more](/guides/getting-started/adding-content#third-party-extensions))!
+Ensure your question is not related to third-party extensions, as we do not maintain those and cannot offer assistance ([Learn more](/getting-started/adding-content#third-party-extensions))!
 :::
 
 ## Your Operating System (OS)

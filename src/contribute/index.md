@@ -12,7 +12,7 @@ Here are some of our main projects:
 
 ### Paperback extension
 
-The official Paperback extension is used for connecting your Paperback app with your own Komga instance ([Learn more](/guides/getting-started/adding-content#Komga)). Get started with our [extension development guide](/contribute/extension-development/).
+The official Paperback extension is used for connecting your Paperback app with your own Komga instance ([Learn more](/getting-started/adding-content#Komga)). Get started with our [extension development guide](/contribute/extension-development/).
 
 ### Paperback website
 
