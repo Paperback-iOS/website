@@ -5,7 +5,7 @@ next: false
 
 # Privacy Policy
 
-_Last reviewed February 23, 2024_
+_Last reviewed March 4, 2024_
 
 Thank you for choosing to be part of our community at Paperback (“**Company**”, “**we**”, “**us**”, or “**our**”). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at paperbackios@gmail.com.
 
@@ -54,7 +54,7 @@ We use personal information collected via our Apps for a variety of business pur
 
 We use the information we collect or receive:
 
--   **To facilitate account creation and logon process.** If you choose to link your account with us to a third party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract. See the section below headed "[5. How do we handle your social logins?](#_5-how-do-we-handle-your-social-logins)" for further information.
+-   **To facilitate account creation and logon process.** If you choose to link your account with us to a third-party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract. See the section below headed "[5. How do we handle your social logins?](#_5-how-do-we-handle-your-social-logins)" for further information.
 -   **To enforce our terms, conditions and policies for Business Purposes, Legal Reasons and Contractual.**
 -   **To respond to legal requests and prevent harm.** If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
 -   **To manage user accounts**. We may use your information for the purposes of managing our account and keeping it in working order.
@@ -78,7 +78,7 @@ We may process or share data based on the following legal basis:
 
 More specifically, we may need to process your data or share your personal information in the following situations:
 
--   **Vendors, Consultants and Other Third-Party Service Providers.** We may share your data with third party vendors, service providers, contractors or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include: payment processing, data analysis, email delivery, hosting services, customer service and marketing efforts. We may allow selected third parties to use tracking technology on the Apps, which will enable them to collect data about how you interact with the Apps over time. This information may be used to, among other things, analyze and track data, determine the popularity of certain content and better understand online activity. Unless described in this Policy, we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.
+-   **Vendors, Consultants and Other Third-Party Service Providers.** We may share your data with third-party vendors, service providers, contractors or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include: payment processing, data analysis, email delivery, hosting services, customer service and marketing efforts. We may allow selected third parties to use tracking technology on the Apps, which will enable them to collect data about how you interact with the Apps over time. This information may be used to, among other things, analyze and track data, determine the popularity of certain content and better understand online activity. Unless described in this Policy, we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.
 
 -   **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
 
@@ -96,9 +96,9 @@ We may use cookies and similar tracking technologies (like web beacons and pixel
 
 **_In Short:_** _If you choose to register or log in to our services using a social media account, we may have access to certain information about you._
 
-Our Apps offer you the ability to register and login using your third party social media account details (like your Facebook or Twitter logins). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile Information we receive may vary depending on the social media provider concerned, but will often include your name, e-mail address, friends list, profile picture as well as other information you choose to make public.
+Our Apps offer you the ability to register and login using your third-party social media account details (like your Facebook or Twitter logins). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile Information we receive may vary depending on the social media provider concerned, but will often include your name, e-mail address, friends list, profile picture as well as other information you choose to make public.
 
-We will use the information we receive only for the purposes that are described in this privacy policy or that are otherwise made clear to you on the Apps. Please note that we do not control, and are not responsible for, other uses of your personal information by your third party social media provider. We recommend that you review their privacy policy to understand how they collect, use and share your personal information, and how you can set your privacy preferences on their sites and apps.
+We will use the information we receive only for the purposes that are described in this privacy policy or that are otherwise made clear to you on the Apps. Please note that we do not control, and are not responsible for, other uses of your personal information by your third-party social media provider. We recommend that you review their privacy policy to understand how they collect, use and share your personal information, and how you can set your privacy preferences on their sites and apps.
 
 ## 6. How long do we keep your information?
 

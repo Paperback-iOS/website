@@ -1,52 +1,55 @@
 export default [
 	{
+		text: 'Getting Started',
+		link: '/getting-started/',
+		items: [
+			{
+				text: 'Installation',
+				link: '/getting-started/installation/',
+			},
+			{
+				text: 'Changing Content Settings',
+				link: '/getting-started/content-settings',
+			},
+			{
+				text: 'Adding Content',
+				link: '/getting-started/adding-content/',
+				items: [
+					{
+						text: 'Komga',
+						link: '/getting-started/adding-content/komga',
+					},
+					{
+						text: 'Third-Party Extensions',
+						link: '/getting-started/adding-content/third-party-extensions',
+					},
+				],
+			},
+		],
+	},
+	{
 		text: 'Guides',
 		link: '/guides/',
 		items: [
 			{
-				text: 'Getting Started',
-				link: '/guides/getting-started/',
-				items: [
-					{
-						text: 'Installation',
-						link: '/guides/getting-started/installation/',
-					},
-					{
-						text: 'Changing Content Settings',
-						link: '/guides/getting-started/content-settings',
-					},
-					{
-						text: 'Adding Content',
-						link: '/guides/getting-started/adding-content',
-					},
-				],
+				text: 'Your Library',
+				link: '/guides/library',
 			},
 			{
-				text: 'Extra Guides',
-				link: '/guides/extra/',
-				collapsed: true,
-				items: [
-					{
-						text: 'Your Library',
-						link: '/guides/extra/library',
-					},
-					{
-						text: 'Using the Reader',
-						link: '/guides/extra/reader',
-					},
-					{
-						text: 'Backing Up Your Data',
-						link: '/guides/extra/backups',
-					},
-					{
-						text: 'Connecting Trackers',
-						link: '/guides/extra/trackers',
-					},
-					{
-						text: 'Changing the Theme',
-						link: '/guides/extra/themes',
-					},
-				],
+				text: 'Using the Reader',
+				link: '/guides/reader',
+			},
+			{
+				text: 'Backing Up Your Data',
+				link: '/guides/backups',
+			},
+			{
+				text: 'Connecting Trackers',
+				link: '/guides/trackers',
+			},
+			{
+				text: 'Changing the Theme',
+				link: '/guides/themes',
 			},
 			{
 				text: 'Further Support',

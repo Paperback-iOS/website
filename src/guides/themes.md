@@ -3,7 +3,7 @@ outline: 2
 ---
 
 <script setup>
-	import ThemesListParser from '../../.vitepress/components/ThemesListParser.vue'
+	import ThemesListParser from '../.vitepress/components/ThemesListParser.vue'
 </script>
 
 # Changing the theme

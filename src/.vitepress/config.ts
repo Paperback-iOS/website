@@ -71,6 +71,8 @@ export default defineConfig({
 
 		sidebar: enSidebar,
 
+		externalLinkIcon: true,
+
 		editLink: {
 			pattern:
 				'https://github.com/Paperback-iOS/website/tree/master/src/:path',
@@ -80,7 +82,5 @@ export default defineConfig({
 			copyright:
 				"Copyright © 2023 Paperback-iOS. MIT Licensed. <a href='/privacy-policy'>Privacy Policy.</a>",
 		},
-
-		externalLinkIcon: true,
 	},
 });

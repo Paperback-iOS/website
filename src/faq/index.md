@@ -8,7 +8,7 @@ If you need further assistance feel free to join the [Paperback Discord Server](
 
 ### Where can I find this app?
 
-Check [Paperback Installation Guide](/guides/getting-started/).
+Check [Paperback Installation Guide](/getting-started/).
 
 ### One of my extension loads really slow
 
@@ -41,7 +41,7 @@ Try making a backup. If the app crashes while making a backup, export your datab
 1. Open the title you wish to download the chapters of
 1. Press the ellipses button and select `Select`
 1. Select the chapters you want to download
-1. Press `Manage Downloads` and select `Queue Downloads`  
+1. Press `Manage Downloads` and select `Queue Downloads`
    _Repeat the same steps but choose `Remove Downloads` to remove downloaded chapters._
 
 ## Library
@@ -52,11 +52,11 @@ In the library, long press the thumbnail then select **Refresh Metadata**.
 
 ### Manga are not showing up in my library after I follow them
 
-You need to [adjust your content settings](/guides/getting-started/content-settings) for Adult titles to be shown in the library.
+You need to [adjust your content settings](/getting-started/content-settings) for Adult titles to be shown in the library.
 
 ## Extensions
 
-### Adding other third party extensions
+### Adding other third-party extensions
 
 1. Navigate to `Settings > Extensions`
 1. Press `Edit` button in the top-right corner
