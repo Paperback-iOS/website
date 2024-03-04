@@ -13,7 +13,17 @@ export default [
 			},
 			{
 				text: 'Adding Content',
-				link: '/getting-started/adding-content',
+				link: '/getting-started/adding-content/',
+				items: [
+					{
+						text: 'Komga',
+						link: '/getting-started/adding-content/komga',
+					},
+					{
+						text: 'Third-Party Extensions',
+						link: '/getting-started/adding-content/third-party-extensions',
+					},
+				],
 			},
 		],
 	},
@@ -22,16 +32,16 @@ export default [
 		link: '/guides/',
 		items: [
 			{
+				text: 'Your Library',
+				link: '/guides/library',
+			},
+			{
 				text: 'Using the Reader',
 				link: '/guides/reader',
 			},
 			{
 				text: 'Backing Up Your Data',
 				link: '/guides/backups',
-			},
-			{
-				text: 'Your Library',
-				link: '/guides/library',
 			},
 			{
 				text: 'Connecting Trackers',

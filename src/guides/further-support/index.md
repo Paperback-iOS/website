@@ -36,7 +36,7 @@ The `#help-desk` is a self-help channel that provides links to guides or FAQ ite
     Please post your support questions in the `#support` channel, not in a channel in the community section. Repeatedly asking for support in a channel in the community section may result in a time-out action.
 
 -   **No Support Provided for Third-Party Extensions:**
-    Ensure your question is not related to third-party extensions, as we do not maintain those and cannot offer assistance ([Learn more](/getting-started/adding-content#third-party-extensions))!
+    Ensure your question is not related to third-party extensions, as we do not maintain those and cannot offer assistance ([Learn more](/getting-started/adding-content/third-party-extensions))!
 
 :::
 

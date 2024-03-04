@@ -1,9 +1,5 @@
 <template>
-	<p v-if="!canShare">
-		Your browser does not support installing Paperback Themes. We recommend
-		using Safari.
-	</p>
-	<section class="fetchError" v-else-if="loading">
+	<section class="fetchError" v-if="loading">
 		<p>Loading...</p>
 	</section>
 	<section
@@ -11,12 +7,28 @@
 		v-else-if="themesList"
 		v-for="group in themesList.themes"
 	>
-		<p>
-			Click the "<span>Install</span>" button and share it with your
-			Paperback app to install the theme. You can also download the theme
-			file and share that with the Paperback app. Note: In both cases the
-			app needs to be open in the background for the theme to apply.
-		</p>
+		<section v-if="canShare">
+			<p>
+				Click the "<span>Install</span>" button and share it with your
+				Paperback app to install the theme. You can also download the
+				theme file and share that with the Paperback app.
+			</p>
+			<p>
+				Note: In both cases the app needs to be open in the background
+				while sharing the theme for it to apply.
+			</p>
+		</section>
+		<section v-else>
+			<p>
+				Your browser does not support direct theme installation.
+				Instead, you can download the theme file and share that with the
+				Paperback app.
+			</p>
+			<p>
+				Note: The app needs to be open in the background while sharing
+				the theme for it to apply.
+			</p>
+		</section>
 		<section class="group">
 			<h2>
 				{{ group.name.charAt(0).toUpperCase() + group.name.slice(1) }}
@@ -53,8 +65,8 @@
 						:src="
 							this.getThemeImage(
 								group.name,
-								subGroup.name || undefined,
-								accentColor.name || undefined,
+								subGroup.name,
+								accentColor.name,
 								mode
 							)
 						"
@@ -63,11 +75,12 @@
 				</section>
 				<section class="themeInstallation">
 					<button
+						v-if="canShare"
 						@click="
 							this.installTheme(
 								group.name,
-								subGroup.name || undefined,
-								accentColor.name || undefined,
+								subGroup.name,
+								accentColor.name,
 								accentColor.description as string
 							)
 						"
@@ -78,12 +91,12 @@
 						:href="
 							this.getThemeUrl(
 								group.name,
-								subGroup.name || undefined,
-								accentColor.name || undefined
+								subGroup.name,
+								accentColor.name
 							)
 						"
 						target="_blank"
-						>Or download the theme.</a
+						>Download</a
 					>
 				</section>
 				<div class="accentColorDivider"></div>
@@ -140,17 +153,17 @@ export default {
 	async beforeMount(): Promise<void> {
 		try {
 			if (
-				!navigator.canShare({
+				await !navigator.canShare({
 					title: 'Test Share',
 					text: 'Testing the share method',
 					files: [],
 				})
 			) {
 				this.$data.canShare = false;
-				return;
 			}
 		} catch (error) {
 			console.log(error);
+			this.$data.canShare = false;
 		}
 
 		const themesList: ThemesList | undefined = await this.fetchThemesList();
@@ -199,13 +212,29 @@ export default {
 			subGroup: String,
 			accentColor: String
 		): string {
-			const title =
-				group.charAt(1).toUpperCase() + group.slice(1) + ' ' + subGroup
-					? subGroup.charAt(1).toUpperCase() + subGroup.slice(1)
-					: '' + ' ' + accentColor
-					? accentColor.charAt(1).toUpperCase() + accentColor.slice(1)
-					: '';
-			return title;
+			if (subGroup && accentColor) {
+				const title =
+					group.charAt(0).toUpperCase() +
+					group.slice(1) +
+					' ' +
+					subGroup.charAt(0).toUpperCase() +
+					subGroup.slice(1) +
+					' ' +
+					accentColor.charAt(0).toUpperCase() +
+					accentColor.slice(1);
+				return title;
+			} else if (subGroup) {
+				const title =
+					group.charAt(0).toUpperCase() +
+					group.slice(1) +
+					' ' +
+					subGroup.charAt(0).toUpperCase() +
+					subGroup.slice(1);
+				return title;
+			} else {
+				const title = group.charAt(0).toUpperCase() + group.slice(1);
+				return title;
+			}
 		},
 
 		getThemeUrl(
@@ -248,13 +277,12 @@ export default {
 				const themeFile = new File([theme], title + '.pbcolors');
 
 				try {
-					navigator.share({
-						title: title,
-						text: description,
+					await navigator.share({
 						files: [themeFile],
 					});
 				} catch (error) {
 					console.log(error);
+					this.$data.canShare = false;
 				}
 			}
 		},
@@ -331,6 +359,10 @@ export default {
 	padding-bottom: 1.5em;
 }
 
+section.themeInstallation {
+	padding-bottom: 0 !important;
+}
+
 .themeInstallation > button {
 	color: var(--vp-button-brand-text);
 	background: var(--vp-button-brand-bg);
@@ -342,13 +374,23 @@ export default {
 	border: 1px solid transparent;
 	transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 	font-weight: 600;
-	margin: 1.5em 0;
+	margin: 1.5em 0 0 0;
 }
 
 .themeInstallation > button:hover {
 	color: var(--vp-button-brand-hover-text);
 	background: var(--vp-button-brand-hover-bg);
 	border: 1px solid var(--vp-button-brand-hover-border);
+}
+
+.themeInstallation > button:focus {
+	color: var(--vp-button-brand-hover-text);
+	background: var(--vp-button-brand-hover-bg);
+	border: 1px solid var(--vp-button-brand-hover-border);
+}
+
+.themeInstallation > a {
+	margin: 1.5em 0;
 }
 
 .accentColor > .accentColorDivider {
@@ -366,6 +408,10 @@ export default {
 		align-items: center;
 		gap: 1em;
 		padding-bottom: 0;
+	}
+
+	.themeInstallation > button {
+		margin: 1.5em 0;
 	}
 }
 

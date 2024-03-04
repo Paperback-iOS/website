@@ -11,7 +11,7 @@ hero:
     actions:
         - theme: brand
           text: Getting Started
-          link: /guides/getting-started/
+          link: /getting-started/
         - theme: alt
           text: Join the Discord
           link: https://discord.paperback.moe

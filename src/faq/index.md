@@ -56,7 +56,7 @@ You need to [adjust your content settings](/getting-started/content-settings) fo
 
 ## Extensions
 
-### Adding other third party extensions
+### Adding other third-party extensions
 
 1. Navigate to `Settings > Extensions`
 1. Press `Edit` button in the top-right corner
