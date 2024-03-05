@@ -14,6 +14,7 @@ export default [
 			{
 				text: 'Adding Content',
 				link: '/getting-started/adding-content/',
+				collapsed: true,
 				items: [
 					{
 						text: 'Komga',

@@ -13,10 +13,17 @@
 				Paperback app to install the theme. You can also download the
 				theme file and share that with the Paperback app.
 			</p>
-			<p>
-				Note: In both cases the app needs to be open in the background
-				while sharing the theme for it to apply.
-			</p>
+			<p>Notes:</p>
+			<ul>
+				<li>
+					The app needs to be open in the background while sharing the
+					theme for it to apply.
+				</li>
+				<li>
+					You need to download the theme file and open it to install
+					the theme in the Mac version of the app.
+				</li>
+			</ul>
 		</section>
 		<section v-else>
 			<p>
@@ -24,16 +31,23 @@
 				Instead, you can download the theme file and share that with the
 				Paperback app.
 			</p>
-			<p>
-				Note: The app needs to be open in the background while sharing
-				the theme for it to apply.
-			</p>
+			<p>Notes:</p>
+			<ul>
+				<li>
+					The app needs to be open in the background while sharing the
+					theme for it to apply.
+				</li>
+				<li>
+					Mac users need to download the theme file and open it to
+					install the theme.
+				</li>
+			</ul>
 		</section>
 		<section class="group">
 			<h2>
 				{{ group.name.charAt(0).toUpperCase() + group.name.slice(1) }}
 			</h2>
-			<a v-bind:href="group.source" target="_blank">Source</a>
+			<a :href="group.source" target="_blank" rel="noreferrer">Source</a>
 		</section>
 		<section class="subGroup" v-for="subGroup in group.subGroups">
 			<h3 v-if="subGroup.name">
@@ -52,9 +66,24 @@
 						accentColor.name.slice(1)
 					}}
 				</h3>
-				<p v-for="creator in accentColor.creators">
-					<span>Creator: </span>
-					{{ creator.charAt(0).toUpperCase() + creator.slice(1) }}
+				<p>
+					<span class="label"
+						>Creator<span v-if="accentColor.creators.length > 1"
+							>s</span
+						>:
+					</span>
+					<span v-for="creator in accentColor.creators">
+						{{ creator.charAt(0).toUpperCase() + creator.slice(1)
+						}}<span
+							v-if="
+								!(
+									accentColor.creators.length - 1 ==
+									accentColor.creators.indexOf(creator)
+								)
+							"
+							>,
+						</span>
+					</span>
 				</p>
 				<p>
 					{{ accentColor.description }}
@@ -96,6 +125,7 @@
 							)
 						"
 						target="_blank"
+						rel="noreferrer"
 						>Download</a
 					>
 				</section>
@@ -112,7 +142,6 @@
 <script lang="ts">
 interface ThemesList {
 	themes: Theme[];
-	creators: Creator;
 }
 
 interface Theme {
@@ -123,18 +152,13 @@ interface Theme {
 
 interface SubGroup {
 	name: String;
-	accentColors: AccentColors[];
+	accentColors: AccentColor[];
 }
 
-interface AccentColors {
+interface AccentColor {
 	name: String;
 	description: String;
 	creators: String[];
-}
-
-interface Creator {
-	homepage: String;
-	discordUsername: String;
 }
 
 export default {
@@ -144,22 +168,21 @@ export default {
 			loading: true,
 			themesList: undefined,
 		} as {
+			canShare: Boolean;
 			loading: Boolean;
 			themesList: ThemesList | undefined;
-			canShare: Boolean;
 		};
 	},
 
 	async beforeMount(): Promise<void> {
 		try {
 			if (
-				await !navigator.canShare({
-					title: 'Test Share',
-					text: 'Testing the share method',
+				!navigator.canShare({
+					title: 'Test',
 					files: [],
 				})
 			) {
-				this.$data.canShare = false;
+				this.$data.canShare = true;
 			}
 		} catch (error) {
 			console.log(error);
@@ -212,29 +235,19 @@ export default {
 			subGroup: String,
 			accentColor: String
 		): string {
-			if (subGroup && accentColor) {
-				const title =
-					group.charAt(0).toUpperCase() +
-					group.slice(1) +
-					' ' +
-					subGroup.charAt(0).toUpperCase() +
-					subGroup.slice(1) +
-					' ' +
-					accentColor.charAt(0).toUpperCase() +
-					accentColor.slice(1);
-				return title;
-			} else if (subGroup) {
-				const title =
-					group.charAt(0).toUpperCase() +
-					group.slice(1) +
-					' ' +
-					subGroup.charAt(0).toUpperCase() +
-					subGroup.slice(1);
-				return title;
-			} else {
-				const title = group.charAt(0).toUpperCase() + group.slice(1);
-				return title;
-			}
+			const title = `${group.charAt(0).toUpperCase() + group.slice(1)}${
+				subGroup
+					? ' ' + subGroup.charAt(0).toUpperCase() + subGroup.slice(1)
+					: ''
+			}${
+				accentColor
+					? ' ' +
+					  accentColor.charAt(0).toUpperCase() +
+					  accentColor.slice(1)
+					: ''
+			}`;
+
+			return title;
 		},
 
 		getThemeUrl(
@@ -261,8 +274,7 @@ export default {
 		async installTheme(
 			group: String,
 			subGroup: String,
-			accentColor: String,
-			description: string
+			accentColor: String
 		): Promise<void> {
 			const title: string = this.getThemeTitle(
 				group,
@@ -274,7 +286,10 @@ export default {
 			const theme: Blob | undefined = await this.fetchTheme(url);
 
 			if (theme) {
-				const themeFile = new File([theme], title + '.pbcolors');
+				theme.type;
+				const themeFile = new File([theme], title + '.pbcolors', {
+					type: 'application/pbcolors',
+				});
 
 				try {
 					await navigator.share({
@@ -282,7 +297,6 @@ export default {
 					});
 				} catch (error) {
 					console.log(error);
-					this.$data.canShare = false;
 				}
 			}
 		},
@@ -291,7 +305,7 @@ export default {
 </script>
 
 <style lang="css">
-.fetchSuccess > p > span {
+.fetchSuccess > section > p > span {
 	font-weight: bold;
 }
 
@@ -337,7 +351,7 @@ export default {
 	padding: 0 0 0.5em 0;
 }
 
-.accentColor > p > span {
+.accentColor > p > span.label {
 	font-weight: bold;
 }
 
@@ -378,12 +392,6 @@ section.themeInstallation {
 }
 
 .themeInstallation > button:hover {
-	color: var(--vp-button-brand-hover-text);
-	background: var(--vp-button-brand-hover-bg);
-	border: 1px solid var(--vp-button-brand-hover-border);
-}
-
-.themeInstallation > button:focus {
 	color: var(--vp-button-brand-hover-text);
 	background: var(--vp-button-brand-hover-bg);
 	border: 1px solid var(--vp-button-brand-hover-border);

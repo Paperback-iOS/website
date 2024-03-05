@@ -6,7 +6,7 @@ outline: 2
 	import ThemesListParser from '../.vitepress/components/ThemesListParser.vue'
 </script>
 
-# Changing the theme
+# Changing the Theme
 
 Bellow you can find a list of all publicly available themes. You can find info regarding making your own theme at the bottom of the page as well.
 

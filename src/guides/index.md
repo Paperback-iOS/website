@@ -1,10 +1,10 @@
 # Guides
 
-Welcome to the Paperback app guides section! Here you'll find all the resources you need to make the most out of your reading experience.
+Welcome to the Paperback guides section! Here you'll find all the resources you need to make the most out of your reading experience.
 
 ## Guides List
 
-Explore these additional guides to enhance your Paperback experience:
+Explore these guides to enhance your Paperback experience:
 
 <!-- A list of all guides (/guides/*) sorted by importance, the structure and list of these is expected to change -->
 
@@ -12,7 +12,7 @@ Explore these additional guides to enhance your Paperback experience:
 -   [The Reader:](/guides/reader) Discover how to utilize the reader interface efficiently for an immersive reading experience.
 -   [Making Backups:](/guides/backups) Get acquainted with the process of creating backups to ensure the safety of your library data.
 -   [Adding Trackers:](/guides/trackers) Explore the feature enabling automatic tracking of your reading progress for convenient monitoring.
--   [Theming Your App:](/guides/themes) Personalize your app's appearance by applying custom themes to suit your preferences.
+-   [Changing the Theme:](/guides/themes) Personalize your app's appearance by applying custom themes to suit your preferences.
 
 While these are nonessential for basic app usage, they can significantly improve your overall experience and are highly recommended.
 
