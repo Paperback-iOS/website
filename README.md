@@ -18,9 +18,9 @@
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
--   [Code of Conduct](./CODE_OF_CONDUCT.md)
--   [Contributing guide](./CONTRIBUTING.md)
--   [Discord server](https://discord.paperback.moe)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Contributing guide](./CONTRIBUTING.md)
+- [Discord server](https://discord.paperback.moe)
 
 ## Credits
 

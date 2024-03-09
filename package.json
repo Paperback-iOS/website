@@ -1,30 +1,48 @@
 {
-	"name": "paperback-website",
-	"version": "1.0.0",
-	"description": "The official website for Paperback",
-	"author": "Paperback-iOS",
-	"homepage": "https://paperback.moe",
-	"keywords": [
-		"Paperback",
-		"Website",
-		"VitePress"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Paperback-iOS/website.git"
-	},
-	"bugs": {
-		"url": "https://github.com/Paperback-iOS/website/issues"
-	},
-	"license": "MIT",
-	"type": "module",
-	"scripts": {
-		"dev": "vitepress dev src --host",
-		"build": "vitepress build src",
-		"preview": "vitepress preview src"
-	},
-	"devDependencies": {
-		"vitepress": "1.0.0-rc.44",
-		"vitepress-plugin-tabs": "0.5.0"
-	}
+  "name": "paperback-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The official website for Paperback",
+  "homepage": "https://paperback.moe",
+  "author": "Paperback-iOS",
+  "license": "MIT",
+  "keywords": [
+    "Paperback",
+    "Website",
+    "VitePress"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paperback-iOS/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Paperback-iOS/website/issues"
+  },
+  "scripts": {
+    "dev": "vitepress dev src --host",
+    "build": "run-s eslint prettier build-only",
+    "build-only": "vitepress build src",
+    "preview": "vitepress preview src",
+    "eslint": "eslint --config .eslintrc.cjs --fix '**/*{.vue,.js,.cjs,.ts}' --ignore-path .eslintignore",
+    "prettier": "prettier --config .prettierrc.cjs --write '**/*{.vue,.md,.css,.js,.cjs,.ts,.json}' --ignore-path .prettierignore",
+    "prepare": "husky",
+    "lint-staged": "lint-staged --config .lintstagedrc.cjs --concurrent false"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.22.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "npm-run-all2": "^6.1.1",
+    "prettier": "3.2.5",
+    "typescript": "5.3.3",
+    "vitepress": "^1.0.0-rc.45",
+    "vitepress-plugin-tabs": "^0.5.0",
+    "vue": "^3.4.21",
+    "vue-eslint-parser": "^9.4.2"
+  }
 }

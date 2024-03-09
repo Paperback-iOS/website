@@ -1,6 +1,8 @@
 # Third-Party Extensions
 
-Third-party extensions are not developed or maintained by the official developers of Paperback. As such, we do not provide support for them nor allow discussions about them on the official Discord server or GitHub page.
+Third-party extensions are not developed or maintained by the Paperback developers. Therefore, we do not offer support for these extensions, nor do we permit discussions about them on the official Discord server or GitHub page.
+
+Below, you'll find a guide on how to add extensions in general.
 
 ::: danger Warning
 Requests for support related to third-party extensions on the official Discord server or GitHub page will be declined at all times.

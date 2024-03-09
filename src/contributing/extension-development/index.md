@@ -15,12 +15,12 @@ content to be made available, only requiring the users to install each module co
 
 Developing an extension is pretty easy, you only need basic programming knowledge. Some understanding of git may help but is not required.
 
--   Check out the [quick start](quick-start) guide for a place to begin.
+- Check out the [quick start](quick-start) guide for a place to begin.
 
--   Use on of our guide and tutorial to learn more about extension development:
+- Use on of our guide and tutorial to learn more about extension development:
 
-    -   [Extension development quick start](/contribute/extension-development/quick-start)
-    -   [A practical guide to Parsing](/contribute/extension-development/reference/parsing-guide)
-    -   [Function definitions](/contribute/extension-development/reference/function-definitions)
-    -   [Models reference](/contribute/extension-development/reference/model-reference)
-    -   [Metadata parameter](/contribute/extension-development/reference/metadata)
+  - [Extension development quick start](/contributing/extension-development/quick-start)
+  - [A practical guide to Parsing](/contributing/extension-development/reference/parsing-guide)
+  - [Function definitions](/contributing/extension-development/reference/function-definitions)
+  - [Models reference](/contributing/extension-development/reference/model-reference)
+  - [Metadata parameter](/contributing/extension-development/reference/metadata)

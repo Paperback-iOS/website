@@ -1,7 +1,7 @@
 ---
 prev:
-    text: 'Further Support'
-    link: '/guides/further-support/#getting-support'
+  text: 'Further Support'
+  link: '/guides/further-support/#getting-support'
 next: false
 ---
 
@@ -21,7 +21,7 @@ Locate the version number of the extension from within the app using the followi
 2. Go to **Extensions**.
 3. Look for the relevant extension.
 4. You can find the version number bellow the extension its name.
-    > e.g. **1.2.12**
+   > e.g. **1.2.12**
 
 ::: warning No Support Provided for Third-Party Extensions
 Ensure your question is not related to third-party extensions, as we do not maintain those and cannot offer assistance ([Learn more](/getting-started/adding-content/third-party-extensions))!

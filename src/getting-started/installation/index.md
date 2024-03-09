@@ -2,18 +2,18 @@
 
 There are three methods to install Paperback:
 
--   **App Store:** The App Store provides the stable release, making it the simplest and most commonly used installation method.
--   **TestFlight:** TestFlight hosts the alpha and beta builds of the app, exclusively accessible to Patreon supporters.
--   **Sideloading:** Towards the end of a development cycle, the `.ipa` file becomes available for sideloading the app.
+- **App Store:** The App Store provides the stable release, making it the simplest and most commonly used installation method.
+- **TestFlight:** TestFlight hosts the alpha and beta builds of the app, exclusively accessible to Patreon supporters.
+- **Sideloading:** Towards the end of a development cycle, the `.ipa` file becomes available for sideloading the app.
 
 More info on these methods can be found in the tabs bellow.
 
 ::: info Device Support
 The latest Paperback version (v0.8) is compatible with the following Apple devices:
 
--   iPhones running iOS 13.4 or later
--   iPads running iPadOS 13.4 or later
--   Macs running macOS 11.0 or later (Intel-based Macs are not supported)
+- iPhones running iOS 13.4 or later
+- iPads running iPadOS 13.4 or later
+- Macs running macOS 11.0 or later (Intel-based Macs are not supported)
 
 :::
 
@@ -41,7 +41,7 @@ Additionally, Patreon supporters gain access to the `#beta-chat` channel in the 
 1. Join the [official Discord server](https://discord.paperback.moe).
 2. Link your Discord account in your [Patreon settings](https://www.patreon.com/settings/apps).
 3. Execute the `/invite` command in any channel in the Discord server ([Learn more](https://discord.com/blog/slash-commands-are-here)).
-    > This process will prompt you for your email and the build you wish to access (beta or alpha). Your email remains private and is not visible to other Discord users ([Learn more](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ)).
+   > This process will prompt you for your email and the build you wish to access (beta or alpha). Your email remains private and is not visible to other Discord users ([Learn more](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ)).
 
 Expect to receive a TestFlight invite via email within a few minutes after executing the command.
 
@@ -53,29 +53,29 @@ Expect to receive a TestFlight invite via email within a few minutes after execu
 
 ::: details Frequently Asked Questions
 
--   **Why am I limited to one invite per 6 hours?**
+- **Why am I limited to one invite per 6 hours?**
 
-    You can only request one invite every 6 hours. If a mistake is made, you must wait for the cooldown period to request a new invite.
+  You can only request one invite every 6 hours. If a mistake is made, you must wait for the cooldown period to request a new invite.
 
--   **What should I do if I made a typo or provided the wrong email when requesting an invite?**
+- **What should I do if I made a typo or provided the wrong email when requesting an invite?**
 
-    If an error is made, you must wait 6 hours to request a new invite.
+  If an error is made, you must wait 6 hours to request a new invite.
 
--   **Why did the `/invite` command fail?**
+- **Why did the `/invite` command fail?**
 
-    Ensure your Discord username contains only alphanumeric characters, as using special characters in your will not work.
+  Ensure your Discord username contains only alphanumeric characters, as using special characters in your will not work.
 
--   **How can I obtain the supporter role?**
+- **How can I obtain the supporter role?**
 
-    Follow the instructions provided and ensure that you are on a valid tier, as custom pledges don't grant the Supporter role.
+  Follow the instructions provided and ensure that you are on a valid tier, as custom pledges don't grant the Supporter role.
 
--   **Why am I unable to type in the `#beta-chat` or `#alpha` channels?**
+- **Why am I unable to type in the `#beta-chat` or `#alpha` channels?**
 
-    This indicates that you haven't acquired the supporter role yet. Refer to the instructions and ensure that you are on a valid tier, as custom pledges don't grant the Supporter role.
+  This indicates that you haven't acquired the supporter role yet. Refer to the instructions and ensure that you are on a valid tier, as custom pledges don't grant the Supporter role.
 
--   **What should I do if I haven't received an invite after completing all steps?**
+- **What should I do if I haven't received an invite after completing all steps?**
 
-    If you've completed all steps but haven't received an invite, create a new post in the `#support` channel of the official Discord server following the provided guidelines.
+  If you've completed all steps but haven't received an invite, create a new post in the `#support` channel of the official Discord server following the provided guidelines.
 
 :::
 

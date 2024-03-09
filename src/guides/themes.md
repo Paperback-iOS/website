@@ -1,9 +1,5 @@
----
-outline: 2
----
-
 <script setup>
-	import ThemesListParser from '../.vitepress/components/ThemesListParser.vue'
+import ThemesListParser from '../.vitepress/components/ThemesListParser.vue'
 </script>
 
 # Changing the Theme
@@ -16,4 +12,6 @@ Bellow you can find a list of all publicly available themes. You can find info r
 
 ## Making Themes
 
-You can make your own theme as well. We recommend that you check the "Celarye/paperback-themes" repository on GitHub for more info, you can find it [here](https://github.com/Celarye/paperback-themes).
+You can make your own theme as well. We recommend that you check out our Themes Creator tool for more info.
+
+[Go to Tools](/tools/)

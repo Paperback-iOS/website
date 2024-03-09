@@ -9,9 +9,9 @@
 3. Clone the fork you've just created on your computer.
 
 4. Install dependencies by running
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 Now, you are ready to start developing an extension.
 

@@ -56,5 +56,5 @@ To access content from your Komga instance, you will need to configure the "Pape
 
 1. Go to your extensions list and select the "**Paperback**" extension, then go to "**Server Settings**".
 2. Enter your server URL, Komga email, and password.
-    > It's recommended to double-check your server URL and authentication using a browser first.
+   > It's recommended to double-check your server URL and authentication using a browser first.
 3. Verify connectivity by navigating back and selecting "**Try Settings**" (under "**Server Settings**"). If successful, you're ready to proceed!

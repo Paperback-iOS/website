@@ -32,11 +32,11 @@ The `#help-desk` is a self-help channel that provides links to guides or FAQ ite
 
 ::: warning Support Warning
 
--   **Support Questions Belong in the Support Section:**
-    Please post your support questions in the `#support` channel, not in a channel in the community section. Repeatedly asking for support in a channel in the community section may result in a time-out action.
+- **Support Questions Belong in the Support Section:**
+  Please post your support questions in the `#support` channel, not in a channel in the community section. Repeatedly asking for support in a channel in the community section may result in a time-out action.
 
--   **No Support Provided for Third-Party Extensions:**
-    Ensure your question is not related to third-party extensions, as we do not maintain those and cannot offer assistance ([Learn more](/getting-started/adding-content/third-party-extensions))!
+- **No Support Provided for Third-Party Extensions:**
+  Ensure your question is not related to third-party extensions, as we do not maintain those and cannot offer assistance ([Learn more](/getting-started/adding-content/third-party-extensions))!
 
 :::
 
@@ -45,9 +45,9 @@ Once you've accepted the rules, you can post in the `#support` channel. Here's w
 1. Check the `#support` channel for similar questions. Join the conversation if your issue is already being discussed.
 2. If your question isn't in `#support`, create a post with a descriptive title and detailed description, including your OS and app version, and potentially extension version ([Learn more](/guides/further-support/version-numbers)).
 
-    ::: tip Don't Share Sensitive Information
-    Never share sensitive information in a support post. If a Paperback team member requires it, they will ask you to send a [ModMail](#making-a-modmail).
-    :::
+   ::: tip Don't Share Sensitive Information
+   Never share sensitive information in a support post. If a Paperback team member requires it, they will ask you to send a [ModMail](#making-a-modmail).
+   :::
 
 3. A community or staff member will respond to your post as soon as possible (please note that everyone helping is a volunteer).
 4. You might be directed to our GitHub page to post your issue in the case of a bug or feature request.

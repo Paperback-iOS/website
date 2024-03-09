@@ -20,15 +20,15 @@ Every time an object is created using braces (`{}`), it should always be wrapped
 
 ### List of Wrapper Functions
 
--   `createChapter` for [Chapter](#chapter) objects.
--   `createChapterDetails` for [ChapterDetails](#chapterdetails) objects.
--   `createIconText` for [IconText](#icontext) objects.
--   `createManga` for [Manga](#manga) objects.
--   `createMangaTile` for [MangaTile](#mangatile) objects.
--   `createPagedResults` for [PagedResults](#pagedresults) objects.
--   `createSearchRequest` for [SearchRequest](#searchrequest) objects.
--   `createTag` for [Tag](#tag) objects.
--   `createTagSection` for [TagSection](#tagsection) objects.
+- `createChapter` for [Chapter](#chapter) objects.
+- `createChapterDetails` for [ChapterDetails](#chapterdetails) objects.
+- `createIconText` for [IconText](#icontext) objects.
+- `createManga` for [Manga](#manga) objects.
+- `createMangaTile` for [MangaTile](#mangatile) objects.
+- `createPagedResults` for [PagedResults](#pagedresults) objects.
+- `createSearchRequest` for [SearchRequest](#searchrequest) objects.
+- `createTag` for [Tag](#tag) objects.
+- `createTagSection` for [TagSection](#tagsection) objects.
 
 ## Chapter
 

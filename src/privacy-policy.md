@@ -43,8 +43,8 @@ Like many businesses, we also collect information through cookies and similar te
 
 If you use our Apps, we may also collect the following information:
 
--   _Mobile Device Data._ We may automatically collect device information (such as your mobile device ID, model and manufacturer), operating system, version information and IP address.
--   _Push Notifications._ We may request to send you push notifications regarding your account or the mobile application. If you wish to opt-out from receiving these types of communications, you may turn them off in your device's settings.
+- _Mobile Device Data._ We may automatically collect device information (such as your mobile device ID, model and manufacturer), operating system, version information and IP address.
+- _Push Notifications._ We may request to send you push notifications regarding your account or the mobile application. If you wish to opt-out from receiving these types of communications, you may turn them off in your device's settings.
 
 ## 2. How do we use your information?
 
@@ -54,11 +54,11 @@ We use personal information collected via our Apps for a variety of business pur
 
 We use the information we collect or receive:
 
--   **To facilitate account creation and logon process.** If you choose to link your account with us to a third-party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract. See the section below headed "[5. How do we handle your social logins?](#_5-how-do-we-handle-your-social-logins)" for further information.
--   **To enforce our terms, conditions and policies for Business Purposes, Legal Reasons and Contractual.**
--   **To respond to legal requests and prevent harm.** If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
--   **To manage user accounts**. We may use your information for the purposes of managing our account and keeping it in working order.
--   **To deliver services to the user.** We may use your information to provide you with the requested service.
+- **To facilitate account creation and logon process.** If you choose to link your account with us to a third-party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract. See the section below headed "[5. How do we handle your social logins?](#_5-how-do-we-handle-your-social-logins)" for further information.
+- **To enforce our terms, conditions and policies for Business Purposes, Legal Reasons and Contractual.**
+- **To respond to legal requests and prevent harm.** If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
+- **To manage user accounts**. We may use your information for the purposes of managing our account and keeping it in working order.
+- **To deliver services to the user.** We may use your information to provide you with the requested service.
 
 ## 3. Will your information be shared with anyone?
 
@@ -66,25 +66,25 @@ We use the information we collect or receive:
 
 We may process or share data based on the following legal basis:
 
--   **Consent:** We may process your data if you have given us specific consent to use your personal information in a specific purpose.
+- **Consent:** We may process your data if you have given us specific consent to use your personal information in a specific purpose.
 
--   **Legitimate Interests:** We may process your data when it is reasonably necessary to achieve our legitimate business interests.
+- **Legitimate Interests:** We may process your data when it is reasonably necessary to achieve our legitimate business interests.
 
--   **Performance of a Contract:** Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.
+- **Performance of a Contract:** Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.
 
--   **Legal Obligations:** We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).
+- **Legal Obligations:** We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).
 
--   **Vital Interests:** We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
+- **Vital Interests:** We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
 
 More specifically, we may need to process your data or share your personal information in the following situations:
 
--   **Vendors, Consultants and Other Third-Party Service Providers.** We may share your data with third-party vendors, service providers, contractors or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include: payment processing, data analysis, email delivery, hosting services, customer service and marketing efforts. We may allow selected third parties to use tracking technology on the Apps, which will enable them to collect data about how you interact with the Apps over time. This information may be used to, among other things, analyze and track data, determine the popularity of certain content and better understand online activity. Unless described in this Policy, we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.
+- **Vendors, Consultants and Other Third-Party Service Providers.** We may share your data with third-party vendors, service providers, contractors or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include: payment processing, data analysis, email delivery, hosting services, customer service and marketing efforts. We may allow selected third parties to use tracking technology on the Apps, which will enable them to collect data about how you interact with the Apps over time. This information may be used to, among other things, analyze and track data, determine the popularity of certain content and better understand online activity. Unless described in this Policy, we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.
 
--   **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+- **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
 
--   **Third-Party Advertisers.** We may use third-party advertising companies to serve ads when you visit the Apps. These companies may use information about your visits to our Website(s) and other websites that are contained in web cookies and other tracking technologies in order to provide advertisements about goods and services of interest to you.
+- **Third-Party Advertisers.** We may use third-party advertising companies to serve ads when you visit the Apps. These companies may use information about your visits to our Website(s) and other websites that are contained in web cookies and other tracking technologies in order to provide advertisements about goods and services of interest to you.
 
--   **Business Partners.** We may share your information with our business partners to offer you certain products, services or promotions.
+- **Business Partners.** We may share your information with our business partners to offer you certain products, services or promotions.
 
 ## 4. Do we use cookies and other tracking technologies?
 
@@ -130,7 +130,7 @@ If you have questions or comments about your privacy rights, you may email us at
 
 If you would at any time like to review or change the information in your account or terminate your account, you can:
 
--   Contact us using the contact information provided.
+- Contact us using the contact information provided.
 
 Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.
 
