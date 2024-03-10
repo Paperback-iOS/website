@@ -21,11 +21,12 @@
   },
   "scripts": {
     "dev": "vitepress dev src --host",
-    "build": "run-s eslint prettier build-only",
+    "build": "run-s tsc eslint prettier build-only",
     "build-only": "vitepress build src",
     "preview": "vitepress preview src",
-    "eslint": "eslint --config .eslintrc.cjs --fix '**/*{.vue,.js,.cjs,.ts}' --ignore-path .eslintignore",
-    "prettier": "prettier --config .prettierrc.cjs --write '**/*{.vue,.md,.css,.js,.cjs,.ts,.json}' --ignore-path .prettierignore",
+    "tsc": "tsc --project tsconfig.json --noEmit",
+    "eslint": "eslint --config .eslintrc.cjs --fix '**/*{.vue,.cjs,.ts}' --ignore-path .eslintignore",
+    "prettier": "prettier --config .prettierrc.cjs --write '**/*{.vue,.md,.css,.cjs,.ts,.json}' --ignore-path .prettierignore",
     "prepare": "husky",
     "lint-staged": "lint-staged --config .lintstagedrc.cjs --concurrent false"
   },

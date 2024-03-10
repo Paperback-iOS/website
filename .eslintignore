@@ -7,6 +7,9 @@
 # Ignore Node dependency directory
 node_modules/**
 
+# Ignore Husky directory
+.husky/**
+
 # Ignore VitePress development directory
 src/.vitepress/cache/**
 

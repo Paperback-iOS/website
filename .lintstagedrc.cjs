@@ -1,6 +1,7 @@
 const config = {
-  '*{.vue,.js,.cjs,.ts}': 'npm run eslint',
-  '*{.vue,.md,.css,.js,.cjs,.ts,.json}': 'npm run prettier',
+  '*{.vue,.ts}': () => 'npm run tsc',
+  '*{.vue,.cjs,.ts}': 'npm run eslint',
+  '*{.vue,.md,.css,.cjs,.ts,.json}': 'npm run prettier',
   '*': 'npm run build-only',
 }
 

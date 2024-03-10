@@ -4,28 +4,27 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "typeRoots": ["node_modules"],
     "types": ["vite/client"],
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noUnusedLocals": false,
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
+    "isolatedModules": true,
     "sourceMap": true,
     "skipLibCheck": true,
     "verbatimModuleSyntax": true,
     "jsx": "preserve",
-    "lib": ["esnext", "dom", "dom.iterable"]
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "paths": {
+      "@/*": ["./src/.vitepress/*"]
+    }
   },
-  "include": ["**/*", "src/.vitepress/**/*"],
-  "exclude": [
-    "**/.DS_Store",
-    ".vscode/**",
-    "node_modules/**",
-    "src/.vitepress/cache/**",
-    "src/.vitepress/dist/**",
-  ]
+  "include": ["typings/env.d.ts", "src/**/*", "src/.vitepress/**/*"],
+  "extensions": [".ts", ".vue"]
 }

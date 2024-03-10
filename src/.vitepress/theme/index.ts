@@ -1,5 +1,6 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
+import type { App } from 'vue'
 import Theme from 'vitepress/theme'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import './style.css'
@@ -7,12 +8,6 @@ import './style.css'
 const modules = import.meta.glob('../components/**/*.vue', {
   eager: true,
 })
-
-const components: any[] = []
-
-for (const path in modules) {
-  components.push(modules[path].default)
-}
 
 export default {
   extends: Theme,
@@ -23,11 +18,13 @@ export default {
     })
   },
 
-  enhanceApp({ app }) {
+  enhanceApp({ app }: { app: App }) {
     enhanceAppWithTabs(app)
 
-    components.forEach((component) => {
-      app.component(component.name, component)
-    })
+    for (const path in modules) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const value = modules[path] as any
+      app.component(value.default.name, value.default)
+    }
   },
 }

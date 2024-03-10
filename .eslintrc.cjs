@@ -32,15 +32,15 @@ const config = {
     },
   },
   plugins: ['@typescript-eslint', 'vue'],
-  ignorePatterns: [
-    '!**/*',
-    '**/.DS_Store',
-    '.vscode/**',
-    'node_modules/**',
-    'src/.vitepress/cache/**',
-    'src/.vitepress/dist/**',
-  ],
-  rules: {},
+  ignorePatterns: ['!**/*'],
+  rules: {
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['Layout'],
+      },
+    ],
+  },
 }
 
 module.exports = config

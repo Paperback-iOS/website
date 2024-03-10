@@ -12,9 +12,6 @@ export default defineConfig({
   title: 'Paperback',
   description: 'An Ad-Free Comic/Manga Reader for iOS',
 
-  // temp
-  outDir: '/public',
-
   head: headConfig,
 
   cleanUrls: true,

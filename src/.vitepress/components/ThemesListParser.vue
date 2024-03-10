@@ -5,6 +5,7 @@
   <section
     v-for="group in themesList.themes"
     v-else-if="themesList"
+    :key="group.name"
     class="fetchSuccess"
   >
     <section v-if="canShare">
@@ -46,11 +47,19 @@
       </h2>
       <a :href="group.source" target="_blank" rel="noreferrer">Source</a>
     </section>
-    <section v-for="subGroup in group.subGroups" class="subGroup">
+    <section
+      v-for="subGroup in group.subGroups"
+      :key="subGroup.name"
+      class="subGroup"
+    >
       <h3 v-if="subGroup.name">
         {{ subGroup.name.charAt(0).toUpperCase() + subGroup.name.slice(1) }}
       </h3>
-      <section v-for="accentColor in subGroup.accentColors" class="accentColor">
+      <section
+        v-for="accentColor in subGroup.accentColors"
+        :key="accentColor.name"
+        class="accentColor"
+      >
         <h3 v-if="accentColor.name">
           {{
             accentColor.name.charAt(0).toUpperCase() + accentColor.name.slice(1)
@@ -60,7 +69,7 @@
           <span class="label"
             >Creator<span v-if="accentColor.creators.length > 1">s</span>:
           </span>
-          <span v-for="creator in accentColor.creators">
+          <span v-for="creator in accentColor.creators" :key="creator">
             {{ creator.charAt(0).toUpperCase() + creator.slice(1)
             }}<span
               v-if="
@@ -79,6 +88,7 @@
         <section class="themeImages">
           <img
             v-for="mode in ['dark', 'light']"
+            :key="mode"
             :src="
               getThemeImage(group.name, subGroup.name, accentColor.name, mode)
             "
