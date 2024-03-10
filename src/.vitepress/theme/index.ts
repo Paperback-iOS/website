@@ -1,28 +1,30 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
+import type { App } from 'vue'
 import Theme from 'vitepress/theme'
-import './style.css'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+import './style.css'
 
-// @ts-ignore
-const modules = import.meta.globEager('../components/**/*.vue')
-const components: any[] = []
-
-for (const path in modules) {
-  components.push(modules[path].default)
-}
+const modules = import.meta.glob('../components/**/*.vue', {
+  eager: true,
+})
 
 export default {
   extends: Theme,
+
   Layout: () => {
     return h(Theme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app, router, siteData }) {
+
+  enhanceApp({ app }: { app: App }) {
     enhanceAppWithTabs(app)
-    components.forEach(component => {
-      app.component(component.name, component)
-    })
-  }
+
+    for (const path in modules) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const value = modules[path] as any
+      app.component(value.default.name, value.default)
+    }
+  },
 }

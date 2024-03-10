@@ -1,13 +1,22 @@
 export default [
-	{ text: "Home", link: "/" },
-	{ text: "FAQ", link: "/help/faq" },
-	{ text: "Getting started", link: "/help/guides/getting-started" },
-	{
-		text: "Contribute",
-		link: "/help/contribution/contribute"
-	},
-	{
-		text: "Support on Patreon",
-		link: "https://www.patreon.com/FaizanDurrani",
-	},
-];
+  {
+    text: 'Getting Started',
+    link: '/getting-started/',
+  },
+  {
+    text: 'Guides',
+    link: '/guides/',
+  },
+  {
+    text: 'FAQ',
+    link: '/faq/',
+  },
+  {
+    text: 'Tools',
+    link: '/tools/',
+  },
+  {
+    text: 'Contributing',
+    link: '/contributing/',
+  },
+]

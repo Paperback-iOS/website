@@ -1,7 +1,9 @@
-<!-- .vitepress/theme/Layout.vue -->
-<template>
-  <h1>Custom Layout!</h1>
+<script setup lang="ts">
+  import Theme from 'vitepress/theme'
+</script>
 
-  <!-- this is where markdown content will be rendered -->
-  <Content />
+<template>
+  <Theme.Layout />
 </template>
+
+<style></style>

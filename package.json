@@ -1,25 +1,49 @@
 {
   "name": "paperback-website",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "private": true,
   "type": "module",
-  "scripts": {
-    "build": "npm run docs:build",
-    "serve": "npm run docs:dev",
-    "docs:dev": "vitepress dev src",
-    "docs:build": "vitepress build src",
-    "docs:preview": "vitepress preview src"
-  },
+  "description": "The official website for Paperback",
+  "homepage": "https://paperback.moe",
+  "author": "Paperback-iOS",
+  "license": "MIT",
+  "keywords": [
+    "Paperback",
+    "Website",
+    "VitePress"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Paperback-iOS/website.git"
   },
-  "private": true,
+  "bugs": {
+    "url": "https://github.com/Paperback-iOS/website/issues"
+  },
+  "scripts": {
+    "dev": "vitepress dev src --host",
+    "build": "run-s tsc eslint prettier build-only",
+    "build-only": "vitepress build src",
+    "preview": "vitepress preview src",
+    "tsc": "tsc --project tsconfig.json --noEmit",
+    "eslint": "eslint --config .eslintrc.cjs --fix '**/*{.vue,.cjs,.ts}' --ignore-path .eslintignore",
+    "prettier": "prettier --config .prettierrc.cjs --write '**/*{.vue,.md,.css,.cjs,.ts,.json}' --ignore-path .prettierignore",
+    "prepare": "husky",
+    "lint-staged": "lint-staged --config .lintstagedrc.cjs --concurrent false"
+  },
   "devDependencies": {
-    "@mdit/plugin-tab": "^0.4.8",
-    "stylus": "^0.59.0",
-    "typescript": "^5.1.6",
-    "vitepress": "^1.0.0-beta.7",
-    "vitepress-plugin-tabs": "^0.3.0",
-    "vue": "^3.3.4"
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.22.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "npm-run-all2": "^6.1.1",
+    "prettier": "3.2.5",
+    "typescript": "5.3.3",
+    "vitepress": "^1.0.0-rc.45",
+    "vitepress-plugin-tabs": "^0.5.0",
+    "vue": "^3.4.21",
+    "vue-eslint-parser": "^9.4.2"
   }
 }
