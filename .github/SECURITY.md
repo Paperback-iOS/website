@@ -6,7 +6,7 @@ The versions of the project which are currently being supported with security up
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.0.0   | :white_check_mark: |
+| 0.8.0   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 

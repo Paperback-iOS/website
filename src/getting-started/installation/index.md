@@ -1,10 +1,15 @@
+---
+title: Installation
+description: Learn about the different methods available to install the app on your Apple device.
+---
+
 # Installation
 
 There are three methods to install Paperback:
 
 - **App Store:** The App Store provides the stable release, making it the simplest and most commonly used installation method.
 - **TestFlight:** TestFlight hosts the alpha and beta builds of the app, exclusively accessible to Patreon supporters.
-- **Sideloading:** Towards the end of a development cycle, the `.ipa` file becomes available for sideloading the app.
+- **Sideloading:** There also always is an `.ipa` file of the stable release for those who prefer sideloading the app.
 
 More info on these methods can be found in the tabs bellow.
 
@@ -23,7 +28,7 @@ The latest Paperback version (v0.8) is compatible with the following Apple devic
 Look for ["Paperback - A Komga Client"](https://apps.apple.com/app/paperback-a-komga-client/id1626613373) on the App Store. Paperback is accessible in the majority of countries. You can view the complete list of available regions [here](/getting-started/installation/availability).
 
 ::: tip App Store Availability
-You can always change your App Store region to one where the app is available if it is not accessible in your current region. However, we recommend switching back to your original region afterward. You can find a guide on how to do this [here](https://support.apple.com/en-us/HT201389).
+You can always change your App Store region to one where the app is available if it is not accessible in your current region. However, we recommend switching back to your original region afterwards. You can find a guide on how to do this [here](https://support.apple.com/en-us/HT201389).
 
 :::
 
@@ -32,15 +37,17 @@ You can always change your App Store region to one where the app is available if
 ::: warning Patreon Exclusive
 Access to beta and alpha builds of Paperback requires being a [Patreon supporter](https://patreon.com/FaizanDurrani). While all Patreon supporters gain access to beta builds, alpha builds are exclusive to the supporter++ tier.
 
-Additionally, Patreon supporters gain access to the `#beta-chat` channel in the official Discord server. For those with the supporter++ tier, the `#alpha` channel is also accessible.
+Additionally, Patreon supporters gain access to the `#beta-chat` channel in the official Discord server. For those with the supporter++ tier, the `#alpha` channel is accessible as well.
 
 :::
 
 ## Request an Invite:
 
 1. Join the [official Discord server](https://discord.paperback.moe).
-2. Link your Discord account in your [Patreon settings](https://www.patreon.com/settings/apps).
-3. Execute the `/invite` command in any channel in the Discord server ([Learn more](https://discord.com/blog/slash-commands-are-here)).
+2. Make sure you are an active [Patreon supporter](https://www.patreon.com/FaizanDurrani).
+   > Only the 3 shown tiers are supported, don't make a custom pledge.
+3. Link your Discord account in your [Patreon settings](https://www.patreon.com/settings/apps).
+4. Execute the `/invite` command in any channel in the Discord server.
    > This process will prompt you for your email and the build you wish to access (beta or alpha). Your email remains private and is not visible to other Discord users ([Learn more](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ)).
 
 Expect to receive a TestFlight invite via email within a few minutes after executing the command.
@@ -49,25 +56,21 @@ Expect to receive a TestFlight invite via email within a few minutes after execu
 
 1. Install the ["TestFlight"](https://apps.apple.com/be/app/testflight/id899247664) app on your device from the App Store.
 2. Inside the invite email, click the "**View in TestFlight**" button.
-3. Paperback will now appear in the TestFlight app, allowing you to install it in the same manner as you would an app from the App Store.
+3. Paperback will now appear in the TestFlight app, allowing you to install it in the same manner as you would with an app from the App Store.
 
 ::: details Frequently Asked Questions
 
 - **Why am I limited to one invite per 6 hours?**
 
-  You can only request one invite every 6 hours. If a mistake is made, you must wait for the cooldown period to request a new invite.
+  This is done to not overload the bot. You must wait for the cooldown period to end to request a new invite.
 
 - **What should I do if I made a typo or provided the wrong email when requesting an invite?**
 
-  If an error is made, you must wait 6 hours to request a new invite.
+  If a mistake is made, you must wait 6 hours to request a new invite.
 
 - **Why did the `/invite` command fail?**
 
-  Ensure your Discord username contains only alphanumeric characters, as using special characters in your will not work.
-
-- **How can I obtain the supporter role?**
-
-  Follow the instructions provided and ensure that you are on a valid tier, as custom pledges don't grant the Supporter role.
+  Ensure your Discord username contains only alphanumeric characters, as using special characters in it will not work.
 
 - **Why am I unable to type in the `#beta-chat` or `#alpha` channels?**
 
@@ -75,7 +78,7 @@ Expect to receive a TestFlight invite via email within a few minutes after execu
 
 - **What should I do if I haven't received an invite after completing all steps?**
 
-  If you've completed all steps but haven't received an invite, create a new post in the `#support` channel of the official Discord server following the provided guidelines.
+  If you've completed all steps but haven't received an invite, create a new post in the `#support` channel of the official Discord server, info on how to do this can be found [here](/getting-started/further-support/).
 
 :::
 

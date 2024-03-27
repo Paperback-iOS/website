@@ -1,7 +1,10 @@
 ---
+title: Finding Version Numbers
+description: Guides for locating version numbers for Paperback, extensions and operating systems.
+
 prev:
   text: 'Further Support'
-  link: '/guides/further-support/#getting-support'
+  link: '/getting-started/further-support/#getting-support'
 next: false
 ---
 
@@ -11,7 +14,7 @@ To identify the version numbers of various components, follow these steps:
 
 ## The App
 
-The version number of the app can be found at the bottom of the app's Settings page.
+The version number of the app can be found at the bottom of the app's **Settings** page.
 
 ## An Extension
 

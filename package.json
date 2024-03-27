@@ -1,6 +1,6 @@
 {
   "name": "paperback-website",
-  "version": "1.0.0",
+  "version": "0.8.0",
   "private": true,
   "type": "module",
   "description": "The official website for Paperback",
@@ -27,8 +27,8 @@
     "tsc": "tsc --project tsconfig.json --noEmit",
     "eslint": "eslint --config .eslintrc.cjs --fix '**/*{.vue,.cjs,.ts}' --ignore-path .eslintignore",
     "prettier": "prettier --config .prettierrc.cjs --write '**/*{.vue,.md,.css,.cjs,.ts,.json}' --ignore-path .prettierignore",
-    "prepare": "husky",
-    "lint-staged": "lint-staged --config .lintstagedrc.cjs --concurrent false"
+    "lint-staged": "lint-staged --config .lintstagedrc.cjs --concurrent false",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.1.1",

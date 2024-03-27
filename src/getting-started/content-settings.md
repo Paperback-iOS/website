@@ -1,10 +1,15 @@
+---
+title: Changing Content Settings
+description: Discover how to customize the content settings in the app.
+---
+
 # Changing Content Settings
 
-Adjusting your content settings to "Mature" or "Adult" is often necessary to add content to your app. Here is how to do it:
+Content in your app may be filtered based on your content settings. Because of this adjusting your content settings might be necessary. Here is how to do it:
 
 1. Visit the [Paperback Portal](https://portal.paperback.moe).
 2. Log in with your Paperback Account or create one if you don't have one.
-3. Customize the content setting to your preference (**Restricted**, **Mature** or **Adult**).
+3. Customize the content setting to your preference. Available options are "Restricted", "Mature" and "Adult".
 4. If you were logged in, log out of the app.
 5. Log back in again.
 
@@ -23,11 +28,11 @@ Adjusting your content settings to "Mature" or "Adult" is often necessary to add
 
 - **Why isn't my selection of "Adult" saving?**
 
-  Clear your browser cache or log in to the Portal through an incognito window.
+  Clear your browser cache or log in to the Portal through an incognito window and try again.
 
 - **Why am I encountering a communication/unknown error when logging into the app?**
 
-  Ensure your email is verified (check spam/promotion). If the issue persists, make a support post in the official Discord server. You can find a guide on how to do that [here](/guides/further-support/#using-the-official-discord-server).
+  Ensure your email is verified (check spam/promotion). If the issue persists, make a support post in the official Discord server. You can find a guide on how to do that [here](/getting-started/further-support/#using-the-official-discord-server).
 
 - **Why is this necessary?**
 

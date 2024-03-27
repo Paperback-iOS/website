@@ -1,3 +1,8 @@
+---
+title: Backing up Your Data
+description: Get acquainted with the process of creating backups to ensure the safety of your library data.
+---
+
 # Backing up Your Data
 
 You should always have a backup of your library, especially before updating the app, migrating or doing a database repair. This ensures that no data loss is possible.

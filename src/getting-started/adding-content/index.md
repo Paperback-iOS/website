@@ -1,3 +1,8 @@
+---
+title: Adding Content
+description: Explore the various methods for adding content to the app.
+---
+
 # Adding Content
 
 The Paperback app does not include any preloaded content. Users are required to add their own content. This process is straightforward and typically takes less than 10 minutes when following the appropriate steps.

@@ -1,4 +1,7 @@
 ---
+title: App Store Availability
+description: A list of all the regions in which Paperback is available in the App Store.
+
 prev:
   text: 'Installation'
   link: '/getting-started/installation/'

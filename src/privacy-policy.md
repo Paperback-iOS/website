@@ -1,4 +1,7 @@
 ---
+title: Privacy Policy
+description: Paperback's privacy policy.
+
 sidebar: false
 next: false
 ---

@@ -1,3 +1,8 @@
+---
+title: Changing the Theme
+description: Personalize your app's appearance by applying custom themes to suit your preferences.
+---
+
 <script setup>
 import ThemesListParser from '../.vitepress/components/ThemesListParser.vue'
 </script>

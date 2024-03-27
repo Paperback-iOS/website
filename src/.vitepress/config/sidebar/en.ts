@@ -27,6 +27,10 @@ export default [
           },
         ],
       },
+      {
+        text: 'Further Support',
+        link: '/getting-started/further-support/',
+      },
     ],
   },
   {
@@ -43,7 +47,7 @@ export default [
         link: '/guides/reader',
       },
       {
-        text: 'Backing Up Your Data',
+        text: 'Backing up Your Data',
         link: '/guides/backups',
       },
       {
@@ -55,8 +59,8 @@ export default [
         link: '/guides/themes',
       },
       {
-        text: 'Further Support',
-        link: '/guides/further-support/',
+        text: 'Title Migration',
+        link: '/guides/migration',
       },
     ],
   },

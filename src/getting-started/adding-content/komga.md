@@ -1,6 +1,11 @@
+---
+title: Komga
+description: Add content to the app using Komga.
+---
+
 # Komga
 
-Komga serves as a media server for comics, manga, BDs, magazines, and eBooks. It offers the capability to organize and manage CBZ, CBR, PDF, and EPUB files (Note: EPUBs are not currently supported by Paperback) across different libraries, collections, or reading lists.
+Komga serves as a media server for comics, manga, BDs, magazines, and eBooks. It offers the capability to organize and manage CBZ, CBR, PDF, and EPUB files (Note: EPUBs are currently not supported by Paperback) across different libraries, collections, or reading lists.
 
 Check their [official website](https://komga.org) for more info.
 
@@ -39,7 +44,7 @@ There are two methods to install the official repository:
 3. The "Repository Name" is optional.
 4. For "Repository Base URL", use this URL: [https://paperback-ios.github.io/extensions-default/main/](https://paperback-ios.github.io/extensions-default/main/).
 5. Read and accept the conditions.
-6. Select Add to Paperback.
+6. Select "**Add to Paperback**".
 
 ::::
 

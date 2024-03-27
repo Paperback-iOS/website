@@ -1,3 +1,8 @@
+---
+title: Third-Party Extensions
+description: Add content to the app using third-party extensions.
+---
+
 # Third-Party Extensions
 
 Third-party extensions are not developed or maintained by the Paperback developers. Therefore, we do not offer support for these extensions, nor do we permit discussions about them on the official Discord server or GitHub page.
@@ -27,7 +32,7 @@ To add third-party extensions, you need to add their repositories. There are two
 3. The "Repository Name" is optional.
 4. For "Repository Base URL", enter the URL provided by the repository maintainer.
 5. Read and accept the conditions.
-6. Select Add to Paperback.
+6. Select "**Add to Paperback**".
 
 ::::
 
