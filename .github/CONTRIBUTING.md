@@ -10,100 +10,83 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 
 ## Table of Contents <!-- omit in toc -->
 
-- [I Have a Question](#i-have-a-question)
-- [I Want To Contribute](#i-want-to-contribute)
-  - [Reporting Bugs](#reporting-bugs)
-  - [Suggesting Enhancements](#suggesting-enhancements)
-  - [Your First Code Contribution](#your-first-code-contribution)
+- [Your First Code Contribution](#your-first-code-contribution)
+  - [Development Setup](#development-setup)
+  - [Project Structure](#project-structure)
   - [Improving The Documentation](#improving-the-documentation)
 - [Styleguides](#styleguides)
   - [Commit Messages](#commit-messages)
+  - [Pull Requests](#pull-requests)
 
-## I Have a Question
+## Your First Code Contribution
 
-> If you want to ask a question, we assume that you have read the available [Documentation](https://paperback.moe/contributing/website).
+Generally you can fork this directory, commit your changes to that and afterwards you can make a pull request.
 
-Before you ask a question, it is best to search for existing [Issues](https://github.com/Paperback-iOS/website/issues?q=label%3Aquestion) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
+For major changes, please open an issue first to discuss what you would like to change. Check the [support disclaimer](SUPPORT_DISCLAIMER.md) for more info regarding issues.
 
-If you then still feel the need to ask a question and need clarification, we recommend the following:
+### Development Setup
 
-- Open a Question [Issue](https://github.com/Paperback-iOS/website/issues/new?template=question).
-- Provide as much context as you can about what you're running into.
-- Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant.
+You will need [Node.js](http://nodejs.org) **version 18+**.
 
-We will then take care of the issue or discussion as soon as possible.
+After cloning the repo and entering the the directory, run:
 
-You may always contact us through our [official Discord server](https://discord.paperback.moe) as well.
+```bash
+# Installs any dependencies needed.
+$ npm install
+```
 
-## I Want To Contribute
+To run a development server for the website now, run:
 
-> ### Legal Notice
->
-> When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
+```bash
+# This command start a local server you can access and edit live.
+$ npm dev
+```
 
-### Reporting Bugs
+To test and build the website, run:
 
-#### Before Submitting a Bug Report <!-- omit in toc -->
+```bash
+# This command tests and builds the website
+$ npm build
+```
 
-A good bug report shouldn't leave others needing to chase you up for more information. Therefore, we ask you to investigate carefully, collect information and describe the issue in detail in your report. Please complete the following steps in advance to help us fix any potential bug as fast as possible.
+> Fix any issues that pop up and then run this command again.
 
-- Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the [documentation](https://paperback.moe/contributing/website). If you are looking for support, you might want to check [this section](#i-have-a-question)).
-- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/Paperback-iOS/website/issues?q=label%3Abug).
-- Also make sure to search the internet to see if users outside of the GitHub community have discussed the issue.
-- Collect information about the bug:
-  - OS, Platform and Version (Windows, Linux, macOS, x86, ARM)
-  - Browser where you found it in and its version
-  - Possibly your input and the output
-  - Can you reliably reproduce the issue?
+To preview the previously build website, run
 
-#### How Do I Submit a Good Bug Report? <!-- omit in toc -->
+```bash
+# This command starts a local server you can access and use view the build.
+$ npm preview
+```
 
-> You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead use the GitHub [Security Advisory tab](https://github.com/Paperback-iOS/website/security/advisories) for sensitive bugs.
+**Note:** There are git hooks in place to run the build tests on commits as well. Pull requests with failing tests will not be merged.
 
-We use [GitHub issues](https://github.com/Paperback-iOS/website/issues) to track bugs and errors. If you run into an issue with the project:
+### Project Structure
 
-- Open a Bug [Issue](https://github.com/Paperback-iOS/website/issues/new?template=bug).
-- Fill in the template and provide the information you collected in the previous section.
+- **`src`**: Contains all the files used for the website.
 
-Once it is filed:
+  - **`.vitepress`**:
 
-- A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps. Bugs without reproduction steps will not be addressed until they can be reproduced.
-- If the team is able to reproduce the issue it will be left to be [implemented by someone](#your-first-code-contribution).
+    - **`components`**: Contains Vue components.
+    - **`config`**: Contains extra config files used in the main configuration file.
+    - **[`dist`](https://vitepress.dev/guide/deploy)**: Contains built files for distribution.
+      > **Note:** Changes to this folder will not carry over with Git.
+    - **`theme`**: Contains custom theme files.
+    - `config.ts`: Main configuration file for VitePress.
 
-### Suggesting Enhancements
+  - **`public`**: Files to be exposed publicly without any processing.
 
-This section guides you through submitting an enhancement suggestion for the website, **including completely new features and minor improvements to existing functionality**. Following these guidelines will help maintainers and the community to understand your suggestion and find related suggestions.
-
-#### Before Submitting an Enhancement <!-- omit in toc -->
-
-- Read the [documentation](https://paperback.moe/contributing/website) carefully and find out if the functionality is already covered, maybe by an individual configuration.
-- Perform a [search](https://github.com/Paperback-iOS/website/issues?q=label%3Aenhancement) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
-- Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this enhancement. Keep in mind that we want enhancements that will be useful to the majority of our users and not just a small subset.
-
-#### How Do I Submit a Good Enhancement Suggestion? <!-- omit in toc -->
-
-Enhancement suggestions are tracked as [GitHub issues](https://github.com/Paperback-iOS/website/issues).
-
-- Open an Enhancement [Issue](https://github.com/Paperback-iOS/website/issues/new?template=enhancement).
-- Fill in the template.
-
-Once it is filed:
-
-- A team member will review your enhancement suggestion and discuss its feasibility and impact on the project.
-- If the enhancement is deemed appropriate and aligns with the project's goals, it will be labeled accordingly and left to be [implemented by someone](#your-first-code-contribution).
-
-### Your First Code Contribution
-
-The quick-start guide on contributing to the website includes the development setup and the project structure, it can be found on the website itself [here](https://paperback.moe/contributing/website/quick-start.md).
+- `package.json`: Contains information about which plugins are installed in the project.
 
 ### Improving The Documentation
 
 Updates, improvements and corrections to the documentation are always welcome.
 
-You can fork this directory and commit your changes to that, afterwards you can make a PR.
-
 ## Styleguides
 
 ### Commit Messages
 
-Make sure that your commit messages are clear and descriptive.
+Ensure that your commit messages are both clear and descriptive.
+
+### Pull Requests
+
+Each pull request should provide a detailed description of the changes it introduces. Simply using the commit message as the title might not suffice. Additionally, it's crucial to include links to any other relevant issues or pull requests.

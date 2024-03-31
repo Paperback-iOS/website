@@ -1,12 +1,9 @@
-name: Close Issues
+name: Close Invalid Threads
 
 on:
   schedule:
     - cron: '0 1 * * *'
   workflow_dispatch:
-
-permissions:
-  contents: read
 
 defaults:
   run:
@@ -23,7 +20,7 @@ jobs:
     steps:
       - name: Close Issues
         run: |
-          DATE=$(date --date='2 days ago' --iso-8601)
+          DATE=$(date --date='7 days ago' --iso-8601)
 
           close_issues() {
             echo "Closing issues marked as '$1'."
@@ -34,4 +31,21 @@ jobs:
           }
 
           close_issues "duplicate"
+          close_issues "wont fix"
           close_issues "invalid"
+
+      - name: Close Pull Requests
+        run: |
+          DATE=$(date --date='7 days ago' --iso-8601)
+
+          close_prs() {
+            echo "Closing pull requests marked as '$1'."
+            for pr in $(gh pr list --limit 100 --label "$1" --repo ${{ github.repository }} --state open --search "updated:<$DATE" --json number --jq '.[].number'); do
+              echo "Closing https://github.com/${{ github.repository }}/pull/$pr"
+              gh pr close $pr --repo ${{ github.repository }} --comment "This pull request has been marked as \"$1\" and has seen no recent activity. It has been automatically closed for house-keeping purposes."
+            done
+          }
+
+          close_prs "duplicate"
+          close_prs "wont fix"
+          close_prs "invalid"

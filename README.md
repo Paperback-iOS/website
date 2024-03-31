@@ -14,12 +14,19 @@
   </a>
 </div>
 
+## Support
+
+For info on how to receive support regarding the website check out:
+
+- [Support Disclaimer](.github/SUPPORT_DISCLAIMER.md)
+- [Discord Server](https://discord.paperback.moe)
+
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. For more info check out:
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. For more info regarding contributing check out:
 
-- [Contributing guide](.github/CONTRIBUTING.md)
-- [Discord server](https://discord.paperback.moe)
+- [Contributing Guide](.github/CONTRIBUTING.md)
+- [Discord Server](https://discord.paperback.moe)
 
 ## Credits
 
