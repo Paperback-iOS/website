@@ -76,11 +76,17 @@ function generateMeta(context: TransformContext, hostname: string) {
       { name: 'twitter:card', content: 'summary_large_image' },
     ])
 
-    head.push(['meta', { property: 'og:image', content: '/pb-logo.svg' }])
-    head.push(['meta', { property: 'og:image:type', content: 'image/svg' }])
+    head.push([
+      'meta',
+      { property: 'og:image', content: `${hostname}/pb-logo.png` },
+    ])
+    head.push(['meta', { property: 'og:image:type', content: 'image/png' }])
     head.push(['meta', { property: 'og:image:alt', content: 'Paperback' }])
 
-    head.push(['meta', { name: 'twitter:image', content: '/pb-logo.svg' }])
+    head.push([
+      'meta',
+      { name: 'twitter:image', content: `${hostname}/pb-logo.png` },
+    ])
     head.push(['meta', { name: 'twitter:image:alt', content: 'Paperback' }])
   } else {
     head.push(['meta', { name: 'twitter:card', content: 'summary' }])

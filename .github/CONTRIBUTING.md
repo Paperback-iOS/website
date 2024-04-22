@@ -83,10 +83,13 @@ $ npm preview
 A list of to do items for the website:
 
 - Update to version +9.0 of ESLint and switch to a flat config.
-- Update the extension contributing guide
+- Update and add the following contributing guides:
+  - Extension Contributing
+  - Website Contributing
 - Add the following tools to the website:
   - Backup Converter
   - Themes Creator
+- Fix the `addRepo` page not showing an error message on invalid URL parameters in build.
 
 ### Improving The Documentation
 

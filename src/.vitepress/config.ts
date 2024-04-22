@@ -88,7 +88,7 @@ export default defineConfig({
 
     footer: {
       copyright:
-        "Copyright © 2023 Paperback-iOS. MIT Licensed. <a href='/privacy-policy'>Privacy Policy.</a>",
+        "Copyright © 2023-present Paperback-iOS. MIT Licensed. <a href='/privacy-policy'>Privacy Policy.</a>",
     },
   },
 })
