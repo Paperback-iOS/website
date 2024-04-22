@@ -36,16 +36,18 @@ function generateMeta(context: TransformContext, hostname: string) {
       'meta',
       {
         property: 'og:title',
-        content: `${pageData.frontmatter.title} | Paperback`,
+        content: `${pageData.frontmatter.title}`,
       },
     ])
     head.push([
       'meta',
       {
         name: 'twitter:title',
-        content: `${pageData.frontmatter.title} | Paperback`,
+        content: `${pageData.frontmatter.title}`,
       },
     ])
+
+    head.push(['meta', { property: 'og:site_name', content: 'Paperback' }])
   } else {
     head.push(['meta', { property: 'og:title', content: 'Paperback' }])
     head.push(['meta', { name: 'twitter:title', content: 'Paperback' }])

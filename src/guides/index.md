@@ -1,3 +1,8 @@
+---
+title: Guides
+description: Everything you need to know to make the most out of your reading experience.
+---
+
 # Guides
 
 Welcome to the Paperback guides section! Here you'll find all the resources you need to make the most out of your reading experience.
@@ -6,13 +11,11 @@ Welcome to the Paperback guides section! Here you'll find all the resources you 
 
 Explore these guides to enhance your Paperback experience:
 
-<!-- A list of all guides (/guides/*) sorted by importance, the structure and list of these is expected to change -->
-
-- [Your Library:](/guides/library) Learn about the library functionality and its various features for managing your collection.
-- [Using the Reader:](/guides/reader) Discover how to utilize the reader interface efficiently for an immersive reading experience.
-- [Backing up Your Data:](/guides/backups) Get acquainted with the process of creating backups to ensure the safety of your library data.
-- [Connecting Trackers:](/guides/trackers) Explore the feature enabling automatic tracking of your reading progress for convenient monitoring.
+- [Using the Reader:](/guides/reader) Discover how to utilize the reader interface efficiently for the best experience.
+- [Backing up Your Data:](/guides/backups) Get acquainted with the process of using backups to ensure the safety of your data.
+- [Connecting Trackers:](/guides/trackers) Enable automatic tracking for alternative backups and monitoring your reading progress.
+- [Migrating Extensions:](/guides/migrating) Transfer your titles across extensions for uninterrupted functionality.
+- [Merging Titles:](/guides/merging) Combine duplicate or related titles from multiple extensions in your library for better organization.
 - [Changing the Theme:](/guides/themes) Personalize your app's appearance by applying custom themes to suit your preferences.
-- [Title Migration:](/guides/migration) Transfer titles between extensions without losing progress.
 
 While these are nonessential for basic app usage, they can significantly improve your overall experience and are highly recommended.

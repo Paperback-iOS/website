@@ -13,6 +13,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 - [Your First Code Contribution](#your-first-code-contribution)
   - [Development Setup](#development-setup)
   - [Project Structure](#project-structure)
+  - [To Do](#to-do)
   - [Improving The Documentation](#improving-the-documentation)
 - [Styleguides](#styleguides)
   - [Commit Messages](#commit-messages)
@@ -76,6 +77,16 @@ $ npm preview
   - **`public`**: Files to be exposed publicly without any processing.
 
 - `package.json`: Contains information about which plugins are installed in the project.
+
+### To Do
+
+A list of to do items for the website:
+
+- Update to version +9.0 of ESLint and switch to a flat config.
+- Update the extension contributing guide
+- Add the following tools to the website:
+  - Backup Converter
+  - Themes Creator
 
 ### Improving The Documentation
 

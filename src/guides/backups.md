@@ -1,6 +1,6 @@
 ---
 title: Backing up Your Data
-description: Get acquainted with the process of creating backups to ensure the safety of your library data.
+description: Get acquainted with the process of using backups to ensure the safety of your data.
 ---
 
 # Backing up Your Data
@@ -11,7 +11,7 @@ You should always have a backup of your library, especially before updating the 
 
 1. Go to **Settings** > **Backups**.
 2. Press "**New Backup**" and choose where you want to save the backup.
-   > We recommend that you save them to your Notes or Files app.
+   > We recommend that you save it to your Files app.
 
 ::: tip Crashing During the Backup Process
 If the app crashed when you made the backup that means that your database has been corrupted, go to settings and press and hold "**Attempt Database Repair**".

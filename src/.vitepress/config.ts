@@ -82,8 +82,6 @@ export default defineConfig({
 
     sidebar: enSidebar,
 
-    externalLinkIcon: true,
-
     editLink: {
       pattern: 'https://github.com/Paperback-iOS/website/tree/master/src/:path',
     },

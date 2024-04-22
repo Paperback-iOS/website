@@ -27,6 +27,10 @@ Run a database repair repair, you can find this option in the **Settings** page.
 
 Try making a backup. If the app crashes while making a backup, export your database via **Settings** > **Developer** > **Export Database** and long press the "**Attempt Database Repair**" button and attempt a repair without making a backup.
 
+## The app crashes when I try to log in
+
+This happens on devices running iOS 17.1 or iPad OS 17.1. To fix this you will need to verify the email address of your Paperback account, an email for this was send automatically on account creation (check your spam/promotion folders).
+
 ## The thumbnail of a title does not appear
 
 In the library, long press the thumbnail and then select **Refresh Metadata**.

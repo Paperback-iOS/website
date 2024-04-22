@@ -17,6 +17,11 @@ Bellow you can find a list of all publicly available themes. You can find info r
 
 ## Making Themes
 
-You can make your own theme as well. We recommend that you check out our Themes Creator tool for more info.
+<!-- You can make your own theme as well. We recommend that you check out our Themes Creator tool for more info.
 
-[Go to Tools](/tools/)
+[Go to Tools](/tools/) -->
+
+For more info on making themes you can check the follow GitHub pages:
+
+1. [Paperback Themes:](https://github.com/Celarye/Paperback-themes) Offers an advanced command-line interface program for creating themes.
+2. [Paperback Themes GUI:](https://github.com/LucifersCircle/paperback-themes-gui) A user-friendly graphical interface for creating themes.

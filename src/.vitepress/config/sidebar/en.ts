@@ -39,10 +39,6 @@ export default [
     collapsed: false,
     items: [
       {
-        text: 'Your Library',
-        link: '/guides/library',
-      },
-      {
         text: 'Using the Reader',
         link: '/guides/reader',
       },
@@ -55,12 +51,16 @@ export default [
         link: '/guides/trackers',
       },
       {
-        text: 'Changing the Theme',
-        link: '/guides/themes',
+        text: 'Migrating Extensions',
+        link: '/guides/migrating',
       },
       {
-        text: 'Title Migration',
-        link: '/guides/migration',
+        text: 'Merging Titles',
+        link: '/guides/merging',
+      },
+      {
+        text: 'Changing the Theme',
+        link: '/guides/themes',
       },
     ],
   },
@@ -79,84 +79,84 @@ export default [
       },
     ],
   },
-  {
-    text: 'Tools',
-    link: '/tools/',
-    collapsed: true,
-    items: [
-      {
-        text: 'Backup Converter',
-        link: '/tools/backup-converter',
-      },
-      {
-        text: 'Themes Creator',
-        link: '/tools/themes-creator',
-      },
-    ],
-  },
-  {
-    text: 'Contributing',
-    link: '/contributing/',
-    collapsed: true,
-    items: [
-      {
-        text: 'Extension Development',
-        link: '/contributing/extension-development/',
-        items: [
-          {
-            text: 'Quick Start',
-            link: '/contributing/extension-development/quick-start',
-          },
-          {
-            text: 'Reference',
-            link: '/contributing/extension-development/reference/',
-            collapsed: true,
-            items: [
-              {
-                text: 'Parsing Guide',
-                link: '/contributing/extension-development/reference/parsing-guide',
-              },
-              {
-                text: 'Function Definitions',
-                link: '/contributing/extension-development/reference/function-definitions',
-              },
-              {
-                text: 'Model Reference',
-                link: '/contributing/extension-development/reference/model-reference',
-              },
-              {
-                text: 'Metadata Parameter',
-                link: '/contributing/extension-development/reference/metadata',
-              },
-            ],
-          },
-        ],
-      },
-      {
-        text: 'Website Contribution',
-        link: '/contributing/website/',
-        items: [
-          {
-            text: 'Quick Start',
-            link: '/contributing/website/quick-start',
-          },
-          {
-            text: 'Reference',
-            link: '/contributing/website/reference/',
-            collapsed: true,
-            items: [
-              {
-                text: 'Markdown Examples',
-                link: '/contributing/website/reference/markdown-examples',
-              },
-              {
-                text: 'API Examples',
-                link: '/contributing/website/reference/api-examples',
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   text: 'Tools',
+  //   link: '/tools/',
+  //   collapsed: true,
+  //   items: [
+  //     {
+  //       text: 'Backup Converter',
+  //       link: '/tools/backup-converter',
+  //     },
+  //     {
+  //       text: 'Themes Creator',
+  //       link: '/tools/themes-creator',
+  //     },
+  //   ],
+  // },
+  // {
+  //   text: 'Contributing',
+  //   link: '/contributing/',
+  //   collapsed: true,
+  //   items: [
+  //     {
+  //       text: 'Extension Development',
+  //       link: '/contributing/extension-development/',
+  //       items: [
+  //         {
+  //           text: 'Quick Start',
+  //           link: '/contributing/extension-development/quick-start',
+  //         },
+  //         {
+  //           text: 'Reference',
+  //           link: '/contributing/extension-development/reference/',
+  //           collapsed: true,
+  //           items: [
+  //             {
+  //               text: 'Parsing Guide',
+  //               link: '/contributing/extension-development/reference/parsing-guide',
+  //             },
+  //             {
+  //               text: 'Function Definitions',
+  //               link: '/contributing/extension-development/reference/function-definitions',
+  //             },
+  //             {
+  //               text: 'Model Reference',
+  //               link: '/contributing/extension-development/reference/model-reference',
+  //             },
+  //             {
+  //               text: 'Metadata Parameter',
+  //               link: '/contributing/extension-development/reference/metadata',
+  //             },
+  //           ],
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       text: 'Website Contribution',
+  //       link: '/contributing/website/',
+  //       items: [
+  //         {
+  //           text: 'Quick Start',
+  //           link: '/contributing/website/quick-start',
+  //         },
+  //         {
+  //           text: 'Reference',
+  //           link: '/contributing/website/reference/',
+  //           collapsed: true,
+  //           items: [
+  //             {
+  //               text: 'Markdown Examples',
+  //               link: '/contributing/website/reference/markdown-examples',
+  //             },
+  //             {
+  //               text: 'API Examples',
+  //               link: '/contributing/website/reference/api-examples',
+  //             },
+  //           ],
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
 ]

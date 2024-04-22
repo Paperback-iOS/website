@@ -9,6 +9,7 @@ Content in your app may be filtered based on your content settings. Because of t
 
 1. Visit the [Paperback Portal](https://portal.paperback.moe).
 2. Log in with your Paperback Account or create one if you don't have one.
+   > New accounts need to have their email address verified, an email for this will be send out automatically on account creation (check your spam/promotion folders).
 3. Customize the content setting to your preference. Available options are "Restricted", "Mature" and "Adult".
 4. If you were logged in, log out of the app.
 5. Log back in again.
@@ -30,9 +31,9 @@ Content in your app may be filtered based on your content settings. Because of t
 
   Clear your browser cache or log in to the Portal through an incognito window and try again.
 
-- **Why am I encountering a communication/unknown error when logging into the app?**
+- **Why am I encountering a communication/unknown error or a crash when logging in to the app?**
 
-  Ensure your email is verified (check spam/promotion). If the issue persists, make a support post in the official Discord server. You can find a guide on how to do that [here](/getting-started/further-support/#using-the-official-discord-server).
+  Ensure your email is verified (check your spam/promotion folders). If the issue persists, make a support post in the official Discord server. You can find a guide on how to do that [here](/getting-started/further-support/#using-the-official-discord-server).
 
 - **Why is this necessary?**
 

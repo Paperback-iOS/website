@@ -28,6 +28,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - [Contributing Guide](.github/CONTRIBUTING.md)
 - [Discord Server](https://discord.paperback.moe)
 
+### To Do
+
+A list of to do items for the website can be found in the [contributing guide](.github/CONTRIBUTING.md).
+
 ## Credits
 
 Thank you to all the people who have already contributed!

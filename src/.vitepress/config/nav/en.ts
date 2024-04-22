@@ -11,12 +11,12 @@ export default [
     text: 'FAQ',
     link: '/faq/',
   },
-  {
-    text: 'Tools',
-    link: '/tools/',
-  },
-  {
-    text: 'Contributing',
-    link: '/contributing/',
-  },
+  // {
+  //   text: 'Tools',
+  //   link: '/tools/',
+  // },
+  // {
+  //   text: 'Contributing',
+  //   link: '/contributing/',
+  // },
 ]
