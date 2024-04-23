@@ -1,0 +1,70 @@
+name: Enhancement Suggestion
+description: If you have an enhancement suggestion for the website. Please use this template to help improve the website.
+title: '[ENHANCEMENT] '
+labels: ['enhancement']
+assignees: []
+body:
+  - type: markdown
+    id: message
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this enhancement suggestion!
+  - type: checkboxes
+    id: preflight-checklist
+    attributes:
+      label: Preflight Checklist
+      description: Please ensure you've completed all of the following.
+      options:
+        - label: I have read and agree to follow the [code of conduct](.github/CODE_OF_CONDUCT.md).
+          required: true
+        - label: I have read and agree to follow the [contributing guide](.github/CONTRIBUTING.md).
+          required: true
+        - label: I have searched the [issue tracker](https://github.com/Paperback-iOS/website/issues) for an enhancement suggestion that matches the one I want to file, without success.
+          required: true
+  - type: dropdown
+    id: device-type
+    attributes:
+      label: Device Type
+      description: What type of device is this enhancement suggestion for?
+      multiple: true
+      options:
+        - All device types
+        - Computers
+        - Phones
+    validations:
+      required: true
+  - type: input
+    id: browser-type
+    attributes:
+      label: Browser Type
+      description: What browser is this enhancement suggestion for?
+      placeholder: 'e.g. Windows 11 Version 22H2, macOS Ventura 13.5 or iOS 16.6'
+    validations:
+      required: true
+  - type: textarea
+    id: enhancement-description
+    attributes:
+      label: Describe The Enhancement
+      description: A clear and concise description of the enhancement you would like to see added.
+      placeholder: Tell us what you want!
+    validations:
+      required: true
+  - type: textarea
+    id: enhancement-motivation
+    attributes:
+      label: Enhancement Motivation
+      description: Explain how the enhancement will improve the website.
+      placeholder: Tell us the about the benefits!
+    validations:
+      required: true
+  - type: textarea
+    id: extra-info
+    attributes:
+      label: Anything Else?
+      description: |
+        Links? References? Anything that will give us more context about the enhancement which you are suggesting!
+
+        Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+      placeholder: Images, links, ...
+    validations:
+      required: false

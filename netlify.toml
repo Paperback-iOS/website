@@ -1,0 +1,5 @@
+[build.environment]
+NODE_VERSION = "20"
+
+[build]
+publish = "src/.vitepress/dist"

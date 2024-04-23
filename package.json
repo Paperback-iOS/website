@@ -1,41 +1,50 @@
 {
-	"name": "paperback-website",
-	"version": "0.0.0",
-	"scripts": {
-		"build": "npm run lint && vuepress build src",
-		"lint": "eslint --fix src/.vuepress/**/*.{js,vue} --no-ignore",
-		"serve": "vuepress dev src",
-		"git-update": "git fetch upstream && git merge upstream/master"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Paperback-iOS/website.git"
-	},
-	"private": true,
-	"devDependencies": {
-		"@vuepress/plugin-back-to-top": "^1.8.2",
-		"@vuepress/plugin-google-analytics": "^1.8.2",
-		"eslint": "^6.8.0",
-		"eslint-config-airbnb": "^18.2.0",
-		"eslint-config-prettier": "^6.15.0",
-		"eslint-config-vuepress": "^2.1.0",
-		"eslint-plugin-prettier": "^3.4.0",
-		"prettier": "^2.2.1",
-		"vuepress": "^1.8.2",
-		"vuepress-plugin-clean-urls": "^1.1.2",
-		"vuepress-plugin-container": "^2.1.5",
-		"vuepress-plugin-element-ui": "^1.1.0",
-		"vuepress-types": "^0.9.4"
-	},
-	"dependencies": {
-		"axios": "^0.21.1",
-		"core-js": "^2.6.12",
-		"eslint-plugin-jsx-a11y": "^6.4.1",
-		"eslint-plugin-react": "^7.23.2",
-		"eslint-plugin-react-hooks": "^2.5.1",
-		"prettier-config-vuepress": "^1.2.0",
-		"vuepress-plugin-robots": "^1.0.1",
-		"vuepress-plugin-sitemap": "^2.3.1",
-		"vuepress-theme-yuu": "^3.0.1"
-	}
+  "name": "paperback-website",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "description": "The official website for Paperback",
+  "homepage": "https://paperback.moe",
+  "author": "Paperback-iOS",
+  "license": "MIT",
+  "keywords": [
+    "Paperback",
+    "Website",
+    "VitePress"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paperback-iOS/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Paperback-iOS/website/issues"
+  },
+  "scripts": {
+    "dev": "vitepress dev src --host",
+    "build": "run-s test build-only",
+    "build-only": "vitepress build src",
+    "preview": "vitepress preview src",
+    "tsc": "tsc --project tsconfig.json --noEmit",
+    "eslint": "eslint --config .eslintrc.cjs --fix '**/*{.vue,.cjs,.ts}' --ignore-path .eslintignore",
+    "prettier": "prettier --config .prettierrc.cjs --write '**/*{.vue,.md,.css,.cjs,.ts,.json}' --ignore-path .prettierignore",
+    "test": "run-s tsc eslint prettier",
+    "lint-staged": "lint-staged --config .lintstagedrc.cjs --concurrent false",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "npm-run-all2": "^6.1.2",
+    "prettier": "3.2.5",
+    "typescript": "^5.4.5",
+    "vitepress": "^1.1.3",
+    "vitepress-plugin-tabs": "^0.5.0",
+    "vue": "^3.4.23",
+    "vue-eslint-parser": "^9.4.2"
+  }
 }
