@@ -1,0 +1,15 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Code of Conduct
+    url: https://github.com/Paperback-iOS/website/blob/master/.github/CODE_OF_CONDUCT.md
+    about: Please read this before creating any issue.
+  - name: Contributing Guide
+    url: https://github.com/Paperback-iOS/website/blob/master/.github/CONTRIBUTING.md
+    about: Please read this before creating any issue.
+  - name: GitHub Issues
+    url: https://github.com/Paperback-iOS/website/issues
+    about: Check to make sure there is not an issue already open that is related to your issue.
+  - name: The Official Discord
+    url: https://discord.paperback.moe
+    about: 'For quick support from the community (use the #support channel).'
