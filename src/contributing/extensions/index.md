@@ -19,8 +19,7 @@ Developing an extension is pretty easy, you only need basic programming knowledg
 
 - Use on of our guide and tutorial to learn more about extension development:
 
-  - [Extension development quick start](/contributing/extension-development/quick-start)
-  - [A practical guide to Parsing](/contributing/extension-development/reference/parsing-guide)
-  - [Function definitions](/contributing/extension-development/reference/function-definitions)
-  - [Models reference](/contributing/extension-development/reference/model-reference)
-  - [Metadata parameter](/contributing/extension-development/reference/metadata)
+  - [Extension development quick start](/contributing/extensions/quick-start)
+  - [A practical guide to Parsing](/contributing/extensions/parsing-guide)
+  - [v0.7 Docs](/contributing/extensions/0.7/)
+  - [v0.8 Docs](/contributing/extensions/0.8/)

@@ -1,13 +1,13 @@
-# The Metadata Parameter
+# v0.7 Metadata Parameter
 
-Any function that returns the [PagedData](model-reference#pageddata) object will also accept a parameter
+Any function that returns the [PagedData](models#pageddata) object will also accept a parameter
 called `metadata` with type `any`. However, it is unclear how this parameter actually works just from looking at the
 method signature.
 
 Metadata has a type signature of `any` because it can be used however the source developer works. The purpose
 of `metadata` is to carry information between method calls, or a rudimentary method of keeping state.
 
-One of the parameters in [PagedData](model-reference#pageddata) is `metadata`, which also has a type value of `any`.
+One of the parameters in [PagedData](models#pageddata) is `metadata`, which also has a type value of `any`.
 When a method containing `metadata` is first called, `metadata` will be null. Future invocations of the method will use
 the value of `metadata` from the last invocation's PagedData's `metadata` field.
 
@@ -31,5 +31,5 @@ Most developers return an object with the page number, although it is not necess
 
 ## Example Implementation of Metadata
 
-See the [example implementation of the `searchRequest` method](function-definitions#example-implementation-4) on how
+See the [example implementation of the `searchRequest` method](functions#example-implementation-4) on how
 to use the metadata parameter.

@@ -12,11 +12,11 @@ Here are some of our main projects:
 
 ### Paperback extension
 
-The official Paperback extension is used for connecting the Paperback app with your own Komga instance ([Learn more](/getting-started/adding-content/komga)). Learn how to develop your own extensions and contribute to existing ones with our [extension development guide](/contributing/extension-development/).
+The official Paperback extension is used for connecting the Paperback app with your own Komga instance ([Learn more](/getting-started/adding-content/komga)). Learn how to develop your own extensions and contribute to existing ones with our [extension development guide](/contributing/extensions/).
 
 ### Paperback website
 
-Any assistance in improving this website is greatly appreciated. Begin with our [website development guide](/contributing/extension-development/).
+Any assistance in improving this website is greatly appreciated. Begin with our [website development guide](/contributing/extensions/).
 
 ### Paperback Toolchain and Types
 
