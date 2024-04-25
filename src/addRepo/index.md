@@ -1,6 +1,6 @@
 ---
 title: Add Repository
-description: Paperback deeplink for adding repositories to the app.
+description: Paperback deeplink for adding a repository to the app.
 navbar: false
 sidebar: false
 editLink: false

@@ -163,7 +163,7 @@
       }
     },
 
-    async beforeMount(): Promise<void> {
+    async mounted(): Promise<void> {
       try {
         if (
           !navigator.canShare({
@@ -178,7 +178,7 @@
         this.$data.canShare = false
       }
 
-      const themesList: ThemesList | undefined = await this.fetchThemesList()
+      const themesList: ThemesList | null = await this.fetchThemesList()
       if (themesList) {
         this.$data.themesList = themesList
         this.$data.loading = false
@@ -186,7 +186,7 @@
     },
 
     methods: {
-      async fetchThemesList(): Promise<ThemesList | undefined> {
+      async fetchThemesList(): Promise<ThemesList | null> {
         try {
           const response = await fetch(
             'https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes-list.json',
@@ -200,7 +200,7 @@
           return data as Promise<ThemesList>
         } catch (error) {
           console.log(error)
-          return undefined
+          return null
         }
       },
 
@@ -246,13 +246,13 @@
         return url
       },
 
-      async fetchTheme(url: string): Promise<Blob | undefined> {
+      async fetchTheme(url: string): Promise<Blob | null> {
         try {
           const response = await fetch(url)
           return response.blob()
         } catch (error) {
           console.log(error)
-          return undefined
+          return null
         }
       },
 
@@ -264,7 +264,7 @@
         const title: string = this.getThemeTitle(group, subGroup, accentColor)
 
         const url = this.getThemeUrl(group, subGroup, accentColor)
-        const theme: Blob | undefined = await this.fetchTheme(url)
+        const theme: Blob | null = await this.fetchTheme(url)
 
         if (theme) {
           theme.type
