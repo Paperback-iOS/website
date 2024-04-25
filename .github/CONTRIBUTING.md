@@ -89,7 +89,6 @@ A list of to do items for the website:
 - Add the following tools to the website:
   - Backup Converter
   - Themes Creator
-- Fix the `addRepo` page not showing an error message on invalid URL parameters in build.
 
 ### Improving The Documentation
 
