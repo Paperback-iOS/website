@@ -1,78 +1,75 @@
 # Parsing Guide
 
-We're sure that you've noticed at this point that when we're handling HTTP parsing that we are
-using [CheerioJS](https://github.com/cheeriojs/cheerio). If you are familiar
-with [JQuery Selectors](https://api.jquery.com/category/selectors/), fortunately a lot of this will come naturally to
-you.
+We're sure that you've noticed at this point that when we're handling HTTP parsing that we are using [CheerioJS](https://github.com/cheeriojs/cheerio). If you are familiar with [JQuery Selectors](https://api.jquery.com/category/selectors/), fortunately a lot of this will come naturally to you.
 
-If you are not familiar, CheerioJS is a library which allows you to programmatically pull information from HTML. This is
-the core fundamental on how Paperback works. Each source that you create is simply a set of parsing logic.
+If you are not familiar, CheerioJS is a library which allows you to programmatically pull information from HTML. This is the core fundamental on how Paperback works. Each source that you create is simply a set of parsing logic.
 
-CheerioJS, just like JQuery, utilizes **CSS Selectors** as the mode of selecting elements. This means that any selector
-that can be used to style elements with CSS can be used to select elements with Cheerio.
+CheerioJS, just like JQuery, utilizes **CSS Selectors** as the mode of selecting elements. This means that any selector that can be used to style elements with CSS can be used to select elements with Cheerio.
 
-# Quick Reference Guide
+## Basic Selectors
 
-## The Basics
-
-```js
-$('div').text() // Get the text of the first 'div' block that the system can find
-$('.apple').text() // Get the text of ANY first object which has class="apple" included
-$('#apple').text() // Get the text of ANY first object which has id="apple" included
-$('div.apple').text() // Gets the text of the first 'div' block which ALSO has class="apple"
+```ts
+$('div').text() // Get the text of the first 'div' element
+$('.apple').text() // Get the text of the first element with class="apple"
+$('#apple').text() // Get the text of the first element with id="apple"
+$('div.apple').text() // Get the text of the first 'div' element with class="apple"
 ```
 
-**An example**
+### Example 1
+
+Getting the text or attributes from an element with the ID "someText".
 
 ```html
 <p id="someText" lang="en">This is some text</p>
 ```
-
----
 
 ```ts
 $('p#someText').text() // This will return 'This is some text'
 $('p#someText').attr('lang') // This will return 'en'
 ```
 
-**"I need something deeper" example**
+### Example 2
+
+Getting the text of an element with the same element type and class name as one of its parents.
 
 ```html
 <p class="someClass">
-    <p class="myClass">
-    	<p class="someClass">
-        	Text that I want
+  <p class="myClass">
+    <p class="someClass">
+      Text that I want
 		</p>
 	</p>
 </p>
 ```
 
-Say in the above HTML, you need to parse out the 'Text that I want' phrase. Unfortunately, there is a big problem with
-this.
+Say in the above HTML, you need to parse out the 'Text that I want' phrase. Unfortunately, there is a big problem with this.
 
-- You cannot select `$('p.someClass')` as this will select the wrong element. (The root node)
+You cannot select `$('p.someClass')` as this will select the wrong element (the root node).
 
 Let's look at the signature for the `$` object. `$(selector, rootNode)`
 
-In the above examples, we've only used a selector. However you are allowed to chain selectors together to be more and
-more specific.
+In the above examples, we've only used a selector. However you are allowed to chain selectors together to be more specific.
+
+Select a more specific area of your HTML that you wish to search inside:
 
 ```ts
-// Select a more specific area of your HTML that you wish to search inside.
-let selectorContext = $('p.myClass')
+const selectorContext = $('p.myClass')
+```
 
-/**
- * At this point, selectorContext would have selected the following HTML:
- * <p class="myClass">
- *	<p class="someClass">
- *		Text that I want
- *	</p>
- *</p>
- * This is narrowed down enough where we can grab our text!
- */
+At this point, selectorContext would have selected the following HTML:
 
-// Select the first <p> with the class 'someClass' INSIDE of the selectorContext selection
-let text = $('p.someClass', $(selectorContext)).text() // "Text that I want"
+```html
+<p class="myClass">
+  <p class="someClass">
+    Text that I want
+  </p>
+</p>
+```
+
+This is narrowed down enough where we can grab our text! Select the first `<p>` with class="someClass" inside of the selectorContext selection:
+
+```ts
+let text = $('p.someClass', $(selectorContext)).text() // This will return 'Text that I want'
 ```
 
 ## Advanced Selectors

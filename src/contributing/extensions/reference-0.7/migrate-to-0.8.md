@@ -15,4 +15,4 @@ The migration isn't 100%, so you might need to update and fix some imports/funct
 
 ## Manually
 
-Please refer to the [0.8 docs](/contributing/extensions/0.8/).
+Please refer to the [0.8 docs](/contributing/extensions/reference-0.8/).

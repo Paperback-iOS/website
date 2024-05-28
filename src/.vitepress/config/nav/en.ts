@@ -15,8 +15,8 @@ export default [
   //   text: 'Tools',
   //   link: '/tools/',
   // },
-  // {
-  //   text: 'Contributing',
-  //   link: '/contributing/',
-  // },
+  {
+    text: 'Contributing',
+    link: '/contributing/',
+  },
 ]
