@@ -1,10 +1,10 @@
-# Function Definitions
+# v0.8 Functions
 
 ## getMangaDetails
 
 ### Method signature
 
-`async getMangaDetails(mangaId: string): Promise<Manga>`
+`async getMangaDetails(mangaId: string): Promise<SourceManga>`
 
 ### Parameters
 
@@ -14,12 +14,12 @@
 
 ### Returns
 
-Given an ID, this async function should return a filled out [Manga](model-reference#manga) object.
+Given an ID, this async function should return a filled out [Manga](models#manga) object.
 
 ### Example Implementation
 
 ```ts
-async getMangaDetails(mangaId: string): Promise<Manga> {
+async getMangaDetails(mangaId: string): Promise<SourceManga> {
 
     // Create a request object which when executed, will yield a HTML page containing the data needed to fill out a Manga object
     const request = createRequestObject({
@@ -62,7 +62,7 @@ async getMangaDetails(mangaId: string): Promise<Manga> {
 
 ### Returns
 
-Given an ID, this async function should return an array of [Chapter](model-reference#chapter) objects.
+Given an ID, this async function should return an array of [Chapter](models#chapter) objects.
 
 ### Example Implementation
 
@@ -122,7 +122,7 @@ async getChapters(mangaId: string): Promise<Chapter[]> {
 
 ### Returns
 
-Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](model-reference#chapterdetails)
+Given both a Manga and a Chapter ID, this function should populate a [ChapterDetails](models#chapterdetails)
 object.
 
 ### Example Implementation
@@ -167,14 +167,14 @@ async getChapterDetails(mangaId: string, chapterId: string): Promise<ChapterDeta
 
 ### Parameters
 
-| Parameter  | Type                                           | Description                                                                                                                                             |
-| ---------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `query`    | [SearchRequest](model-reference#searchrequest) | The object representing the search. View the fields of the [SearchRequest](model-reference#searchrequest) object to find out what a search can contain. |
-| `metadata` | any                                            | Metadata carried through function calls. View the [metadata page](metadata) to learn more about how the parameter works.                                |
+| Parameter  | Type                                  | Description                                                                                                                                    |
+| ---------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `query`    | [SearchRequest](models#searchrequest) | The object representing the search. View the fields of the [SearchRequest](models#searchrequest) object to find out what a search can contain. |
+| `metadata` | any                                   | Metadata carried through function calls. View the [metadata page](metadata) to learn more about how the parameter works.                       |
 
 ### Returns
 
-A [PagedResults](model-reference#pagedresults) object with the results of the search for the current page, and metadata for the next page, if it exists.
+A [PagedResults](models#pagedresults) object with the results of the search for the current page, and metadata for the next page, if it exists.
 
 ### Example Implementation
 
