@@ -1,81 +1,81 @@
 export default [
   {
-    text: 'Getting Started',
-    link: '/getting-started/',
+    text: "Getting Started",
+    link: "/getting-started/",
     collapsed: false,
     items: [
       {
-        text: 'Installation',
-        link: '/getting-started/installation/',
+        text: "Installation",
+        link: "/getting-started/installation/",
       },
       {
-        text: 'Changing Content Settings',
-        link: '/getting-started/content-settings',
+        text: "Changing Content Settings",
+        link: "/getting-started/content-settings",
       },
       {
-        text: 'Adding Content',
-        link: '/getting-started/adding-content/',
+        text: "Adding Content",
+        link: "/getting-started/adding-content/",
         collapsed: true,
         items: [
           {
-            text: 'Komga',
-            link: '/getting-started/adding-content/komga',
+            text: "Komga",
+            link: "/getting-started/adding-content/komga",
           },
           {
-            text: 'Third-Party Extensions',
-            link: '/getting-started/adding-content/third-party-extensions',
+            text: "Third-Party Extensions",
+            link: "/getting-started/adding-content/third-party-extensions",
           },
         ],
       },
       {
-        text: 'Further Support',
-        link: '/getting-started/further-support/',
+        text: "Further Support",
+        link: "/getting-started/further-support/",
       },
     ],
   },
   {
-    text: 'Guides',
-    link: '/guides/',
+    text: "Guides",
+    link: "/guides/",
     collapsed: false,
     items: [
       {
-        text: 'Using the Reader',
-        link: '/guides/reader',
+        text: "Using the Reader",
+        link: "/guides/reader",
       },
       {
-        text: 'Backing up Your Data',
-        link: '/guides/backups',
+        text: "Backing up Your Data",
+        link: "/guides/backups",
       },
       {
-        text: 'Connecting Trackers',
-        link: '/guides/trackers',
+        text: "Connecting Trackers",
+        link: "/guides/trackers",
       },
       {
-        text: 'Migrating Extensions',
-        link: '/guides/migrating',
+        text: "Migrating Extensions",
+        link: "/guides/migrating",
       },
       {
-        text: 'Merging Titles',
-        link: '/guides/merging',
+        text: "Merging Titles",
+        link: "/guides/merging",
       },
       {
-        text: 'Changing the Theme',
-        link: '/guides/themes',
+        text: "Changing the Theme",
+        link: "/guides/themes",
       },
     ],
   },
   {
-    text: 'FAQ',
-    link: '/faq/',
+    text: "FAQ",
+    link: "/faq/",
     collapsed: false,
     items: [
       {
-        text: 'General',
-        link: '/faq/general',
+        text: "General",
+        link: "/faq/general",
       },
       {
-        text: 'Troubleshooting',
-        link: '/faq/troubleshooting',
+        text: "Troubleshooting",
+        link: "/faq/troubleshooting",
       },
     ],
   },
@@ -159,4 +159,4 @@ export default [
   //     },
   //   ],
   // },
-]
+];

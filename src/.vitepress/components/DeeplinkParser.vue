@@ -25,64 +25,64 @@ The url argument must point to the webpage hosting the `versioning.json` file an
       </p>
     </section>
   </div>
-  <div v-else></div>
+  <div v-else />
 </template>
 
 <script lang="ts">
-  export default {
-    data() {
-      return {
-        statusSuccess: undefined,
-        redirectUrl: undefined,
-      } as {
-        statusSuccess: boolean | undefined
-        redirectUrl: string | undefined
-      }
-    },
+export default {
+  data() {
+    return {
+      statusSuccess: undefined,
+      redirectUrl: undefined,
+    } as {
+      statusSuccess: boolean | undefined;
+      redirectUrl: string | undefined;
+    };
+  },
 
-    async mounted() {
-      const urlParams = new URLSearchParams(window.location.search)
-      const displayName = urlParams.get('displayName')
-      const url = urlParams.get('url')
+  async mounted() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const displayName = urlParams.get("displayName");
+    const url = urlParams.get("url");
 
-      if (displayName && url && (await this.fetchVersioning(url))) {
-        this.$data.statusSuccess = true
-        document.title = 'Adding Repository | Paperback'
+    if (displayName && url && (await this.fetchVersioning(url))) {
+      this.$data.statusSuccess = true;
+      document.title = "Adding Repository | Paperback";
 
-        const deeplink = this.constructDeeplink(displayName, url)
-        this.$data.redirectUrl = deeplink
-        window.location.replace(deeplink)
-      } else {
-        this.$data.statusSuccess = false
-        document.title = 'Failed | Paperback'
-      }
-    },
+      const deeplink = this.constructDeeplink(displayName, url);
+      this.$data.redirectUrl = deeplink;
+      window.location.replace(deeplink);
+    } else {
+      this.$data.statusSuccess = false;
+      document.title = "Failed | Paperback";
+    }
+  },
 
-    methods: {
-      async fetchVersioning(url: string): Promise<JSON | null> {
-        try {
-          const response = await fetch(`${url}/versioning.json`)
+  methods: {
+    async fetchVersioning(url: string): Promise<JSON | null> {
+      try {
+        const response = await fetch(`${url}/versioning.json`);
 
-          if (!response.ok) {
-            throw new Error('The fetched response did return an "ok" status.')
-          }
-
-          const data = response.json()
-          return data as Promise<JSON>
-        } catch (error) {
-          console.log(error)
-          return null
+        if (!response.ok) {
+          throw new Error('The fetched response did return an "ok" status.');
         }
-      },
 
-      constructDeeplink(displayName: string, url: string) {
-        return (
-          'paperback://addRepo?displayName=' +
-          encodeURI(displayName) +
-          '&url=' +
-          encodeURIComponent(url)
-        )
-      },
+        const data = response.json();
+        return data as Promise<JSON>;
+      } catch (error) {
+        console.log(error);
+        return null;
+      }
     },
-  }
+
+    constructDeeplink(displayName: string, url: string) {
+      return (
+        "paperback://addRepo?displayName=" +
+        encodeURI(displayName) +
+        "&url=" +
+        encodeURIComponent(url)
+      );
+    },
+  },
+};
 </script>

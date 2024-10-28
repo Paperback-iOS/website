@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import Theme from 'vitepress/theme'
+import Theme from "vitepress/theme";
 </script>
 
 <template>

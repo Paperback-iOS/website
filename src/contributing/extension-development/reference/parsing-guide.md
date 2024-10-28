@@ -16,10 +16,10 @@ that can be used to style elements with CSS can be used to select elements with 
 ## The Basics
 
 ```js
-$('div').text() // Get the text of the first 'div' block that the system can find
-$('.apple').text() // Get the text of ANY first object which has class="apple" included
-$('#apple').text() // Get the text of ANY first object which has id="apple" included
-$('div.apple').text() // Gets the text of the first 'div' block which ALSO has class="apple"
+$("div").text(); // Get the text of the first 'div' block that the system can find
+$(".apple").text(); // Get the text of ANY first object which has class="apple" included
+$("#apple").text(); // Get the text of ANY first object which has id="apple" included
+$("div.apple").text(); // Gets the text of the first 'div' block which ALSO has class="apple"
 ```
 
 **An example**
@@ -31,8 +31,8 @@ $('div.apple').text() // Gets the text of the first 'div' block which ALSO has c
 ---
 
 ```ts
-$('p#someText').text() // This will return 'This is some text'
-$('p#someText').attr('lang') // This will return 'en'
+$("p#someText").text(); // This will return 'This is some text'
+$("p#someText").attr("lang"); // This will return 'en'
 ```
 
 **"I need something deeper" example**
@@ -59,7 +59,7 @@ more specific.
 
 ```ts
 // Select a more specific area of your HTML that you wish to search inside.
-let selectorContext = $('p.myClass')
+let selectorContext = $("p.myClass");
 
 /**
  * At this point, selectorContext would have selected the following HTML:
@@ -72,7 +72,7 @@ let selectorContext = $('p.myClass')
  */
 
 // Select the first <p> with the class 'someClass' INSIDE of the selectorContext selection
-let text = $('p.someClass', $(selectorContext)).text() // "Text that I want"
+let text = $("p.someClass", $(selectorContext)).text(); // "Text that I want"
 ```
 
 ## Advanced Selectors
@@ -92,41 +92,41 @@ Example HTML:
 **Attribute Equals Selector**
 
 ```js
-$('p[lang="en-us"]').text() // Matches the first 'p' block with a language attribute equaling 'en-us' - Block 2
+$('p[lang="en-us"]').text(); // Matches the first 'p' block with a language attribute equaling 'en-us' - Block 2
 ```
 
 **Not Equals Selector**
 
 ```js
-$('p[lang!="en"]').text() // Matches the first 'p' block with a language attribute NOT equalling 'en'. - Block 2
+$('p[lang!="en"]').text(); // Matches the first 'p' block with a language attribute NOT equalling 'en'. - Block 2
 ```
 
 **Contains Prefix Selector**
 
 ```js
-$('p[lang|="en"]').text() // Gets the first 'p' block which has a 'lang' attribute which STARTS with 'en' - Block 1
+$('p[lang|="en"]').text(); // Gets the first 'p' block which has a 'lang' attribute which STARTS with 'en' - Block 1
 // Note that this will ALSO match Block 2
 
-$('p[lang|="en"]').last().text() // This will get the LAST matching option fitting this. This will select Block 2's text.
+$('p[lang|="en"]').last().text(); // This will get the LAST matching option fitting this. This will select Block 2's text.
 ```
 
 **Contains Selector**
 
 ```js
-$('p[lang*="en"]').text() // Unlike the prefix selector, if any <p> containing a language which has 'en' ANYWHERE will be
+$('p[lang*="en"]').text(); // Unlike the prefix selector, if any <p> containing a language which has 'en' ANYWHERE will be
 // selected. This will select Block 1 and Block 2. (Defaulting to 1 without a .toArray())
 ```
 
 **Ends With Selector**
 
 ```js
-$('p[lang$="fr"]').text() // Selects the first 'p' block which has a 'lang' attribute ENDING in 'fr'	- Block 3
+$('p[lang$="fr"]').text(); // Selects the first 'p' block which has a 'lang' attribute ENDING in 'fr'	- Block 3
 ```
 
 **Starts With Selector**
 
 ```js
-$('p[lang^="lang"]').text() // Selects the first 'p' block with a 'lang' attribute STARTING with 'lang'	- Block 3
+$('p[lang^="lang"]').text(); // Selects the first 'p' block with a 'lang' attribute STARTING with 'lang'	- Block 3
 ```
 
 ## Tutorial - Basic Parsing
@@ -136,8 +136,8 @@ $('p[lang^="lang"]').text() // Selects the first 'p' block with a 'lang' attribu
 After you've made a request and have HTML available as a string, you must first tell CheerioJS to load your data.
 
 ```typescript
-let data = '<div><span>some html</span></div>' // This should be the entire webpage which you've pulled.
-let $ = this.cheerio.load(data) // This loads the Cheerio library. You may now access the DOM with the '$' keyword
+let data = "<div><span>some html</span></div>"; // This should be the entire webpage which you've pulled.
+let $ = this.cheerio.load(data); // This loads the Cheerio library. You may now access the DOM with the '$' keyword
 ```
 
 It is recommended that you use the `$` symbol as a variable, but this is merely convention and not a requirement.
@@ -167,14 +167,14 @@ head;
 In this case, to get the 'Three Apples' text, we are looking for a `li` object with a class `apple`
 
 ```js
-$('li.apple') // Selects the correct spot
-$('li.apple').text() // This will return the text inside of the selected area.
+$("li.apple"); // Selects the correct spot
+$("li.apple").text(); // This will return the text inside of the selected area.
 ```
 
 What if we want to get the "Twelve Pears" text? Referencing the table at the top of this document, we can use the **Attribute Equals Selector**!
 
 ```js
-$('li[meta="pear-data"]').text() // This will return 'Twelve Pears'
+$('li[meta="pear-data"]').text(); // This will return 'Twelve Pears'
 ```
 
 ## Tutorial - Looping Example
@@ -209,14 +209,14 @@ Fortunately, it is likely as you'd expect. **You can easily get an array of each
 
 ```ts
 // Get an array of all the '<div class="mangaObject"> pieces'
-let selectionArray = $('div.mangaObject').toArray()
-let titles: string[] = []
+let selectionArray = $("div.mangaObject").toArray();
+let titles: string[] = [];
 
 // Iterate over each of the selections, and get every available title
 for (let obj of selectionArray) {
   // Parse out the title. Each 'p' with the ID 'title'. Note that we want each one INSIDE of the selector we're looping in
-  let title = $('p#title', $(obj)).text()
-  titles.push(title)
+  let title = $("p#title", $(obj)).text();
+  titles.push(title);
 }
 
 // At this point, you should have a 'titles' array with 3 elements inside!
