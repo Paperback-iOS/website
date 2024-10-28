@@ -109,7 +109,7 @@
             >Download</a
           >
         </section>
-        <div class="accentColorDivider"></div>
+        <div class="accentColorDivider" />
       </section>
     </section>
     <p>
@@ -129,302 +129,297 @@
 </template>
 
 <script lang="ts">
-  interface ThemesList {
-    themes: Theme[]
-  }
+interface ThemesList {
+  themes: Theme[];
+}
 
-  interface Theme {
-    name: string
-    source: string
-    subGroups: SubGroup[]
-  }
+interface Theme {
+  name: string;
+  source: string;
+  subGroups: SubGroup[];
+}
 
-  interface SubGroup {
-    name: string
-    accentColors: AccentColor[]
-  }
+interface SubGroup {
+  name: string;
+  accentColors: AccentColor[];
+}
 
-  interface AccentColor {
-    name: string
-    description: string
-    creators: string[]
-  }
+interface AccentColor {
+  name: string;
+  description: string;
+  creators: string[];
+}
 
-  export default {
-    data() {
-      return {
-        canShare: true,
-        loading: true,
-        themesList: undefined,
-      } as {
-        canShare: boolean
-        loading: boolean
-        themesList: ThemesList | undefined
+export default {
+  data() {
+    return {
+      canShare: true,
+      loading: true,
+      themesList: undefined,
+    } as {
+      canShare: boolean;
+      loading: boolean;
+      themesList: ThemesList | undefined;
+    };
+  },
+
+  async mounted(): Promise<void> {
+    try {
+      if (
+        !navigator.canShare({
+          title: "Test",
+          files: [],
+        })
+      ) {
+        this.$data.canShare = true;
       }
-    },
+    } catch (error) {
+      console.log(error);
+      this.$data.canShare = false;
+    }
 
-    async mounted(): Promise<void> {
+    const themesList: ThemesList | null = await this.fetchThemesList();
+    if (themesList) {
+      this.$data.themesList = themesList;
+      this.$data.loading = false;
+    }
+  },
+
+  methods: {
+    async fetchThemesList(): Promise<ThemesList | null> {
       try {
-        if (
-          !navigator.canShare({
-            title: 'Test',
-            files: [],
-          })
-        ) {
-          this.$data.canShare = true
+        const response = await fetch(
+          "https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes-list.json",
+        );
+
+        if (!response.ok) {
+          throw new Error('The fetched response did return an "ok" status.');
         }
+
+        const data = response.json();
+        return data as Promise<ThemesList>;
       } catch (error) {
-        console.log(error)
-        this.$data.canShare = false
-      }
-
-      const themesList: ThemesList | null = await this.fetchThemesList()
-      if (themesList) {
-        this.$data.themesList = themesList
-        this.$data.loading = false
+        console.log(error);
+        return null;
       }
     },
 
-    methods: {
-      async fetchThemesList(): Promise<ThemesList | null> {
-        try {
-          const response = await fetch(
-            'https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes-list.json',
-          )
+    getThemeImage(
+      group: string,
+      subGroup: string,
+      accentColor: string,
+      mode: string,
+    ): string {
+      const url = `https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes/${group}/${
+        subGroup ? subGroup + "/" : ""
+      }${accentColor ? accentColor + "/" : ""}${mode}.png`;
 
-          if (!response.ok) {
-            throw new Error('The fetched response did return an "ok" status.')
-          }
-
-          const data = response.json()
-          return data as Promise<ThemesList>
-        } catch (error) {
-          console.log(error)
-          return null
-        }
-      },
-
-      getThemeImage(
-        group: string,
-        subGroup: string,
-        accentColor: string,
-        mode: string,
-      ): string {
-        const url = `https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes/${group}/${
-          subGroup ? subGroup + '/' : ''
-        }${accentColor ? accentColor + '/' : ''}${mode}.png`
-
-        return url
-      },
-
-      getThemeTitle(
-        group: string,
-        subGroup: string,
-        accentColor: string,
-      ): string {
-        const title = `${group.charAt(0).toUpperCase() + group.slice(1)}${
-          subGroup
-            ? ' ' + subGroup.charAt(0).toUpperCase() + subGroup.slice(1)
-            : ''
-        }${
-          accentColor
-            ? ' ' + accentColor.charAt(0).toUpperCase() + accentColor.slice(1)
-            : ''
-        }`
-
-        return title
-      },
-
-      getThemeUrl(
-        group: string,
-        subGroup: string,
-        accentColor: string,
-      ): string {
-        const url = `https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes/${group}/${
-          subGroup ? subGroup + '/' : ''
-        }${accentColor ? accentColor + '/' : ''}theme.pbcolors`
-        return url
-      },
-
-      async fetchTheme(url: string): Promise<Blob | null> {
-        try {
-          const response = await fetch(url)
-          return response.blob()
-        } catch (error) {
-          console.log(error)
-          return null
-        }
-      },
-
-      async installTheme(
-        group: string,
-        subGroup: string,
-        accentColor: string,
-      ): Promise<void> {
-        const title: string = this.getThemeTitle(group, subGroup, accentColor)
-
-        const url = this.getThemeUrl(group, subGroup, accentColor)
-        const theme: Blob | null = await this.fetchTheme(url)
-
-        if (theme) {
-          theme.type
-          const themeFile = new File([theme], title + '.pbcolors', {
-            type: 'application/pbcolors',
-          })
-
-          try {
-            await navigator.share({
-              files: [themeFile],
-            })
-          } catch (error) {
-            console.log(error)
-          }
-        }
-      },
+      return url;
     },
-  }
+
+    getThemeTitle(
+      group: string,
+      subGroup: string,
+      accentColor: string,
+    ): string {
+      const title = `${group.charAt(0).toUpperCase() + group.slice(1)}${
+        subGroup
+          ? " " + subGroup.charAt(0).toUpperCase() + subGroup.slice(1)
+          : ""
+      }${
+        accentColor
+          ? " " + accentColor.charAt(0).toUpperCase() + accentColor.slice(1)
+          : ""
+      }`;
+
+      return title;
+    },
+
+    getThemeUrl(group: string, subGroup: string, accentColor: string): string {
+      const url = `https://raw.githubusercontent.com/Celarye/paperback-themes/master/themes/${group}/${
+        subGroup ? subGroup + "/" : ""
+      }${accentColor ? accentColor + "/" : ""}theme.pbcolors`;
+      return url;
+    },
+
+    async fetchTheme(url: string): Promise<Blob | null> {
+      try {
+        const response = await fetch(url);
+        return response.blob();
+      } catch (error) {
+        console.log(error);
+        return null;
+      }
+    },
+
+    async installTheme(
+      group: string,
+      subGroup: string,
+      accentColor: string,
+    ): Promise<void> {
+      const title: string = this.getThemeTitle(group, subGroup, accentColor);
+
+      const url = this.getThemeUrl(group, subGroup, accentColor);
+      const theme: Blob | null = await this.fetchTheme(url);
+
+      if (theme) {
+        const themeFile = new File([theme], title + ".pbcolors", {
+          type: "application/pbcolors",
+        });
+
+        try {
+          await navigator.share({
+            files: [themeFile],
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    },
+  },
+};
 </script>
 
 <style lang="css">
-  .fetchSuccess > section > p > span {
-    font-weight: bold;
-  }
+.fetchSuccess > section > p > span {
+  font-weight: bold;
+}
 
-  .group {
-    display: flex;
-    align-items: end;
-    gap: 0.5em;
-    padding-bottom: 0.5em;
-  }
+.group {
+  display: flex;
+  align-items: end;
+  gap: 0.5em;
+  padding-bottom: 0.5em;
+}
 
-  .group > h2 {
-    border: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+.group > h2 {
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
-  .group > a {
-    font-size: 0.75em;
-  }
-  .subGroup {
-    padding-left: 1em;
-    border-left: 1px solid var(--vp-c-divider);
-    margin-bottom: 1em;
-  }
+.group > a {
+  font-size: 0.75em;
+}
+.subGroup {
+  padding-left: 1em;
+  border-left: 1px solid var(--vp-c-divider);
+  margin-bottom: 1em;
+}
 
-  .subGroup > h3 {
-    margin: 0 !important;
-    padding: 0 0 0.5em 0;
-  }
+.subGroup > h3 {
+  margin: 0 !important;
+  padding: 0 0 0.5em 0;
+}
 
-  .accentColor {
-    padding-left: 1em;
-    border-left: 1px solid var(--vp-c-divider);
-  }
+.accentColor {
+  padding-left: 1em;
+  border-left: 1px solid var(--vp-c-divider);
+}
 
-  .accentColor > h3 {
-    margin: 0 !important;
-    padding: 0 0 0.5em 0;
-  }
+.accentColor > h3 {
+  margin: 0 !important;
+  padding: 0 0 0.5em 0;
+}
 
-  .accentColor > p {
-    margin: 0 !important;
-    padding: 0 0 0.5em 0;
-  }
+.accentColor > p {
+  margin: 0 !important;
+  padding: 0 0 0.5em 0;
+}
 
-  .accentColor > p > span.label {
-    font-weight: bold;
-  }
+.accentColor > p > span.label {
+  font-weight: bold;
+}
 
-  .themeImages {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5%;
-  }
+.themeImages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
 
-  .themeImages > img {
-    width: 47.5%;
-    display: inline !important;
-  }
+.themeImages > img {
+  width: 47.5%;
+  display: inline !important;
+}
 
+.themeInstallation {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-bottom: 1.5em;
+}
+
+section.themeInstallation {
+  padding-bottom: 0 !important;
+}
+
+.themeInstallation > button {
+  color: var(--vp-button-brand-text);
+  background: var(--vp-button-brand-bg);
+  border: 1px solid var(--vp-button-brand-border);
+  border-radius: 1.5em;
+  padding: 0 2em;
+  line-height: 2.75em;
+  font-size: 0.875em;
+  border: 1px solid transparent;
+  transition:
+    color 0.25s,
+    border-color 0.25s,
+    background-color 0.25s;
+  font-weight: 600;
+  margin: 1.5em 0 0 0;
+}
+
+.themeInstallation > button:hover {
+  color: var(--vp-button-brand-hover-text);
+  background: var(--vp-button-brand-hover-bg);
+  border: 1px solid var(--vp-button-brand-hover-border);
+}
+
+.themeInstallation > button:active {
+  color: var(--vp-button-brand-text);
+  background: var(--vp-button-brand-bg);
+  border: 1px solid var(--vp-button-brand-border);
+}
+
+.themeInstallation > a {
+  margin: 1.5em 0;
+}
+
+.accentColor > .accentColorDivider {
+  position: relative;
+  top: -1px;
+  border-top: 1px solid var(--vp-c-divider);
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+@media only screen and (min-width: 397px) {
   .themeInstallation {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-bottom: 1.5em;
-  }
-
-  section.themeInstallation {
-    padding-bottom: 0 !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 0;
   }
 
   .themeInstallation > button {
-    color: var(--vp-button-brand-text);
-    background: var(--vp-button-brand-bg);
-    border: 1px solid var(--vp-button-brand-border);
-    border-radius: 1.5em;
-    padding: 0 2em;
-    line-height: 2.75em;
-    font-size: 0.875em;
-    border: 1px solid transparent;
-    transition:
-      color 0.25s,
-      border-color 0.25s,
-      background-color 0.25s;
-    font-weight: 600;
-    margin: 1.5em 0 0 0;
-  }
-
-  .themeInstallation > button:hover {
-    color: var(--vp-button-brand-hover-text);
-    background: var(--vp-button-brand-hover-bg);
-    border: 1px solid var(--vp-button-brand-hover-border);
-  }
-
-  .themeInstallation > button:active {
-    color: var(--vp-button-brand-text);
-    background: var(--vp-button-brand-bg);
-    border: 1px solid var(--vp-button-brand-border);
-  }
-
-  .themeInstallation > a {
     margin: 1.5em 0;
+  }
+}
+
+@media only screen and (min-width: 594px) {
+  .themeImages {
+    gap: 1.7em;
+  }
+
+  .themeImages > img {
+    width: 15em;
+    display: inline !important;
   }
 
   .accentColor > .accentColorDivider {
-    position: relative;
-    top: -1px;
-    border-top: 1px solid var(--vp-c-divider);
-    margin-bottom: 1em;
-    width: 100%;
+    width: 31.7em;
   }
-
-  @media only screen and (min-width: 397px) {
-    .themeInstallation {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1em;
-      padding-bottom: 0;
-    }
-
-    .themeInstallation > button {
-      margin: 1.5em 0;
-    }
-  }
-
-  @media only screen and (min-width: 594px) {
-    .themeImages {
-      gap: 1.7em;
-    }
-
-    .themeImages > img {
-      width: 15em;
-      display: inline !important;
-    }
-
-    .accentColor > .accentColorDivider {
-      width: 31.7em;
-    }
-  }
+}
 </style>

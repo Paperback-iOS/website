@@ -1,15 +1,15 @@
 export default [
   {
-    text: 'Getting Started',
-    link: '/getting-started/',
+    text: "Getting Started",
+    link: "/getting-started/",
   },
   {
-    text: 'Guides',
-    link: '/guides/',
+    text: "Guides",
+    link: "/guides/",
   },
   {
-    text: 'FAQ',
-    link: '/faq/',
+    text: "FAQ",
+    link: "/faq/",
   },
   // {
   //   text: 'Tools',
@@ -19,4 +19,4 @@ export default [
   //   text: 'Contributing',
   //   link: '/contributing/',
   // },
-]
+];

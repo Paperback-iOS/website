@@ -3,8 +3,8 @@ title: Finding Version Numbers
 description: Guides for locating version numbers for Paperback, extensions and operating systems.
 
 prev:
-  text: 'Further Support'
-  link: '/getting-started/further-support/#getting-support'
+  text: "Further Support"
+  link: "/getting-started/further-support/#getting-support"
 next: false
 ---
 

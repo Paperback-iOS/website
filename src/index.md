@@ -2,7 +2,7 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-description: 'An Ad-Free Comic/Manga Reader for iOS'
+description: "An Ad-Free Comic/Manga Reader for iOS"
 
 hero:
   name: Paperback
