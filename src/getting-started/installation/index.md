@@ -8,7 +8,7 @@ description: Learn about the different methods available to install the app on y
 There are three methods to install Paperback:
 
 - **App Store:** The App Store provides the stable release, making it the simplest and most commonly used installation method.
-- **TestFlight:** TestFlight hosts the alpha and beta builds of the app, exclusively accessible to Patreon supporters.
+- **TestFlight:** TestFlight hosts the alpha and beta builds of the app, exclusively accessible to Patreon supporters and Discord server boosters.
 - **Sideloading:** There also always is an `.ipa` file of the stable release for those who prefer sideloading the app.
 
 More info on these methods can be found in the tabs bellow.
@@ -34,19 +34,19 @@ You can always change your App Store region to one where the app is available if
 
 == TestFlight
 
-::: warning Patreon Exclusive
-Access to beta and alpha builds of Paperback requires being a [Patreon supporter](https://patreon.com/FaizanDurrani). While all Patreon supporters gain access to beta builds, alpha builds are exclusive to the supporter++ tier.
+::: warning Patron and Discord Booster Exclusive
+Access to beta and alpha builds of Paperback requires being a [Patreon supporter](https://patreon.com/FaizanDurrani) or a [Discord server booster](https://discord.paperback.moe). While all Patreon supporters and Discord server boosters gain access to beta builds, alpha builds are exclusive to the Patreon supporter++ tier supporters.
 
-Additionally, Patreon supporters gain access to the `#beta-chat` channel in the official Discord server. For those with the supporter++ tier, the `#alpha` channel is accessible as well.
+Additionally, supporters/boosters will gain access to the `#beta-chat` channel in the official Discord server. Patreon `supporter++` tier supporters get access to the `#alpha` channel as well.
 
 :::
 
 ## Request an Invite:
 
 1. Join the [official Discord server](https://discord.paperback.moe).
-2. Make sure you are an active [Patreon supporter](https://www.patreon.com/FaizanDurrani).
-   > Only the 3 shown tiers are supported, don't make a custom pledge.
-3. Link your Discord account in your [Patreon settings](https://www.patreon.com/settings/apps).
+2. Make sure you are an active [Patreon supporter](https://www.patreon.com/FaizanDurrani) or [Discord server booster](https://discord.paperback.moe).
+   > For Patreon, only the 3 shown tiers are supported, don't make a custom pledge.
+3. Patreon supporters will need to link their Discord account in their [Patreon settings](https://www.patreon.com/settings/apps).
 4. Execute the `/invite` command in any channel in the Discord server.
    > This process will prompt you for your email and the build you wish to access (beta or alpha). Your email remains private and is not visible to other Discord users ([Learn more](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ)).
 
