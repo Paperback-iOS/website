@@ -47,7 +47,7 @@ Additionally, supporters/boosters will gain access to the `#beta-chat` channel i
 2. Make sure you are an active [Patreon supporter](https://www.patreon.com/FaizanDurrani) or [Discord server booster](https://discord.paperback.moe).
    > For Patreon, only the 3 shown tiers are supported, don't make a custom pledge.
 3. Patreon supporters will need to link their Discord account in their [Patreon settings](https://www.patreon.com/settings/apps).
-4. Execute the `/invite` command in any channel in the Discord server.
+4. Execute the `Request Testflight invitation` button in `📨・testflight` in the Discord server.
    > This process will prompt you for your email and the build you wish to access (beta or alpha). Your email remains private and is not visible to other Discord users ([Learn more](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ)).
 
 Expect to receive a TestFlight invite via email within a few minutes after executing the command.
@@ -68,7 +68,7 @@ Expect to receive a TestFlight invite via email within a few minutes after execu
 
   If a mistake is made, you must wait 6 hours to request a new invite.
 
-- **Why did the `/invite` command fail?**
+- **Why did the `Request Testflight invitation` button fail?**
 
   Ensure your Discord username contains only alphanumeric characters, as using special characters in it will not work.
 
