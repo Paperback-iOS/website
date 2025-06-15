@@ -35,9 +35,9 @@ You can always change your App Store region to one where the app is available if
 == TestFlight
 
 ::: warning Patron and Discord Booster Exclusive
-Access to beta and alpha builds of Paperback requires being a [Patreon supporter](https://patreon.com/FaizanDurrani) or a [Discord server booster](https://discord.paperback.moe). While all Patreon supporters and Discord server boosters gain access to beta builds, alpha builds are exclusive to the Patreon supporter++ tier supporters.
+Access to beta and alpha builds of Paperback requires being a [Patreon supporter](https://patreon.com/FaizanDurrani) or a [Discord Server Booster](https://discord.paperback.moe). While all Patreon supporters and Discord server boosters gain access to beta builds, alpha builds are exclusive to the Patreon supporter++ tier supporters.
 
-Additionally, supporters/boosters will gain access to the `#beta-chat` channel in the official Discord server. Patreon `supporter++` tier supporters get access to the `#alpha` channel as well.
+Additionally, supporters/boosters will gain access to the `#beta-chat` channel in the official Discord server. Patreon `Supporter++` tier supporters get access to the `#alpha-chat` channel as well.
 
 :::
 
@@ -47,7 +47,7 @@ Additionally, supporters/boosters will gain access to the `#beta-chat` channel i
 2. Make sure you are an active [Patreon supporter](https://www.patreon.com/FaizanDurrani) or [Discord server booster](https://discord.paperback.moe).
    > For Patreon, only the 3 shown tiers are supported, don't make a custom pledge.
 3. Patreon supporters will need to link their Discord account in their [Patreon settings](https://www.patreon.com/settings/apps).
-4. Execute the `/invite` command in any channel in the Discord server.
+4. Execute the `Request Testflight invitation` button in `📨・testflight` in the Discord server.
    > This process will prompt you for your email and the build you wish to access (beta or alpha). Your email remains private and is not visible to other Discord users ([Learn more](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ)).
 
 Expect to receive a TestFlight invite via email within a few minutes after executing the command.
@@ -57,6 +57,17 @@ Expect to receive a TestFlight invite via email within a few minutes after execu
 1. Install the ["TestFlight"](https://apps.apple.com/be/app/testflight/id899247664) app on your device from the App Store.
 2. Inside the invite email, click the "**View in TestFlight**" button.
 3. Paperback will now appear in the TestFlight app, allowing you to install it in the same manner as you would with an app from the App Store.
+
+### Watch the Installation Tutorial
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/JlawdANWYtw?modestbranding=1&rel=0"
+  title="TestFlight Installation Tutorial"
+  frameborder="0"
+  allowfullscreen
+></iframe>
 
 ::: details Frequently Asked Questions
 
@@ -68,11 +79,11 @@ Expect to receive a TestFlight invite via email within a few minutes after execu
 
   If a mistake is made, you must wait 6 hours to request a new invite.
 
-- **Why did the `/invite` command fail?**
+- **Why did the `Request Testflight invitation` button fail?**
 
   Ensure your Discord username contains only alphanumeric characters, as using special characters in it will not work.
 
-- **Why am I unable to type in the `#beta-chat` or `#alpha` channels?**
+- **Why am I unable to type in the `💙・supporter-chat` channel?**
 
   This indicates that you haven't acquired the supporter role yet. Refer to the instructions and ensure that you are on a valid tier, as custom pledges don't grant the Supporter role.
 

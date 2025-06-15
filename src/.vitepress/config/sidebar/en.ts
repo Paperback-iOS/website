@@ -9,7 +9,11 @@ export default [
         link: "/getting-started/installation/",
       },
       {
-        text: "Changing Content Settings",
+        text: "Changing Content Settings (0.8)",
+        link: "/getting-started/content-settings0-8",
+      },
+      {
+        text: "Changing Content Settings (0.9)",
         link: "/getting-started/content-settings",
       },
       {
