@@ -19,7 +19,7 @@ export default [
           },
           {
             text: "Sideloading",
-            link: "/getting-started/ainstallation/sideloading",
+            link: "/getting-started/installation/sideloading",
           },
         ],
       },
