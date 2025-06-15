@@ -52,13 +52,7 @@ Additionally, supporters/boosters will gain access to the `#beta-chat` channel i
 
 Expect to receive a TestFlight invite via email within a few minutes after executing the command.
 
-## Installation Instructions:
-
-1. Install the ["TestFlight"](https://apps.apple.com/be/app/testflight/id899247664) app on your device from the App Store.
-2. Inside the invite email, click the "**View in TestFlight**" button.
-3. Paperback will now appear in the TestFlight app, allowing you to install it in the same manner as you would with an app from the App Store.
-
-### Watch the Installation Tutorial
+### Watch the TestFlight invite Tutorial
 
 <iframe
   width="560"
@@ -68,6 +62,12 @@ Expect to receive a TestFlight invite via email within a few minutes after execu
   frameborder="0"
   allowfullscreen
 ></iframe>
+
+## Installation Instructions:
+
+1. Install the ["TestFlight"](https://apps.apple.com/be/app/testflight/id899247664) app on your device from the App Store.
+2. Inside the invite email, click the "**View in TestFlight**" button.
+3. Paperback will now appear in the TestFlight app, allowing you to install it in the same manner as you would with an app from the App Store.
 
 ::: details Frequently Asked Questions
 
