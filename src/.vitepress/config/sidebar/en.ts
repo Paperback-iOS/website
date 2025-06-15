@@ -7,13 +7,24 @@ export default [
       {
         text: "Installation",
         link: "/getting-started/installation/",
+        collapsed: true,
+        items: [
+          {
+            text: "App Store",
+            link: "/getting-started/installation/appstore",
+          },
+          {
+            text: "TestFlight",
+            link: "/getting-started/installation/testflight",
+          },
+          {
+            text: "Sideloading",
+            link: "/getting-started/ainstallation/sideloading",
+          },
+        ],
       },
       {
-        text: "Changing Content Settings (0.8)",
-        link: "/getting-started/content-settings0-8",
-      },
-      {
-        text: "Changing Content Settings (0.9)",
+        text: "Changing Content Settings",
         link: "/getting-started/content-settings",
       },
       {
