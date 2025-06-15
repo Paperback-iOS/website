@@ -12,7 +12,7 @@ description: Discover how to customize the content settings in the app.
 Content in your app may be filtered based on your content settings. Because of this adjusting your content settings might be necessary. Here is how to do it:
 
 1. Visit the [Paperback Portal](https://portal.paperback.moe).
-2. Log in with your Paperback Account or create one if you don't have one.  
+2. Log in with your Paperback Account or create one if you don't have one.
    > New accounts need to have their email address verified. An email for this will be sent automatically upon account creation (check your spam/promotion folders).
 3. Customize the content setting to your preference. Available options are "Restricted", "Mature" and "Adult".
 4. If you were logged in, log out of the app.
