@@ -61,6 +61,7 @@ Expect to receive a TestFlight invite via email within a few minutes after execu
   title="TestFlight Installation Tutorial"
   frameborder="0"
   allowfullscreen
+  style="border-radius: 12px;"
 ></iframe>
 
 ## Installation Instructions:
