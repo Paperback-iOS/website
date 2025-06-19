@@ -25,7 +25,7 @@ TestFlight builds are only available to [Patreon supporters](https://patreon.com
 == GIF Tutorial
 <video autoplay muted loop playsinline style="max-width: 100%; border-radius: 12px;">
 
-  <source src="https://imgur.com/IF5EN88.mp4" type="video/mp4" />
+  <source src="https://imgur.com/K2ob9LV.mp4" type="video/mp4" />
 </video>
 
 == Video Tutorial
