@@ -21,4 +21,3 @@ Sideloading is a manual method using tools like [AltStore](https://altstore.io) 
 
 - Apps installed via sideloading expire after 7 days (free account).
 - You must re-sign and re-install regularly.
-
