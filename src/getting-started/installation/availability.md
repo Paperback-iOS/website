@@ -112,3 +112,7 @@ What follows is a list of all countries where you can find the Paperback app in 
 - Yemen
 - Zambia
 - Zimbabwe
+
+::: tip Paperback not available in your country
+We're sorry to say that Paperback may not be available in your country at this time. There may be a variety of reasons why, including local laws and regulations. We suggest looking into other methods for obtaining the app.
+:::

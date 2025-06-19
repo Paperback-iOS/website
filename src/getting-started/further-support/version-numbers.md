@@ -14,7 +14,7 @@ To identify the version numbers of various components, follow these steps:
 
 ## The App
 
-The version number of the app can be found at the bottom of the app's **Settings** page.
+The version number of the app can be found at the app's **Settings** page.
 
 ## An Extension
 
@@ -36,16 +36,16 @@ Ensure your question is not related to third-party extensions, as we do not main
 
 For devices running iOS, navigate to **Settings** > **General** > **About** > **iOS Version**.
 
-> e.g. **16.2**
+> e.g. **26.1**
 
 ### Your iPadOS Device (iPads)
 
 For devices running iPadOS, navigate to **Settings** > **General** > **About** > **iPadOS Version**.
 
-> e.g. **16.2**
+> e.g. **26.1**
 
 ### Your macOS Device (Macs)
 
 MacOS devices, find the OS version in the **Apple menu** (Top left) > **About This Mac** > **macOS**.
 
-> e.g. **Sonoma 14.2**
+> e.g. **Tahoe 26.1**

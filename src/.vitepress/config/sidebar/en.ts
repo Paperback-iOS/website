@@ -5,7 +5,7 @@ export default [
     collapsed: false,
     items: [
       {
-        text: "Installation",
+        text: "Download",
         link: "/getting-started/installation/",
         collapsed: true,
         items: [

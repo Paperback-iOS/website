@@ -29,10 +29,6 @@ You can join using [this link](https://discord.paperback.moe) (a Discord account
 Breaking these rules can result in a time-out or permanent ban!
 :::
 
-### Checking Help-Desk
-
-The `#help-desk` is a self-help channel that provides links to guides or links to FAQ items on our website. We recommend checking this channel before seeking further assistance in `#support`.
-
 ### Getting Support
 
 ::: warning Support Warning

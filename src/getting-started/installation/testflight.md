@@ -18,8 +18,17 @@ TestFlight builds are only available to [Patreon supporters](https://patreon.com
 
 > Your email stays private. Learn more [here](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ).
 
-### 📺・Watch the TestFlight Invite Tutorial
+### 📺・TestFlight Tutorial
 
+:::: tabs
+
+== GIF Tutorial
+<video autoplay muted loop playsinline style="max-width: 100%; border-radius: 12px;">
+  <source src="https://imgur.com/IF5EN88.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+== Video Tutorial
 <iframe
   width="560"
   height="315"
@@ -29,6 +38,8 @@ TestFlight builds are only available to [Patreon supporters](https://patreon.com
   allowfullscreen
   style="border-radius: 12px;"
 ></iframe>
+
+::::
 
 ## Installation Instructions
 
@@ -43,5 +54,7 @@ TestFlight builds are only available to [Patreon supporters](https://patreon.com
 - **Button failed?** Make sure your Discord name contains only alphanumeric characters.
 - **Can't type in `💙・supporter-chat`?** You may not have the correct role — follow the invite steps carefully.
 - **Didn't receive invite?** Ask for help in `#support` on Discord. [Guide here](/getting-started/further-support/)
+- **Didn't receive my supporter role** Link your ["Patreon"](https://www.patreon.com/settings/profile) role with your Discord account
+- **I made a custom pledge!** Thank you for considering to support us through Patreon! Making a **Custom Pledge** with Patreon will not allow you to have access to the Patreon Testflight. Make sure to verify that **YOU HAVE SELECTED A TIER**.
 
 :::

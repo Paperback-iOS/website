@@ -56,7 +56,7 @@ Content in your app may be filtered based on your content settings. Because of t
 5. In Paperback, go to your settings then `General Settings`.
 6. Customize the content setting to your preference. Available options are "Restricted", "Mature" and "Adult".
 
-<img src="/assets/ContentSettingsv9.png" alt="Content settings in iOS and Paperback." style="border-radius: 12px; max-width: 100%;" />
+<img src="/assets/Renders/ContentSettingsv9.png" alt="Content settings in iOS and Paperback." style="border-radius: 12px; max-width: 100%;" />
 
 ::: tip Notes
 
