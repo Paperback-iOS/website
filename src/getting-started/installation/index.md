@@ -11,7 +11,7 @@ There are three methods to install Paperback:
 - [**TestFlight**](./testflight.md): Grants access to alpha/beta builds via Discord/Patreon.
 - [**Sideloading**](./sideloading.md): Manual install for advanced users.
 
-::: info Device Support (0.8)
+::: info Device Support
 The latest Paperback version (v0.8) is compatible with:
 
 - iPhones running iOS 13.4 or later
