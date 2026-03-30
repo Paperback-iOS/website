@@ -1,6 +1,6 @@
 ---
 title: Connecting Trackers
-description: Enable automatic tracking for alternative backups and monitoring your reading progress.
+description: Enable automatic tracking and monitor your reading progress.
 ---
 
 # Connecting Trackers
@@ -11,7 +11,7 @@ Adding external trackers is an optional but recommended step, this will prevent 
 - [**MyAnimeList:**](https://myanimelist.net) The tracker with the biggest userbase.
 - [**MangaUpdates:**](https://mangaupdates.com) An alternative smaller tracker.
 
-We recommend that you use AniList, this because it has as modern user interface and one of if not the largest manga libraries. Trackers are installed the same way as content providing extensions. Bellow follows a guide on how to install and setup the AniList extension, the process for installing other tracker extensions is similar (they are located in the same repository).
+We recommend that you use AniList because it has a modern user interface and one of the largest manga libraries. Trackers are installed the same way as content-providing extensions. Below is a guide on how to install and set up the AniList extension. The process for installing other tracker extensions is similar, as they are located in the same repository.
 
 ## 1. Adding the Tracker Repository
 

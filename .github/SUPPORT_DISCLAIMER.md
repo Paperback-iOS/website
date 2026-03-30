@@ -14,7 +14,7 @@ Refer to the [Table of Contents](#table-of-contents) to explore the various type
   - [Submitting a Good Bug Report](#submitting-a-good-bug-report)
 - [Suggesting Enhancements](#suggesting-enhancements)
   - [Before Submitting an Enhancement suggestion](#before-submitting-an-enhancement-suggestion)
-  - [Submiting a Good Enhancement Suggestion](#submiting-a-good-enhancement-suggestion)
+  - [Submitting a Good Enhancement Suggestion](#submitting-a-good-enhancement-suggestion)
 
 ## I Have a Question
 
@@ -68,7 +68,7 @@ This section guides you through submitting an enhancement suggestion for the web
 - Perform a [search](https://github.com/Paperback-iOS/website/issues?q=label%3Aenhancement) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 - Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this enhancement. Keep in mind that we want enhancements that will be useful to the majority of our users and not just a small subset.
 
-### Submiting a Good Enhancement Suggestion
+### Submitting a Good Enhancement Suggestion
 
 Enhancement suggestions are tracked as [GitHub issues](https://github.com/Paperback-iOS/website/issues).
 

@@ -9,7 +9,7 @@ import ThemesListParser from '../.vitepress/components/ThemesListParser.vue'
 
 # Changing the Theme
 
-Bellow you can find a list of all publicly available themes. You can find info regarding making your own theme at the bottom of the page as well.
+Below you can find a list of all publicly available themes. You can find information about making your own theme at the bottom of the page as well.
 
 ## Available Themes
 
@@ -21,7 +21,7 @@ Bellow you can find a list of all publicly available themes. You can find info r
 
 [Go to Tools](/tools/) -->
 
-For more info on making themes you can check the follow GitHub repositories:
+For more information on making themes, you can check the following GitHub repositories:
 
 1. [Paperback Themes:](https://github.com/Celarye/Paperback-themes) Offers an advanced command-line interface program for editing and creating themes.
 2. [Paperback Themes GUI:](https://github.com/LucifersCircle/paperback-themes-gui) A user-friendly graphical interface for editing and creating themes.

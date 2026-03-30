@@ -16,7 +16,7 @@ The official Paperback extension is used for connecting the Paperback app with y
 
 ### Paperback website
 
-Any assistance in improving this website is greatly appreciated. Begin with our [website development guide](/contributing/extension-development/).
+Any assistance in improving this website is greatly appreciated. Begin with our [website development guide](/contributing/website/).
 
 ### Paperback Toolchain and Types
 

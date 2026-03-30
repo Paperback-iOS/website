@@ -29,7 +29,7 @@ For major changes, please open an issue first to discuss what you would like to 
 
 You will need [Node.js](http://nodejs.org) **version 18+**.
 
-After cloning the repo and entering the the directory, run:
+After cloning the repo and entering the directory, run:
 
 ```bash
 # Installs any dependencies needed.
@@ -39,24 +39,24 @@ $ npm install
 To run a development server for the website now, run:
 
 ```bash
-# This command start a local server you can access and edit live.
-$ npm dev
+# This command starts a local server you can access and edit live.
+$ npm run dev
 ```
 
 To test and build the website, run:
 
 ```bash
-# This command tests and builds the website
-$ npm build
+# This command tests and builds the website.
+$ npm run build
 ```
 
 > Fix any issues that pop up and then run this command again.
 
-To preview the previously build website, run
+To preview the previously built website, run:
 
 ```bash
-# This command starts a local server you can access and use view the build.
-$ npm preview
+# This command starts a local server you can use to view the build.
+$ npm run preview
 ```
 
 **Note:** There are git hooks in place to run the build tests on commits as well. Pull requests with failing tests will not be merged.
@@ -82,11 +82,10 @@ $ npm preview
 
 A list of to do items for the website:
 
-- Update to version +9.0 of ESLint and switch to a flat config.
-- Update and add the following contributing guides:
-  - Extension Contributing
-  - Website Contributing
-- Add the following tools to the website:
+- Expand and improve the following contributing guides:
+  - Extension Development
+  - Website Contribution
+- Finish and ship the following tools:
   - Backup Converter
   - Themes Creator
 
