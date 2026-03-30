@@ -52,7 +52,7 @@ number.
 | `name`   | String                                                                                               | The title of the chapter.                                                                                                                                                                            |
 | `volume` | Number                                                                                               | The volume that the chapter belongs to. It is recommended to leave the volume number out if every chapter does not have a corresponding volume number, as the volume number interferes with sorting. |
 | `group`  | String                                                                                               | The group that posted the chapter.                                                                                                                                                                   |
-| `time`   | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object | The date that the chapter is published. If omitted, the chapter will have a creation of the time when the chapter list was loaded.                                                                   |
+| `time`   | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object | The date that the chapter was published. If omitted, the chapter will use the time when the chapter list was loaded.                                                                                 |
 
 ## ChapterDetails
 
