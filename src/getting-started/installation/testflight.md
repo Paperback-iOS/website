@@ -13,12 +13,10 @@ TestFlight builds are only available to [Patreon supporters](https://patreon.com
 
 1. Join the [Official Discord server](https://discord.paperback.moe).
 2. Become an active [Patreon supporter](https://www.patreon.com/FaizanDurrani) or [Discord booster](https://discord.paperback.moe).
-3. Link your Discord on [Patreon settings](https://www.patreon.com/settings/apps).
+3. (For Patreons) Link your Discord on [Patreon settings](https://www.patreon.com/settings/apps).
 4. Click the `Request Testflight invitation` button in `📨・testflight`.
 
-> Your email stays private. Learn more [here](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ).
-
-### 📺・TestFlight Tutorial
+### TestFlight Tutorial
 
 :::: tabs
 

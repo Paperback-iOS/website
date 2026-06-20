@@ -5,7 +5,7 @@ export default [
     collapsed: false,
     items: [
       {
-        text: "Download",
+        text: "Installation",
         link: "/getting-started/installation/",
         collapsed: true,
         items: [
@@ -74,7 +74,7 @@ export default [
         link: "/guides/merging",
       },
       {
-        text: "Changing the Theme",
+        text: "Using themes",
         link: "/guides/themes",
       },
     ],
